@@ -64,6 +64,19 @@ const nextConfig = {
           destination: 'https://localhost:4900/:path*',
           permanent: false,
         },
+        // HTTP 요청 시 자동 HTTPS 리다이렉트 (더 간단한 접근)
+        {
+          source: '/:path*',
+          has: [
+            {
+              type: 'header',
+              key: 'x-forwarded-proto',
+              value: 'http',
+            },
+          ],
+          destination: 'https://localhost:4900/:path*',
+          permanent: false,
+        },
       ];
     }
     return [];
