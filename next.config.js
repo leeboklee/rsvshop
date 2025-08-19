@@ -20,7 +20,7 @@ const nextConfig = {
   
   // 이미지 최적화
   images: {
-    domains: ['example.com'],
+    domains: ['example.com', 'rsvshop.local'],
     formats: ['image/webp', 'image/avif'],
   },
   
@@ -52,6 +52,7 @@ const nextConfig = {
     // 개발 환경에서만 HTTPS 리다이렉트 활성화
     if (process.env.NODE_ENV === 'development' && process.env.NEXT_DEV_HTTPS === 'true') {
       return [
+        // localhost HTTP → HTTPS 리다이렉트
         {
           source: '/:path*',
           has: [
@@ -64,7 +65,7 @@ const nextConfig = {
           destination: 'https://localhost:4900/:path*',
           permanent: false,
         },
-        // HTTP 요청 시 자동 HTTPS 리다이렉트 (더 간단한 접근)
+        // rsvshop.local HTTP → HTTPS 리다이렉트
         {
           source: '/:path*',
           has: [
@@ -74,7 +75,7 @@ const nextConfig = {
               value: 'http',
             },
           ],
-          destination: 'https://localhost:4900/:path*',
+          destination: 'https://rsvshop.local:4900/:path*',
           permanent: false,
         },
       ];
