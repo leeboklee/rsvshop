@@ -46,6 +46,28 @@ const nextConfig = {
       },
     ];
   },
+
+  // 개발 환경에서 HTTP → HTTPS 자동 리다이렉트
+  async redirects() {
+    // 개발 환경에서만 HTTPS 리다이렉트 활성화
+    if (process.env.NODE_ENV === 'development' && process.env.NEXT_DEV_HTTPS === 'true') {
+      return [
+        {
+          source: '/:path*',
+          has: [
+            {
+              type: 'header',
+              key: 'x-forwarded-proto',
+              value: 'http',
+            },
+          ],
+          destination: 'https://localhost:4900/:path*',
+          permanent: false,
+        },
+      ];
+    }
+    return [];
+  },
 };
 
 module.exports = nextConfig;

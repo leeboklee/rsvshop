@@ -6,15 +6,16 @@
     "node": ">=18.17.0"
   },
   "scripts": {
-    "dev": "NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo --experimental-https",
+    "dev": "NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' NEXT_DEV_HTTPS=true npx next dev --port 4900 --turbo --experimental-https",
+    "dev:http": "NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo",
     "dev:wsl": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 4900",
     "dev:customer": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 5990",
 
-    "dev:nodemon": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' nodemon --watch . --ext js,ts,tsx,jsx,json --exec 'npx next dev --port 4900'",
+    "dev:nodemon": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' nodemon --watch . --ext js,ts,tsx,jsx,json --exec 'npm run dev:http'",
     "dev:fast": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev -p 4900 --turbo",
     "dev:ultra": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=512' npx next dev -p 4900 --turbo",
     "dev:compile": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=512 --max-semi-space-size=64' npx next dev -p 4900 --turbo",
-    "dev:fix": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev -p 4900 --turbo --experimental-https",
+    "dev:fix": "NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev -p 4900 --turbo --experimental-https",
     "dev:both": "concurrently \"npm run dev\" \"npm run dev:customer\"",
     "build": "next build",
     "start": "next start",
