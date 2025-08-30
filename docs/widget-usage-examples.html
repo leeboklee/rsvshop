@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVShop Web Component 사용 예시</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .example-section {
+            padding: 40px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .example-section:last-child {
+            border-bottom: none;
+        }
+
+        .example-section h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .example-section p {
+            color: #6b7280;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 16px;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #5a67d8;
+        }
+
+        .code-block {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #374151;
+        }
+
+        .widget-demo {
+            background: #f9fafb;
+            border: 2px dashed #d1d5db;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .widget-demo h3 {
+            margin-bottom: 16px;
+            color: #374151;
+            font-size: 18px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .feature-card h4 {
+            color: #1f2937;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .comparison-table td {
+            color: #6b7280;
+        }
+
+        .advantage {
+            color: #16a34a;
+            font-weight: 500;
+        }
+
+        .disadvantage {
+            color: #dc2626;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 24px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .example-section {
+                padding: 24px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏨 RSVShop Web Component</h1>
+            <p>완전 격리된 예약 시스템 - Shadow DOM으로 안전한 통합</p>
+        </div>
+
+        <div class="example-section">
+            <h2>🚀 1. 기본 사용법</h2>
+            <p>가장 간단한 방법으로 Web Component를 삽입할 수 있습니다. Shadow DOM으로 완전히 격리되어 CSS 충돌 걱정이 없습니다.</p>
+            
+            <button class="copy-btn" onclick="copyCode('basic-usage')">코드 복사</button>
+            <div class="code-block" id="basic-usage">
+<pre>&lt;!-- HTML에 Web Component 추가 --&gt;
+&lt;rsvshop-widget 
+  api-key="your-api-key-here"
+  api-url="http://localhost:3900"&gt;
+&lt;/rsvshop-widget&gt;
+
+&lt;!-- JavaScript 파일 로드 --&gt;
+&lt;script src="http://localhost:3900/reservation-widget.js"&gt;&lt;/script&gt;</pre>
+            </div>
+
+            <div class="widget-demo">
+                <h3>실제 Web Component 미리보기:</h3>
+                <rsvshop-widget 
+                  api-key="demo-key"
+                  api-url="http://localhost:3900">
+                </rsvshop-widget>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>⚙️ 2. 고급 설정</h2>
+            <p>다양한 속성을 통해 Web Component를 커스터마이징할 수 있습니다.</p>
+            
+            <button class="copy-btn" onclick="copyCode('advanced-usage')">코드 복사</button>
+            <div class="code-block" id="advanced-usage">
+<pre>&lt;!-- 커스텀 API URL 설정 --&gt;
+&lt;rsvshop-widget 
+  api-key="your-production-api-key"
+  api-url="https://your-domain.com"&gt;
+&lt;/rsvshop-widget&gt;
+
+&lt;!-- 여러 위젯 동시 사용 --&gt;
+&lt;div class="reservation-section"&gt;
+  &lt;h3&gt;객실 예약&lt;/h3&gt;
+  &lt;rsvshop-widget api-key="key1"&gt;&lt;/rsvshop-widget&gt;
+&lt;/div&gt;
+
+&lt;div class="package-section"&gt;
+  &lt;h3&gt;패키지 예약&lt;/h3&gt;
+  &lt;rsvshop-widget api-key="key2"&gt;&lt;/rsvshop-widget&gt;
+&lt;/div&gt;</pre>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>🎨 3. React에서 사용</h2>
+            <p>React 컴포넌트에서 Web Component를 사용하는 방법입니다.</p>
+            
+            <button class="copy-btn" onclick="copyCode('react-usage')">코드 복사</button>
+            <div class="code-block" id="react-usage">
+<pre>import React, { useEffect } from 'react';
+
+function ReservationWidget({ apiKey, apiUrl }) {
+  useEffect(() => {
+    // Web Component 스크립트 로드
+    const script = document.createElement('script');
+    script.src = `${apiUrl}/reservation-widget.js`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // 컴포넌트 언마운트 시 스크립트 제거
+      document.body.removeChild(script);
+    };
+  }, [apiUrl]);
+
+  return (
+    &lt;div className="reservation-widget"&gt;
+      &lt;rsvshop-widget 
+        api-key={apiKey}
+        api-url={apiUrl}&gt;
+      &lt;/rsvshop-widget&gt;
+    &lt;/div&gt;
+  );
+}
+
+// 사용 예시
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;호텔 예약&lt;/h1&gt;
+      &lt;ReservationWidget 
+        apiKey="your-api-key"
+        apiUrl="http://localhost:3900" /&gt;
+    &lt;/div&gt;
+  );
+}</pre>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>⚡ 4. Vue.js에서 사용</h2>
+            <p>Vue.js 컴포넌트에서 Web Component를 사용하는 방법입니다.</p>
+            
+            <button class="copy-btn" onclick="copyCode('vue-usage')">코드 복사</button>
+            <div class="code-block" id="vue-usage">
+<pre>&lt;template&gt;
+  &lt;div class="reservation-widget"&gt;
+    &lt;rsvshop-widget 
+      :api-key="apiKey"
+      :api-url="apiUrl"&gt;
+    &lt;/rsvshop-widget&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: 'ReservationWidget',
+  props: {
+    apiKey: {
+      type: String,
+      required: true
+    },
+    apiUrl: {
+      type: String,
+      default: 'http://localhost:3900'
+    }
+  },
+  mounted() {
+    // Web Component 스크립트 로드
+    const script = document.createElement('script');
+    script.src = `${this.apiUrl}/reservation-widget.js`;
+    script.async = true;
+    document.body.appendChild(script);
+  },
+  beforeDestroy() {
+    // 컴포넌트 제거 시 스크립트 정리
+    const scripts = document.querySelectorAll('script[src*="reservation-widget.js"]');
+    scripts.forEach(script => script.remove());
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.reservation-widget {
+  margin: 20px 0;
+}
+&lt;/style&gt;</pre>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>🔧 5. API 직접 연동</h2>
+            <p>Web Component 대신 API를 직접 호출하여 더 많은 커스터마이징이 가능합니다.</p>
+            
+            <button class="copy-btn" onclick="copyCode('api-usage')">코드 복사</button>
+            <div class="code-block" id="api-usage">
+<pre>// 예약 생성 API 호출
+async function createReservation(bookingData) {
+  try {
+    const response = await fetch('http://localhost:3900/api/external/reservations', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-API-Key': 'your-api-key-here'
+      },
+      body: JSON.stringify(bookingData)
+    });
+    
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error('예약 생성 오류:', error);
+    throw error;
+  }
+}
+
+// 객실 목록 조회
+async function getRooms() {
+  try {
+    const response = await fetch('http://localhost:3900/api/external/rooms', {
+      headers: {
+        'X-API-Key': 'your-api-key-here'
+      }
+    });
+    
+    const rooms = await response.json();
+    return rooms;
+  } catch (error) {
+    console.error('객실 조회 오류:', error);
+    throw error;
+  }
+}
+
+// 패키지 목록 조회
+async function getPackages(roomId) {
+  try {
+    const url = roomId 
+      ? `http://localhost:3900/api/external/packages?roomId=${roomId}`
+      : 'http://localhost:3900/api/external/packages';
+      
+    const response = await fetch(url, {
+      headers: {
+        'X-API-Key': 'your-api-key-here'
+      }
+    });
+    
+    const packages = await response.json();
+    return packages;
+  } catch (error) {
+    console.error('패키지 조회 오류:', error);
+    throw error;
+  }
+}</pre>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>📊 6. Web Component vs 기존 방식 비교</h2>
+            <p>Web Component 방식의 장점을 다른 방식들과 비교해보세요.</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>특징</th>
+                        <th>Web Component</th>
+                        <th>JavaScript 위젯</th>
+                        <th>iframe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSS 격리</td>
+                        <td class="advantage">✅ 완전 격리 (Shadow DOM)</td>
+                        <td class="disadvantage">❌ 충돌 가능성</td>
+                        <td class="advantage">✅ 완전 격리</td>
+                    </tr>
+                    <tr>
+                        <td>성능</td>
+                        <td class="advantage">✅ 빠름 (네이티브)</td>
+                        <td class="advantage">✅ 빠름</td>
+                        <td class="disadvantage">❌ 느림</td>
+                    </tr>
+                    <tr>
+                        <td>사용 편의성</td>
+                        <td class="advantage">✅ 간단한 태그</td>
+                        <td class="advantage">✅ 스크립트 로드</td>
+                        <td class="disadvantage">❌ 복잡한 설정</td>
+                    </tr>
+                    <tr>
+                        <td>보안</td>
+                        <td class="advantage">✅ 안전</td>
+                        <td class="disadvantage">❌ 상대방 사이트 접근</td>
+                        <td class="advantage">✅ 완전 격리</td>
+                    </tr>
+                    <tr>
+                        <td>브라우저 지원</td>
+                        <td class="advantage">✅ 모던 브라우저</td>
+                        <td class="advantage">✅ 모든 브라우저</td>
+                        <td class="advantage">✅ 모든 브라우저</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="example-section">
+            <h2>🎯 7. 주요 기능</h2>
+            <p>RSVShop Web Component가 제공하는 핵심 기능들입니다.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🔒 완전 격리</h4>
+                    <p>Shadow DOM을 사용하여 상대방 사이트의 CSS와 완전히 격리됩니다. 스타일 충돌 걱정이 없습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>📱 반응형 디자인</h4>
+                    <p>모든 디바이스에서 최적화된 UI를 제공합니다. 모바일, 태블릿, 데스크톱 모두 지원합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>⚡ 빠른 로딩</h4>
+                    <p>브라우저 네이티브 기술을 사용하여 빠른 로딩 속도를 보장합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>🔑 API 키 인증</h4>
+                    <p>안전한 API 키 인증 시스템으로 데이터를 보호합니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>🎨 커스터마이징</h4>
+                    <p>속성을 통해 API URL과 키를 쉽게 설정할 수 있습니다.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>📊 실시간 검증</h4>
+                    <p>폼 입력값의 실시간 검증과 오류 처리를 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="example-section">
+            <h2>🚀 8. 시작하기</h2>
+            <p>지금 바로 RSVShop Web Component를 사용해보세요!</p>
+            
+            <div class="code-block">
+<pre>1. API 키 발급
+   - 관리자 페이지에서 API 키를 생성하세요
+   - http://localhost:3900/admin/api-keys
+
+2. Web Component 삽입
+   &lt;rsvshop-widget api-key="your-key"&gt;&lt;/rsvshop-widget&gt;
+
+3. 스크립트 로드
+   &lt;script src="http://localhost:3900/reservation-widget.js"&gt;&lt;/script&gt;
+
+4. 완료!
+   예약 시스템이 즉시 작동합니다.</pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(elementId) {
+            const codeBlock = document.getElementById(elementId);
+            const code = codeBlock.querySelector('pre').textContent;
+            
+            navigator.clipboard.writeText(code).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = '복사됨!';
+                button.style.background = '#16a34a';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#667eea';
+                }, 2000);
+            }).catch(err => {
+                console.error('클립보드 복사 실패:', err);
+                alert('코드를 수동으로 복사해주세요.');
+            });
+        }
+
+        // Web Component 스크립트 로드
+        document.addEventListener('DOMContentLoaded', function() {
+            const script = document.createElement('script');
+            script.src = '/reservation-widget.js';
+            script.async = true;
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+</html> 

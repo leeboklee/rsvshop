@@ -1,0 +1,20 @@
+[Unit]
+Description=RSVShop Next.js App (Prod - Standalone)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rsvshop
+WorkingDirectory=/home/rsvshop/rsvshop
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=4901
+ExecStart=/usr/bin/node .next/standalone/server.js
+Restart=always
+RestartSec=1
+KillSignal=SIGINT
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target

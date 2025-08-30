@@ -1,0 +1,21 @@
+# 개발용 Dockerfile (빠른 빌드)
+FROM node:18-alpine
+
+WORKDIR /app
+
+# 패키지 파일만 복사 (캐시 최적화)
+COPY package*.json ./
+
+# 개발 의존성만 설치 (빠른 설치)
+RUN npm ci --only=development
+
+# 포트 노출
+EXPOSE 4900
+
+# 환경 변수
+ENV NODE_ENV=development
+ENV PORT=4900
+ENV HOSTNAME="0.0.0.0"
+
+# 개발 서버 실행 (실시간 반영)
+CMD ["npm", "run", "dev"] 

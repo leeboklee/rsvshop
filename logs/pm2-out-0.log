@@ -1,0 +1,232 @@
+2025-08-24T14:56:45: 
+2025-08-24T14:56:45: > rsvshop@0.1.0 predev
+2025-08-24T14:56:45: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T14:56:45: 
+2025-08-24T14:56:45: No process found on port 4900
+2025-08-24T14:56:45: 
+2025-08-24T14:56:45: > rsvshop@0.1.0 dev
+2025-08-24T14:56:45: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T14:56:45: 
+2025-08-24T14:56:49:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T14:56:49:   - Local:        http://localhost:4900
+2025-08-24T14:56:49:   - Environments: .env.local, .env
+2025-08-24T14:56:49: 
+2025-08-24T14:56:49:  ✓ Starting...
+2025-08-24T14:56:52:  ✓ Compiled in 1690ms
+2025-08-24T14:56:53:  ✓ Ready in 4.9s
+2025-08-24T14:56:53:  ○ Compiling /api/ping ...
+2025-08-24T14:56:53:  ✓ Compiled /api/ping in 538ms
+2025-08-24T14:56:54:  GET /api/ping 200 in 928ms
+2025-08-24T14:56:54:  GET /api/ping 200 in 997ms
+2025-08-24T14:56:56:  GET /api/ping 200 in 373ms
+2025-08-24T14:57:01:  GET /api/ping 200 in 266ms
+2025-08-24T14:57:06:  GET /api/ping 200 in 250ms
+2025-08-24T14:57:11:  GET /api/ping 200 in 263ms
+2025-08-24T14:57:17:  GET /api/ping 200 in 620ms
+2025-08-24T14:57:22:  GET /api/ping 200 in 537ms
+2025-08-24T14:57:26:  GET /api/ping 200 in 378ms
+2025-08-24T14:57:31:  GET /api/ping 200 in 261ms
+2025-08-24T14:57:36:  GET /api/ping 200 in 325ms
+2025-08-24T14:57:41:  GET /api/ping 200 in 327ms
+2025-08-24T14:57:46:  GET /api/ping 200 in 367ms
+2025-08-24T14:57:52:  GET /api/ping 200 in 408ms
+2025-08-24T14:57:56:  GET /api/ping 200 in 188ms
+2025-08-24T14:58:01:  GET /api/ping 200 in 152ms
+2025-08-24T14:58:06:  GET /api/ping 200 in 95ms
+2025-08-24T14:58:11:  GET /api/ping 200 in 172ms
+2025-08-24T14:58:16:  GET /api/ping 200 in 119ms
+2025-08-24T14:58:21:  GET /api/ping 200 in 106ms
+2025-08-24T14:58:26:  GET /api/ping 200 in 156ms
+2025-08-24T14:58:31:  GET /api/ping 200 in 101ms
+2025-08-24T14:58:36:  GET /api/ping 200 in 92ms
+2025-08-24T14:58:41:  GET /api/ping 200 in 74ms
+2025-08-24T14:58:46:  GET /api/ping 200 in 100ms
+2025-08-24T14:58:51:  GET /api/ping 200 in 112ms
+2025-08-24T14:58:56:  GET /api/ping 200 in 113ms
+2025-08-24T14:59:01:  GET /api/ping 200 in 101ms
+2025-08-24T14:59:06:  GET /api/ping 200 in 81ms
+2025-08-24T14:59:09:  GET /api/ping 200 in 202ms
+2025-08-24T14:59:32: 
+2025-08-24T14:59:32: > rsvshop@0.1.0 predev
+2025-08-24T14:59:32: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T14:59:32: 
+2025-08-24T14:59:32: No process found on port 4900
+2025-08-24T14:59:32: 
+2025-08-24T14:59:32: > rsvshop@0.1.0 dev
+2025-08-24T14:59:32: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T14:59:32: 
+2025-08-24T14:59:43: [?25h
+2025-08-24T14:59:50: 
+2025-08-24T14:59:50: > rsvshop@0.1.0 predev
+2025-08-24T14:59:50: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T14:59:50: 
+2025-08-24T14:59:50: Killing process 17943 (next-server (v1) on port 4900
+2025-08-24T14:59:50: Killed
+2025-08-24T14:59:50: 
+2025-08-24T14:59:50: > rsvshop@0.1.0 dev
+2025-08-24T14:59:50: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T14:59:50: 
+2025-08-24T14:59:56:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T14:59:56:   - Local:        http://localhost:4900
+2025-08-24T14:59:56:   - Environments: .env.local, .env
+2025-08-24T14:59:56: 
+2025-08-24T14:59:56:  ✓ Starting...
+2025-08-24T15:00:00:  ✓ Compiled in 2s
+2025-08-24T15:00:02:  ✓ Ready in 6.1s
+2025-08-24T15:01:15: [?25h
+2025-08-24T15:01:18: 
+2025-08-24T15:01:18: > rsvshop@0.1.0 predev
+2025-08-24T15:01:18: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:01:18: 
+2025-08-24T15:01:19: No process found on port 4900
+2025-08-24T15:01:19: 
+2025-08-24T15:01:19: > rsvshop@0.1.0 dev
+2025-08-24T15:01:19: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:01:19: 
+2025-08-24T15:01:30:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:01:30:   - Local:        http://localhost:4900
+2025-08-24T15:01:30:   - Environments: .env.local, .env
+2025-08-24T15:01:30: 
+2025-08-24T15:01:30:  ✓ Starting...
+2025-08-24T15:01:38:  ✓ Compiled in 1967ms
+2025-08-24T15:01:40:  ✓ Ready in 11.5s
+2025-08-24T15:01:51: 
+2025-08-24T15:01:51: > rsvshop@0.1.0 predev
+2025-08-24T15:01:51: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:01:51: 
+2025-08-24T15:01:51: No process found on port 4900
+2025-08-24T15:01:51: 
+2025-08-24T15:01:51: > rsvshop@0.1.0 dev
+2025-08-24T15:01:51: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:01:51: 
+2025-08-24T15:01:55:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:01:55:   - Local:        http://localhost:4900
+2025-08-24T15:01:55:   - Environments: .env.local, .env
+2025-08-24T15:01:55: 
+2025-08-24T15:01:55:  ✓ Starting...
+2025-08-24T15:01:58:  ✓ Compiled in 1605ms
+2025-08-24T15:01:59:  ✓ Ready in 5.1s
+2025-08-24T15:02:08: 
+2025-08-24T15:02:08: > rsvshop@0.1.0 predev
+2025-08-24T15:02:08: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:02:08: 
+2025-08-24T15:02:08: Killing process 19630 (next-server (v1) on port 4900
+2025-08-24T15:02:08: Killed
+2025-08-24T15:02:08: 
+2025-08-24T15:02:08: > rsvshop@0.1.0 dev
+2025-08-24T15:02:08: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:02:08: 
+2025-08-24T15:02:12:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:02:12:   - Local:        http://localhost:4900
+2025-08-24T15:02:12:   - Environments: .env.local, .env
+2025-08-24T15:02:12: 
+2025-08-24T15:02:12:  ✓ Starting...
+2025-08-24T15:02:16:  ✓ Compiled in 1347ms
+2025-08-24T15:02:17:  ✓ Ready in 5.1s
+2025-08-24T15:02:18: [?25h
+2025-08-24T15:02:19: 
+2025-08-24T15:02:19: > rsvshop@0.1.0 predev
+2025-08-24T15:02:19: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:02:19: 
+2025-08-24T15:02:19: No process found on port 4900
+2025-08-24T15:02:19: 
+2025-08-24T15:02:19: > rsvshop@0.1.0 dev
+2025-08-24T15:02:19: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:02:19: 
+2025-08-24T15:02:24:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:02:24:   - Local:        http://localhost:4900
+2025-08-24T15:02:24:   - Environments: .env.local, .env
+2025-08-24T15:02:24: 
+2025-08-24T15:02:24:  ✓ Starting...
+2025-08-24T15:02:26:  ✓ Compiled in 1080ms
+2025-08-24T15:02:27:  ✓ Ready in 3.8s
+2025-08-24T15:08:28: 
+2025-08-24T15:08:28: > rsvshop@0.1.0 predev
+2025-08-24T15:08:28: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:08:28: 
+2025-08-24T15:08:28: Killing process 20029 (next-server (v1) on port 4900
+2025-08-24T15:08:28: Killed
+2025-08-24T15:08:28: 
+2025-08-24T15:08:28: > rsvshop@0.1.0 dev
+2025-08-24T15:08:28: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:08:28: 
+2025-08-24T15:08:30:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:08:30:   - Local:        http://localhost:4900
+2025-08-24T15:08:30:   - Environments: .env.local, .env
+2025-08-24T15:08:30: 
+2025-08-24T15:08:30:  ✓ Starting...
+2025-08-24T15:08:31:  ✓ Compiled in 376ms
+2025-08-24T15:08:31:  ✓ Ready in 1887ms
+2025-08-24T15:09:30: 
+2025-08-24T15:09:30: > rsvshop@0.1.0 predev
+2025-08-24T15:09:30: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:09:30: 
+2025-08-24T15:09:30: No process found on port 4900
+2025-08-24T15:09:30: 
+2025-08-24T15:09:30: > rsvshop@0.1.0 dev
+2025-08-24T15:09:30: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:09:30: 
+2025-08-24T15:09:39: 
+2025-08-24T15:09:39: > rsvshop@0.1.0 predev
+2025-08-24T15:09:39: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:09:39: 
+2025-08-24T15:09:39: Killing process 20298 (next-server (v1) on port 4900
+2025-08-24T15:09:39: Killed
+2025-08-24T15:09:39: 
+2025-08-24T15:09:39: > rsvshop@0.1.0 dev
+2025-08-24T15:09:39: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:09:39: 
+2025-08-24T15:09:43:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:09:43:   - Local:        http://localhost:4900
+2025-08-24T15:09:43:   - Environments: .env.local, .env
+2025-08-24T15:09:43: 
+2025-08-24T15:09:43:  ✓ Starting...
+2025-08-24T15:09:46:  ✓ Compiled in 1299ms
+2025-08-24T15:09:47:  ✓ Ready in 4.2s
+2025-08-24T15:09:48: [?25h
+2025-08-24T15:09:49: 
+2025-08-24T15:09:49: > rsvshop@0.1.0 predev
+2025-08-24T15:09:49: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:09:49: 
+2025-08-24T15:09:50: No process found on port 4900
+2025-08-24T15:09:50: 
+2025-08-24T15:09:50: > rsvshop@0.1.0 dev
+2025-08-24T15:09:50: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:09:50: 
+2025-08-24T15:09:53:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:09:53:   - Local:        http://localhost:4900
+2025-08-24T15:09:53:   - Environments: .env.local, .env
+2025-08-24T15:09:53: 
+2025-08-24T15:09:53:  ✓ Starting...
+2025-08-24T15:09:57:  ✓ Compiled in 1305ms
+2025-08-24T15:09:57:  ✓ Ready in 4.3s
+2025-08-24T15:10:47: [?25h
+2025-08-24T15:10:52: 
+2025-08-24T15:10:52: > rsvshop@0.1.0 predev
+2025-08-24T15:10:52: > bash ./scripts/kill-port.sh 4900 || true
+2025-08-24T15:10:52: 
+2025-08-24T15:10:52: No process found on port 4900
+2025-08-24T15:10:52: 
+2025-08-24T15:10:52: > rsvshop@0.1.0 dev
+2025-08-24T15:10:52: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:10:52: 
+2025-08-24T15:10:56:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:10:56:   - Local:        http://localhost:4900
+2025-08-24T15:10:56:   - Environments: .env.local, .env
+2025-08-24T15:10:56: 
+2025-08-24T15:10:56:  ✓ Starting...
+2025-08-24T15:11:00:  ✓ Compiled in 1354ms
+2025-08-24T15:11:01:  ✓ Ready in 5.1s
+2025-08-24T15:11:02: [?25h
+2025-08-24T15:11:03: 
+2025-08-24T15:11:03: > rsvshop@0.1.0 dev:pm2
+2025-08-24T15:11:03: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:11:03: 
+2025-08-24T15:11:07:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:11:07:   - Local:        http://localhost:4900
+2025-08-24T15:11:07:   - Environments: .env.local, .env
+2025-08-24T15:11:07: 
+2025-08-24T15:11:07:  ✓ Starting...
+2025-08-24T15:11:10:  ✓ Compiled in 1141ms
+2025-08-24T15:11:11:  ✓ Ready in 4.5s
+2025-08-24T15:18:22: [?25h

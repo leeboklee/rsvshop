@@ -1,0 +1,393 @@
+{
+  "timestamp": "2025-08-01T06:56:12.294Z",
+  "users": [
+    {
+      "id": "41fb08aa-90d0-4699-9234-daf72f7a17e9",
+      "email": "admin@rsvshop.com",
+      "password": "admin123",
+      "name": "관리자",
+      "createdAt": "2025-08-01T06:43:44.072Z",
+      "updatedAt": "2025-08-01T06:43:44.072Z",
+      "role": "ADMIN"
+    },
+    {
+      "id": "305f5c02-5c4d-450f-a988-8c7a63c9c1ba",
+      "email": "user1@example.com",
+      "password": "user123",
+      "name": "홍길동",
+      "createdAt": "2025-08-01T06:43:44.085Z",
+      "updatedAt": "2025-08-01T06:43:44.085Z",
+      "role": "USER"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+      "name": "그랜드 호텔",
+      "address": "서울시 강남구 테헤란로 123",
+      "phone": "02-1234-5678",
+      "email": "info@grandhotel.com",
+      "description": "최고급 호텔",
+      "isActive": true,
+      "createdAt": "2025-07-31T19:23:07.732Z",
+      "updatedAt": "2025-07-31T19:23:07.732Z"
+    },
+    {
+      "id": "76140984-0005-4c97-bd7a-0954385aebd0",
+      "name": "ddddd",
+      "address": "222",
+      "phone": null,
+      "email": null,
+      "description": null,
+      "isActive": true,
+      "createdAt": "2025-08-01T06:46:14.406Z",
+      "updatedAt": "2025-08-01T06:46:14.406Z"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "78cc89d3-5f28-46ae-8a21-6e25c5c6f262",
+      "name": "디럭스 더블",
+      "description": "2명 수용 가능한 디럭스 더블룸",
+      "capacity": 2,
+      "createdAt": "2025-08-01T06:43:44.123Z",
+      "updatedAt": "2025-08-01T06:43:44.123Z",
+      "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+      "isActive": true,
+      "price": 150000
+    },
+    {
+      "id": "df92a2df-85c5-4447-8301-632074a4f71e",
+      "name": "스위트",
+      "description": "4명 수용 가능한 프리미엄 스위트",
+      "capacity": 4,
+      "createdAt": "2025-08-01T06:43:44.145Z",
+      "updatedAt": "2025-08-01T06:43:44.145Z",
+      "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+      "isActive": true,
+      "price": 300000
+    }
+  ],
+  "packages": [
+    {
+      "id": "2b03a6fa-b71c-4eea-ab69-10a355d07fd3",
+      "name": "조식 패키지",
+      "description": "아침 식사 포함",
+      "price": 15000,
+      "createdAt": "2025-08-01T06:43:44.155Z",
+      "updatedAt": "2025-08-01T06:43:44.155Z",
+      "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+      "isActive": true
+    },
+    {
+      "id": "90c28f10-7a18-4e5c-be7f-dc4a489e4f22",
+      "name": "스파 패키지",
+      "description": "스파 서비스 포함",
+      "price": 50000,
+      "createdAt": "2025-08-01T06:43:44.167Z",
+      "updatedAt": "2025-08-01T06:43:44.167Z",
+      "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+      "isActive": true
+    },
+    {
+      "id": "0325e5ba-9ca2-4e54-bfd6-db580e9070b3",
+      "name": "sdfsf",
+      "description": null,
+      "price": 22,
+      "createdAt": "2025-08-01T06:46:24.644Z",
+      "updatedAt": "2025-08-01T06:46:24.644Z",
+      "hotelId": "76140984-0005-4c97-bd7a-0954385aebd0",
+      "isActive": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "3736a640-7345-49b9-b412-528e8326c40d",
+      "userId": "305f5c02-5c4d-450f-a988-8c7a63c9c1ba",
+      "totalAmount": 150000,
+      "checkInDate": "2025-08-01T06:43:44.265Z",
+      "checkOutDate": "2025-08-02T06:43:44.265Z",
+      "guestName": "김철수",
+      "guestPhone": "010-1234-5678",
+      "guestEmail": "kim@example.com",
+      "notes": null,
+      "createdAt": "2025-08-01T06:43:44.274Z",
+      "updatedAt": "2025-08-01T06:43:44.274Z",
+      "roomId": "78cc89d3-5f28-46ae-8a21-6e25c5c6f262",
+      "commissionAmount": 0,
+      "commissionRate": 0,
+      "discountAmount": 0,
+      "discountType": "NONE",
+      "guestCount": 1,
+      "memo": null,
+      "orderDate": null,
+      "orderNumber": null,
+      "originalPrice": 0,
+      "paymentMethod": "CARD",
+      "shoppingMall": null,
+      "shoppingMallId": null,
+      "source": "ADMIN",
+      "specialRequests": null,
+      "supplyPrice": 0,
+      "status": "RECEIVED",
+      "room": {
+        "id": "78cc89d3-5f28-46ae-8a21-6e25c5c6f262",
+        "name": "디럭스 더블",
+        "description": "2명 수용 가능한 디럭스 더블룸",
+        "capacity": 2,
+        "createdAt": "2025-08-01T06:43:44.123Z",
+        "updatedAt": "2025-08-01T06:43:44.123Z",
+        "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+        "isActive": true,
+        "price": 150000,
+        "hotel": {
+          "id": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+          "name": "그랜드 호텔",
+          "address": "서울시 강남구 테헤란로 123",
+          "phone": "02-1234-5678",
+          "email": "info@grandhotel.com",
+          "description": "최고급 호텔",
+          "isActive": true,
+          "createdAt": "2025-07-31T19:23:07.732Z",
+          "updatedAt": "2025-07-31T19:23:07.732Z"
+        }
+      }
+    },
+    {
+      "id": "bed8aabf-356c-4df5-922f-7545e307b700",
+      "userId": "305f5c02-5c4d-450f-a988-8c7a63c9c1ba",
+      "totalAmount": 300000,
+      "checkInDate": "2025-08-03T06:43:44.282Z",
+      "checkOutDate": "2025-08-05T06:43:44.282Z",
+      "guestName": "이영희",
+      "guestPhone": "010-2345-6789",
+      "guestEmail": "lee@example.com",
+      "notes": null,
+      "createdAt": "2025-08-01T06:43:44.283Z",
+      "updatedAt": "2025-08-01T06:43:44.283Z",
+      "roomId": "78cc89d3-5f28-46ae-8a21-6e25c5c6f262",
+      "commissionAmount": 0,
+      "commissionRate": 0,
+      "discountAmount": 0,
+      "discountType": "NONE",
+      "guestCount": 1,
+      "memo": null,
+      "orderDate": null,
+      "orderNumber": null,
+      "originalPrice": 0,
+      "paymentMethod": "CARD",
+      "shoppingMall": null,
+      "shoppingMallId": null,
+      "source": "ADMIN",
+      "specialRequests": null,
+      "supplyPrice": 0,
+      "status": "RECEIVED",
+      "room": {
+        "id": "78cc89d3-5f28-46ae-8a21-6e25c5c6f262",
+        "name": "디럭스 더블",
+        "description": "2명 수용 가능한 디럭스 더블룸",
+        "capacity": 2,
+        "createdAt": "2025-08-01T06:43:44.123Z",
+        "updatedAt": "2025-08-01T06:43:44.123Z",
+        "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+        "isActive": true,
+        "price": 150000,
+        "hotel": {
+          "id": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+          "name": "그랜드 호텔",
+          "address": "서울시 강남구 테헤란로 123",
+          "phone": "02-1234-5678",
+          "email": "info@grandhotel.com",
+          "description": "최고급 호텔",
+          "isActive": true,
+          "createdAt": "2025-07-31T19:23:07.732Z",
+          "updatedAt": "2025-07-31T19:23:07.732Z"
+        }
+      }
+    },
+    {
+      "id": "3cafaba4-85ff-49ab-bf12-b2968fa77ad4",
+      "userId": "305f5c02-5c4d-450f-a988-8c7a63c9c1ba",
+      "totalAmount": 600000,
+      "checkInDate": "2025-08-08T06:43:44.288Z",
+      "checkOutDate": "2025-08-10T06:43:44.288Z",
+      "guestName": "박민수",
+      "guestPhone": "010-3456-7890",
+      "guestEmail": "park@example.com",
+      "notes": null,
+      "createdAt": "2025-08-01T06:43:44.289Z",
+      "updatedAt": "2025-08-01T06:43:44.289Z",
+      "roomId": "df92a2df-85c5-4447-8301-632074a4f71e",
+      "commissionAmount": 0,
+      "commissionRate": 0,
+      "discountAmount": 0,
+      "discountType": "NONE",
+      "guestCount": 1,
+      "memo": null,
+      "orderDate": null,
+      "orderNumber": null,
+      "originalPrice": 0,
+      "paymentMethod": "CARD",
+      "shoppingMall": null,
+      "shoppingMallId": null,
+      "source": "ADMIN",
+      "specialRequests": null,
+      "supplyPrice": 0,
+      "status": "RECEIVED",
+      "room": {
+        "id": "df92a2df-85c5-4447-8301-632074a4f71e",
+        "name": "스위트",
+        "description": "4명 수용 가능한 프리미엄 스위트",
+        "capacity": 4,
+        "createdAt": "2025-08-01T06:43:44.145Z",
+        "updatedAt": "2025-08-01T06:43:44.145Z",
+        "hotelId": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+        "isActive": true,
+        "price": 300000,
+        "hotel": {
+          "id": "41c16ca9-b5c2-408a-af63-6c5589f138ec",
+          "name": "그랜드 호텔",
+          "address": "서울시 강남구 테헤란로 123",
+          "phone": "02-1234-5678",
+          "email": "info@grandhotel.com",
+          "description": "최고급 호텔",
+          "isActive": true,
+          "createdAt": "2025-07-31T19:23:07.732Z",
+          "updatedAt": "2025-07-31T19:23:07.732Z"
+        }
+      }
+    },
+    {
+      "id": "e037f996-74d6-4b65-a5ca-4a19525afdfc",
+      "userId": null,
+      "totalAmount": 111414,
+      "checkInDate": "2025-08-20T00:00:00.000Z",
+      "checkOutDate": "2025-08-20T00:00:00.000Z",
+      "guestName": "222",
+      "guestPhone": "",
+      "guestEmail": null,
+      "notes": null,
+      "createdAt": "2025-08-01T06:53:47.228Z",
+      "updatedAt": "2025-08-01T06:53:47.228Z",
+      "roomId": null,
+      "commissionAmount": 7798.98,
+      "commissionRate": 7,
+      "discountAmount": 0,
+      "discountType": "NONE",
+      "guestCount": 1,
+      "memo": null,
+      "orderDate": null,
+      "orderNumber": null,
+      "originalPrice": 111414,
+      "paymentMethod": "CARD",
+      "shoppingMall": null,
+      "shoppingMallId": "1bb7e7da-2be9-4ddf-ac9e-8ded465ee63a",
+      "source": "ADMIN",
+      "specialRequests": "",
+      "supplyPrice": 0,
+      "status": "RECEIVED",
+      "room": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "70d265e7-30d5-49fd-871e-cdcd25cf6532",
+      "name": "전자제품",
+      "description": "스마트폰, 노트북, 태블릿 등",
+      "createdAt": "2025-08-01T06:43:44.171Z",
+      "updatedAt": "2025-08-01T06:43:44.171Z"
+    },
+    {
+      "id": "96292865-a476-461f-9f53-acae8b8c2531",
+      "name": "패션",
+      "description": "의류, 신발, 가방 등",
+      "createdAt": "2025-08-01T06:43:44.182Z",
+      "updatedAt": "2025-08-01T06:43:44.182Z"
+    },
+    {
+      "id": "de2bed3f-d999-4a9a-bc14-ebc2bf682716",
+      "name": "뷰티",
+      "description": "화장품, 향수, 스킨케어 등",
+      "createdAt": "2025-08-01T06:43:44.201Z",
+      "updatedAt": "2025-08-01T06:43:44.201Z"
+    },
+    {
+      "id": "9db8f1ae-1ec0-4196-865c-04ac2804763a",
+      "name": "식품",
+      "description": "신선식품, 가공식품, 건강식품 등",
+      "createdAt": "2025-08-01T06:43:44.205Z",
+      "updatedAt": "2025-08-01T06:43:44.205Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "14301170-fb45-4d91-98d8-4a7514af7195",
+      "name": "삼성 갤럭시 S24",
+      "description": "최신 스마트폰, 256GB",
+      "price": 1200000,
+      "imageUrl": null,
+      "categoryId": "70d265e7-30d5-49fd-871e-cdcd25cf6532",
+      "createdAt": "2025-08-01T06:43:44.216Z",
+      "updatedAt": "2025-08-01T06:43:44.216Z"
+    },
+    {
+      "id": "c2b89264-0c8f-4410-a7f3-5552389ecf1b",
+      "name": "LG OLED TV 65인치",
+      "description": "4K OLED 디스플레이",
+      "price": 2500000,
+      "imageUrl": null,
+      "categoryId": "70d265e7-30d5-49fd-871e-cdcd25cf6532",
+      "createdAt": "2025-08-01T06:43:44.222Z",
+      "updatedAt": "2025-08-01T06:43:44.222Z"
+    },
+    {
+      "id": "a6203238-8ade-494f-b185-b9d1b43fed7c",
+      "name": "나이키 에어맥스 270",
+      "description": "편안한 쿠션감의 운동화",
+      "price": 180000,
+      "imageUrl": null,
+      "categoryId": "96292865-a476-461f-9f53-acae8b8c2531",
+      "createdAt": "2025-08-01T06:43:44.238Z",
+      "updatedAt": "2025-08-01T06:43:44.238Z"
+    },
+    {
+      "id": "6283d5ba-8fa5-4d7f-bd1c-f02e255528d2",
+      "name": "라네즈 워터뱅크 크림",
+      "description": "수분감 가득한 보습 크림",
+      "price": 28000,
+      "imageUrl": null,
+      "categoryId": "de2bed3f-d999-4a9a-bc14-ebc2bf682716",
+      "createdAt": "2025-08-01T06:43:44.247Z",
+      "updatedAt": "2025-08-01T06:43:44.247Z"
+    },
+    {
+      "id": "87435d96-15c2-4296-8fed-9d33f451d21e",
+      "name": "농심 신라면",
+      "description": "국민 라면, 5봉지",
+      "price": 4500,
+      "imageUrl": null,
+      "categoryId": "9db8f1ae-1ec0-4196-865c-04ac2804763a",
+      "createdAt": "2025-08-01T06:43:44.251Z",
+      "updatedAt": "2025-08-01T06:43:44.251Z"
+    }
+  ],
+  "orders": [],
+  "orderItems": [],
+  "bookingItems": [],
+  "inventories": [],
+  "shoppingMalls": [
+    {
+      "id": "1bb7e7da-2be9-4ddf-ac9e-8ded465ee63a",
+      "name": "롯데홈쇼핑",
+      "commissionRate": 7,
+      "description": null,
+      "isActive": true,
+      "settlementCycle": "MONTHLY",
+      "settlementDay": null,
+      "lastSettlementDate": null,
+      "nextSettlementDate": null,
+      "createdAt": "2025-07-31T19:44:37.598Z",
+      "updatedAt": "2025-07-31T19:44:37.598Z"
+    }
+  ]
+}

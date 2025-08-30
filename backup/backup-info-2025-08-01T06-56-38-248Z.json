@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-08-01T06:56:38.407Z",
+  "filename": "backup-2025-08-01T06-56-38-248Z.json",
+  "size": 12766,
+  "type": "auto",
+  "description": "Prisma 자동 백업",
+  "recordCounts": {
+    "users": 2,
+    "hotels": 2,
+    "rooms": 2,
+    "packages": 3,
+    "bookings": 4,
+    "categories": 4,
+    "products": 5,
+    "orders": 0
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "url": "http://localhost:3900/",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.174Z",
+    "type": "request",
+    "resourceType": "document"
+  },
+  {
+    "url": "http://localhost:3900/",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.258Z",
+    "type": "response",
+    "resourceType": "document"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/css/app/layout.css?v=1753267834217",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.286Z",
+    "type": "request",
+    "resourceType": "stylesheet"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/webpack.js?v=1753267834217",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.287Z",
+    "type": "request",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/main-app.js?v=1753267834217",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.287Z",
+    "type": "request",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/app-pages-internals.js",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.287Z",
+    "type": "request",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/app/page.js",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.288Z",
+    "type": "request",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/css/app/layout.css?v=1753267834217",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.304Z",
+    "type": "response",
+    "resourceType": "stylesheet"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+    "method": "GET",
+    "time": "2025-07-23T10:50:34.327Z",
+    "type": "request",
+    "resourceType": "font"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/webpack.js?v=1753267834217",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.334Z",
+    "type": "response",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/app-pages-internals.js",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.373Z",
+    "type": "response",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.376Z",
+    "type": "response",
+    "resourceType": "font"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/app/page.js",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.434Z",
+    "type": "response",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3900/_next/static/chunks/main-app.js?v=1753267834217",
+    "status": 200,
+    "time": "2025-07-23T10:50:34.914Z",
+    "type": "response",
+    "resourceType": "script"
+  }
+]

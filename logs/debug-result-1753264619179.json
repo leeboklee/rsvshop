@@ -1,0 +1,172 @@
+{
+  "timestamp": "2025-07-23T09:56:59.179Z",
+  "url": "http://localhost:3900/payment/success",
+  "pageInfo": {
+    "title": "숙소 예약 시스템",
+    "url": "http://localhost:3900/payment/success",
+    "elements": {
+      "total": 27,
+      "divs": 4,
+      "spans": 0,
+      "images": 0,
+      "links": 0,
+      "buttons": 0,
+      "inputs": 0
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+  },
+  "consoleLogs": [
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+      "time": "2025-07-23T09:56:58.409Z"
+    }
+  ],
+  "networkRequests": [
+    {
+      "url": "http://localhost:3900/payment/success",
+      "method": "GET",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "time": "2025-07-23T09:56:37.181Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/payment/success",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:54.640Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/css/app/layout.css?v=1753264613565",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/payment/success",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:54.649Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/webpack.js?v=1753264613565",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/payment/success",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:54.650Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/main-app.js?v=1753264613565",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/payment/success",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:54.650Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/app-pages-internals.js",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/payment/success",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:54.651Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/app/payment/success/page.js",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/payment/success",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:54.651Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/css/app/layout.css?v=1753264613565",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:55.571Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+      "method": "GET",
+      "headers": {
+        "origin": "http://localhost:3900",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "http://localhost:3900/_next/static/css/app/layout.css?v=1753264613565",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"24\", \"Chromium\";v=\"134\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "time": "2025-07-23T09:56:55.571Z",
+      "type": "request"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/webpack.js?v=1753264613565",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:55.571Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/app-pages-internals.js",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:55.572Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/app/payment/success/page.js",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:55.586Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:55.755Z",
+      "type": "response"
+    },
+    {
+      "url": "http://localhost:3900/_next/static/chunks/main-app.js?v=1753264613565",
+      "status": 200,
+      "statusText": "OK",
+      "time": "2025-07-23T09:56:57.960Z",
+      "type": "response"
+    }
+  ]
+}

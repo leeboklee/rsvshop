@@ -1,0 +1,44 @@
+# Tailwind Diagnose Report - 2025. 7. 25. 오전 1:00:48
+- postcss.config.mjs: OK
+- tailwind.config.ts: OK
+- app/globals.css: OK / @tailwind: OK
+- node_modules/tailwindcss: OK
+- node_modules/autoprefixer: OK
+- .next/static/css: NO_CSS
+
+# 최근 dev 서버 로그 (logs/server.log):
+./app/globals.css
+[2025-07-23T04:59:19.623Z] [32m
+Your page [1mapp/page.tsx[22m did not have a root layout. We created [1mapp\layout.tsx[22m for you.[39m
+[2025-07-23T04:59:19.631Z] [32m
+Your page [1mapp/admin/page.tsx[22m did not have a root layout. We created [1mapp\layout.tsx[22m for you.[39m
+[2025-07-23T04:59:20.053Z] [SERVER ERR] [31m[1m⨯[22m[39m ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[14].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[14].use[2]!./app/globals.css
+Error: ENOENT: no such file or directory, open 'C:\codist\rsvshop\app\globals.css'
+
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[14].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[14].use[2]!./app/globals.css
+./app/globals.css
+[2025-07-23T04:59:23.820Z] [SERVER ERR] [33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+[2025-07-23T04:59:26.391Z] [SERVER ERR] Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig [90m(C:\codist\rsvshop\[39mnode_modules\[4mnext[24m\dist\server\config.js:758:19[90m)[39m
+    at async initialize [90m(C:\codist\rsvshop\[39mnode_modules\[4mnext[24m\dist\server\lib\router-server.js:49:20[90m)[39m
+    at async Server.<anonymous> [90m(C:\codist\rsvshop\[39mnode_modules\[4mnext[24m\dist\server\lib\start-server.js:221:36[90m)[39m
+[2025-07-23T04:59:26.442Z] [?25h
+[2025-07-23T04:59:26.443Z] 
+[2025-07-23T04:59:26.509Z] 서버가 종료되었습니다. 종료 코드: 0
+
+
+# 최근 빌드 로그 (logs/debug-all.log):
+[2025-04-18T07:39:05.133Z] 통합 디버깅 시작
+[2025-04-18T07:39:05.138Z] ===== 통합 디버깅 시작 =====
+[2025-04-18T07:39:05.150Z] 타겟 URL: app/components/PaymentButton.tsx
+[2025-04-18T07:39:05.151Z] MCP 서버 상태 확인 중...
+[2025-04-18T07:39:05.216Z] MCP 서버 연결 오류: connect ECONNREFUSED ::1:4950
+[2025-04-18T07:39:05.217Z] MCP 서버 시작 시도 중...
+[2025-04-18T07:39:05.218Z] MCP 서버 시작 중...
+[2025-04-18T07:39:05.270Z] MCP 서버 백그라운드에서 시작됨
+[2025-04-18T07:39:08.286Z] 브라우저 열기 요청: app/components/PaymentButton.tsx
+[2025-04-18T07:39:08.288Z] 브라우저 열기 요청 오류: connect ECONNREFUSED ::1:4950
+[2025-04-18T07:39:08.290Z] 디버깅 결과 요약 중...
+[2025-04-18T07:39:08.292Z] 디버깅 결과가 C:\Users\comjo\OneDrive\바탕 화면\codist\rsvshop\logs\debug-results.json에 저장되었습니다
+[2025-04-18T07:39:08.295Z] ===== 통합 디버깅 완료 =====

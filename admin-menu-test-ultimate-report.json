@@ -1,0 +1,144 @@
+{
+  "timestamp": "2025-08-18T16:32:36.113Z",
+  "totalMenus": 18,
+  "testResults": [
+    {
+      "menu": "대시보드",
+      "url": "http://localhost:4900/admin",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin\"]"
+    },
+    {
+      "menu": "예약 관리",
+      "url": "http://localhost:4900/admin/reservations",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/reservations\"]"
+    },
+    {
+      "menu": "달력 뷰",
+      "url": "http://localhost:4900/admin/calendar",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/calendar\"]"
+    },
+    {
+      "menu": "호텔 관리",
+      "url": "http://localhost:4900/admin/rooms",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/rooms\"]"
+    },
+    {
+      "menu": "패키지 관리",
+      "url": "http://localhost:4900/admin/packages",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/packages\"]"
+    },
+    {
+      "menu": "결제 관리",
+      "url": "http://localhost:4900/admin/payments",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/payments\"]"
+    },
+    {
+      "menu": "매출 관리",
+      "url": "http://localhost:4900/admin/sales",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/sales\"]"
+    },
+    {
+      "menu": "수수료 관리",
+      "url": "http://localhost:4900/admin/commission",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/commission\"]"
+    },
+    {
+      "menu": "부가세 관리",
+      "url": "http://localhost:4900/admin/vat-management",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/vat-management\"]"
+    },
+    {
+      "menu": "추가요금 규칙",
+      "url": "http://localhost:4900/admin/surcharge-rules",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/surcharge-rules\"]"
+    },
+    {
+      "menu": "쇼핑몰 연동",
+      "url": "http://localhost:4900/admin/integrations/marketplaces",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/integrations/marketplaces\"]"
+    },
+    {
+      "menu": "주문 목록 연동",
+      "url": "http://localhost:4900/admin/integrations/orders",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/integrations/orders\"]"
+    },
+    {
+      "menu": "고객 관리",
+      "url": "http://localhost:4900/admin/customers",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/customers\"]"
+    },
+    {
+      "menu": "쇼핑몰 관리",
+      "url": "http://localhost:4900/admin/shopping-malls",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/shopping-malls\"]"
+    },
+    {
+      "menu": "DB 관리",
+      "url": "http://localhost:4900/admin/database",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/database\"]"
+    },
+    {
+      "menu": "에러 모니터",
+      "url": "http://localhost:4900/admin/error-monitor",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/error-monitor\"]"
+    },
+    {
+      "menu": "로그 뷰어",
+      "url": "http://localhost:4900/admin/logs",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/logs\"]"
+    },
+    {
+      "menu": "API 키",
+      "url": "http://localhost:4900/admin/api-keys",
+      "status": "selector_not_found",
+      "error": "선택자로 요소를 찾을 수 없음: aside a[href=\"http://localhost:4900/admin/api-keys\"]"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "location": {
+        "url": "http://localhost:4900/api/admin/stats",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "location": {
+        "url": "http://localhost:4900/api/admin/stats",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "summary": {
+    "success": 0,
+    "error": 0,
+    "timeout": 0,
+    "clickFailed": 0,
+    "notVisible": 0,
+    "notFound": 0,
+    "selectorNotFound": 18
+  }
+}

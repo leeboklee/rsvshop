@@ -1,0 +1,118 @@
+Killing process 22757 (next-server (v1) on port 4900
+Killed
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+  ▲ Next.js 14.2.31 (turbo)
+  - Local:        http://localhost:4900
+  - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Compiled in 749ms
+ ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+ ✓ Ready in 2.7s
+ ✓ Compiled /api/ping in 499ms
+ GET /api/ping 200 in 713ms
+ GET /api/ping 200 in 131ms
+ GET /api/ping 200 in 195ms
+ ✓ Compiled /api/admin/hotels in 186ms
+[호텔 API] POST 요청 시작
+[호텔 API] 요청 데이터: {
+  name: '테스트호텔 자동2',
+  address: '테스트 주소',
+  phone: '',
+  email: 'test2@example.com',
+  description: '테스트용 호텔입니다'
+}
+[호텔 API] POST 오류: PrismaClientInitializationError: 
+Invalid `prisma.hotel.findFirst()` invocation in
+/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:76:50
+
+  73     });
+  74 }
+  75 // 중복 호텔명 확인
+→ 76 const existingHotel = await prisma.hotel.findFirst(
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+    at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+    at async POST (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:76:31)
+    at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.13.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+ POST /api/admin/hotels 500 in 486ms
+ GET /api/ping 200 in 87ms
+ GET /api/ping 200 in 97ms
+ GET /api/ping 200 in 99ms
+ GET /api/ping 200 in 147ms
+ GET /api/ping 200 in 202ms
+ GET /api/ping 200 in 179ms
+ GET /api/ping 200 in 253ms
+ GET /api/ping 200 in 166ms
+ GET /api/ping 200 in 190ms
+ GET /api/ping 200 in 164ms
+ GET /api/ping 200 in 231ms
+ GET /api/ping 200 in 263ms
+ GET /api/ping 200 in 106ms
+ GET /api/ping 200 in 196ms
+ GET /api/ping 200 in 146ms
+ GET /api/ping 200 in 195ms
+ GET /api/ping 200 in 261ms
+ GET /api/ping 200 in 107ms
+[호텔 API] GET 요청 시작
+[호텔 API] GET 오류: PrismaClientInitializationError: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+    at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+    at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+    at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+    at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:22:9)
+    at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  clientVersion: '6.13.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+ GET /api/admin/hotels 500 in 626ms
+[?25h

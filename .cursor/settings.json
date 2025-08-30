@@ -1,0 +1,39 @@
+{
+    "features": {
+        "yolo": true,
+        "mcpAutoRun": true
+    },
+    "autoYoloMode": true,
+    "mcpServers": [
+        {
+            "name": "BrowserTools MCP",
+            "type": "command",
+            "command": "node",
+            "args": ["browser-tools-mcp.js"],
+            "autoApprove": true,
+            "enabled": true
+        }
+    ],
+    "yoloMode": {
+        "commandWhitelist": [],
+        "commandDenylist": ["rm -rf", "taskkill /f", "format", "del /s /q"],
+        "fileDeleteProtection": true,
+        "directoryDeleteProtection": true,
+        "autoRun": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "cursor.features.mcpTools.enabled": true,
+    "cursor.features.yolo.enabled": true,
+    "cursor.features.mcpTools.autoRun": true,
+    "cursor.features.chat.autoRun": {
+        "mcpBrowserTools": true,
+        "mcpScreenshot": true,
+        "mcpNetworkRequests": true,
+        "mcpConsoleLog": true
+    },
+    "cursor.features.terminal.alwaysApprove": true
+} 

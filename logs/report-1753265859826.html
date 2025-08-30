@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디버깅 보고서 - http://localhost:3900/admin</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .log-error {
+      color: #e74c3c;
+    }
+    .log-warning {
+      color: #f39c12;
+    }
+    .screenshot {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>디버깅 보고서</h1>
+  <div class="section">
+    <h2>페이지 정보</h2>
+    <table>
+      <tr>
+        <th>URL</th>
+        <td>http://localhost:3900/admin</td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td>숙소 예약 시스템</td>
+      </tr>
+      <tr>
+        <th>시간</th>
+        <td>2025-07-23T10:17:39.823Z</td>
+      </tr>
+      <tr>
+        <th>사용자 에이전트</th>
+        <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36</td>
+      </tr>
+      <tr>
+        <th>뷰포트</th>
+        <td>1280 x 720</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="section">
+    <h2>스크린샷</h2>
+    <img src="screenshot-1753265859368.png" alt="페이지 스크린샷" class="screenshot">
+  </div>
+  
+  <div class="section">
+    <h2>요소 통계</h2>
+    <table>
+      <tr>
+        <th>총 요소 수</th>
+        <td>40</td>
+      </tr>
+      <tr>
+        <th>DIV</th>
+        <td>9</td>
+      </tr>
+      <tr>
+        <th>SPAN</th>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>이미지</th>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>링크</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>버튼</th>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>입력 필드</th>
+        <td>0</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="section">
+    <h2>콘솔 로그 (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>유형</th>
+          <th>메시지</th>
+          <th>시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="">
+            <td>info</td>
+            <td>%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold</td>
+            <td>2025-07-23T10:17:39.114Z</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <h2>네트워크 요청 (표시: 14)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>유형</th>
+          <th>URL</th>
+          <th>상태</th>
+          <th>시간</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/admin</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:35.829Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/admin</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.300Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/css/app/layout.css?v=1753265856423</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.359Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/chunks/webpack.js?v=1753265856423</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.360Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/chunks/main-app.js?v=1753265856423</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.360Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/chunks/app-pages-internals.js</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.360Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/chunks/app/admin/page.js</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.361Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/css/app/layout.css?v=1753265856423</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.441Z</td>
+          </tr>
+        
+          <tr>
+            <td>request</td>
+            <td>http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2</td>
+            <td>GET</td>
+            <td>2025-07-23T10:17:37.581Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/chunks/webpack.js?v=1753265856423</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.598Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/chunks/app-pages-internals.js</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.598Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/chunks/app/admin/page.js</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.629Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/media/e4af272ccee01ff0-s.p.woff2</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:37.712Z</td>
+          </tr>
+        
+          <tr>
+            <td>response</td>
+            <td>http://localhost:3900/_next/static/chunks/main-app.js?v=1753265856423</td>
+            <td>200</td>
+            <td>2025-07-23T10:17:38.715Z</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="section">
+    <h2>디버깅 정보</h2>
+    <p>로그 파일: C:\codist\rsvshop\logs\debug-1753265853785.log</p>
+    <p>디버깅 시간: 2025. 7. 23. 오후 7:17:39</p>
+  </div>
+</body>
+</html>
+  

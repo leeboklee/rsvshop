@@ -1,0 +1,197 @@
+{
+  "timestamp": "2025-08-18T17:49:26.247Z",
+  "totalMenus": 18,
+  "testResults": [
+    {
+      "menu": "대시보드",
+      "url": "/admin",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "관리자 대시보드",
+      "screenshot": "admin-대시보드.png",
+      "pageSize": 27512
+    },
+    {
+      "menu": "예약 관리",
+      "url": "/admin/reservations",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "관리자 대시보드",
+      "screenshot": "admin-예약-관리.png",
+      "pageSize": 27512
+    },
+    {
+      "menu": "달력 뷰",
+      "url": "/admin/calendar",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "관리자 대시보드",
+      "screenshot": "admin-달력-뷰.png",
+      "pageSize": 27512
+    },
+    {
+      "menu": "호텔 관리",
+      "url": "/admin/rooms",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "N/A",
+      "screenshot": "admin-호텔-관리.png",
+      "pageSize": 25004
+    },
+    {
+      "menu": "패키지 관리",
+      "url": "/admin/packages",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "N/A",
+      "screenshot": "admin-패키지-관리.png",
+      "pageSize": 25004
+    },
+    {
+      "menu": "결제 관리",
+      "url": "/admin/payments",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "N/A",
+      "screenshot": "admin-결제-관리.png",
+      "pageSize": 25004
+    },
+    {
+      "menu": "매출 관리",
+      "url": "/admin/sales",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "N/A",
+      "screenshot": "admin-매출-관리.png",
+      "pageSize": 25004
+    },
+    {
+      "menu": "수수료 관리",
+      "url": "/admin/commission",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "예약 달력",
+      "screenshot": "admin-수수료-관리.png",
+      "pageSize": 41664
+    },
+    {
+      "menu": "부가세 관리",
+      "url": "/admin/vat-management",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "수수료 관리",
+      "screenshot": "admin-부가세-관리.png",
+      "pageSize": 24619
+    },
+    {
+      "menu": "추가요금 규칙",
+      "url": "/admin/surcharge-rules",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "수수료 관리",
+      "screenshot": "admin-추가요금-규칙.png",
+      "pageSize": 24655
+    },
+    {
+      "menu": "쇼핑몰 연동",
+      "url": "/admin/integrations/marketplaces",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "수수료 관리",
+      "screenshot": "admin-쇼핑몰-연동.png",
+      "pageSize": 24591
+    },
+    {
+      "menu": "주문 목록 연동",
+      "url": "/admin/integrations/orders",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "수수료 관리",
+      "screenshot": "admin-주문-목록-연동.png",
+      "pageSize": 24591
+    },
+    {
+      "menu": "고객 관리",
+      "url": "/admin/customers",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "주문 목록 연동",
+      "screenshot": "admin-고객-관리.png",
+      "pageSize": 24015
+    },
+    {
+      "menu": "쇼핑몰 관리",
+      "url": "/admin/shopping-malls",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "주문 목록 연동",
+      "screenshot": "admin-쇼핑몰-관리.png",
+      "pageSize": 24015
+    },
+    {
+      "menu": "DB 관리",
+      "url": "/admin/database",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "주문 목록 연동",
+      "screenshot": "admin-DB-관리.png",
+      "pageSize": 24019
+    },
+    {
+      "menu": "에러 모니터",
+      "url": "/admin/error-monitor",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "주문 목록 연동",
+      "screenshot": "admin-에러-모니터.png",
+      "pageSize": 24019
+    },
+    {
+      "menu": "로그 뷰어",
+      "url": "/admin/logs",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "주문 목록 연동",
+      "screenshot": "admin-로그-뷰어.png",
+      "pageSize": 24019
+    },
+    {
+      "menu": "API 키",
+      "url": "/admin/api-keys",
+      "status": "success",
+      "title": "RSVShop - 호텔 예약 시스템",
+      "h1": "실시간 로그 뷰어",
+      "screenshot": "admin-API-키.png",
+      "pageSize": 25334
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "location": {
+        "url": "http://localhost:4900/api/admin/shopping-malls",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "location": {
+        "url": "http://localhost:4900/api/admin/shopping-malls",
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "summary": {
+    "success": 18,
+    "error": 0,
+    "timeout": 0,
+    "clickFailed": 0,
+    "notVisible": 0,
+    "notFound": 0
+  }
+}

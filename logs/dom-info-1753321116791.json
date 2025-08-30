@@ -1,0 +1,21 @@
+{
+  "pageInfo": {
+    "title": "",
+    "url": "about:blank",
+    "elements": {
+      "total": 3,
+      "divs": 0,
+      "spans": 0,
+      "images": 0,
+      "links": 0,
+      "buttons": 0,
+      "inputs": 0,
+      "forms": 0
+    }
+  },
+  "domSnapshot": {
+    "type": "element",
+    "tagName": "body",
+    "attributes": {}
+  }
+}

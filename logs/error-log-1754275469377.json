@@ -1,0 +1,13 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 4294967295,
+      "timestamp": "2025-08-04T02:44:29.365Z"
+    },
+    "timestamp": "2025-08-04T02:44:29.374Z",
+    "recoveryAttempts": 1
+  }
+]

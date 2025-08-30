@@ -1,0 +1,1005 @@
+2025-08-24T15:19:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:19:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:30:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:36:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:41:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:27:26: GET /api/hotels PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:43
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   15 const prisma = new __TURBOPACK__commonjs__external__$40$prisma$2f$client__["PrismaClient"]();
+2025-08-24T15:27:26:   16 async function GET() {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26: → 18         const hotels = await prisma.hotel.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:24)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:26: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   16 async function GET(request) {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:26: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:26: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   16 async function GET(request) {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:26: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:27: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   16 async function GET(request) {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:27: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:27:27: GET /api/hotels PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:43
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   15 const prisma = new __TURBOPACK__commonjs__external__$40$prisma$2f$client__["PrismaClient"]();
+2025-08-24T15:27:27:   16 async function GET() {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27: → 18         const hotels = await prisma.hotel.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:24)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:27:27: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   16 async function GET(request) {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:27: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:28:06:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:19:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:48:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:54:  ⨯ Failed to start server
+2025-08-24T15:28:54: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:28:54:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:28:54:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:28:54:     at Server.listen (node:net:2067:7)
+2025-08-24T15:28:54:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:28:54:     at new Promise (<anonymous>)
+2025-08-24T15:28:54:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:28:54:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:28:54:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:28:54:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:28:54:     at process.emit (node:events:524:28) {
+2025-08-24T15:28:54:   code: 'EADDRINUSE',
+2025-08-24T15:28:54:   errno: -98,
+2025-08-24T15:28:54:   syscall: 'listen',
+2025-08-24T15:28:54:   address: '::',
+2025-08-24T15:28:54:   port: 4900
+2025-08-24T15:28:54: }
+2025-08-24T15:29:05:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:07:  ⨯ Failed to start server
+2025-08-24T15:29:07: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:07:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:07:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:07:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:07:     at new Promise (<anonymous>)
+2025-08-24T15:29:07:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:07:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:07:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:07:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:07:   code: 'EADDRINUSE',
+2025-08-24T15:29:07:   errno: -98,
+2025-08-24T15:29:07:   syscall: 'listen',
+2025-08-24T15:29:07:   address: '::',
+2025-08-24T15:29:07:   port: 4900
+2025-08-24T15:29:07: }
+2025-08-24T15:29:20:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:22:  ⨯ Failed to start server
+2025-08-24T15:29:22: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:22:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:22:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:22:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:22:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:22:     at new Promise (<anonymous>)
+2025-08-24T15:29:22:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:22:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:22:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:22:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:22:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:22:   code: 'EADDRINUSE',
+2025-08-24T15:29:22:   errno: -98,
+2025-08-24T15:29:22:   syscall: 'listen',
+2025-08-24T15:29:22:   address: '::',
+2025-08-24T15:29:22:   port: 4900
+2025-08-24T15:29:22: }
+2025-08-24T15:29:32:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:38:  ⨯ Failed to start server
+2025-08-24T15:29:38: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:38:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:38:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:38:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:38:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:38:     at new Promise (<anonymous>)
+2025-08-24T15:29:38:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:38:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:38:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:38:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:38:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:38:   code: 'EADDRINUSE',
+2025-08-24T15:29:38:   errno: -98,
+2025-08-24T15:29:38:   syscall: 'listen',
+2025-08-24T15:29:38:   address: '::',
+2025-08-24T15:29:38:   port: 4900
+2025-08-24T15:29:38: }
+2025-08-24T15:29:47:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:49:  ⨯ Failed to start server
+2025-08-24T15:29:49: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:49:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:49:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:49:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:49:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:49:     at new Promise (<anonymous>)
+2025-08-24T15:29:49:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:49:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:49:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:49:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:49:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:49:   code: 'EADDRINUSE',
+2025-08-24T15:29:49:   errno: -98,
+2025-08-24T15:29:49:   syscall: 'listen',
+2025-08-24T15:29:49:   address: '::',
+2025-08-24T15:29:49:   port: 4900
+2025-08-24T15:29:49: }
+2025-08-24T15:29:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:58:  ⨯ Failed to start server
+2025-08-24T15:29:58: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:58:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:58:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:58:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:58:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:58:     at new Promise (<anonymous>)
+2025-08-24T15:29:58:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:58:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:58:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:58:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:58:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:58:   code: 'EADDRINUSE',
+2025-08-24T15:29:58:   errno: -98,
+2025-08-24T15:29:58:   syscall: 'listen',
+2025-08-24T15:29:58:   address: '::',
+2025-08-24T15:29:58:   port: 4900
+2025-08-24T15:29:58: }
+2025-08-24T15:30:06:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:08:  ⨯ Failed to start server
+2025-08-24T15:30:08: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:08:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:08:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:08:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:08:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:08:     at new Promise (<anonymous>)
+2025-08-24T15:30:08:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:08:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:08:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:08:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:08:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:08:   code: 'EADDRINUSE',
+2025-08-24T15:30:08:   errno: -98,
+2025-08-24T15:30:08:   syscall: 'listen',
+2025-08-24T15:30:08:   address: '::',
+2025-08-24T15:30:08:   port: 4900
+2025-08-24T15:30:08: }
+2025-08-24T15:30:15:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:18:  ⨯ Failed to start server
+2025-08-24T15:30:18: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:18:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:18:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:18:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:18:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:18:     at new Promise (<anonymous>)
+2025-08-24T15:30:18:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:18:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:18:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:18:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:18:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:18:   code: 'EADDRINUSE',
+2025-08-24T15:30:18:   errno: -98,
+2025-08-24T15:30:18:   syscall: 'listen',
+2025-08-24T15:30:18:   address: '::',
+2025-08-24T15:30:18:   port: 4900
+2025-08-24T15:30:18: }
+2025-08-24T15:30:25:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:26:  ⨯ Failed to start server
+2025-08-24T15:30:26: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:26:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:26:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:26:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:26:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:26:     at new Promise (<anonymous>)
+2025-08-24T15:30:26:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:26:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:26:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:26:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:26:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:26:   code: 'EADDRINUSE',
+2025-08-24T15:30:26:   errno: -98,
+2025-08-24T15:30:26:   syscall: 'listen',
+2025-08-24T15:30:26:   address: '::',
+2025-08-24T15:30:26:   port: 4900
+2025-08-24T15:30:26: }
+2025-08-24T15:30:34:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:37:  ⨯ Failed to start server
+2025-08-24T15:30:37: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:37:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:37:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:37:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:37:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:37:     at new Promise (<anonymous>)
+2025-08-24T15:30:37:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:37:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:37:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:37:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:37:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:37:   code: 'EADDRINUSE',
+2025-08-24T15:30:37:   errno: -98,
+2025-08-24T15:30:37:   syscall: 'listen',
+2025-08-24T15:30:37:   address: '::',
+2025-08-24T15:30:37:   port: 4900
+2025-08-24T15:30:37: }
+2025-08-24T15:30:45:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:47:  ⨯ Failed to start server
+2025-08-24T15:30:47: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:47:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:47:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:47:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:47:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:47:     at new Promise (<anonymous>)
+2025-08-24T15:30:47:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:47:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:47:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:47:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:47:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:47:   code: 'EADDRINUSE',
+2025-08-24T15:30:47:   errno: -98,
+2025-08-24T15:30:47:   syscall: 'listen',
+2025-08-24T15:30:47:   address: '::',
+2025-08-24T15:30:47:   port: 4900
+2025-08-24T15:30:47: }
+2025-08-24T15:30:55:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:57:  ⨯ Failed to start server
+2025-08-24T15:30:57: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:57:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:57:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:57:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:57:     at new Promise (<anonymous>)
+2025-08-24T15:30:57:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:57:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:57:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:57:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:57:   code: 'EADDRINUSE',
+2025-08-24T15:30:57:   errno: -98,
+2025-08-24T15:30:57:   syscall: 'listen',
+2025-08-24T15:30:57:   address: '::',
+2025-08-24T15:30:57:   port: 4900
+2025-08-24T15:30:57: }
+2025-08-24T15:31:05:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:07:  ⨯ Failed to start server
+2025-08-24T15:31:07: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:07:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:07:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:07:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:07:     at new Promise (<anonymous>)
+2025-08-24T15:31:07:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:07:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:07:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:07:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:07:   code: 'EADDRINUSE',
+2025-08-24T15:31:07:   errno: -98,
+2025-08-24T15:31:07:   syscall: 'listen',
+2025-08-24T15:31:07:   address: '::',
+2025-08-24T15:31:07:   port: 4900
+2025-08-24T15:31:07: }
+2025-08-24T15:31:14:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:16:  ⨯ Failed to start server
+2025-08-24T15:31:16: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:16:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:16:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:16:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:16:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:16:     at new Promise (<anonymous>)
+2025-08-24T15:31:16:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:16:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:16:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:16:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:16:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:16:   code: 'EADDRINUSE',
+2025-08-24T15:31:16:   errno: -98,
+2025-08-24T15:31:16:   syscall: 'listen',
+2025-08-24T15:31:16:   address: '::',
+2025-08-24T15:31:16:   port: 4900
+2025-08-24T15:31:16: }
+2025-08-24T15:31:25:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:27:  ⨯ Failed to start server
+2025-08-24T15:31:27: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:27:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:27:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:27:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:27:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:27:     at new Promise (<anonymous>)
+2025-08-24T15:31:27:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:27:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:27:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:27:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:27:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:27:   code: 'EADDRINUSE',
+2025-08-24T15:31:27:   errno: -98,
+2025-08-24T15:31:27:   syscall: 'listen',
+2025-08-24T15:31:27:   address: '::',
+2025-08-24T15:31:27:   port: 4900
+2025-08-24T15:31:27: }
+2025-08-24T15:31:33:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:35:  ⨯ Failed to start server
+2025-08-24T15:31:35: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:35:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:35:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:35:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:35:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:35:     at new Promise (<anonymous>)
+2025-08-24T15:31:35:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:35:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:35:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:35:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:35:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:35:   code: 'EADDRINUSE',
+2025-08-24T15:31:35:   errno: -98,
+2025-08-24T15:31:35:   syscall: 'listen',
+2025-08-24T15:31:35:   address: '::',
+2025-08-24T15:31:35:   port: 4900
+2025-08-24T15:31:35: }
+2025-08-24T15:31:42:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:43:  ⨯ Failed to start server
+2025-08-24T15:31:43: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:43:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:43:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:43:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:43:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:43:     at new Promise (<anonymous>)
+2025-08-24T15:31:43:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:43:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:43:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:43:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:43:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:43:   code: 'EADDRINUSE',
+2025-08-24T15:31:43:   errno: -98,
+2025-08-24T15:31:43:   syscall: 'listen',
+2025-08-24T15:31:43:   address: '::',
+2025-08-24T15:31:43:   port: 4900
+2025-08-24T15:31:43: }
+2025-08-24T15:31:50:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:52:  ⨯ Failed to start server
+2025-08-24T15:31:52: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:52:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:52:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:52:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:52:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:52:     at new Promise (<anonymous>)
+2025-08-24T15:31:52:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:52:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:52:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:52:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:52:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:52:   code: 'EADDRINUSE',
+2025-08-24T15:31:52:   errno: -98,
+2025-08-24T15:31:52:   syscall: 'listen',
+2025-08-24T15:31:52:   address: '::',
+2025-08-24T15:31:52:   port: 4900
+2025-08-24T15:31:52: }
+2025-08-24T15:31:59:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:01:  ⨯ Failed to start server
+2025-08-24T15:32:01: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:01:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:01:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:01:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:01:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:01:     at new Promise (<anonymous>)
+2025-08-24T15:32:01:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:01:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:01:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:01:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:01:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:01:   code: 'EADDRINUSE',
+2025-08-24T15:32:01:   errno: -98,
+2025-08-24T15:32:01:   syscall: 'listen',
+2025-08-24T15:32:01:   address: '::',
+2025-08-24T15:32:01:   port: 4900
+2025-08-24T15:32:01: }
+2025-08-24T15:32:10:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:14:  ⨯ Failed to start server
+2025-08-24T15:32:14: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:14:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:14:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:14:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:14:     at new Promise (<anonymous>)
+2025-08-24T15:32:14:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:14:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:14:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:14:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:14:   code: 'EADDRINUSE',
+2025-08-24T15:32:14:   errno: -98,
+2025-08-24T15:32:14:   syscall: 'listen',
+2025-08-24T15:32:14:   address: '::',
+2025-08-24T15:32:14:   port: 4900
+2025-08-24T15:32:14: }
+2025-08-24T15:32:26:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:30:  ⨯ Failed to start server
+2025-08-24T15:32:30: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:30:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:30:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:30:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:30:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:30:     at new Promise (<anonymous>)
+2025-08-24T15:32:30:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:30:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:30:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:30:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:30:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:30:   code: 'EADDRINUSE',
+2025-08-24T15:32:30:   errno: -98,
+2025-08-24T15:32:30:   syscall: 'listen',
+2025-08-24T15:32:30:   address: '::',
+2025-08-24T15:32:30:   port: 4900
+2025-08-24T15:32:30: }
+2025-08-24T15:32:41:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:53:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:08:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:14:  ⨯ Failed to start server
+2025-08-24T15:33:14: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:33:14:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:33:14:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:33:14:     at Server.listen (node:net:2067:7)
+2025-08-24T15:33:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:33:14:     at new Promise (<anonymous>)
+2025-08-24T15:33:14:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:33:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:33:14:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:33:14:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:33:14:     at process.emit (node:events:524:28) {
+2025-08-24T15:33:14:   code: 'EADDRINUSE',
+2025-08-24T15:33:14:   errno: -98,
+2025-08-24T15:33:14:   syscall: 'listen',
+2025-08-24T15:33:14:   address: '::',
+2025-08-24T15:33:14:   port: 4900
+2025-08-24T15:33:14: }
+2025-08-24T15:33:30:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:36:19:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:36:33:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:37:12:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:37:20:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:07:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:14:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:43:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:55:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:57:  ⨯ Failed to start server
+2025-08-24T15:38:57: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:38:57:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:38:57:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:38:57:     at Server.listen (node:net:2067:7)
+2025-08-24T15:38:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:38:57:     at new Promise (<anonymous>)
+2025-08-24T15:38:57:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:38:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:38:57:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:38:57:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:38:57:     at process.emit (node:events:524:28) {
+2025-08-24T15:38:57:   code: 'EADDRINUSE',
+2025-08-24T15:38:57:   errno: -98,
+2025-08-24T15:38:57:   syscall: 'listen',
+2025-08-24T15:38:57:   address: '::',
+2025-08-24T15:38:57:   port: 4900
+2025-08-24T15:38:57: }
+2025-08-24T15:39:04:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:15:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:28:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:36:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:24:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:35:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:39:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:49:53: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T16:16:12:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T16:16:17:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:28:05: [호텔 API] GET 오류: PrismaClientValidationError: 
+2025-08-24T17:28:05: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T17:28:05: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:43
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05:   21 // 데이터베이스 연결 확인
+2025-08-24T17:28:05:   22 await prisma.$queryRaw`SELECT 1`;
+2025-08-24T17:28:05:   23 console.log('[호텔 API] DB 연결 성공');
+2025-08-24T17:28:05: → 24 const hotels = await prisma.hotel.findMany({
+2025-08-24T17:28:05:        where: {
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          ~~~~~~~~
+2025-08-24T17:28:05:      ?   AND?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   OR?: HotelWhereInput[],
+2025-08-24T17:28:05:      ?   NOT?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   id?: StringFilter | String,
+2025-08-24T17:28:05:      ?   name?: StringFilter | String,
+2025-08-24T17:28:05:      ?   address?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   phone?: StringFilter | String,
+2025-08-24T17:28:05:      ?   email?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   description?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   rating?: IntFilter | Int,
+2025-08-24T17:28:05:      ?   imageUrl?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   status?: EnumHotelStatusFilter | HotelStatus,
+2025-08-24T17:28:05:      ?   createdAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   updatedAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   discounts?: DiscountListRelationFilter,
+2025-08-24T17:28:05:      ?   rooms?: RoomListRelationFilter
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        select: {
+2025-08-24T17:28:05:          id: true,
+2025-08-24T17:28:05:          name: true,
+2025-08-24T17:28:05:          address: true,
+2025-08-24T17:28:05:          phone: true,
+2025-08-24T17:28:05:          email: true,
+2025-08-24T17:28:05:          description: true,
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          createdAt: true,
+2025-08-24T17:28:05:          _count: {
+2025-08-24T17:28:05:            select: {
+2025-08-24T17:28:05:              rooms: true,
+2025-08-24T17:28:05:              packages: true
+2025-08-24T17:28:05:            }
+2025-08-24T17:28:05:          }
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        orderBy: {
+2025-08-24T17:28:05:          createdAt: "desc"
+2025-08-24T17:28:05:        }
+2025-08-24T17:28:05:      })
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05: Unknown argument `isActive`. Available options are marked with ?.
+2025-08-24T17:28:05:     at _n (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:29:1363)
+2025-08-24T17:28:05:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7102)
+2025-08-24T17:28:05:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T17:28:05:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T17:28:05:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T17:28:05:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:24)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T17:28:05:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T17:28:05:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T17:28:05:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T17:28:05:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T17:28:05:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T17:28:05:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T17:28:05:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T17:28:05:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T17:28:05:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T17:28:05:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T17:28:05:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T17:28:05:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T17:28:05:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T17:28:05:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T17:28:05:   clientVersion: '6.13.0'
+2025-08-24T17:28:05: }
+2025-08-24T17:28:05: [호텔 API] GET 오류: PrismaClientValidationError: 
+2025-08-24T17:28:05: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T17:28:05: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:43
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05:   21 // 데이터베이스 연결 확인
+2025-08-24T17:28:05:   22 await prisma.$queryRaw`SELECT 1`;
+2025-08-24T17:28:05:   23 console.log('[호텔 API] DB 연결 성공');
+2025-08-24T17:28:05: → 24 const hotels = await prisma.hotel.findMany({
+2025-08-24T17:28:05:        where: {
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          ~~~~~~~~
+2025-08-24T17:28:05:      ?   AND?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   OR?: HotelWhereInput[],
+2025-08-24T17:28:05:      ?   NOT?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   id?: StringFilter | String,
+2025-08-24T17:28:05:      ?   name?: StringFilter | String,
+2025-08-24T17:28:05:      ?   address?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   phone?: StringFilter | String,
+2025-08-24T17:28:05:      ?   email?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   description?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   rating?: IntFilter | Int,
+2025-08-24T17:28:05:      ?   imageUrl?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   status?: EnumHotelStatusFilter | HotelStatus,
+2025-08-24T17:28:05:      ?   createdAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   updatedAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   discounts?: DiscountListRelationFilter,
+2025-08-24T17:28:05:      ?   rooms?: RoomListRelationFilter
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        select: {
+2025-08-24T17:28:05:          id: true,
+2025-08-24T17:28:05:          name: true,
+2025-08-24T17:28:05:          address: true,
+2025-08-24T17:28:05:          phone: true,
+2025-08-24T17:28:05:          email: true,
+2025-08-24T17:28:05:          description: true,
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          createdAt: true,
+2025-08-24T17:28:05:          _count: {
+2025-08-24T17:28:05:            select: {
+2025-08-24T17:28:05:              rooms: true,
+2025-08-24T17:28:05:              packages: true
+2025-08-24T17:28:05:            }
+2025-08-24T17:28:05:          }
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        orderBy: {
+2025-08-24T17:28:05:          createdAt: "desc"
+2025-08-24T17:28:05:        }
+2025-08-24T17:28:05:      })
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05: Unknown argument `isActive`. Available options are marked with ?.
+2025-08-24T17:28:05:     at _n (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:29:1363)
+2025-08-24T17:28:05:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7102)
+2025-08-24T17:28:05:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T17:28:05:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T17:28:05:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T17:28:05:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:24)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T17:28:05:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T17:28:05:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T17:28:05:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T17:28:05:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T17:28:05:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T17:28:05:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T17:28:05:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T17:28:05:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T17:28:05:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T17:28:05:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T17:28:05:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T17:28:05:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T17:28:05:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T17:28:05:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T17:28:05:   clientVersion: '6.13.0'
+2025-08-24T17:28:05: }
+2025-08-24T17:34:37:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:34:59:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:40:40:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:40:50:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:44:23:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:44:32:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:49:02:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:49:07:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env

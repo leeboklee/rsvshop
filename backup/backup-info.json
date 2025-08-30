@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-07-31T14:36:07.359Z",
+    "file": "C:\\codist\\rsvshop\\backup\\backup-2025-07-31T14-36-06-901Z.sql",
+    "size": 24189,
+    "type": "postgresql"
+  },
+  {
+    "timestamp": "2025-07-31T14:35:34.847Z",
+    "file": "C:\\codist\\rsvshop\\backup\\backup-2025-07-31T14-35-33-144Z.sql",
+    "size": 24189,
+    "type": "postgresql"
+  }
+]

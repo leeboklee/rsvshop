@@ -1,0 +1,23 @@
+  column_name  |          data_type          
+---------------+-----------------------------
+ id            | text
+ userId        | text
+ totalAmount   | double precision
+ status        | USER-DEFINED
+ checkInDate   | timestamp without time zone
+ checkOutDate  | timestamp without time zone
+ guestName     | text
+ guestPhone    | text
+ guestEmail    | text
+ notes         | text
+ createdAt     | timestamp without time zone
+ updatedAt     | timestamp without time zone
+ roomId        | text
+ depositAmount | double precision
+ externalId    | text
+ orderNumber   | text
+ sellingPrice  | double precision
+ shoppingMall  | text
+ supplyPrice   | double precision
+(19 rows)
+

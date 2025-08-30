@@ -1,0 +1,1862 @@
+2025-08-24T15:19:47: 
+2025-08-24T15:19:47: > rsvshop@0.1.0 dev
+2025-08-24T15:19:47: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:19:47: 
+2025-08-24T15:19:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:19:52:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:19:52:   - Local:        http://localhost:4900
+2025-08-24T15:19:52:   - Environments: .env.local, .env
+2025-08-24T15:19:52: 
+2025-08-24T15:19:52:  ✓ Starting...
+2025-08-24T15:19:56:  ✓ Compiled in 1642ms
+2025-08-24T15:19:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:19:56:  ✓ Ready in 5.6s
+2025-08-24T15:20:22: [?25h
+2025-08-24T15:20:28: 
+2025-08-24T15:20:28: > rsvshop@0.1.0 dev
+2025-08-24T15:20:28: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:20:28: 
+2025-08-24T15:20:30:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:33:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:20:33:   - Local:        http://localhost:4900
+2025-08-24T15:20:33:   - Environments: .env.local, .env
+2025-08-24T15:20:33: 
+2025-08-24T15:20:33:  ✓ Starting...
+2025-08-24T15:20:35:  ✓ Compiled in 722ms
+2025-08-24T15:20:36:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:36:  ✓ Ready in 4.4s
+2025-08-24T15:20:37: [?25h
+2025-08-24T15:20:39: 
+2025-08-24T15:20:39: > rsvshop@0.1.0 dev
+2025-08-24T15:20:39: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:20:39: 
+2025-08-24T15:20:41:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:44:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:20:44:   - Local:        http://localhost:4900
+2025-08-24T15:20:44:   - Environments: .env.local, .env
+2025-08-24T15:20:44: 
+2025-08-24T15:20:44:  ✓ Starting...
+2025-08-24T15:20:48:  ✓ Compiled in 1175ms
+2025-08-24T15:20:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:20:49:  ✓ Ready in 5.9s
+2025-08-24T15:27:00:  ○ Compiling /hotel-admin/hotels ...
+2025-08-24T15:27:15:  ✓ Compiled /hotel-admin/hotels in 15.7s
+2025-08-24T15:27:18:  GET /customer 200 in 18385ms
+2025-08-24T15:27:18:  GET /hotel-admin/hotels 200 in 18598ms
+2025-08-24T15:27:19:  ○ Compiling /api/ping ...
+2025-08-24T15:27:20:  ✓ Compiled /api/ping in 1731ms
+2025-08-24T15:27:21:  GET /api/ping 200 in 2582ms
+2025-08-24T15:27:23:  ○ Compiling /favicon.ico ...
+2025-08-24T15:27:25:  ✓ Compiled /favicon.ico in 2.7s
+2025-08-24T15:27:26:  GET /favicon.ico?favicon.45db1c09.ico 200 in 3191ms
+2025-08-24T15:27:26: GET /api/hotels PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:43
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   15 const prisma = new __TURBOPACK__commonjs__external__$40$prisma$2f$client__["PrismaClient"]();
+2025-08-24T15:27:26:   16 async function GET() {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26: → 18         const hotels = await prisma.hotel.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:24)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:26:  GET /api/hotels 500 in 2803ms
+2025-08-24T15:27:26: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   16 async function GET(request) {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:26: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:26:  GET /api/packages 500 in 3063ms
+2025-08-24T15:27:26: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:26: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:27:26: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26:   16 async function GET(request) {
+2025-08-24T15:27:26:   17     try {
+2025-08-24T15:27:26:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:26: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:27:26: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:26: 
+2025-08-24T15:27:26: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:26:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:26:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:26:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:26:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:26:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:26:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:26:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:26:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:26:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:26:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:26:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:26:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:26:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:26:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:26:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:26:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:26:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:26:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:26:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:26:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:26:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:26:   clientVersion: '6.13.0',
+2025-08-24T15:27:26:   errorCode: undefined,
+2025-08-24T15:27:26:   retryable: undefined
+2025-08-24T15:27:26: }
+2025-08-24T15:27:26:  GET /api/rooms 500 in 3227ms
+2025-08-24T15:27:26:  GET /favicon.ico?favicon.45db1c09.ico 200 in 690ms
+2025-08-24T15:27:27: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   16 async function GET(request) {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:27: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:27:27:  GET /api/packages 500 in 1104ms
+2025-08-24T15:27:27: GET /api/hotels PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:43
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   15 const prisma = new __TURBOPACK__commonjs__external__$40$prisma$2f$client__["PrismaClient"]();
+2025-08-24T15:27:27:   16 async function GET() {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27: → 18         const hotels = await prisma.hotel.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_hotels_route_ts_7cc224._.js:18:24)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:27:27:  GET /api/hotels 500 in 1307ms
+2025-08-24T15:27:27: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:27:27: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:27:27: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27:   16 async function GET(request) {
+2025-08-24T15:27:27:   17     try {
+2025-08-24T15:27:27:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:27:27: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:27:27: Can't reach database server at `localhost:5432`
+2025-08-24T15:27:27: 
+2025-08-24T15:27:27: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:27:27:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:27:27:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:27:27:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:27:27:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:27:27:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:27:27:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:27:27:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:27:27:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:27:27:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:27:27:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:27:27:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:27:27:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:27:27:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:27:27:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:27:27:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:27:27:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:27:27:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:27:27:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:27:27:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:27:27:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:27:27:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:27:27:   clientVersion: '6.13.0',
+2025-08-24T15:27:27:   errorCode: undefined,
+2025-08-24T15:27:27:   retryable: undefined
+2025-08-24T15:27:27: }
+2025-08-24T15:27:27:  GET /api/rooms 500 in 1146ms
+2025-08-24T15:27:34:  ○ Compiling /_not-found/page ...
+2025-08-24T15:27:34:  GET /api/ping 200 in 376ms
+2025-08-24T15:27:35:  ✓ Compiled /_not-found/page in 1675ms
+2025-08-24T15:27:36:  GET /hotel-admin/inventory 404 in 483ms
+2025-08-24T15:27:41:  GET /api/ping 200 in 139ms
+2025-08-24T15:27:46:  GET /api/ping 200 in 175ms
+2025-08-24T15:27:51:  GET /api/ping 200 in 354ms
+2025-08-24T15:27:56:  GET /api/ping 200 in 551ms
+2025-08-24T15:28:03: 
+2025-08-24T15:28:03: > rsvshop@0.1.0 dev
+2025-08-24T15:28:03: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:28:03: 
+2025-08-24T15:28:06:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:11:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:28:11:   - Local:        http://localhost:4900
+2025-08-24T15:28:11:   - Environments: .env.local, .env
+2025-08-24T15:28:11: 
+2025-08-24T15:28:11:  ✓ Starting...
+2025-08-24T15:28:18:  ✓ Compiled in 2.4s
+2025-08-24T15:28:19:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:20:  ✓ Ready in 9.7s
+2025-08-24T15:28:21:  ○ Compiling /api/ping ...
+2025-08-24T15:28:22:  ✓ Compiled /api/ping in 2s
+2025-08-24T15:28:24:  GET /api/ping 200 in 3506ms
+2025-08-24T15:28:24:  GET /api/ping 200 in 2659ms
+2025-08-24T15:28:24:  GET /api/ping 200 in 3690ms
+2025-08-24T15:28:26:  GET /api/ping 200 in 343ms
+2025-08-24T15:28:31:  GET /api/ping 200 in 170ms
+2025-08-24T15:28:36:  GET /api/ping 200 in 391ms
+2025-08-24T15:28:43: 
+2025-08-24T15:28:43: > rsvshop@0.1.0 dev
+2025-08-24T15:28:43: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:28:43: 
+2025-08-24T15:28:48:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:28:54:  ⨯ Failed to start server
+2025-08-24T15:28:54: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:28:54:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:28:54:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:28:54:     at Server.listen (node:net:2067:7)
+2025-08-24T15:28:54:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:28:54:     at new Promise (<anonymous>)
+2025-08-24T15:28:54:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:28:54:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:28:54:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:28:54:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:28:54:     at process.emit (node:events:524:28) {
+2025-08-24T15:28:54:   code: 'EADDRINUSE',
+2025-08-24T15:28:54:   errno: -98,
+2025-08-24T15:28:54:   syscall: 'listen',
+2025-08-24T15:28:54:   address: '::',
+2025-08-24T15:28:54:   port: 4900
+2025-08-24T15:28:54: }
+2025-08-24T15:28:55: [?25h
+2025-08-24T15:29:02: 
+2025-08-24T15:29:02: > rsvshop@0.1.0 dev
+2025-08-24T15:29:02: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:29:02: 
+2025-08-24T15:29:05:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:07:  ⨯ Failed to start server
+2025-08-24T15:29:07: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:07:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:07:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:07:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:07:     at new Promise (<anonymous>)
+2025-08-24T15:29:07:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:07:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:07:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:07:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:07:   code: 'EADDRINUSE',
+2025-08-24T15:29:07:   errno: -98,
+2025-08-24T15:29:07:   syscall: 'listen',
+2025-08-24T15:29:07:   address: '::',
+2025-08-24T15:29:07:   port: 4900
+2025-08-24T15:29:07: }
+2025-08-24T15:29:08: [?25h
+2025-08-24T15:29:14: 
+2025-08-24T15:29:14: > rsvshop@0.1.0 dev
+2025-08-24T15:29:14: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:29:14: 
+2025-08-24T15:29:20:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:22:  ⨯ Failed to start server
+2025-08-24T15:29:22: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:22:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:22:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:22:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:22:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:22:     at new Promise (<anonymous>)
+2025-08-24T15:29:22:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:22:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:22:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:22:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:22:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:22:   code: 'EADDRINUSE',
+2025-08-24T15:29:22:   errno: -98,
+2025-08-24T15:29:22:   syscall: 'listen',
+2025-08-24T15:29:22:   address: '::',
+2025-08-24T15:29:22:   port: 4900
+2025-08-24T15:29:22: }
+2025-08-24T15:29:22: [?25h
+2025-08-24T15:29:22: 
+2025-08-24T15:29:29: 
+2025-08-24T15:29:29: > rsvshop@0.1.0 dev
+2025-08-24T15:29:29: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:29:29: 
+2025-08-24T15:29:32:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:38:  ⨯ Failed to start server
+2025-08-24T15:29:38: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:38:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:38:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:38:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:38:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:38:     at new Promise (<anonymous>)
+2025-08-24T15:29:38:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:38:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:38:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:38:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:38:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:38:   code: 'EADDRINUSE',
+2025-08-24T15:29:38:   errno: -98,
+2025-08-24T15:29:38:   syscall: 'listen',
+2025-08-24T15:29:38:   address: '::',
+2025-08-24T15:29:38:   port: 4900
+2025-08-24T15:29:38: }
+2025-08-24T15:29:38: [?25h
+2025-08-24T15:29:45: 
+2025-08-24T15:29:45: > rsvshop@0.1.0 dev
+2025-08-24T15:29:45: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:29:45: 
+2025-08-24T15:29:47:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:49:  ⨯ Failed to start server
+2025-08-24T15:29:49: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:49:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:49:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:49:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:49:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:49:     at new Promise (<anonymous>)
+2025-08-24T15:29:49:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:49:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:49:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:49:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:49:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:49:   code: 'EADDRINUSE',
+2025-08-24T15:29:49:   errno: -98,
+2025-08-24T15:29:49:   syscall: 'listen',
+2025-08-24T15:29:49:   address: '::',
+2025-08-24T15:29:49:   port: 4900
+2025-08-24T15:29:49: }
+2025-08-24T15:29:49: [?25h
+2025-08-24T15:29:54: 
+2025-08-24T15:29:54: > rsvshop@0.1.0 dev
+2025-08-24T15:29:54: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:29:54: 
+2025-08-24T15:29:56:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:29:58:  ⨯ Failed to start server
+2025-08-24T15:29:58: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:29:58:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:29:58:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:29:58:     at Server.listen (node:net:2067:7)
+2025-08-24T15:29:58:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:29:58:     at new Promise (<anonymous>)
+2025-08-24T15:29:58:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:29:58:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:29:58:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:29:58:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:29:58:     at process.emit (node:events:524:28) {
+2025-08-24T15:29:58:   code: 'EADDRINUSE',
+2025-08-24T15:29:58:   errno: -98,
+2025-08-24T15:29:58:   syscall: 'listen',
+2025-08-24T15:29:58:   address: '::',
+2025-08-24T15:29:58:   port: 4900
+2025-08-24T15:29:58: }
+2025-08-24T15:29:58: [?25h
+2025-08-24T15:29:58: 
+2025-08-24T15:30:03: 
+2025-08-24T15:30:03: > rsvshop@0.1.0 dev
+2025-08-24T15:30:03: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:03: 
+2025-08-24T15:30:06:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:08:  ⨯ Failed to start server
+2025-08-24T15:30:08: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:08:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:08:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:08:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:08:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:08:     at new Promise (<anonymous>)
+2025-08-24T15:30:08:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:08:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:08:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:08:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:08:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:08:   code: 'EADDRINUSE',
+2025-08-24T15:30:08:   errno: -98,
+2025-08-24T15:30:08:   syscall: 'listen',
+2025-08-24T15:30:08:   address: '::',
+2025-08-24T15:30:08:   port: 4900
+2025-08-24T15:30:08: }
+2025-08-24T15:30:08: [?25h
+2025-08-24T15:30:08: 
+2025-08-24T15:30:13: 
+2025-08-24T15:30:13: > rsvshop@0.1.0 dev
+2025-08-24T15:30:13: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:13: 
+2025-08-24T15:30:15:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:18:  ⨯ Failed to start server
+2025-08-24T15:30:18: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:18:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:18:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:18:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:18:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:18:     at new Promise (<anonymous>)
+2025-08-24T15:30:18:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:18:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:18:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:18:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:18:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:18:   code: 'EADDRINUSE',
+2025-08-24T15:30:18:   errno: -98,
+2025-08-24T15:30:18:   syscall: 'listen',
+2025-08-24T15:30:18:   address: '::',
+2025-08-24T15:30:18:   port: 4900
+2025-08-24T15:30:18: }
+2025-08-24T15:30:18: [?25h
+2025-08-24T15:30:18: 
+2025-08-24T15:30:23: 
+2025-08-24T15:30:23: > rsvshop@0.1.0 dev
+2025-08-24T15:30:23: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:23: 
+2025-08-24T15:30:25:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:26:  ⨯ Failed to start server
+2025-08-24T15:30:26: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:26:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:26:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:26:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:26:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:26:     at new Promise (<anonymous>)
+2025-08-24T15:30:26:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:26:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:26:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:26:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:26:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:26:   code: 'EADDRINUSE',
+2025-08-24T15:30:26:   errno: -98,
+2025-08-24T15:30:26:   syscall: 'listen',
+2025-08-24T15:30:26:   address: '::',
+2025-08-24T15:30:26:   port: 4900
+2025-08-24T15:30:26: }
+2025-08-24T15:30:26: [?25h
+2025-08-24T15:30:26: 
+2025-08-24T15:30:32: 
+2025-08-24T15:30:32: > rsvshop@0.1.0 dev
+2025-08-24T15:30:32: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:32: 
+2025-08-24T15:30:34:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:37:  ⨯ Failed to start server
+2025-08-24T15:30:37: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:37:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:37:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:37:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:37:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:37:     at new Promise (<anonymous>)
+2025-08-24T15:30:37:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:37:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:37:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:37:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:37:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:37:   code: 'EADDRINUSE',
+2025-08-24T15:30:37:   errno: -98,
+2025-08-24T15:30:37:   syscall: 'listen',
+2025-08-24T15:30:37:   address: '::',
+2025-08-24T15:30:37:   port: 4900
+2025-08-24T15:30:37: }
+2025-08-24T15:30:37: [?25h
+2025-08-24T15:30:42: 
+2025-08-24T15:30:42: > rsvshop@0.1.0 dev
+2025-08-24T15:30:42: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:42: 
+2025-08-24T15:30:45:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:47:  ⨯ Failed to start server
+2025-08-24T15:30:47: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:47:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:47:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:47:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:47:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:47:     at new Promise (<anonymous>)
+2025-08-24T15:30:47:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:47:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:47:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:47:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:47:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:47:   code: 'EADDRINUSE',
+2025-08-24T15:30:47:   errno: -98,
+2025-08-24T15:30:47:   syscall: 'listen',
+2025-08-24T15:30:47:   address: '::',
+2025-08-24T15:30:47:   port: 4900
+2025-08-24T15:30:47: }
+2025-08-24T15:30:47: [?25h
+2025-08-24T15:30:47: 
+2025-08-24T15:30:53: 
+2025-08-24T15:30:53: > rsvshop@0.1.0 dev
+2025-08-24T15:30:53: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:30:53: 
+2025-08-24T15:30:55:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:30:57:  ⨯ Failed to start server
+2025-08-24T15:30:57: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:30:57:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:30:57:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:30:57:     at Server.listen (node:net:2067:7)
+2025-08-24T15:30:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:30:57:     at new Promise (<anonymous>)
+2025-08-24T15:30:57:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:30:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:30:57:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:30:57:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:30:57:     at process.emit (node:events:524:28) {
+2025-08-24T15:30:57:   code: 'EADDRINUSE',
+2025-08-24T15:30:57:   errno: -98,
+2025-08-24T15:30:57:   syscall: 'listen',
+2025-08-24T15:30:57:   address: '::',
+2025-08-24T15:30:57:   port: 4900
+2025-08-24T15:30:57: }
+2025-08-24T15:30:57: [?25h
+2025-08-24T15:31:03: 
+2025-08-24T15:31:03: > rsvshop@0.1.0 dev
+2025-08-24T15:31:03: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:03: 
+2025-08-24T15:31:05:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:07:  ⨯ Failed to start server
+2025-08-24T15:31:07: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:07:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:07:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:07:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:07:     at new Promise (<anonymous>)
+2025-08-24T15:31:07:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:07:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:07:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:07:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:07:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:07:   code: 'EADDRINUSE',
+2025-08-24T15:31:07:   errno: -98,
+2025-08-24T15:31:07:   syscall: 'listen',
+2025-08-24T15:31:07:   address: '::',
+2025-08-24T15:31:07:   port: 4900
+2025-08-24T15:31:07: }
+2025-08-24T15:31:07: [?25h
+2025-08-24T15:31:11: 
+2025-08-24T15:31:11: > rsvshop@0.1.0 dev
+2025-08-24T15:31:11: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:11: 
+2025-08-24T15:31:14:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:16:  ⨯ Failed to start server
+2025-08-24T15:31:16: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:16:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:16:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:16:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:16:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:16:     at new Promise (<anonymous>)
+2025-08-24T15:31:16:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:16:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:16:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:16:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:16:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:16:   code: 'EADDRINUSE',
+2025-08-24T15:31:16:   errno: -98,
+2025-08-24T15:31:16:   syscall: 'listen',
+2025-08-24T15:31:16:   address: '::',
+2025-08-24T15:31:16:   port: 4900
+2025-08-24T15:31:16: }
+2025-08-24T15:31:16: [?25h
+2025-08-24T15:31:22: 
+2025-08-24T15:31:22: > rsvshop@0.1.0 dev
+2025-08-24T15:31:22: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:22: 
+2025-08-24T15:31:25:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:27:  ⨯ Failed to start server
+2025-08-24T15:31:27: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:27:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:27:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:27:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:27:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:27:     at new Promise (<anonymous>)
+2025-08-24T15:31:27:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:27:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:27:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:27:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:27:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:27:   code: 'EADDRINUSE',
+2025-08-24T15:31:27:   errno: -98,
+2025-08-24T15:31:27:   syscall: 'listen',
+2025-08-24T15:31:27:   address: '::',
+2025-08-24T15:31:27:   port: 4900
+2025-08-24T15:31:27: }
+2025-08-24T15:31:27: [?25h
+2025-08-24T15:31:32: 
+2025-08-24T15:31:32: > rsvshop@0.1.0 dev
+2025-08-24T15:31:32: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:32: 
+2025-08-24T15:31:33:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:35:  ⨯ Failed to start server
+2025-08-24T15:31:35: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:35:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:35:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:35:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:35:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:35:     at new Promise (<anonymous>)
+2025-08-24T15:31:35:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:35:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:35:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:35:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:35:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:35:   code: 'EADDRINUSE',
+2025-08-24T15:31:35:   errno: -98,
+2025-08-24T15:31:35:   syscall: 'listen',
+2025-08-24T15:31:35:   address: '::',
+2025-08-24T15:31:35:   port: 4900
+2025-08-24T15:31:35: }
+2025-08-24T15:31:35: [?25h
+2025-08-24T15:31:40: 
+2025-08-24T15:31:40: > rsvshop@0.1.0 dev
+2025-08-24T15:31:40: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:40: 
+2025-08-24T15:31:42:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:43:  ⨯ Failed to start server
+2025-08-24T15:31:43: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:43:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:43:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:43:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:43:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:43:     at new Promise (<anonymous>)
+2025-08-24T15:31:43:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:43:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:43:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:43:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:43:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:43:   code: 'EADDRINUSE',
+2025-08-24T15:31:43:   errno: -98,
+2025-08-24T15:31:43:   syscall: 'listen',
+2025-08-24T15:31:43:   address: '::',
+2025-08-24T15:31:43:   port: 4900
+2025-08-24T15:31:43: }
+2025-08-24T15:31:43: [?25h
+2025-08-24T15:31:48: 
+2025-08-24T15:31:48: > rsvshop@0.1.0 dev
+2025-08-24T15:31:48: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:48: 
+2025-08-24T15:31:50:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:31:52:  ⨯ Failed to start server
+2025-08-24T15:31:52: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:31:52:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:31:52:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:31:52:     at Server.listen (node:net:2067:7)
+2025-08-24T15:31:52:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:31:52:     at new Promise (<anonymous>)
+2025-08-24T15:31:52:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:31:52:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:31:52:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:31:52:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:31:52:     at process.emit (node:events:524:28) {
+2025-08-24T15:31:52:   code: 'EADDRINUSE',
+2025-08-24T15:31:52:   errno: -98,
+2025-08-24T15:31:52:   syscall: 'listen',
+2025-08-24T15:31:52:   address: '::',
+2025-08-24T15:31:52:   port: 4900
+2025-08-24T15:31:52: }
+2025-08-24T15:31:52: [?25h
+2025-08-24T15:31:57: 
+2025-08-24T15:31:57: > rsvshop@0.1.0 dev
+2025-08-24T15:31:57: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:31:57: 
+2025-08-24T15:31:59:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:01:  ⨯ Failed to start server
+2025-08-24T15:32:01: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:01:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:01:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:01:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:01:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:01:     at new Promise (<anonymous>)
+2025-08-24T15:32:01:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:01:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:01:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:01:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:01:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:01:   code: 'EADDRINUSE',
+2025-08-24T15:32:01:   errno: -98,
+2025-08-24T15:32:01:   syscall: 'listen',
+2025-08-24T15:32:01:   address: '::',
+2025-08-24T15:32:01:   port: 4900
+2025-08-24T15:32:01: }
+2025-08-24T15:32:01: [?25h
+2025-08-24T15:32:07: 
+2025-08-24T15:32:07: > rsvshop@0.1.0 dev
+2025-08-24T15:32:07: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:32:07: 
+2025-08-24T15:32:10:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:14:  ⨯ Failed to start server
+2025-08-24T15:32:14: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:14:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:14:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:14:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:14:     at new Promise (<anonymous>)
+2025-08-24T15:32:14:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:14:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:14:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:14:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:14:   code: 'EADDRINUSE',
+2025-08-24T15:32:14:   errno: -98,
+2025-08-24T15:32:14:   syscall: 'listen',
+2025-08-24T15:32:14:   address: '::',
+2025-08-24T15:32:14:   port: 4900
+2025-08-24T15:32:14: }
+2025-08-24T15:32:14: [?25h
+2025-08-24T15:32:20: 
+2025-08-24T15:32:20: > rsvshop@0.1.0 dev
+2025-08-24T15:32:20: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:32:20: 
+2025-08-24T15:32:26:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:30:  ⨯ Failed to start server
+2025-08-24T15:32:30: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:32:30:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:32:30:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:32:30:     at Server.listen (node:net:2067:7)
+2025-08-24T15:32:30:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:32:30:     at new Promise (<anonymous>)
+2025-08-24T15:32:30:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:32:30:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:32:30:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:32:30:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:32:30:     at process.emit (node:events:524:28) {
+2025-08-24T15:32:30:   code: 'EADDRINUSE',
+2025-08-24T15:32:30:   errno: -98,
+2025-08-24T15:32:30:   syscall: 'listen',
+2025-08-24T15:32:30:   address: '::',
+2025-08-24T15:32:30:   port: 4900
+2025-08-24T15:32:30: }
+2025-08-24T15:32:30: [?25h
+2025-08-24T15:32:38: 
+2025-08-24T15:32:38: > rsvshop@0.1.0 dev
+2025-08-24T15:32:38: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:32:38: 
+2025-08-24T15:32:41:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:45:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:32:45:   - Local:        http://localhost:4900
+2025-08-24T15:32:45:   - Environments: .env.local, .env
+2025-08-24T15:32:45: 
+2025-08-24T15:32:45:  ✓ Starting...
+2025-08-24T15:32:51:  ✓ Compiled in 2.3s
+2025-08-24T15:32:53:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:32:54:  ✓ Ready in 9.5s
+2025-08-24T15:33:05: 
+2025-08-24T15:33:05: > rsvshop@0.1.0 dev
+2025-08-24T15:33:05: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:33:05: 
+2025-08-24T15:33:08:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:14:  ⨯ Failed to start server
+2025-08-24T15:33:14: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:33:14:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:33:14:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:33:14:     at Server.listen (node:net:2067:7)
+2025-08-24T15:33:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:33:14:     at new Promise (<anonymous>)
+2025-08-24T15:33:14:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:33:14:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:33:14:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:33:14:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:33:14:     at process.emit (node:events:524:28) {
+2025-08-24T15:33:14:   code: 'EADDRINUSE',
+2025-08-24T15:33:14:   errno: -98,
+2025-08-24T15:33:14:   syscall: 'listen',
+2025-08-24T15:33:14:   address: '::',
+2025-08-24T15:33:14:   port: 4900
+2025-08-24T15:33:14: }
+2025-08-24T15:33:14: [?25h
+2025-08-24T15:33:23: 
+2025-08-24T15:33:23: > rsvshop@0.1.0 dev
+2025-08-24T15:33:23: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:33:23: 
+2025-08-24T15:33:30:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:37:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:33:37:   - Local:        http://localhost:4900
+2025-08-24T15:33:37:   - Environments: .env.local, .env
+2025-08-24T15:33:37: 
+2025-08-24T15:33:37:  ✓ Starting...
+2025-08-24T15:33:47:  ✓ Compiled in 2.8s
+2025-08-24T15:33:49:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:33:49:  ✓ Ready in 13.7s
+2025-08-24T15:36:16: 
+2025-08-24T15:36:16: > rsvshop@0.1.0 dev
+2025-08-24T15:36:16: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:36:16: 
+2025-08-24T15:36:19:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:36:24:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:36:24:   - Local:        http://localhost:4900
+2025-08-24T15:36:24:   - Environments: .env.local, .env
+2025-08-24T15:36:24: 
+2025-08-24T15:36:24:  ✓ Starting...
+2025-08-24T15:36:32:  ✓ Compiled in 3.7s
+2025-08-24T15:36:33:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:36:34:  ✓ Ready in 11.2s
+2025-08-24T15:37:05: [?25h
+2025-08-24T15:37:11: 
+2025-08-24T15:37:11: > rsvshop@0.1.0 dev
+2025-08-24T15:37:11: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:37:11: 
+2025-08-24T15:37:12:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:37:16:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:37:16:   - Local:        http://localhost:4900
+2025-08-24T15:37:16:   - Environments: .env.local, .env
+2025-08-24T15:37:16: 
+2025-08-24T15:37:16:  ✓ Starting...
+2025-08-24T15:37:19:  ✓ Compiled in 944ms
+2025-08-24T15:37:20:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:37:20:  ✓ Ready in 5s
+2025-08-24T15:38:06: 
+2025-08-24T15:38:06: > rsvshop@0.1.0 dev
+2025-08-24T15:38:06: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:38:06: 
+2025-08-24T15:38:07:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:10:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:38:10:   - Local:        http://localhost:4900
+2025-08-24T15:38:10:   - Environments: .env.local, .env
+2025-08-24T15:38:10: 
+2025-08-24T15:38:10:  ✓ Starting...
+2025-08-24T15:38:14:  ✓ Compiled in 832ms
+2025-08-24T15:38:14:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:14:  ✓ Ready in 5.2s
+2025-08-24T15:38:41: 
+2025-08-24T15:38:41: > rsvshop@0.1.0 dev
+2025-08-24T15:38:41: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:38:41: 
+2025-08-24T15:38:43:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:46:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:38:46:   - Local:        http://localhost:4900
+2025-08-24T15:38:46:   - Environments: .env.local, .env
+2025-08-24T15:38:46: 
+2025-08-24T15:38:46:  ✓ Starting...
+2025-08-24T15:38:55: 
+2025-08-24T15:38:55: > rsvshop@0.1.0 dev
+2025-08-24T15:38:55: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:38:55: 
+2025-08-24T15:38:55:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:38:57:  ⨯ Failed to start server
+2025-08-24T15:38:57: Error: listen EADDRINUSE: address already in use :::4900
+2025-08-24T15:38:57:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+2025-08-24T15:38:57:     at listenInCluster (node:net:1965:12)
+2025-08-24T15:38:57:     at Server.listen (node:net:2067:7)
+2025-08-24T15:38:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+2025-08-24T15:38:57:     at new Promise (<anonymous>)
+2025-08-24T15:38:57:     at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+2025-08-24T15:38:57:     at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+2025-08-24T15:38:57:     at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+2025-08-24T15:38:57:     at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+2025-08-24T15:38:57:     at process.emit (node:events:524:28) {
+2025-08-24T15:38:57:   code: 'EADDRINUSE',
+2025-08-24T15:38:57:   errno: -98,
+2025-08-24T15:38:57:   syscall: 'listen',
+2025-08-24T15:38:57:   address: '::',
+2025-08-24T15:38:57:   port: 4900
+2025-08-24T15:38:57: }
+2025-08-24T15:38:57: [?25h
+2025-08-24T15:39:02: 
+2025-08-24T15:39:02: > rsvshop@0.1.0 dev
+2025-08-24T15:39:02: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:39:02: 
+2025-08-24T15:39:04:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:08:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:39:08:   - Local:        http://localhost:4900
+2025-08-24T15:39:08:   - Environments: .env.local, .env
+2025-08-24T15:39:08: 
+2025-08-24T15:39:08:  ✓ Starting...
+2025-08-24T15:39:14:  ✓ Compiled in 2.3s
+2025-08-24T15:39:15:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:16:  ✓ Ready in 8.3s
+2025-08-24T15:39:27: 
+2025-08-24T15:39:27: > rsvshop@0.1.0 dev
+2025-08-24T15:39:27: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:39:27: 
+2025-08-24T15:39:28:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:31:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:39:31:   - Local:        http://localhost:4900
+2025-08-24T15:39:31:   - Environments: .env.local, .env
+2025-08-24T15:39:31: 
+2025-08-24T15:39:31:  ✓ Starting...
+2025-08-24T15:39:36:  ✓ Compiled in 1770ms
+2025-08-24T15:39:36:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:39:37:  ✓ Ready in 6.2s
+2025-08-24T15:41:16: [?25h
+2025-08-24T15:41:22: 
+2025-08-24T15:41:22: > rsvshop@0.1.0 dev
+2025-08-24T15:41:22: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:41:22: 
+2025-08-24T15:41:24:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:28:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:41:28:   - Local:        http://localhost:4900
+2025-08-24T15:41:28:   - Environments: .env.local, .env
+2025-08-24T15:41:28: 
+2025-08-24T15:41:28:  ✓ Starting...
+2025-08-24T15:41:30:  ✓ Compiled in 736ms
+2025-08-24T15:41:35: 
+2025-08-24T15:41:35: > rsvshop@0.1.0 dev
+2025-08-24T15:41:35: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T15:41:35: 
+2025-08-24T15:41:35:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:37:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T15:41:37:   - Local:        http://localhost:4900
+2025-08-24T15:41:37:   - Environments: .env.local, .env
+2025-08-24T15:41:37: 
+2025-08-24T15:41:37:  ✓ Starting...
+2025-08-24T15:41:38:  ✓ Compiled in 599ms
+2025-08-24T15:41:39:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T15:41:39:  ✓ Ready in 2.5s
+2025-08-24T15:49:28:  ○ Compiling /api/ping ...
+2025-08-24T15:49:33:  GET /api/ping 200 in 5008ms
+2025-08-24T15:49:33:  GET /api/ping 200 in 5368ms
+2025-08-24T15:49:44:  GET /api/ping 200 in 267ms
+2025-08-24T15:49:48:  ✓ Compiled /api/ping in 20.1s
+2025-08-24T15:49:49:  GET /hotel-admin/inventory 404 in 20303ms
+2025-08-24T15:49:49:  GET /customer 200 in 21239ms
+2025-08-24T15:49:51:  ○ Compiling /favicon.ico ...
+2025-08-24T15:49:52:  ✓ Compiled /favicon.ico in 1317ms
+2025-08-24T15:49:52:  GET /favicon.ico?favicon.45db1c09.ico 200 in 1556ms
+2025-08-24T15:49:52:  GET /favicon.ico?favicon.45db1c09.ico 200 in 385ms
+2025-08-24T15:49:53: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53:  GET /api/packages 500 in 2034ms
+2025-08-24T15:49:53: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53:  GET /api/rooms 500 in 2038ms
+2025-08-24T15:49:53: 패키지 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.package.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:47
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const packages = await prisma.package.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_packages_route_ts_5ecd3c._.js:19:26)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53:  GET /api/packages 500 in 513ms
+2025-08-24T15:49:53: 객실 목록 조회 실패: PrismaClientInitializationError: 
+2025-08-24T15:49:53: Invalid `prisma.room.findMany()` invocation in
+2025-08-24T15:49:53: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:41
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53:   16 async function GET(request) {
+2025-08-24T15:49:53:   17     try {
+2025-08-24T15:49:53:   18         // 성능 최적화: 캐시 헤더 추가
+2025-08-24T15:49:53: → 19         const rooms = await prisma.room.findMany(
+2025-08-24T15:49:53: Can't reach database server at `localhost:5432`
+2025-08-24T15:49:53: 
+2025-08-24T15:49:53: Please make sure your database server is running at `localhost:5432`.
+2025-08-24T15:49:53:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7759)
+2025-08-24T15:49:53:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T15:49:53:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T15:49:53:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T15:49:53:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_rooms_route_ts_993866._.js:19:23)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T15:49:53:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T15:49:53:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T15:49:53:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T15:49:53:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T15:49:53:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T15:49:53:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T15:49:53:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T15:49:53:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T15:49:53:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T15:49:53:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T15:49:53:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T15:49:53:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T15:49:53:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T15:49:53:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T15:49:53:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T15:49:53:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T15:49:53:   clientVersion: '6.13.0',
+2025-08-24T15:49:53:   errorCode: undefined,
+2025-08-24T15:49:53:   retryable: undefined
+2025-08-24T15:49:53: }
+2025-08-24T15:49:53:  GET /api/rooms 500 in 518ms
+2025-08-24T16:12:12:  GET /api/ping 200 in 121ms
+2025-08-24T16:12:20:  ✓ Compiled /api/hotels in 60ms
+2025-08-24T16:12:21:  GET /api/hotels 200 in 708ms
+2025-08-24T16:16:10: 
+2025-08-24T16:16:10: > rsvshop@0.1.0 dev
+2025-08-24T16:16:10: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T16:16:10: 
+2025-08-24T16:16:12:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T16:16:15:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T16:16:15:   - Local:        http://localhost:4900
+2025-08-24T16:16:15:   - Environments: .env.local, .env
+2025-08-24T16:16:15: 
+2025-08-24T16:16:15:  ✓ Starting...
+2025-08-24T16:16:17:  ✓ Compiled in 648ms
+2025-08-24T16:16:17:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T16:16:17:  ✓ Ready in 2.6s
+2025-08-24T16:31:44:  ✓ Compiled /api/ping in 496ms
+2025-08-24T16:31:44:  GET /api/ping 200 in 829ms
+2025-08-24T16:31:52:  ○ Compiling / ...
+2025-08-24T16:32:05:  ✓ Compiled / in 12.8s
+2025-08-24T16:32:33:  GET /api/ping 200 in 291ms
+2025-08-24T16:32:34:  GET /api/ping 200 in 242ms
+2025-08-24T16:32:39:  ✓ Compiled /_not-found/page in 427ms
+2025-08-24T16:32:39:  GET /hotel-admin/inventory 404 in 598ms
+2025-08-24T16:32:44:  GET /api/ping 200 in 110ms
+2025-08-24T16:32:49:  ○ Compiling /hotel-admin ...
+2025-08-24T16:32:49:  ✓ Compiled /hotel-admin in 678ms
+2025-08-24T16:32:49:  GET /hotel-admin 200 in 1104ms
+2025-08-24T16:32:52:  ○ Compiling /hotel-admin/hotels ...
+2025-08-24T16:32:53:  ✓ Compiled /hotel-admin/hotels in 969ms
+2025-08-24T16:32:53:  ✓ Compiled /api/hotels in 90ms
+2025-08-24T16:32:54:  GET /api/hotels 200 in 547ms
+2025-08-24T16:32:54:  GET /api/hotels 200 in 108ms
+2025-08-24T16:32:54:  GET /api/ping 200 in 79ms
+2025-08-24T16:32:59:  GET /api/ping 200 in 69ms
+2025-08-24T16:33:04:  GET /api/ping 200 in 43ms
+2025-08-24T16:33:09:  GET /api/ping 200 in 87ms
+2025-08-24T16:33:14:  GET /api/ping 200 in 99ms
+2025-08-24T16:33:19:  GET /api/ping 200 in 91ms
+2025-08-24T16:33:20:  POST /api/hotels 201 in 60ms
+2025-08-24T16:33:20:  GET /api/hotels 200 in 126ms
+2025-08-24T16:33:25:  GET /api/ping 200 in 111ms
+2025-08-24T16:33:25:  GET /hotel-admin/inventory 404 in 181ms
+2025-08-24T16:33:31:  GET /api/ping 200 in 233ms
+2025-08-24T16:33:35:  GET /api/ping 200 in 51ms
+2025-08-24T16:33:40:  GET /api/ping 200 in 63ms
+2025-08-24T16:33:45:  GET /api/ping 200 in 81ms
+2025-08-24T16:33:50:  GET /api/ping 200 in 111ms
+2025-08-24T16:33:55:  GET /api/ping 200 in 63ms
+2025-08-24T16:34:00:  GET /api/ping 200 in 80ms
+2025-08-24T16:34:05:  GET /api/ping 200 in 48ms
+2025-08-24T16:34:10:  GET /api/ping 200 in 50ms
+2025-08-24T16:34:16:  GET /api/ping 200 in 247ms
+2025-08-24T16:34:20:  GET /api/ping 200 in 105ms
+2025-08-24T16:34:25:  GET /api/ping 200 in 81ms
+2025-08-24T16:34:30:  GET /api/ping 200 in 46ms
+2025-08-24T16:34:35:  GET /api/ping 200 in 76ms
+2025-08-24T16:34:40:  GET /api/ping 200 in 117ms
+2025-08-24T16:34:45:  GET /api/ping 200 in 51ms
+2025-08-24T16:34:50:  GET /api/ping 200 in 73ms
+2025-08-24T16:34:55:  GET /api/ping 200 in 88ms
+2025-08-24T16:35:01:  GET /api/ping 200 in 202ms
+2025-08-24T16:35:05:  GET /hotel-admin/inventory 404 in 159ms
+2025-08-24T16:35:06:  GET /api/ping 200 in 300ms
+2025-08-24T16:35:10:  GET /api/ping 200 in 187ms
+2025-08-24T16:35:12:  GET /hotel-admin/inventory 404 in 349ms
+2025-08-24T16:35:15:  GET /api/ping 200 in 128ms
+2025-08-24T16:35:20:  GET /api/ping 200 in 193ms
+2025-08-24T16:35:26:  GET /api/ping 200 in 202ms
+2025-08-24T16:35:31:  GET /api/ping 200 in 250ms
+2025-08-24T16:35:36:  GET /api/ping 200 in 231ms
+2025-08-24T16:35:40:  GET /api/ping 200 in 178ms
+2025-08-24T16:35:45:  GET /api/ping 200 in 156ms
+2025-08-24T16:35:50:  GET /api/ping 200 in 119ms
+2025-08-24T16:35:56:  GET /api/ping 200 in 249ms
+2025-08-24T16:35:58:  ○ Compiling /hotel-admin/hotels/[id]/inventory ...
+2025-08-24T16:35:58:  ✓ Compiled /hotel-admin/hotels/[id]/inventory in 939ms
+2025-08-24T16:35:59:  GET /hotel-admin/hotels/1/inventory 200 in 2177ms
+2025-08-24T16:36:00:  GET /api/ping 200 in 182ms
+2025-08-24T16:36:04:  GET /hotel-admin/hotels/1/inventory 200 in 197ms
+2025-08-24T16:36:05:  GET /api/ping 200 in 144ms
+2025-08-24T16:36:10:  GET /api/ping 200 in 188ms
+2025-08-24T16:36:15:  GET /api/ping 200 in 71ms
+2025-08-24T16:36:20:  GET /api/ping 200 in 78ms
+2025-08-24T16:36:25:  GET /api/ping 200 in 131ms
+2025-08-24T16:36:30:  GET /api/ping 200 in 45ms
+2025-08-24T16:36:35:  GET /api/ping 200 in 96ms
+2025-08-24T16:36:40:  GET /api/ping 200 in 101ms
+2025-08-24T16:36:44:  GET /hotel-admin/inventory 404 in 154ms
+2025-08-24T16:36:45:  ✓ Compiled /favicon.ico in 415ms
+2025-08-24T16:36:45:  GET /favicon.ico?favicon.45db1c09.ico 200 in 596ms
+2025-08-24T16:36:49:  GET /api/ping 200 in 109ms
+2025-08-24T16:36:54:  GET /api/ping 200 in 175ms
+2025-08-24T16:36:59:  GET /api/ping 200 in 105ms
+2025-08-24T16:37:04:  GET /api/ping 200 in 104ms
+2025-08-24T16:37:09:  GET /api/ping 200 in 51ms
+2025-08-24T16:37:14:  GET /api/ping 200 in 133ms
+2025-08-24T16:37:19:  GET /api/ping 200 in 201ms
+2025-08-24T16:37:24:  GET /api/ping 200 in 48ms
+2025-08-24T16:37:29:  GET /api/ping 200 in 182ms
+2025-08-24T16:37:34:  GET /api/ping 200 in 175ms
+2025-08-24T16:37:39:  GET /api/ping 200 in 67ms
+2025-08-24T16:37:44:  GET /api/ping 200 in 53ms
+2025-08-24T16:37:49:  GET /api/ping 200 in 82ms
+2025-08-24T16:37:54:  GET /api/ping 200 in 245ms
+2025-08-24T16:37:59:  GET /api/ping 200 in 137ms
+2025-08-24T16:38:04:  GET /api/ping 200 in 69ms
+2025-08-24T16:38:09:  GET /api/ping 200 in 142ms
+2025-08-24T16:38:14:  GET /api/ping 200 in 94ms
+2025-08-24T16:38:19:  GET /api/ping 200 in 232ms
+2025-08-24T16:38:24:  GET /api/ping 200 in 90ms
+2025-08-24T16:38:29:  GET /api/ping 200 in 114ms
+2025-08-24T16:38:34:  GET /api/ping 200 in 143ms
+2025-08-24T16:38:39:  GET /api/ping 200 in 406ms
+2025-08-24T16:38:44:  GET /api/ping 200 in 71ms
+2025-08-24T16:38:49:  GET /api/ping 200 in 61ms
+2025-08-24T16:38:54:  GET /api/ping 200 in 98ms
+2025-08-24T16:38:59:  GET /api/ping 200 in 75ms
+2025-08-24T16:39:04:  GET /api/ping 200 in 51ms
+2025-08-24T16:39:09:  GET /api/ping 200 in 73ms
+2025-08-24T16:39:14:  GET /api/ping 200 in 60ms
+2025-08-24T16:39:19:  GET /api/ping 200 in 129ms
+2025-08-24T16:39:24:  GET /api/ping 200 in 181ms
+2025-08-24T16:39:29:  GET /api/ping 200 in 265ms
+2025-08-24T16:39:34:  GET /api/ping 200 in 163ms
+2025-08-24T16:39:39:  GET /api/ping 200 in 180ms
+2025-08-24T16:39:44:  GET /api/ping 200 in 221ms
+2025-08-24T16:39:49:  GET /api/ping 200 in 435ms
+2025-08-24T16:39:54:  GET /api/ping 200 in 361ms
+2025-08-24T16:40:00:  GET /api/ping 200 in 1262ms
+2025-08-24T16:40:04:  GET /api/ping 200 in 504ms
+2025-08-24T16:40:09:  GET /api/ping 200 in 461ms
+2025-08-24T16:40:14:  GET /api/ping 200 in 152ms
+2025-08-24T16:40:19:  GET /api/ping 200 in 236ms
+2025-08-24T16:40:24:  GET /api/ping 200 in 337ms
+2025-08-24T16:40:29:  GET /api/ping 200 in 286ms
+2025-08-24T16:40:34:  GET /api/ping 200 in 266ms
+2025-08-24T16:40:39:  GET /api/ping 200 in 131ms
+2025-08-24T16:40:42:  ○ Compiling /_not-found/page ...
+2025-08-24T16:40:48:  GET /api/ping 200 in 3939ms
+2025-08-24T16:40:49:  GET /api/ping 200 in 262ms
+2025-08-24T16:40:50:  ✓ Compiled in 7.6s
+2025-08-24T16:40:50:  ✓ Compiled /_not-found/page in 8.2s
+2025-08-24T16:40:52:  ○ Compiling /hotel-admin/inventory ...
+2025-08-24T16:40:53:  ✓ Compiled /hotel-admin/inventory in 2.3s
+2025-08-24T16:40:55:  GET /api/ping 200 in 935ms
+2025-08-24T16:41:00:  GET /api/ping 200 in 740ms
+2025-08-24T16:41:01:  GET /hotel-admin/inventory 200 in 790ms
+2025-08-24T16:41:02:  GET /api/hotels 200 in 606ms
+2025-08-24T16:41:03:  GET /api/hotels 200 in 704ms
+2025-08-24T16:41:04:  GET /api/inventory/summary?date=2025-08-24 404 in 1066ms
+2025-08-24T16:41:04:  ○ Compiling /api/packages ...
+2025-08-24T16:41:08:  GET /api/inventory/summary?date=2025-08-24 404 in 4478ms
+2025-08-24T16:41:09:  GET /api/ping 200 in 2333ms
+2025-08-24T16:41:10:  ✓ Compiled /api/packages in 6s
+2025-08-24T16:41:11:  ✓ Compiled in 7.4s
+2025-08-24T16:41:11:  GET /api/packages 200 in 7752ms
+2025-08-24T16:41:12:  ✓ Compiled /hotel-admin/inventory in 108ms
+2025-08-24T16:41:24:  ✓ Compiled in 2.5s
+2025-08-24T16:41:24:  ○ Compiling /hotel-admin/inventory ...
+2025-08-24T16:41:24:  ✓ Compiled /hotel-admin/inventory in 796ms
+2025-08-24T16:41:26:  GET /hotel-admin/inventory 200 in 2134ms
+2025-08-24T16:41:27:  GET /favicon.ico?favicon.45db1c09.ico 200 in 515ms
+2025-08-24T16:41:27:  GET /api/hotels 200 in 401ms
+2025-08-24T16:41:27:  GET /api/hotels 200 in 296ms
+2025-08-24T16:41:27:  ✓ Compiled /api/inventory/summary in 242ms
+2025-08-24T16:41:28:  GET /api/inventory/summary?date=2025-08-24 200 in 1210ms
+2025-08-24T16:41:29:  GET /api/inventory/summary?date=2025-08-24 200 in 746ms
+2025-08-24T16:42:06:  GET /api/ping 200 in 396ms
+2025-08-24T16:42:14:  ○ Compiling /hotel-admin/inventory ...
+2025-08-24T16:42:15:  ✓ Compiled /hotel-admin/inventory in 1440ms
+2025-08-24T16:42:16:  ✓ Compiled in 3.1s
+2025-08-24T16:42:16:  ✓ Compiled /hotel-admin/inventory in 57ms
+2025-08-24T16:42:30:  ✓ Compiled in 752ms
+2025-08-24T16:42:30:  ✓ Compiled /hotel-admin/inventory in 60ms
+2025-08-24T16:42:42:  GET /hotel-admin/inventory 200 in 314ms
+2025-08-24T16:42:50:  GET /hotel-admin/inventory 200 in 446ms
+2025-08-24T16:43:05:  ○ Compiling /hotel-admin/inventory ...
+2025-08-24T16:43:05:  ✓ Compiled in 1228ms
+2025-08-24T16:43:05:  ✓ Compiled /hotel-admin/inventory in 1383ms
+2025-08-24T17:26:33:  GET /api/ping 200 in 1042ms
+2025-08-24T17:26:33:  GET /api/ping 200 in 605ms
+2025-08-24T17:26:33:  GET /hotel-admin/inventory 200 in 613ms
+2025-08-24T17:26:34:  GET /favicon.ico?favicon.45db1c09.ico 200 in 275ms
+2025-08-24T17:26:34:  GET /api/hotels 200 in 217ms
+2025-08-24T17:26:34:  GET /api/hotels 200 in 192ms
+2025-08-24T17:26:35:  GET /api/inventory/summary?date=2025-08-24 200 in 361ms
+2025-08-24T17:26:35:  GET /api/packages 200 in 244ms
+2025-08-24T17:26:35:  GET /api/inventory/summary?date=2025-08-24 200 in 443ms
+2025-08-24T17:26:39:  GET /api/ping 200 in 132ms
+2025-08-24T17:26:40:  ✓ Compiled /_not-found/page in 49ms
+2025-08-24T17:26:41:  GET /hotel-admin/discounts 404 in 291ms
+2025-08-24T17:26:43:  GET /hotel-admin/inventory 200 in 438ms
+2025-08-24T17:26:44:  GET /api/hotels 200 in 273ms
+2025-08-24T17:26:44:  GET /api/hotels 200 in 191ms
+2025-08-24T17:26:44:  GET /api/inventory/summary?date=2025-08-24 200 in 358ms
+2025-08-24T17:26:44:  GET /api/inventory/summary?date=2025-08-24 200 in 477ms
+2025-08-24T17:26:49:  GET /api/ping 200 in 131ms
+2025-08-24T17:26:49:  GET /api/ping 200 in 50ms
+2025-08-24T17:26:54:  GET /api/ping 200 in 168ms
+2025-08-24T17:26:55:  ✓ Compiled / in 74ms
+2025-08-24T17:26:55:  GET / 200 in 280ms
+2025-08-24T17:26:56:  GET /favicon.ico?favicon.45db1c09.ico 200 in 206ms
+2025-08-24T17:26:56:  ✓ Compiled /api/admin/stats in 119ms
+2025-08-24T17:26:56:  GET /api/admin/stats 200 in 408ms
+2025-08-24T17:26:56:  GET /api/admin/stats 200 in 432ms
+2025-08-24T17:26:57:  GET / 200 in 832ms
+2025-08-24T17:26:58:  GET /favicon.ico?favicon.45db1c09.ico 200 in 331ms
+2025-08-24T17:26:58:  GET /api/admin/stats 200 in 200ms
+2025-08-24T17:26:58:  GET /api/admin/stats 200 in 158ms
+2025-08-24T17:27:02:  GET /api/ping 200 in 96ms
+2025-08-24T17:27:07:  GET /api/ping 200 in 44ms
+2025-08-24T17:27:12:  GET /api/ping 200 in 77ms
+2025-08-24T17:27:17:  GET /api/ping 200 in 46ms
+2025-08-24T17:27:22:  GET /api/ping 200 in 101ms
+2025-08-24T17:27:23:  ○ Compiling /admin/packages ...
+2025-08-24T17:27:23:  ✓ Compiled /admin/packages in 767ms
+2025-08-24T17:27:24:  GET /admin/packages 200 in 1420ms
+2025-08-24T17:27:25:  GET /favicon.ico?favicon.45db1c09.ico 200 in 550ms
+2025-08-24T17:27:25:  ○ Compiling /api/rooms ...
+2025-08-24T17:27:26:  ✓ Compiled /api/rooms in 659ms
+2025-08-24T17:27:26:  GET /api/rooms 200 in 1097ms
+2025-08-24T17:27:29:  GET /api/ping 200 in 97ms
+2025-08-24T17:27:32:  GET /api/ping 200 in 233ms
+2025-08-24T17:27:37:  GET /api/ping 200 in 242ms
+2025-08-24T17:27:42:  GET /api/ping 200 in 99ms
+2025-08-24T17:27:47:  GET /api/ping 200 in 177ms
+2025-08-24T17:27:52:  GET /api/ping 200 in 73ms
+2025-08-24T17:27:57:  GET /api/ping 200 in 124ms
+2025-08-24T17:28:01:  ○ Compiling /admin/hotels ...
+2025-08-24T17:28:01:  ✓ Compiled /admin/hotels in 1075ms
+2025-08-24T17:28:02:  GET /admin/hotels 200 in 1811ms
+2025-08-24T17:28:03:  GET /api/ping 200 in 858ms
+2025-08-24T17:28:04:  GET /favicon.ico?favicon.45db1c09.ico 200 in 581ms
+2025-08-24T17:28:04:  ○ Compiling /api/admin/hotels ...
+2025-08-24T17:28:04: [호텔 API] GET 요청 시작
+2025-08-24T17:28:05: [호텔 API] DB 연결 성공
+2025-08-24T17:28:05: [호텔 API] GET 오류: PrismaClientValidationError: 
+2025-08-24T17:28:05: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T17:28:05: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:43
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05:   21 // 데이터베이스 연결 확인
+2025-08-24T17:28:05:   22 await prisma.$queryRaw`SELECT 1`;
+2025-08-24T17:28:05:   23 console.log('[호텔 API] DB 연결 성공');
+2025-08-24T17:28:05: → 24 const hotels = await prisma.hotel.findMany({
+2025-08-24T17:28:05:        where: {
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          ~~~~~~~~
+2025-08-24T17:28:05:      ?   AND?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   OR?: HotelWhereInput[],
+2025-08-24T17:28:05:      ?   NOT?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   id?: StringFilter | String,
+2025-08-24T17:28:05:      ?   name?: StringFilter | String,
+2025-08-24T17:28:05:      ?   address?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   phone?: StringFilter | String,
+2025-08-24T17:28:05:      ?   email?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   description?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   rating?: IntFilter | Int,
+2025-08-24T17:28:05:      ?   imageUrl?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   status?: EnumHotelStatusFilter | HotelStatus,
+2025-08-24T17:28:05:      ?   createdAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   updatedAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   discounts?: DiscountListRelationFilter,
+2025-08-24T17:28:05:      ?   rooms?: RoomListRelationFilter
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        select: {
+2025-08-24T17:28:05:          id: true,
+2025-08-24T17:28:05:          name: true,
+2025-08-24T17:28:05:          address: true,
+2025-08-24T17:28:05:          phone: true,
+2025-08-24T17:28:05:          email: true,
+2025-08-24T17:28:05:          description: true,
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          createdAt: true,
+2025-08-24T17:28:05:          _count: {
+2025-08-24T17:28:05:            select: {
+2025-08-24T17:28:05:              rooms: true,
+2025-08-24T17:28:05:              packages: true
+2025-08-24T17:28:05:            }
+2025-08-24T17:28:05:          }
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        orderBy: {
+2025-08-24T17:28:05:          createdAt: "desc"
+2025-08-24T17:28:05:        }
+2025-08-24T17:28:05:      })
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05: Unknown argument `isActive`. Available options are marked with ?.
+2025-08-24T17:28:05:     at _n (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:29:1363)
+2025-08-24T17:28:05:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7102)
+2025-08-24T17:28:05:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T17:28:05:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T17:28:05:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T17:28:05:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:24)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T17:28:05:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T17:28:05:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T17:28:05:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T17:28:05:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T17:28:05:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T17:28:05:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T17:28:05:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T17:28:05:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T17:28:05:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T17:28:05:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T17:28:05:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T17:28:05:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T17:28:05:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T17:28:05:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T17:28:05:   clientVersion: '6.13.0'
+2025-08-24T17:28:05: }
+2025-08-24T17:28:05:  GET /api/admin/hotels 500 in 1837ms
+2025-08-24T17:28:05: [호텔 API] GET 요청 시작
+2025-08-24T17:28:05: [호텔 API] DB 연결 성공
+2025-08-24T17:28:05: [호텔 API] GET 오류: PrismaClientValidationError: 
+2025-08-24T17:28:05: Invalid `prisma.hotel.findMany()` invocation in
+2025-08-24T17:28:05: /home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:43
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05:   21 // 데이터베이스 연결 확인
+2025-08-24T17:28:05:   22 await prisma.$queryRaw`SELECT 1`;
+2025-08-24T17:28:05:   23 console.log('[호텔 API] DB 연결 성공');
+2025-08-24T17:28:05: → 24 const hotels = await prisma.hotel.findMany({
+2025-08-24T17:28:05:        where: {
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          ~~~~~~~~
+2025-08-24T17:28:05:      ?   AND?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   OR?: HotelWhereInput[],
+2025-08-24T17:28:05:      ?   NOT?: HotelWhereInput | HotelWhereInput[],
+2025-08-24T17:28:05:      ?   id?: StringFilter | String,
+2025-08-24T17:28:05:      ?   name?: StringFilter | String,
+2025-08-24T17:28:05:      ?   address?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   phone?: StringFilter | String,
+2025-08-24T17:28:05:      ?   email?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   description?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   rating?: IntFilter | Int,
+2025-08-24T17:28:05:      ?   imageUrl?: StringNullableFilter | String | Null,
+2025-08-24T17:28:05:      ?   status?: EnumHotelStatusFilter | HotelStatus,
+2025-08-24T17:28:05:      ?   createdAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   updatedAt?: DateTimeFilter | DateTime,
+2025-08-24T17:28:05:      ?   discounts?: DiscountListRelationFilter,
+2025-08-24T17:28:05:      ?   rooms?: RoomListRelationFilter
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        select: {
+2025-08-24T17:28:05:          id: true,
+2025-08-24T17:28:05:          name: true,
+2025-08-24T17:28:05:          address: true,
+2025-08-24T17:28:05:          phone: true,
+2025-08-24T17:28:05:          email: true,
+2025-08-24T17:28:05:          description: true,
+2025-08-24T17:28:05:          isActive: true,
+2025-08-24T17:28:05:          createdAt: true,
+2025-08-24T17:28:05:          _count: {
+2025-08-24T17:28:05:            select: {
+2025-08-24T17:28:05:              rooms: true,
+2025-08-24T17:28:05:              packages: true
+2025-08-24T17:28:05:            }
+2025-08-24T17:28:05:          }
+2025-08-24T17:28:05:        },
+2025-08-24T17:28:05:        orderBy: {
+2025-08-24T17:28:05:          createdAt: "desc"
+2025-08-24T17:28:05:        }
+2025-08-24T17:28:05:      })
+2025-08-24T17:28:05: 
+2025-08-24T17:28:05: Unknown argument `isActive`. Available options are marked with ?.
+2025-08-24T17:28:05:     at _n (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:29:1363)
+2025-08-24T17:28:05:     at ri.handleRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:7102)
+2025-08-24T17:28:05:     at ri.handleAndLogRequestError (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6784)
+2025-08-24T17:28:05:     at ri.request (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:121:6491)
+2025-08-24T17:28:05:     at async l (/home/rsvshop/projects/rsvshop/node_modules/@prisma/client/runtime/library.js:130:9812)
+2025-08-24T17:28:05:     at async GET (/home/rsvshop/projects/rsvshop/.next/server/chunks/app_api_admin_hotels_route_ts_5d7a8d._.js:24:24)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+2025-08-24T17:28:05:     at async eT.execute (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+2025-08-24T17:28:05:     at async eT.handle (/home/rsvshop/projects/rsvshop/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+2025-08-24T17:28:05:     at async doRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1366:42)
+2025-08-24T17:28:05:     at async cacheEntry.responseCache.get.routeKind (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1588:28)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseWithComponentsImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1496:28)
+2025-08-24T17:28:05:     at async DevServer.renderPageComponent (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1924:24)
+2025-08-24T17:28:05:     at async DevServer.renderToResponseImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:1962:32)
+2025-08-24T17:28:05:     at async DevServer.pipeImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:922:25)
+2025-08-24T17:28:05:     at async NextNodeServer.handleCatchallRenderRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/next-server.js:272:17)
+2025-08-24T17:28:05:     at async DevServer.handleRequestImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/base-server.js:818:17)
+2025-08-24T17:28:05:     at async /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+2025-08-24T17:28:05:     at async Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:20)
+2025-08-24T17:28:05:     at async DevServer.handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+2025-08-24T17:28:05:     at async invokeRender (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:179:21)
+2025-08-24T17:28:05:     at async handleRequest (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:359:24)
+2025-08-24T17:28:05:     at async requestHandlerImpl (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/router-server.js:383:13)
+2025-08-24T17:28:05:     at async Server.requestListener (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:141:13) {
+2025-08-24T17:28:05:   clientVersion: '6.13.0'
+2025-08-24T17:28:05: }
+2025-08-24T17:28:05:  GET /api/admin/hotels 500 in 382ms
+2025-08-24T17:28:07:  GET /api/ping 200 in 432ms
+2025-08-24T17:28:09:  ✓ Compiled /api/admin/hotels in 5.8s
+2025-08-24T17:28:09:  GET /admin/calendar 200 in 5415ms
+2025-08-24T17:28:10:  GET /favicon.ico?favicon.45db1c09.ico 200 in 396ms
+2025-08-24T17:28:10:  ✓ Compiled /api/admin/reservations in 320ms
+2025-08-24T17:28:11:  GET /api/admin/reservations 200 in 1103ms
+2025-08-24T17:28:12:  GET /api/ping 200 in 81ms
+2025-08-24T17:28:14:  GET /api/ping 200 in 60ms
+2025-08-24T17:28:18:  GET /api/ping 200 in 115ms
+2025-08-24T17:28:19:  GET /api/ping 200 in 150ms
+2025-08-24T17:28:22:  GET /api/ping 200 in 90ms
+2025-08-24T17:28:27:  GET /api/ping 200 in 79ms
+2025-08-24T17:28:32:  GET /api/ping 200 in 48ms
+2025-08-24T17:28:37:  GET /api/ping 200 in 187ms
+2025-08-24T17:28:42:  GET /api/ping 200 in 354ms
+2025-08-24T17:28:47:  GET /api/ping 200 in 113ms
+2025-08-24T17:29:02:  GET /api/ping 200 in 287ms
+2025-08-24T17:29:03:  GET /api/ping 200 in 202ms
+2025-08-24T17:29:07:  GET /api/ping 200 in 175ms
+2025-08-24T17:29:09:  GET /shop 404 in 289ms
+2025-08-24T17:29:10:  GET /favicon.ico?favicon.45db1c09.ico 200 in 331ms
+2025-08-24T17:29:12:  GET /api/ping 200 in 274ms
+2025-08-24T17:29:17:  GET /api/ping 200 in 287ms
+2025-08-24T17:29:17:  GET /api/ping 200 in 239ms
+2025-08-24T17:29:20:  GET /api/ping 200 in 140ms
+2025-08-24T17:29:25:  GET /api/ping 200 in 197ms
+2025-08-24T17:29:30:  GET /api/ping 200 in 316ms
+2025-08-24T17:29:33:  GET /api/ping 200 in 80ms
+2025-08-24T17:29:38:  GET /api/ping 200 in 101ms
+2025-08-24T17:29:42:  ○ Compiling /_not-found/page ...
+2025-08-24T17:29:42:  ✓ Compiled in 1114ms
+2025-08-24T17:29:42:  ✓ Compiled in 0ms
+2025-08-24T17:29:43:  ✓ Compiled /_not-found/page in 1297ms
+2025-08-24T17:29:44:  GET /hotel-admin/inventory 200 in 1581ms
+2025-08-24T17:29:45:  GET /api/ping 200 in 1124ms
+2025-08-24T17:29:47:  GET /api/hotels 200 in 1263ms
+2025-08-24T17:29:47:  GET /favicon.ico?favicon.45db1c09.ico 200 in 1189ms
+2025-08-24T17:29:48:  GET /api/hotels 200 in 1267ms
+2025-08-24T17:29:49:  GET /api/inventory/summary?date=2025-08-24 200 in 1815ms
+2025-08-24T17:29:49:  GET /api/ping 200 in 906ms
+2025-08-24T17:29:50:  GET /api/inventory/summary?date=2025-08-24 200 in 986ms
+2025-08-24T17:29:52:  GET /admin/integrations 404 in 1991ms
+2025-08-24T17:29:54:  GET /api/ping 200 in 1244ms
+2025-08-24T17:29:59:  GET /api/ping 200 in 729ms
+2025-08-24T17:30:02:  GET /shop 404 in 1400ms
+2025-08-24T17:30:04:  GET /payment 404 in 530ms
+2025-08-24T17:30:09:  GET /api/ping 200 in 213ms
+2025-08-24T17:30:13:  GET /api/ping 200 in 155ms
+2025-08-24T17:30:18:  GET /api/ping 200 in 100ms
+2025-08-24T17:30:23:  GET /api/ping 200 in 159ms
+2025-08-24T17:30:29:  GET /api/ping 200 in 302ms
+2025-08-24T17:30:33:  ○ Compiling /admin ...
+2025-08-24T17:30:33:  GET /api/ping 200 in 348ms
+2025-08-24T17:30:37:  GET /api/ping 200 in 169ms
+2025-08-24T17:30:38:  GET /api/ping 200 in 314ms
+2025-08-24T17:30:52:  GET /api/ping 200 in 2840ms
+2025-08-24T17:30:53:  GET /api/ping 200 in 1266ms
+2025-08-24T17:30:53:  GET /api/ping 200 in 1256ms
+2025-08-24T17:30:53:  GET /api/ping 200 in 1394ms
+2025-08-24T17:30:54:  GET /hotel-admin/inventory 200 in 2768ms
+2025-08-24T17:30:59:  ✓ Compiled in 26.5s
+2025-08-24T17:31:01:  ✓ Compiled /admin in 28.3s
+2025-08-24T17:31:01:  GET /api/hotels 200 in 3554ms
+2025-08-24T17:31:03:  GET /api/ping 200 in 3003ms
+2025-08-24T17:31:03:  GET /admin 200 in 29787ms
+2025-08-24T17:31:05:  GET /api/inventory/summary?date=2025-08-24 200 in 1289ms
+2025-08-24T17:31:05:  GET /api/hotels 200 in 1454ms
+2025-08-24T17:31:05:  GET /hotel-admin/inventory 200 in 3512ms
+2025-08-24T17:31:05:  GET /hotel-admin/packages 200 in 3175ms
+2025-08-24T17:31:09:  GET /api/hotels 200 in 1441ms
+2025-08-24T17:31:09:  GET /favicon.ico?favicon.45db1c09.ico 200 in 1378ms
+2025-08-24T17:31:09:  GET /api/admin/stats 200 in 1264ms
+2025-08-24T17:31:10:  GET /api/ping 200 in 1667ms
+2025-08-24T17:31:11:  GET /api/hotels 200 in 1859ms
+2025-08-24T17:31:11:  GET /favicon.ico?favicon.45db1c09.ico 200 in 1868ms
+2025-08-24T17:31:11:  GET /api/inventory/summary?date=2025-08-24 200 in 2467ms
+2025-08-24T17:31:11:  GET /hotel-admin/packages 200 in 2416ms
+2025-08-24T17:31:12:  GET /api/admin/stats 200 in 2022ms
+2025-08-24T17:31:13:  GET /api/inventory/summary?date=2025-08-24 200 in 1405ms
+2025-08-24T17:31:14:  GET /api/ping 200 in 873ms
+2025-08-24T17:31:18:  GET /shop 404 in 531ms
+2025-08-24T17:31:19:  GET /api/ping 200 in 139ms
+2025-08-24T17:31:23:  GET /api/ping 200 in 98ms
+2025-08-24T17:31:26:  ○ Compiling /admin/hotels ...
+2025-08-24T17:31:26:  ✓ Compiled in 712ms
+2025-08-24T17:31:26:  ✓ Compiled /admin/hotels in 1615ms
+2025-08-24T17:31:29:  GET /api/ping 200 in 477ms
+2025-08-24T17:31:34:  GET /api/ping 200 in 743ms
+2025-08-24T17:31:40:  GET /api/ping 200 in 1142ms
+2025-08-24T17:31:40:  GET /shop 404 in 1353ms
+2025-08-24T17:31:43:  GET /api/ping 200 in 65ms
+2025-08-24T17:31:49:  GET /api/ping 200 in 199ms
+2025-08-24T17:31:53:  GET /api/ping 200 in 114ms
+2025-08-24T17:31:58:  GET /api/ping 200 in 82ms
+2025-08-24T17:32:03:  GET /api/ping 200 in 116ms
+2025-08-24T17:32:08:  GET /api/ping 200 in 123ms
+2025-08-24T17:32:12:  ○ Compiling /admin/reservations ...
+2025-08-24T17:32:15:  ✓ Compiled /admin/reservations in 2.6s
+2025-08-24T17:32:15:  GET /api/ping 200 in 1204ms
+2025-08-24T17:32:16:  ✓ Compiled /api/health/db in 309ms
+2025-08-24T17:32:16:  GET /api/packages 200 in 537ms
+2025-08-24T17:32:16:  GET /api/admin/reservations?limit=10 200 in 718ms
+2025-08-24T17:32:16:  GET /api/health/db 200 in 848ms
+2025-08-24T17:32:17:  GET /api/health/db 200 in 675ms
+2025-08-24T17:32:18:  GET /api/ping 200 in 176ms
+2025-08-24T17:32:18:  GET /api/ping 200 in 114ms
+2025-08-24T17:32:19:  GET /api/ping 200 in 209ms
+2025-08-24T17:32:23:  GET /api/ping 200 in 112ms
+2025-08-24T17:32:23:  GET /api/ping 200 in 215ms
+2025-08-24T17:34:07:  ✓ Compiled in 2.6s
+2025-08-24T17:34:33: 
+2025-08-24T17:34:33: > rsvshop@0.1.0 dev
+2025-08-24T17:34:33: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T17:34:33: 
+2025-08-24T17:34:37:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:34:44:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T17:34:44:   - Local:        http://localhost:4900
+2025-08-24T17:34:44:   - Environments: .env.local, .env
+2025-08-24T17:34:44: 
+2025-08-24T17:34:44:  ✓ Starting...
+2025-08-24T17:34:58:  ✓ Compiled in 2.9s
+2025-08-24T17:34:59:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:35:00:  ✓ Ready in 16.7s
+2025-08-24T17:35:02:  ○ Compiling /customer ...
+2025-08-24T17:35:40:  ✓ Compiled /customer in 38.7s
+2025-08-24T17:35:41:  GET /customer 200 in 40005ms
+2025-08-24T17:40:09:  ○ Compiling /api/ping ...
+2025-08-24T17:40:09:  ✓ Compiled /api/ping in 1364ms
+2025-08-24T17:40:10:  GET /api/ping 200 in 1561ms
+2025-08-24T17:40:10:  GET /api/ping 200 in 2359ms
+2025-08-24T17:40:11:  GET /api/ping 200 in 938ms
+2025-08-24T17:40:11:  GET /api/ping 200 in 447ms
+2025-08-24T17:40:11:  GET /api/ping 200 in 163ms
+2025-08-24T17:40:12:  GET /api/ping 200 in 187ms
+2025-08-24T17:40:15:  GET /api/ping 200 in 136ms
+2025-08-24T17:40:18:  ○ Compiling /admin ...
+2025-08-24T17:40:20:  GET /api/ping 200 in 254ms
+2025-08-24T17:40:21:  GET /api/ping 200 in 252ms
+2025-08-24T17:40:37: 
+2025-08-24T17:40:37: > rsvshop@0.1.0 dev
+2025-08-24T17:40:37: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T17:40:37: 
+2025-08-24T17:40:40:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:40:44:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T17:40:44:   - Local:        http://localhost:4900
+2025-08-24T17:40:44:   - Environments: .env.local, .env
+2025-08-24T17:40:44: 
+2025-08-24T17:40:44:  ✓ Starting...
+2025-08-24T17:40:48:  ✓ Compiled in 1244ms
+2025-08-24T17:40:50:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:40:50:  ✓ Ready in 7.4s
+2025-08-24T17:40:52:  ○ Compiling /admin/reservations ...
+2025-08-24T17:41:39:  ✓ Compiled /admin/reservations in 47.9s
+2025-08-24T17:41:42:  GET /admin/reservations 200 in 50613ms
+2025-08-24T17:41:44:  ○ Compiling /favicon.ico ...
+2025-08-24T17:41:49:  GET /favicon.ico?favicon.45db1c09.ico 200 in 5760ms
+2025-08-24T17:41:51:  GET /api/ping 200 in 4383ms
+2025-08-24T17:41:53:  ✓ Compiled /favicon.ico in 10s
+2025-08-24T17:41:54:  GET /api/admin/reservations?limit=10 200 in 10669ms
+2025-08-24T17:41:54:  GET /api/rooms 200 in 10733ms
+2025-08-24T17:41:54:  GET /api/packages 200 in 11033ms
+2025-08-24T17:41:54:  GET /api/health/db 200 in 11128ms
+2025-08-24T17:41:55:  GET /api/ping 200 in 3151ms
+2025-08-24T17:41:56:  GET / 200 in 3617ms
+2025-08-24T17:41:57:  GET /api/health/db 200 in 1633ms
+2025-08-24T17:41:57:  GET /api/ping 200 in 330ms
+2025-08-24T17:42:02:  GET /api/ping 200 in 403ms
+2025-08-24T17:42:07:  GET /api/ping 200 in 388ms
+2025-08-24T17:42:12:  GET /api/ping 200 in 624ms
+2025-08-24T17:42:17:  GET /api/ping 200 in 450ms
+2025-08-24T17:42:22:  GET /api/ping 200 in 485ms
+2025-08-24T17:42:27:  GET /api/ping 200 in 674ms
+2025-08-24T17:42:32:  GET /api/ping 200 in 301ms
+2025-08-24T17:42:37:  GET /api/ping 200 in 649ms
+2025-08-24T17:42:42:  GET /api/ping 200 in 229ms
+2025-08-24T17:42:47:  GET /api/ping 200 in 180ms
+2025-08-24T17:42:52:  GET /api/ping 200 in 164ms
+2025-08-24T17:42:57:  GET /api/ping 200 in 254ms
+2025-08-24T17:43:02:  GET /api/ping 200 in 89ms
+2025-08-24T17:43:07:  GET /api/ping 200 in 288ms
+2025-08-24T17:43:12:  GET /api/ping 200 in 292ms
+2025-08-24T17:43:17:  GET /api/ping 200 in 270ms
+2025-08-24T17:43:18:  ○ Compiling /admin/sales ...
+2025-08-24T17:43:18:  ✓ Compiled /admin/sales in 1433ms
+2025-08-24T17:43:20:  GET /favicon.ico?favicon.45db1c09.ico 200 in 693ms
+2025-08-24T17:43:22:  GET /api/ping 200 in 418ms
+2025-08-24T17:43:27:  GET /api/ping 200 in 547ms
+2025-08-24T17:43:33:  GET /api/ping 200 in 1106ms
+2025-08-24T17:43:37:  GET /api/ping 200 in 158ms
+2025-08-24T17:43:50:  GET /api/ping 200 in 307ms
+2025-08-24T17:43:52:  GET / 200 in 769ms
+2025-08-24T17:43:53:  GET /api/ping 200 in 256ms
+2025-08-24T17:43:58:  GET /api/ping 200 in 379ms
+2025-08-24T17:44:03:  GET /api/ping 200 in 259ms
+2025-08-24T17:44:08:  GET /api/ping 200 in 206ms
+2025-08-24T17:44:13:  GET /api/ping 200 in 267ms
+2025-08-24T17:44:20: 
+2025-08-24T17:44:20: > rsvshop@0.1.0 dev
+2025-08-24T17:44:20: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T17:44:20: 
+2025-08-24T17:44:23:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:44:27:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T17:44:27:   - Local:        http://localhost:4900
+2025-08-24T17:44:27:   - Environments: .env.local, .env
+2025-08-24T17:44:27: 
+2025-08-24T17:44:27:  ✓ Starting...
+2025-08-24T17:44:31:  ✓ Compiled in 1293ms
+2025-08-24T17:44:32:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:44:33:  ✓ Ready in 6.3s
+2025-08-24T17:44:33:  ○ Compiling /api/ping ...
+2025-08-24T17:44:33:  ✓ Compiled /api/ping in 677ms
+2025-08-24T17:44:34:  GET /api/ping 200 in 1214ms
+2025-08-24T17:44:34:  GET /api/ping 200 in 1617ms
+2025-08-24T17:44:38:  GET /api/ping 200 in 198ms
+2025-08-24T17:44:43:  GET /api/ping 200 in 384ms
+2025-08-24T17:44:49:  GET /api/ping 200 in 531ms
+2025-08-24T17:44:54:  GET /api/ping 200 in 644ms
+2025-08-24T17:44:59:  GET /api/ping 200 in 565ms
+2025-08-24T17:45:03:  GET /api/ping 200 in 234ms
+2025-08-24T17:45:08:  GET /api/ping 200 in 379ms
+2025-08-24T17:45:14:  GET /api/ping 200 in 519ms
+2025-08-24T17:45:19:  GET /api/ping 200 in 453ms
+2025-08-24T17:45:23:  GET /api/ping 200 in 422ms
+2025-08-24T17:45:29:  GET /api/ping 200 in 570ms
+2025-08-24T17:45:34:  GET /api/ping 200 in 485ms
+2025-08-24T17:45:38:  GET /api/ping 200 in 281ms
+2025-08-24T17:45:43:  GET /api/ping 200 in 308ms
+2025-08-24T17:45:49:  GET /api/ping 200 in 561ms
+2025-08-24T17:45:53:  GET /api/ping 200 in 306ms
+2025-08-24T17:45:58:  GET /api/ping 200 in 157ms
+2025-08-24T17:46:03:  GET /api/ping 200 in 264ms
+2025-08-24T17:46:08:  GET /api/ping 200 in 325ms
+2025-08-24T17:46:13:  GET /api/ping 200 in 140ms
+2025-08-24T17:46:18:  GET /api/ping 200 in 344ms
+2025-08-24T17:46:23:  GET /api/ping 200 in 388ms
+2025-08-24T17:46:29:  GET /api/ping 200 in 493ms
+2025-08-24T17:46:33:  GET /api/ping 200 in 380ms
+2025-08-24T17:46:38:  GET /api/ping 200 in 91ms
+2025-08-24T17:46:43:  GET /api/ping 200 in 103ms
+2025-08-24T17:46:48:  GET /api/ping 200 in 240ms
+2025-08-24T17:46:53:  GET /api/ping 200 in 238ms
+2025-08-24T17:46:58:  GET /api/ping 200 in 260ms
+2025-08-24T17:47:04:  GET /api/ping 200 in 640ms
+2025-08-24T17:47:08:  GET /api/ping 200 in 149ms
+2025-08-24T17:47:13:  GET /api/ping 200 in 132ms
+2025-08-24T17:47:18:  GET /api/ping 200 in 206ms
+2025-08-24T17:47:23:  GET /api/ping 200 in 169ms
+2025-08-24T17:47:28:  GET /api/ping 200 in 148ms
+2025-08-24T17:47:33:  GET /api/ping 200 in 141ms
+2025-08-24T17:47:38:  GET /api/ping 200 in 149ms
+2025-08-24T17:47:43:  GET /api/ping 200 in 164ms
+2025-08-24T17:47:48:  GET /api/ping 200 in 105ms
+2025-08-24T17:47:53:  GET /api/ping 200 in 97ms
+2025-08-24T17:47:58:  GET /api/ping 200 in 94ms
+2025-08-24T17:48:04:  GET /api/ping 200 in 615ms
+2025-08-24T17:48:08:  GET /api/ping 200 in 152ms
+2025-08-24T17:48:13:  GET /api/ping 200 in 287ms
+2025-08-24T17:48:18:  GET /api/ping 200 in 160ms
+2025-08-24T17:48:23:  GET /api/ping 200 in 349ms
+2025-08-24T17:48:29:  GET /api/ping 200 in 601ms
+2025-08-24T17:48:33:  GET /api/ping 200 in 450ms
+2025-08-24T17:48:38:  GET /api/ping 200 in 164ms
+2025-08-24T17:48:43:  GET /api/ping 200 in 214ms
+2025-08-24T17:48:48:  GET /api/ping 200 in 84ms
+2025-08-24T17:48:53:  GET /api/ping 200 in 93ms
+2025-08-24T17:49:01: 
+2025-08-24T17:49:01: > rsvshop@0.1.0 dev
+2025-08-24T17:49:01: > NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo
+2025-08-24T17:49:01: 
+2025-08-24T17:49:02:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:49:04:   ▲ Next.js 14.2.31 (turbo)
+2025-08-24T17:49:04:   - Local:        http://localhost:4900
+2025-08-24T17:49:04:   - Environments: .env.local, .env
+2025-08-24T17:49:04: 
+2025-08-24T17:49:04:  ✓ Starting...
+2025-08-24T17:49:06:  ✓ Compiled in 623ms
+2025-08-24T17:49:07:  ⚠ You are using a non-standard "NODE_ENV" value in your environment. This creates inconsistencies in the project and is strongly advised against. Read more: https://nextjs.org/docs/messages/non-standard-node-env
+2025-08-24T17:49:07:  ✓ Ready in 4s
+2025-08-24T17:49:08:  ✓ Compiled /api/ping in 487ms
+2025-08-24T17:49:08:  GET /api/ping 200 in 914ms
+2025-08-24T17:49:08:  GET /api/ping 200 in 115ms
+2025-08-24T17:49:13:  GET /api/ping 200 in 82ms
+2025-08-24T17:49:18:  GET /api/ping 200 in 165ms
+2025-08-24T17:49:23:  GET /api/ping 200 in 103ms
+2025-08-24T17:49:28:  GET /api/ping 200 in 109ms
+2025-08-24T17:49:33:  GET /api/ping 200 in 99ms
+2025-08-24T17:49:38:  GET /api/ping 200 in 129ms
+2025-08-24T17:49:43:  GET /api/ping 200 in 60ms
+2025-08-24T17:49:48:  GET /api/ping 200 in 157ms
+2025-08-24T17:49:53:  GET /api/ping 200 in 166ms
+2025-08-24T17:49:58:  GET /api/ping 200 in 67ms
+2025-08-24T17:50:03:  GET /api/ping 200 in 128ms
+2025-08-24T17:50:08:  GET /api/ping 200 in 72ms
+2025-08-24T17:50:13:  GET /api/ping 200 in 45ms
+2025-08-24T17:50:18:  GET /api/ping 200 in 75ms
+2025-08-24T17:50:23:  GET /api/ping 200 in 163ms
+2025-08-24T17:50:28:  GET /api/ping 200 in 76ms
+2025-08-24T17:50:33:  GET /api/ping 200 in 136ms
+2025-08-24T17:50:38:  GET /api/ping 200 in 93ms
+2025-08-24T17:50:43:  GET /api/ping 200 in 125ms
+2025-08-24T17:50:48:  GET /api/ping 200 in 99ms
+2025-08-24T17:50:50: [?25h

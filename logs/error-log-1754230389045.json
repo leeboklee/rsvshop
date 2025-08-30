@@ -1,0 +1,49 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "헬스체크 실패"
+    },
+    "timestamp": "2025-08-03T14:11:39.104Z",
+    "recoveryAttempts": 1
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T14:11:40.527Z"
+    },
+    "timestamp": "2025-08-03T14:11:40.528Z",
+    "recoveryAttempts": 2
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "헬스체크 실패"
+    },
+    "timestamp": "2025-08-03T14:12:09.236Z",
+    "recoveryAttempts": 3
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "헬스체크 실패"
+    },
+    "timestamp": "2025-08-03T14:12:39.129Z",
+    "recoveryAttempts": 4
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "헬스체크 실패"
+    },
+    "timestamp": "2025-08-03T14:13:09.044Z",
+    "recoveryAttempts": 5
+  }
+]

@@ -1,0 +1,1232 @@
+{
+  "timestamp": "2025-08-18T16:33:56.389Z",
+  "domAnalysis": {
+    "title": "RSVShop - 호텔 예약 시스템",
+    "url": "http://localhost:4900/admin",
+    "bodyLength": 27520,
+    "totalLinks": 19,
+    "totalButtons": 20,
+    "allLinks": [
+      {
+        "text": "RSVShop 관리자",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "text-xl font-bold text-gray-900",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex items-center gap-2",
+        "innerHTML": "RSVShop 관리자"
+      },
+      {
+        "text": "대시보드",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">대시보드</span>"
+      },
+      {
+        "text": "예약 관리",
+        "href": "http://localhost:4900/admin/reservations",
+        "getAttributeHref": "/admin/reservations",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">예약 관리</span>"
+      },
+      {
+        "text": "달력 뷰",
+        "href": "http://localhost:4900/admin/calendar",
+        "getAttributeHref": "/admin/calendar",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">달력 뷰</span>"
+      },
+      {
+        "text": "호텔 관리",
+        "href": "http://localhost:4900/admin/rooms",
+        "getAttributeHref": "/admin/rooms",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">호텔 관리</span>"
+      },
+      {
+        "text": "패키지 관리",
+        "href": "http://localhost:4900/admin/packages",
+        "getAttributeHref": "/admin/packages",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">패키지 관리</span>"
+      },
+      {
+        "text": "결제 관리",
+        "href": "http://localhost:4900/admin/payments",
+        "getAttributeHref": "/admin/payments",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">결제 관리</span>"
+      },
+      {
+        "text": "매출 관리",
+        "href": "http://localhost:4900/admin/sales",
+        "getAttributeHref": "/admin/sales",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">매출 관리</span>"
+      },
+      {
+        "text": "수수료 관리",
+        "href": "http://localhost:4900/admin/commission",
+        "getAttributeHref": "/admin/commission",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">수수료 관리</span>"
+      },
+      {
+        "text": "부가세 관리",
+        "href": "http://localhost:4900/admin/vat-management",
+        "getAttributeHref": "/admin/vat-management",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">부가세 관리</span>"
+      },
+      {
+        "text": "추가요금 규칙",
+        "href": "http://localhost:4900/admin/surcharge-rules",
+        "getAttributeHref": "/admin/surcharge-rules",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">추가요금 규칙</span>"
+      },
+      {
+        "text": "쇼핑몰 연동",
+        "href": "http://localhost:4900/admin/integrations/marketplaces",
+        "getAttributeHref": "/admin/integrations/marketplaces",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">쇼핑몰 연동</span>"
+      },
+      {
+        "text": "주문 목록 연동",
+        "href": "http://localhost:4900/admin/integrations/orders",
+        "getAttributeHref": "/admin/integrations/orders",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">주문 목록 연동</span>"
+      },
+      {
+        "text": "고객 관리",
+        "href": "http://localhost:4900/admin/customers",
+        "getAttributeHref": "/admin/customers",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">고객 관리</span>"
+      },
+      {
+        "text": "쇼핑몰 관리",
+        "href": "http://localhost:4900/admin/shopping-malls",
+        "getAttributeHref": "/admin/shopping-malls",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">쇼핑몰 관리</span>"
+      },
+      {
+        "text": "DB 관리",
+        "href": "http://localhost:4900/admin/database",
+        "getAttributeHref": "/admin/database",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">DB 관리</span>"
+      },
+      {
+        "text": "에러 모니터",
+        "href": "http://localhost:4900/admin/error-monitor",
+        "getAttributeHref": "/admin/error-monitor",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">에러 모니터</span>"
+      },
+      {
+        "text": "로그 뷰어",
+        "href": "http://localhost:4900/admin/logs",
+        "getAttributeHref": "/admin/logs",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">로그 뷰어</span>"
+      },
+      {
+        "text": "API 키",
+        "href": "http://localhost:4900/admin/api-keys",
+        "getAttributeHref": "/admin/api-keys",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">API 키</span>"
+      }
+    ],
+    "allButtons": [
+      {
+        "text": "대시보드",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">대시보드</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 10."
+      },
+      {
+        "text": "예약/객실",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">예약/객실</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 10"
+      },
+      {
+        "text": "매출/정산",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">매출/정산</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 10"
+      },
+      {
+        "text": "API 연동",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">API 연동</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 1"
+      },
+      {
+        "text": "고객/쇼핑몰",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">고객/쇼핑몰</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 1"
+      },
+      {
+        "text": "시스템",
+        "type": "button",
+        "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "mt-2",
+        "innerHTML": "<span class=\"tracking-wide\">시스템</span><svg class=\"w-4 h-4 transition-transform text-gray-700\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M5.23 7.21a.75.75 0 011.06.02L10 10.9"
+      },
+      {
+        "text": "🤖 AI 연결",
+        "type": "submit",
+        "className": "px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex space-x-3",
+        "innerHTML": "🤖 AI 연결"
+      },
+      {
+        "text": "📊 상태 보고",
+        "type": "submit",
+        "className": "px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex space-x-3",
+        "innerHTML": "📊 상태 보고"
+      },
+      {
+        "text": "🗄️ DB 확인",
+        "type": "submit",
+        "className": "px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex space-x-3",
+        "innerHTML": "🗄️ DB 확인"
+      },
+      {
+        "text": "📊대시보드",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">📊</span><span class=\"font-medium\">대시보드</span>"
+      },
+      {
+        "text": "📅예약 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">📅</span><span class=\"font-medium\">예약 관리</span>"
+      },
+      {
+        "text": "📆달력 뷰",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">📆</span><span class=\"font-medium\">달력 뷰</span>"
+      },
+      {
+        "text": "💰매출 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">💰</span><span class=\"font-medium\">매출 관리</span>"
+      },
+      {
+        "text": "🧾부가세 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">🧾</span><span class=\"font-medium\">부가세 관리</span>"
+      },
+      {
+        "text": "🏨호텔 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">🏨</span><span class=\"font-medium\">호텔 관리</span>"
+      },
+      {
+        "text": "🛍️쇼핑몰 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">🛍️</span><span class=\"font-medium\">쇼핑몰 관리</span>"
+      },
+      {
+        "text": "👥고객 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">👥</span><span class=\"font-medium\">고객 관리</span>"
+      },
+      {
+        "text": "🗄️DB 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">🗄️</span><span class=\"font-medium\">DB 관리</span>"
+      },
+      {
+        "text": "📋로그 뷰어",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">📋</span><span class=\"font-medium\">로그 뷰어</span>"
+      },
+      {
+        "text": "📦패키지 관리",
+        "type": "submit",
+        "className": "w-full flex items-center px-4 py-3 text-left rounded-lg transition-all duration-200 text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": false,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"text-lg mr-3\">📦</span><span class=\"font-medium\">패키지 관리</span>"
+      }
+    ],
+    "sidebar": {
+      "tagName": "ASIDE",
+      "className": "hidden md:block shrink-0 transition-all duration-200 w-64",
+      "id": "",
+      "children": [
+        {
+          "tagName": "DIV",
+          "className": "bg-white border rounded-lg p-2 h-full",
+          "textContent": "대시보드대시보드예약/객실예약 관리달력 뷰호텔 관리패키지 관리결제 관리매출/정산매출 관리수수료 관리부가세 관리추가요금 규칙API 연동쇼핑몰 연동주문 목록 연동고객/쇼핑몰고객 관리쇼핑"
+        }
+      ]
+    },
+    "nav": {
+      "tagName": "NAV",
+      "className": "bg-white shadow-sm border-b sticky top-0 z-30",
+      "id": "",
+      "children": [
+        {
+          "tagName": "DIV",
+          "className": "w-full px-3 sm:px-4 lg:px-6",
+          "textContent": "RSVShop 관리자"
+        }
+      ]
+    },
+    "adminLinks": [
+      {
+        "text": "RSVShop 관리자",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "text-xl font-bold text-gray-900",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex items-center gap-2",
+        "innerHTML": "RSVShop 관리자"
+      },
+      {
+        "text": "대시보드",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">대시보드</span>"
+      },
+      {
+        "text": "예약 관리",
+        "href": "http://localhost:4900/admin/reservations",
+        "getAttributeHref": "/admin/reservations",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">예약 관리</span>"
+      },
+      {
+        "text": "달력 뷰",
+        "href": "http://localhost:4900/admin/calendar",
+        "getAttributeHref": "/admin/calendar",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">달력 뷰</span>"
+      },
+      {
+        "text": "호텔 관리",
+        "href": "http://localhost:4900/admin/rooms",
+        "getAttributeHref": "/admin/rooms",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">호텔 관리</span>"
+      },
+      {
+        "text": "패키지 관리",
+        "href": "http://localhost:4900/admin/packages",
+        "getAttributeHref": "/admin/packages",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">패키지 관리</span>"
+      },
+      {
+        "text": "결제 관리",
+        "href": "http://localhost:4900/admin/payments",
+        "getAttributeHref": "/admin/payments",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">결제 관리</span>"
+      },
+      {
+        "text": "매출 관리",
+        "href": "http://localhost:4900/admin/sales",
+        "getAttributeHref": "/admin/sales",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">매출 관리</span>"
+      },
+      {
+        "text": "수수료 관리",
+        "href": "http://localhost:4900/admin/commission",
+        "getAttributeHref": "/admin/commission",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">수수료 관리</span>"
+      },
+      {
+        "text": "부가세 관리",
+        "href": "http://localhost:4900/admin/vat-management",
+        "getAttributeHref": "/admin/vat-management",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">부가세 관리</span>"
+      },
+      {
+        "text": "추가요금 규칙",
+        "href": "http://localhost:4900/admin/surcharge-rules",
+        "getAttributeHref": "/admin/surcharge-rules",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">추가요금 규칙</span>"
+      },
+      {
+        "text": "쇼핑몰 연동",
+        "href": "http://localhost:4900/admin/integrations/marketplaces",
+        "getAttributeHref": "/admin/integrations/marketplaces",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">쇼핑몰 연동</span>"
+      },
+      {
+        "text": "주문 목록 연동",
+        "href": "http://localhost:4900/admin/integrations/orders",
+        "getAttributeHref": "/admin/integrations/orders",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">주문 목록 연동</span>"
+      },
+      {
+        "text": "고객 관리",
+        "href": "http://localhost:4900/admin/customers",
+        "getAttributeHref": "/admin/customers",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">고객 관리</span>"
+      },
+      {
+        "text": "쇼핑몰 관리",
+        "href": "http://localhost:4900/admin/shopping-malls",
+        "getAttributeHref": "/admin/shopping-malls",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">쇼핑몰 관리</span>"
+      },
+      {
+        "text": "DB 관리",
+        "href": "http://localhost:4900/admin/database",
+        "getAttributeHref": "/admin/database",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">DB 관리</span>"
+      },
+      {
+        "text": "에러 모니터",
+        "href": "http://localhost:4900/admin/error-monitor",
+        "getAttributeHref": "/admin/error-monitor",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">에러 모니터</span>"
+      },
+      {
+        "text": "로그 뷰어",
+        "href": "http://localhost:4900/admin/logs",
+        "getAttributeHref": "/admin/logs",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">로그 뷰어</span>"
+      },
+      {
+        "text": "API 키",
+        "href": "http://localhost:4900/admin/api-keys",
+        "getAttributeHref": "/admin/api-keys",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">API 키</span>"
+      }
+    ],
+    "adminTextLinks": [
+      {
+        "text": "RSVShop 관리자",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "text-xl font-bold text-gray-900",
+        "id": "",
+        "visible": true,
+        "parentTag": "DIV",
+        "parentClass": "flex items-center gap-2",
+        "innerHTML": "RSVShop 관리자"
+      },
+      {
+        "text": "대시보드",
+        "href": "http://localhost:4900/admin",
+        "getAttributeHref": "/admin",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">대시보드</span>"
+      },
+      {
+        "text": "예약 관리",
+        "href": "http://localhost:4900/admin/reservations",
+        "getAttributeHref": "/admin/reservations",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">예약 관리</span>"
+      },
+      {
+        "text": "호텔 관리",
+        "href": "http://localhost:4900/admin/rooms",
+        "getAttributeHref": "/admin/rooms",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">호텔 관리</span>"
+      },
+      {
+        "text": "패키지 관리",
+        "href": "http://localhost:4900/admin/packages",
+        "getAttributeHref": "/admin/packages",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">패키지 관리</span>"
+      },
+      {
+        "text": "결제 관리",
+        "href": "http://localhost:4900/admin/payments",
+        "getAttributeHref": "/admin/payments",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">결제 관리</span>"
+      },
+      {
+        "text": "매출 관리",
+        "href": "http://localhost:4900/admin/sales",
+        "getAttributeHref": "/admin/sales",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">매출 관리</span>"
+      },
+      {
+        "text": "수수료 관리",
+        "href": "http://localhost:4900/admin/commission",
+        "getAttributeHref": "/admin/commission",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">수수료 관리</span>"
+      },
+      {
+        "text": "부가세 관리",
+        "href": "http://localhost:4900/admin/vat-management",
+        "getAttributeHref": "/admin/vat-management",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">부가세 관리</span>"
+      },
+      {
+        "text": "고객 관리",
+        "href": "http://localhost:4900/admin/customers",
+        "getAttributeHref": "/admin/customers",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">고객 관리</span>"
+      },
+      {
+        "text": "쇼핑몰 관리",
+        "href": "http://localhost:4900/admin/shopping-malls",
+        "getAttributeHref": "/admin/shopping-malls",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">쇼핑몰 관리</span>"
+      },
+      {
+        "text": "DB 관리",
+        "href": "http://localhost:4900/admin/database",
+        "getAttributeHref": "/admin/database",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">DB 관리</span>"
+      },
+      {
+        "text": "로그 뷰어",
+        "href": "http://localhost:4900/admin/logs",
+        "getAttributeHref": "/admin/logs",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">로그 뷰어</span>"
+      },
+      {
+        "text": "API 키",
+        "href": "http://localhost:4900/admin/api-keys",
+        "getAttributeHref": "/admin/api-keys",
+        "tagName": "A",
+        "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+        "id": "",
+        "visible": true,
+        "parentTag": "LI",
+        "parentClass": "",
+        "innerHTML": "<span class=\"inline whitespace-nowrap\">API 키</span>"
+      }
+    ]
+  },
+  "clickableElements": [
+    {
+      "tag": "a",
+      "text": "RSVShop 관리자",
+      "href": "http://localhost:4900/admin",
+      "className": "text-xl font-bold text-gray-900",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "DIV",
+        "class": "flex items-center gap-2"
+      }
+    },
+    {
+      "tag": "button",
+      "text": "대시보드",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "대시보드",
+      "href": "http://localhost:4900/admin",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "예약/객실",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "예약 관리",
+      "href": "http://localhost:4900/admin/reservations",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "달력 뷰",
+      "href": "http://localhost:4900/admin/calendar",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "호텔 관리",
+      "href": "http://localhost:4900/admin/rooms",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "패키지 관리",
+      "href": "http://localhost:4900/admin/packages",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "결제 관리",
+      "href": "http://localhost:4900/admin/payments",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "매출/정산",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "매출 관리",
+      "href": "http://localhost:4900/admin/sales",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "수수료 관리",
+      "href": "http://localhost:4900/admin/commission",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "부가세 관리",
+      "href": "http://localhost:4900/admin/vat-management",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "추가요금 규칙",
+      "href": "http://localhost:4900/admin/surcharge-rules",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "API 연동",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "쇼핑몰 연동",
+      "href": "http://localhost:4900/admin/integrations/marketplaces",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "주문 목록 연동",
+      "href": "http://localhost:4900/admin/integrations/orders",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "고객/쇼핑몰",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "고객 관리",
+      "href": "http://localhost:4900/admin/customers",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "쇼핑몰 관리",
+      "href": "http://localhost:4900/admin/shopping-malls",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "시스템",
+      "href": null,
+      "className": "w-full flex items-center justify-between px-2.5 py-2 rounded-md border text-xs transition-colors  bg-gray-50 border-gray-200 text-gray-800",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": "mt-2"
+      }
+    },
+    {
+      "tag": "a",
+      "text": "DB 관리",
+      "href": "http://localhost:4900/admin/database",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "에러 모니터",
+      "href": "http://localhost:4900/admin/error-monitor",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "로그 뷰어",
+      "href": "http://localhost:4900/admin/logs",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "a",
+      "text": "API 키",
+      "href": "http://localhost:4900/admin/api-keys",
+      "className": "flex items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-100",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "LI",
+        "class": ""
+      }
+    },
+    {
+      "tag": "button",
+      "text": "🤖 AI 연결",
+      "href": null,
+      "className": "px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "DIV",
+        "class": "flex space-x-3"
+      }
+    },
+    {
+      "tag": "button",
+      "text": "📊 상태 보고",
+      "href": null,
+      "className": "px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "DIV",
+        "class": "flex space-x-3"
+      }
+    },
+    {
+      "tag": "button",
+      "text": "🗄️ DB 확인",
+      "href": null,
+      "className": "px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium",
+      "id": "",
+      "visible": true,
+      "clickable": true,
+      "parent": {
+        "tag": "DIV",
+        "class": "flex space-x-3"
+      }
+    }
+  ]
+}

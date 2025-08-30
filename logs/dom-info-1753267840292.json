@@ -1,0 +1,130 @@
+{
+  "pageInfo": {
+    "title": "숙소 예약 시스템",
+    "url": "http://localhost:3900/",
+    "elements": {
+      "total": 40,
+      "divs": 6,
+      "spans": 4,
+      "images": 0,
+      "links": 2,
+      "buttons": 0,
+      "inputs": 0,
+      "forms": 0
+    }
+  },
+  "domSnapshot": {
+    "type": "element",
+    "tagName": "body",
+    "attributes": {
+      "class": "__className_e8ce0c bg-gradient-to-b from-blue-50 to-white min-h-screen"
+    },
+    "children": [
+      {
+        "type": "element",
+        "tagName": "main",
+        "attributes": {
+          "class": "min-h-screen flex flex-col items-center justify-center"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tagName": "div",
+            "attributes": {
+              "class": "flex flex-col items-center justify-center min-h-screen p-6 bg-gradient-to-b from-blue-50 to-white"
+            },
+            "children": [
+              {
+                "type": "truncated"
+              },
+              {
+                "type": "truncated"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {
+          "src": "/_next/static/chunks/webpack.js?v=1753267849270",
+          "async": ""
+        }
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "self.__next_f.push([1,\"1:HL[\\\"/_next/static/css/app/layout.css?v=1753267849270\\\",\\\"style\\\"]\\n0:\\\"$L2"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "self.__next_f.push([1,\"3:I[\\\"(app-pages-browser)/./node_modules/next/dist/client/components/app-rout"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "self.__next_f.push([1,\"t/components/render-from-template-context.js\\\",[\\\"app-pages-internals\\\",\\\"sta"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "self.__next_f.push([1,\"2:[[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/cs"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "script",
+        "attributes": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "self.__next_f.push([1,\"4:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"title\\\",\\\"1\\\",{\\\"c"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tagName": "next-route-announcer",
+        "attributes": {
+          "style": "position: absolute;"
+        }
+      }
+    ]
+  }
+}

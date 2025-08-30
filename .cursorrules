@@ -1,0 +1,75 @@
+# Cursor AI 안전 실행 규칙
+# RSVShop 프로젝트 전용 설정
+
+# 위험한 명령어 목록 (자동 거절)
+DANGEROUS_COMMANDS:
+  - "taskkill /f /im node.exe"
+  - "taskkill /f /im"
+  - "rm -rf"
+  - "rm -rf /"
+  - "format"
+  - "format C:"
+  - "del /s /q"
+  - "shutdown"
+  - "reboot"
+  - "init 0"
+  - "halt"
+
+# 안전한 명령어 목록 (자동 실행 허용)
+SAFE_COMMANDS:
+  - "npm run dev"
+  - "npm install"
+  - "npm run build"
+  - "npm start"
+  - "npx prisma generate"
+  - "npx prisma db push"
+  - "npx prisma migrate dev"
+  - "npx prisma migrate reset"
+  - "npx prisma studio"
+  - "curl"
+  - "netstat -ano"
+  - "taskkill /F /PID"
+  - "timeout"
+  - "echo"
+
+# 프로젝트별 특별 규칙
+PROJECT_SPECIFIC_RULES:
+  - "포트별 프로세스 종료만 허용 (taskkill /F /PID)"
+  - "전체 Node.js 프로세스 종료 금지"
+  - "데이터베이스 작업 시 --accept-data-loss 확인"
+  - "파일 삭제 전 백업 확인"
+  - "시스템 명령어 실행 전 사용자 승인"
+  - "포트 3900은 파트너 사이트나 호텔 재고 관리 사이트일 수 있음 - 자동 종료 금지"
+  - "프로젝트와 관련없는 포트(3900 등)는 사용자 확인 후에만 종료"
+
+# 개발 환경 보호
+ENVIRONMENT_PROTECTION:
+  - "다른 프로젝트의 Node.js 프로세스 보호"
+  - "시스템 파일 수정 금지"
+  - "환경 변수 변경 시 확인"
+  - "포트 충돌 시 안전한 해결 방법 사용"
+  - "포트 3900, 5990 등 다른 서비스 포트 보호"
+  - "파트너 사이트, 호텔 재고 관리 사이트 등 외부 서비스 보호"
+
+# 안전한 서버 재시작 방법
+SAFE_SERVER_RESTART:
+  1. "ss -tlnp | grep LISTEN" (모든 포트 확인)
+  2. "포트 4900만 RSVShop 프로젝트용 - 다른 포트는 건드리지 않음"
+  3. "taskkill /F /PID [특정PID]" (포트 4900의 프로세스만 종료)
+  4. "npm run dev" (서버 재시작)
+
+# 오류 해결 가이드
+TROUBLESHOOTING_GUIDE:
+  - "EADDRINUSE 오류: 포트별 프로세스 종료 사용"
+  - "Prisma 오류: npx prisma generate 실행"
+  - "캐시 문제: .next 폴더만 삭제"
+  - "모듈 오류: node_modules 재설치"
+  - "포트 3900 충돌: 파트너 사이트 확인 후 사용자 승인 필요"
+  - "포트 5990 충돌: 고객용 서버 확인 후 사용자 승인 필요"
+
+# 포트별 서비스 정보
+PORT_SERVICES:
+  - "포트 4900: RSVShop Admin 서버 (메인)"
+  - "포트 5990: RSVShop 고객용 서버"
+  - "포트 3900: 파트너 사이트 또는 호텔 재고 관리 사이트 (자동 종료 금지)"
+  - "포트 5432: PostgreSQL 데이터베이스 (자동 종료 금지)" 

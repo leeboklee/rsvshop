@@ -1,0 +1,12 @@
+[
+  {
+    "type": {
+      "message": "서버 프로세스 크래시",
+      "code": 4294967295,
+      "timestamp": "2025-08-04T03:07:39.951Z"
+    },
+    "details": {},
+    "timestamp": "2025-08-04T03:07:39.959Z",
+    "recoveryAttempts": 0
+  }
+]

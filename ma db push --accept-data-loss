@@ -1,0 +1,17 @@
+ column_name  |          data_type          
+--------------+-----------------------------
+ id           | text
+ userId       | text
+ totalAmount  | double precision
+ status       | USER-DEFINED
+ checkInDate  | timestamp without time zone
+ checkOutDate | timestamp without time zone
+ guestName    | text
+ guestPhone   | text
+ guestEmail   | text
+ notes        | text
+ createdAt    | timestamp without time zone
+ updatedAt    | timestamp without time zone
+ roomId       | text
+(13 rows)
+

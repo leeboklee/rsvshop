@@ -1,0 +1,57 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T19:06:59.965Z"
+    },
+    "timestamp": "2025-08-03T19:06:59.969Z",
+    "recoveryAttempts": 1
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T19:07:32.560Z"
+    },
+    "timestamp": "2025-08-03T19:07:32.561Z",
+    "recoveryAttempts": 2
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T19:08:05.869Z"
+    },
+    "timestamp": "2025-08-03T19:08:05.869Z",
+    "recoveryAttempts": 3
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T19:08:45.222Z"
+    },
+    "timestamp": "2025-08-03T19:08:45.222Z",
+    "recoveryAttempts": 4
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T19:09:20.723Z"
+    },
+    "timestamp": "2025-08-03T19:09:20.724Z",
+    "recoveryAttempts": 5
+  }
+]

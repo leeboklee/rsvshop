@@ -1,0 +1,341 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  password  String
+  name      String
+  role      Role      @default(USER)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  bookings  Booking[]
+  Order     Order[]
+}
+
+model Room {
+  id               String             @id @default(cuid())
+  name             String
+  description      String
+  imageUrl         String?
+  capacity         Int
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  hotelId          String?
+  bookings         Booking[]
+  inventory        Inventory[]
+  packages         Package[]
+  packageInventory PackageInventory[]
+  hotel            Hotel?             @relation(fields: [hotelId], references: [id])
+  surchargeRules   SurchargeRule[]
+}
+
+model Package {
+  id               String             @id @default(cuid())
+  name             String
+  description      String
+  price            Float
+  roomId           String
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  bookingItems     BookingItem[]
+  inventory        Inventory[]
+  room             Room               @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  packageInventory PackageInventory[]
+  reservations     Reservation[]
+  surchargeRules   SurchargeRule[]
+  vouchers         Voucher[]
+}
+
+model Inventory {
+  id          String   @id @default(cuid())
+  date        DateTime
+  roomId      String
+  packageId   String?
+  totalCount  Int
+  bookedCount Int      @default(0)
+  isBlocked   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  package     Package? @relation(fields: [packageId], references: [id])
+  room        Room     @relation(fields: [roomId], references: [id], onDelete: Cascade)
+
+  @@unique([date, roomId, packageId])
+}
+
+model Booking {
+  id            String        @id @default(cuid())
+  userId        String
+  totalAmount   Float
+  status        BookingStatus @default(PENDING)
+  checkInDate   DateTime
+  checkOutDate  DateTime
+  guestName     String
+  guestPhone    String
+  guestEmail    String?
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  roomId        String?
+  depositAmount Float?
+  externalId    String?
+  orderNumber   String?
+  sellingPrice  Float?
+  shoppingMall  String?
+  supplyPrice   Float?
+  room          Room?         @relation(fields: [roomId], references: [id])
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookingItems  BookingItem[]
+}
+
+model BookingItem {
+  id        String   @id @default(cuid())
+  bookingId String
+  packageId String
+  price     Float
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  booking   Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  package   Package  @relation(fields: [packageId], references: [id], onDelete: Cascade)
+}
+
+model Category {
+  id          String    @id
+  name        String    @unique
+  description String?
+  imageUrl    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime
+  Product     Product[]
+}
+
+model Order {
+  id               String      @id
+  userId           String?
+  orderNumber      String      @unique
+  status           OrderStatus @default(PENDING)
+  totalAmount      Float
+  customerName     String
+  customerEmail    String
+  customerPhone    String
+  shippingAddress  String?
+  notes            String?
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime
+  commissionAmount Float       @default(0)
+  discountAmount   Float       @default(0)
+  shippingAmount   Float       @default(0)
+  subtotalAmount   Float       @default(0)
+  taxAmount        Float       @default(0)
+  User             User?       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  OrderItem        OrderItem[]
+}
+
+model OrderItem {
+  id        String   @id
+  orderId   String
+  productId String
+  quantity  Int
+  price     Float
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  Order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  Product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+}
+
+model Product {
+  id             String      @id
+  name           String
+  description    String
+  price          Float
+  stock          Int         @default(0)
+  imageUrl       String?
+  categoryId     String
+  isActive       Boolean     @default(true)
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime
+  commissionRate Float       @default(0.1)
+  shippingFee    Float       @default(0)
+  taxRate        Float       @default(0.1)
+  OrderItem      OrderItem[]
+  Category       Category    @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+}
+
+/// Added for hotel/price management features
+model Hotel {
+  id           String        @id @default(cuid())
+  name         String
+  address      String?
+  phone        String
+  email        String?
+  description  String?
+  rating       Int           @default(5)
+  imageUrl     String?
+  status       HotelStatus   @default(ACTIVE)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  discounts    Discount[]
+  reservations Reservation[]
+  rooms        Room[]
+  vouchers     Voucher[]
+}
+
+model PackageInventory {
+  id        String   @id @default(cuid())
+  date      DateTime
+  roomId    String?
+  packageId String?
+  allotment Int      @default(0)
+  closed    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  package   Package? @relation(fields: [packageId], references: [id])
+  room      Room?    @relation(fields: [roomId], references: [id])
+
+  @@index([date])
+  @@index([roomId])
+  @@index([packageId])
+}
+
+model SurchargeRule {
+  id        String         @id @default(cuid())
+  scope     SurchargeScope @default(HOTEL)
+  roomId    String?
+  packageId String?
+  ruleType  SurchargeType  @default(FIXED)
+  amount    Int
+  startDate DateTime
+  endDate   DateTime
+  enabled   Boolean        @default(true)
+  priority  Int            @default(0)
+  dowMask   Int?
+  channel   String?
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+  package   Package?       @relation(fields: [packageId], references: [id])
+  room      Room?          @relation(fields: [roomId], references: [id])
+}
+
+/// Added for discount management
+model Discount {
+  id              String       @id @default(cuid())
+  hotelId         String
+  name            String
+  description     String?
+  discountType    DiscountType @default(PERCENTAGE)
+  amount          Float
+  minAmount       Float?
+  maxDiscount     Float?
+  startDate       DateTime
+  endDate         DateTime
+  enabled         Boolean      @default(true)
+  usageLimit      Int?
+  usedCount       Int          @default(0)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  isVisible       Boolean      @default(true)
+  visibleChannels String[]     @default([])
+  visibleFrom     DateTime?
+  visibleTo       DateTime?
+  hotel           Hotel        @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+}
+
+/// Voucher model for partner-supplied vouchers (e.g., home shopping purchases)
+model Voucher {
+  id               String        @id @default(cuid())
+  partner          String
+  partnerVoucherId String?       @unique
+  code             String        @unique
+  hotelId          String
+  packageId        String
+  status           VoucherStatus @default(UNUSED)
+  buyerName        String?
+  buyerEmail       String?
+  metadata         Json?
+  createdAt        DateTime      @default(now())
+  usedAt           DateTime?
+  reservation      Reservation?
+  hotel            Hotel         @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  package          Package       @relation(fields: [packageId], references: [id], onDelete: Cascade)
+}
+
+/// Reservation created when a voucher is redeemed or a direct booking is made
+model Reservation {
+  id           String            @id @default(cuid())
+  voucherId    String?           @unique
+  hotelId      String
+  packageId    String
+  guestName    String
+  guestPhone   String
+  guestEmail   String?
+  checkInDate  DateTime
+  checkOutDate DateTime
+  totalAmount  Float
+  status       ReservationStatus @default(PENDING)
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  hotel        Hotel             @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  package      Package           @relation(fields: [packageId], references: [id], onDelete: Cascade)
+  voucher      Voucher?          @relation(fields: [voucherId], references: [id])
+}
+
+enum VoucherStatus {
+  UNUSED
+  REDEEMED
+  EXPIRED
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum HotelStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum SurchargeType {
+  FIXED
+  PERCENT
+}
+
+enum SurchargeScope {
+  HOTEL
+  ROOM
+  PACKAGE
+}
+
+enum DiscountType {
+  PERCENTAGE
+  FIXED_AMOUNT
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "헬스체크 실패"
+    },
+    "timestamp": "2025-08-03T14:12:18.718Z",
+    "recoveryAttempts": 1
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T14:12:38.183Z"
+    },
+    "timestamp": "2025-08-03T14:12:38.227Z",
+    "recoveryAttempts": 2
+  }
+]

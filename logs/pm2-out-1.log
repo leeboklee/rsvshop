@@ -1,0 +1,2239 @@
+2025-08-26T10:22:57: 
+2025-08-26T10:22:57: > rsvshop@0.1.0 dev
+2025-08-26T10:22:57: > NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+2025-08-26T10:22:57: 
+2025-08-26T10:22:59: [33m[nodemon] 3.1.10[39m
+2025-08-26T10:22:59: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-08-26T10:22:59: [33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+2025-08-26T10:22:59: [33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+2025-08-26T10:22:59: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:23:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:23:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:23:24:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T10:23:24:   - Local:        http://localhost:4900
+2025-08-26T10:23:24:   - Environments: .env.local, .env
+2025-08-26T10:23:24:   - Experiments (use with caution):
+2025-08-26T10:23:24:     · turbo
+2025-08-26T10:23:24:     · webpackBuildWorker
+2025-08-26T10:23:24: 
+2025-08-26T10:23:24:  ✓ Starting...
+2025-08-26T10:23:37: 
+2025-08-26T10:23:37: > rsvshop@0.1.0 dev
+2025-08-26T10:23:37: > NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+2025-08-26T10:23:37: 
+2025-08-26T10:23:42: [33m[nodemon] 3.1.10[39m
+2025-08-26T10:23:42: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-08-26T10:23:42: [33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+2025-08-26T10:23:42: [33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+2025-08-26T10:23:42: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:24:00: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:24:01: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:24:23:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T10:24:23:   - Local:        http://localhost:4900
+2025-08-26T10:24:23:   - Environments: .env.local, .env
+2025-08-26T10:24:23:   - Experiments (use with caution):
+2025-08-26T10:24:23:     · turbo
+2025-08-26T10:24:23:     · webpackBuildWorker
+2025-08-26T10:24:23: 
+2025-08-26T10:24:23:  ✓ Starting...
+2025-08-26T10:24:28: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:24:29: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:24:52: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:24:52: [?25h
+2025-08-26T10:24:52: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:25:03: [?25h
+2025-08-26T10:25:03: 
+2025-08-26T10:25:04: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:25:44: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:25:44: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:25:53: [?25h
+2025-08-26T10:25:53: 
+2025-08-26T10:25:53: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:25:59: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:25:59: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:26:04: [?25h
+2025-08-26T10:26:04: 
+2025-08-26T10:26:04: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:26:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:26:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:26:20:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T10:26:20:   - Local:        http://localhost:4900
+2025-08-26T10:26:20:   - Environments: .env.local, .env
+2025-08-26T10:26:20:   - Experiments (use with caution):
+2025-08-26T10:26:20:     · turbo
+2025-08-26T10:26:20:     · webpackBuildWorker
+2025-08-26T10:26:20: 
+2025-08-26T10:26:20:  ✓ Starting...
+2025-08-26T10:26:24:  ✓ Compiled in 899ms
+2025-08-26T10:26:25:  ✓ Ready in 5.4s
+2025-08-26T10:26:27: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:26:27: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:26:31: [?25h
+2025-08-26T10:26:31: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:26:40: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:26:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:26:44: [?25h
+2025-08-26T10:26:44: 
+2025-08-26T10:26:44: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:27:12: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:27:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:27:17: [?25h
+2025-08-26T10:27:17: 
+2025-08-26T10:27:17: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:39:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:39:41: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:39:51: [?25h
+2025-08-26T10:39:51: 
+2025-08-26T10:39:51: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:40:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:40:08: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:40:17: [?25h
+2025-08-26T10:40:18: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:45:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:45:08: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:45:13: [?25h
+2025-08-26T10:45:13: 
+2025-08-26T10:45:14: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T10:45:33: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T10:45:33: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T10:45:39: [?25h
+2025-08-26T10:45:39: 
+2025-08-26T10:45:39: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T15:55:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T15:55:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T15:55:37: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T15:55:38: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T15:55:50: [?25h
+2025-08-26T15:55:50: 
+2025-08-26T15:55:51: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:09:12: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:09:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:09:27: [?25h
+2025-08-26T16:09:27: 
+2025-08-26T16:09:27: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:09:36: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:09:36: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:09:48: [?25h
+2025-08-26T16:09:48: 
+2025-08-26T16:09:48: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:09:56: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:09:56: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:10:09: [?25h
+2025-08-26T16:10:09: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:10:10: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:10:10: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:10:21: [?25h
+2025-08-26T16:10:21: 
+2025-08-26T16:10:21: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:23:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:23:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:23:49: [?25h
+2025-08-26T16:23:49: 
+2025-08-26T16:23:49: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:23:50: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:23:50: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:24:08: [?25h
+2025-08-26T16:24:08: 
+2025-08-26T16:24:08: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:24:18: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:24:18: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:24:37: [?25h
+2025-08-26T16:24:37: 
+2025-08-26T16:24:37: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:24:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:24:41: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:24:57:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T16:24:57:   - Local:        http://localhost:4900
+2025-08-26T16:24:57:   - Environments: .env.local, .env
+2025-08-26T16:24:57:   - Experiments (use with caution):
+2025-08-26T16:24:57:     · turbo
+2025-08-26T16:24:57:     · webpackBuildWorker
+2025-08-26T16:24:57: 
+2025-08-26T16:24:57:  ✓ Starting...
+2025-08-26T16:25:03:  ✓ Compiled in 1475ms
+2025-08-26T16:25:04:  ✓ Ready in 8.2s
+2025-08-26T16:26:03:  ○ Compiling /api/ping ...
+2025-08-26T16:26:04:  ✓ Compiled /api/ping in 1472ms
+2025-08-26T16:26:05:  GET /api/ping 200 in 2387ms
+2025-08-26T16:44:29:  GET /api/ping 200 in 644ms
+2025-08-26T16:44:34:  ○ Compiling /dashboard ...
+2025-08-26T16:44:34:  GET /api/ping 200 in 654ms
+2025-08-26T16:44:36:  GET /api/ping 200 in 434ms
+2025-08-26T16:44:44:  GET /api/ping 200 in 806ms
+2025-08-26T16:44:56:  GET /api/ping 200 in 1271ms
+2025-08-26T16:45:07:  GET /dashboard 200 in 33631ms
+2025-08-26T16:45:07:  GET /api/ping 200 in 718ms
+2025-08-26T16:45:10:  GET /favicon.ico?favicon.45db1c09.ico 200 in 2597ms
+2025-08-26T16:45:11:  GET /api/admin/stats 200 in 2593ms
+2025-08-26T16:45:13:  ✓ Compiled /dashboard in 39.8s
+2025-08-26T16:45:15:  GET /admin/reservations 200 in 12001ms
+2025-08-26T16:45:16:  ✓ Compiled /api/admin/reservations in 438ms
+2025-08-26T16:45:16:  GET /api/rooms 200 in 894ms
+2025-08-26T16:45:17:  GET /api/packages 200 in 938ms
+2025-08-26T16:45:17:  GET /api/packages 200 in 403ms
+2025-08-26T16:45:17:  GET /api/admin/reservations?limit=10 200 in 1410ms
+2025-08-26T16:45:17:  GET /api/health/db 200 in 1486ms
+2025-08-26T16:45:17:  GET /api/rooms 200 in 585ms
+2025-08-26T16:45:18:  GET /api/packages 200 in 632ms
+2025-08-26T16:45:18:  GET /api/rooms 200 in 628ms
+2025-08-26T16:45:18:  GET /api/packages 200 in 400ms
+2025-08-26T16:45:18:  GET /api/rooms 200 in 285ms
+2025-08-26T16:45:18:  GET /api/health/db 200 in 1114ms
+2025-08-26T16:45:27:  GET /api/ping 200 in 195ms
+2025-08-26T16:45:39:  GET /api/ping 200 in 136ms
+2025-08-26T16:45:51:  GET /api/ping 200 in 94ms
+2025-08-26T16:46:03:  GET /api/ping 200 in 226ms
+2025-08-26T16:46:15:  GET /api/ping 200 in 244ms
+2025-08-26T16:46:27:  GET /api/ping 200 in 152ms
+2025-08-26T16:46:39:  GET /api/ping 200 in 196ms
+2025-08-26T16:46:51:  GET /api/ping 200 in 149ms
+2025-08-26T16:47:03:  GET /api/ping 200 in 239ms
+2025-08-26T16:47:15:  GET /api/ping 200 in 198ms
+2025-08-26T16:47:26: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:47:26: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:47:34: [?25h
+2025-08-26T16:47:34: 
+2025-08-26T16:47:35: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:47:44: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:47:44: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:47:53:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T16:47:53:   - Local:        http://localhost:4900
+2025-08-26T16:47:53:   - Environments: .env.local, .env
+2025-08-26T16:47:53:   - Experiments (use with caution):
+2025-08-26T16:47:53:     · turbo
+2025-08-26T16:47:53:     · webpackBuildWorker
+2025-08-26T16:47:53: 
+2025-08-26T16:47:53:  ✓ Starting...
+2025-08-26T16:47:59:  ✓ Compiled in 1576ms
+2025-08-26T16:48:00:  ✓ Ready in 7.9s
+2025-08-26T16:48:00:  ○ Compiling /api/ping ...
+2025-08-26T16:48:01:  ✓ Compiled /api/ping in 586ms
+2025-08-26T16:48:01:  GET /api/ping 200 in 898ms
+2025-08-26T16:48:03:  GET /api/ping 200 in 239ms
+2025-08-26T16:48:15:  GET /api/ping 200 in 111ms
+2025-08-26T16:48:27:  GET /api/ping 200 in 148ms
+2025-08-26T16:48:39:  GET /api/ping 200 in 81ms
+2025-08-26T16:48:51:  GET /api/ping 200 in 127ms
+2025-08-26T16:49:03:  GET /api/ping 200 in 154ms
+2025-08-26T16:49:15:  GET /api/ping 200 in 169ms
+2025-08-26T16:49:27:  GET /api/ping 200 in 212ms
+2025-08-26T16:49:39:  GET /api/ping 200 in 135ms
+2025-08-26T16:49:51:  GET /api/ping 200 in 93ms
+2025-08-26T16:50:03:  GET /api/ping 200 in 107ms
+2025-08-26T16:50:15:  GET /api/ping 200 in 142ms
+2025-08-26T16:50:27:  GET /api/ping 200 in 84ms
+2025-08-26T16:50:39:  GET /api/ping 200 in 225ms
+2025-08-26T16:50:51:  GET /api/ping 200 in 115ms
+2025-08-26T16:51:03:  GET /api/ping 200 in 156ms
+2025-08-26T16:51:15:  GET /api/ping 200 in 131ms
+2025-08-26T16:51:27:  GET /api/ping 200 in 138ms
+2025-08-26T16:51:39:  GET /api/ping 200 in 188ms
+2025-08-26T16:51:51:  GET /api/ping 200 in 266ms
+2025-08-26T16:52:03:  GET /api/ping 200 in 81ms
+2025-08-26T16:52:15:  GET /api/ping 200 in 114ms
+2025-08-26T16:52:27:  GET /api/ping 200 in 138ms
+2025-08-26T16:52:39:  GET /api/ping 200 in 96ms
+2025-08-26T16:52:51:  GET /api/ping 200 in 205ms
+2025-08-26T16:53:07:  ○ Compiling /admin/reservations ...
+2025-08-26T16:53:15:  GET /api/ping 200 in 503ms
+2025-08-26T16:53:27:  GET /api/ping 200 in 512ms
+2025-08-26T16:53:35:  ✓ Compiled /admin/reservations in 28.8s
+2025-08-26T16:53:37:  GET /admin/reservations 200 in 30324ms
+2025-08-26T16:53:38:  ○ Compiling /favicon.ico ...
+2025-08-26T16:53:40:  ✓ Compiled /favicon.ico in 2s
+2025-08-26T16:53:40:  GET /api/rooms 200 in 2037ms
+2025-08-26T16:53:40:  GET /api/packages 200 in 2127ms
+2025-08-26T16:53:41:  GET /favicon.ico?favicon.45db1c09.ico 200 in 3489ms
+2025-08-26T16:53:41:  GET /api/health/db 200 in 3459ms
+2025-08-26T16:53:41:  GET /api/rooms 200 in 1769ms
+2025-08-26T16:53:41:  GET /api/admin/reservations?limit=10 200 in 3853ms
+2025-08-26T16:53:42:  GET /api/packages 200 in 1812ms
+2025-08-26T16:53:42:  GET /api/rooms 200 in 801ms
+2025-08-26T16:53:42:  GET /api/packages 200 in 702ms
+2025-08-26T16:53:43:  GET /api/health/db 200 in 1371ms
+2025-08-26T16:53:43:  GET /api/rooms 200 in 351ms
+2025-08-26T16:53:43:  GET /api/packages 200 in 303ms
+2025-08-26T16:53:49:  GET /api/ping 200 in 468ms
+2025-08-26T16:54:01:  GET /api/ping 200 in 121ms
+2025-08-26T16:54:13:  GET /api/ping 200 in 475ms
+2025-08-26T16:54:25:  GET /api/ping 200 in 392ms
+2025-08-26T16:54:37:  GET /api/ping 200 in 99ms
+2025-08-26T16:54:49:  GET /api/ping 200 in 86ms
+2025-08-26T16:55:01:  GET /api/ping 200 in 179ms
+2025-08-26T16:55:13:  GET /api/ping 200 in 537ms
+2025-08-26T16:55:53: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:55:54: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:56:06: [?25h
+2025-08-26T16:56:06: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:56:31: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:56:31: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:56:47: [?25h
+2025-08-26T16:56:47: 
+2025-08-26T16:56:48: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T16:56:59: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T16:56:59: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T16:57:12: [?25h
+2025-08-26T16:57:12: 
+2025-08-26T16:57:12: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:03:39: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:03:39: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:03:49: [?25h
+2025-08-26T17:03:49: 
+2025-08-26T17:03:49: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:04:15: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:04:15: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:04:22: [?25h
+2025-08-26T17:04:22: 
+2025-08-26T17:04:22: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:04:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:04:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:04:45:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:04:45:   - Local:        http://localhost:4900
+2025-08-26T17:04:45:   - Environments: .env.local, .env
+2025-08-26T17:04:45:   - Experiments (use with caution):
+2025-08-26T17:04:45:     · turbo
+2025-08-26T17:04:45:     · webpackBuildWorker
+2025-08-26T17:04:45: 
+2025-08-26T17:04:45:  ✓ Starting...
+2025-08-26T17:04:45: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:04:45: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:04:53:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:04:53:   - Local:        http://localhost:4900
+2025-08-26T17:04:53:   - Environments: .env.local, .env
+2025-08-26T17:04:53:   - Experiments (use with caution):
+2025-08-26T17:04:53:     · turbo
+2025-08-26T17:04:53:     · webpackBuildWorker
+2025-08-26T17:04:53: 
+2025-08-26T17:04:53:  ✓ Starting...
+2025-08-26T17:04:59:  ✓ Compiled in 994ms
+2025-08-26T17:04:59:  ✓ Ready in 7.5s
+2025-08-26T17:18:40:  ○ Compiling /admin/reservations ...
+2025-08-26T17:18:57:  GET /api/ping 200 in 7885ms
+2025-08-26T17:19:01:  GET /api/ping 200 in 333ms
+2025-08-26T17:19:13:  GET /api/ping 200 in 450ms
+2025-08-26T17:19:13:  ✓ Compiled /admin/reservations in 33.8s
+2025-08-26T17:19:15:  GET /admin/reservations 200 in 35748ms
+2025-08-26T17:19:17:  ○ Compiling /favicon.ico ...
+2025-08-26T17:19:19:  ✓ Compiled /favicon.ico in 2.4s
+2025-08-26T17:19:19:  GET /api/rooms 200 in 2362ms
+2025-08-26T17:19:19:  GET /api/packages 200 in 2691ms
+2025-08-26T17:19:20:  GET /favicon.ico?favicon.45db1c09.ico 200 in 3712ms
+2025-08-26T17:19:21:  GET /api/rooms 200 in 1754ms
+2025-08-26T17:19:21:  GET /api/admin/reservations?limit=10 200 in 4306ms
+2025-08-26T17:19:21:  GET /api/packages 200 in 1599ms
+2025-08-26T17:19:21:  GET /api/health/db 200 in 4374ms
+2025-08-26T17:19:21:  GET /api/rooms 200 in 515ms
+2025-08-26T17:19:22:  GET /api/packages 200 in 563ms
+2025-08-26T17:19:22:  GET /api/rooms 200 in 571ms
+2025-08-26T17:19:22:  GET /api/packages 200 in 354ms
+2025-08-26T17:19:22:  GET /api/health/db 200 in 1055ms
+2025-08-26T17:19:27:  GET /api/ping 200 in 91ms
+2025-08-26T17:19:39:  GET /api/ping 200 in 75ms
+2025-08-26T17:21:11:  GET /api/ping 200 in 630ms
+2025-08-26T17:21:15:  GET /api/ping 200 in 236ms
+2025-08-26T17:21:27:  GET /api/ping 200 in 258ms
+2025-08-26T17:21:39:  GET /api/ping 200 in 309ms
+2025-08-26T17:21:51:  GET /api/ping 200 in 159ms
+2025-08-26T17:22:03:  GET /api/ping 200 in 341ms
+2025-08-26T17:22:15:  GET /api/ping 200 in 104ms
+2025-08-26T17:22:27:  GET /api/ping 200 in 184ms
+2025-08-26T17:22:39:  GET /api/ping 200 in 192ms
+2025-08-26T17:22:51:  GET /api/ping 200 in 131ms
+2025-08-26T17:23:03:  GET /api/ping 200 in 222ms
+2025-08-26T17:23:15:  GET /api/ping 200 in 193ms
+2025-08-26T17:23:27:  GET /api/ping 200 in 174ms
+2025-08-26T17:23:39:  GET /api/ping 200 in 109ms
+2025-08-26T17:23:51:  GET /api/ping 200 in 149ms
+2025-08-26T17:24:03:  GET /api/ping 200 in 296ms
+2025-08-26T17:24:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:24:05: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:24:13: [?25h
+2025-08-26T17:24:13: 
+2025-08-26T17:24:13: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:24:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:24:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:24:42: [?25h
+2025-08-26T17:24:42: 
+2025-08-26T17:24:43: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:24:44: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:24:44: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:24:51: [?25h
+2025-08-26T17:24:51: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:38:18: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:38:18: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:38:25:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:38:25:   - Local:        http://localhost:4900
+2025-08-26T17:38:25:   - Environments: .env.local, .env
+2025-08-26T17:38:25:   - Experiments (use with caution):
+2025-08-26T17:38:25:     · turbo
+2025-08-26T17:38:25:     · webpackBuildWorker
+2025-08-26T17:38:25: 
+2025-08-26T17:38:25:  ✓ Starting...
+2025-08-26T17:38:26: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:38:26: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:38:33:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:38:33:   - Local:        http://localhost:4900
+2025-08-26T17:38:33:   - Environments: .env.local, .env
+2025-08-26T17:38:33:   - Experiments (use with caution):
+2025-08-26T17:38:33:     · turbo
+2025-08-26T17:38:33:     · webpackBuildWorker
+2025-08-26T17:38:33: 
+2025-08-26T17:38:33:  ✓ Starting...
+2025-08-26T17:38:37:  ✓ Compiled in 1070ms
+2025-08-26T17:38:38:  ✓ Ready in 5.5s
+2025-08-26T17:38:40:  ✓ Compiled /api/ping in 404ms
+2025-08-26T17:38:40:  GET /api/ping 200 in 677ms
+2025-08-26T17:38:52:  GET /api/ping 200 in 101ms
+2025-08-26T17:39:04:  GET /api/ping 200 in 95ms
+2025-08-26T17:39:16:  GET /api/ping 200 in 139ms
+2025-08-26T17:39:27:  GET /api/ping 200 in 68ms
+2025-08-26T17:39:40:  GET /api/ping 200 in 156ms
+2025-08-26T17:39:51:  GET /api/ping 200 in 98ms
+2025-08-26T17:40:04:  GET /api/ping 200 in 91ms
+2025-08-26T17:40:15:  GET /api/ping 200 in 90ms
+2025-08-26T17:40:28:  GET /api/ping 200 in 133ms
+2025-08-26T17:40:39:  GET /api/ping 200 in 71ms
+2025-08-26T17:40:51:  GET /api/ping 200 in 78ms
+2025-08-26T17:41:04:  GET /api/ping 200 in 206ms
+2025-08-26T17:41:07:  ○ Compiling /admin/reservations ...
+2025-08-26T17:41:16:  GET /api/ping 200 in 150ms
+2025-08-26T17:41:22:  ✓ Compiled /admin/reservations in 16.1s
+2025-08-26T17:41:24:  GET /admin/reservations 200 in 16546ms
+2025-08-26T17:41:25:  ○ Compiling /favicon.ico ...
+2025-08-26T17:41:25:  ✓ Compiled /favicon.ico in 711ms
+2025-08-26T17:41:25:  GET /favicon.ico?favicon.45db1c09.ico 200 in 982ms
+2025-08-26T17:41:26:  GET /api/health/db 200 in 1172ms
+2025-08-26T17:41:26:  GET /api/health/db 200 in 449ms
+2025-08-26T17:41:36:  GET /api/ping 200 in 196ms
+2025-08-26T17:41:48:  GET /api/ping 200 in 215ms
+2025-08-26T17:42:00:  GET /api/ping 200 in 185ms
+2025-08-26T17:42:12:  GET /api/ping 200 in 112ms
+2025-08-26T17:42:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:42:17: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:42:24:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:42:24:   - Local:        http://localhost:4900
+2025-08-26T17:42:25:   - Environments: .env.local, .env
+2025-08-26T17:42:25:   - Experiments (use with caution):
+2025-08-26T17:42:25:     · turbo
+2025-08-26T17:42:25:     · webpackBuildWorker
+2025-08-26T17:42:25: 
+2025-08-26T17:42:25:  ✓ Starting...
+2025-08-26T17:42:29:  ✓ Compiled in 991ms
+2025-08-26T17:42:30:  ✓ Ready in 6.7s
+2025-08-26T17:42:31:  ○ Compiling /api/ping ...
+2025-08-26T17:42:31:  ✓ Compiled /api/ping in 882ms
+2025-08-26T17:42:31:  GET /api/ping 200 in 1240ms
+2025-08-26T17:42:36:  GET /api/ping 200 in 343ms
+2025-08-26T17:42:39: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:42:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:42:48: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:42:49: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:42:58:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T17:42:58:   - Local:        http://localhost:4900
+2025-08-26T17:42:58:   - Environments: .env.local, .env
+2025-08-26T17:42:58:   - Experiments (use with caution):
+2025-08-26T17:42:58:     · turbo
+2025-08-26T17:42:58:     · webpackBuildWorker
+2025-08-26T17:42:58: 
+2025-08-26T17:42:58:  ✓ Starting...
+2025-08-26T17:43:03:  ✓ Compiled in 896ms
+2025-08-26T17:43:03:  ✓ Ready in 6.5s
+2025-08-26T17:44:18:  ○ Compiling /api/ping ...
+2025-08-26T17:44:19:  ✓ Compiled /api/ping in 1671ms
+2025-08-26T17:44:20:  GET /api/ping 200 in 2573ms
+2025-08-26T17:44:22:  ○ Compiling /admin/reservations ...
+2025-08-26T17:44:24:  GET /api/ping 200 in 198ms
+2025-08-26T17:44:36:  GET /api/ping 200 in 509ms
+2025-08-26T17:44:51:  GET /api/ping 200 in 3080ms
+2025-08-26T17:45:01:  GET /api/ping 200 in 1565ms
+2025-08-26T17:45:09:  ✓ Compiled /admin/reservations in 47.7s
+2025-08-26T17:45:13:  GET /admin/reservations 200 in 52339ms
+2025-08-26T17:45:16:  ○ Compiling /favicon.ico ...
+2025-08-26T17:45:21:  GET /api/packages 200 in 5622ms
+2025-08-26T17:45:21:  ✓ Compiled /favicon.ico in 6.1s
+2025-08-26T17:45:22:  GET /api/rooms 200 in 6141ms
+2025-08-26T17:45:23:  GET /favicon.ico?favicon.45db1c09.ico 200 in 7385ms
+2025-08-26T17:45:23:  GET /api/packages 200 in 1601ms
+2025-08-26T17:45:23:  GET /api/rooms 200 in 1338ms
+2025-08-26T17:45:23:  GET /api/admin/reservations?limit=10 200 in 7613ms
+2025-08-26T17:45:23:  GET /api/health/db 200 in 7705ms
+2025-08-26T17:45:24:  GET /api/packages 200 in 1404ms
+2025-08-26T17:45:24:  GET /api/rooms 200 in 1397ms
+2025-08-26T17:45:25:  GET /api/packages 200 in 577ms
+2025-08-26T17:45:25:  GET /api/rooms 200 in 423ms
+2025-08-26T17:45:25:  GET /api/health/db 200 in 1792ms
+2025-08-26T17:45:26:  GET /api/ping 200 in 467ms
+2025-08-26T17:45:38:  GET /api/ping 200 in 298ms
+2025-08-26T17:45:45: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:45:45: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:45:53: [?25h
+2025-08-26T17:45:53: 
+2025-08-26T17:45:53: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:45:55: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:45:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:46:03: [?25h
+2025-08-26T17:46:03: 
+2025-08-26T17:46:03: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:54:13: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:54:13: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:54:24: [?25h
+2025-08-26T17:54:24: 
+2025-08-26T17:54:24: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:54:52: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:54:52: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:55:00: [?25h
+2025-08-26T17:55:00: 
+2025-08-26T17:55:01: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:55:02: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:55:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:55:09: [?25h
+2025-08-26T17:55:09: 
+2025-08-26T17:55:09: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:59:25: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:59:25: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:59:37: [?25h
+2025-08-26T17:59:37: 
+2025-08-26T17:59:37: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:59:43: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:59:43: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T17:59:50: [?25h
+2025-08-26T17:59:50: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T17:59:56: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T17:59:56: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:00:05: [?25h
+2025-08-26T18:00:05: 
+2025-08-26T18:00:05: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:00:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:00:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:00:20: [?25h
+2025-08-26T18:00:20: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:00:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:00:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:00:34: [?25h
+2025-08-26T18:00:34: 
+2025-08-26T18:00:35: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:01:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:01:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:01:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:01:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:01:48:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T18:01:48:   - Local:        http://localhost:4900
+2025-08-26T18:01:48:   - Environments: .env.local, .env
+2025-08-26T18:01:48:   - Experiments (use with caution):
+2025-08-26T18:01:48:     · turbo
+2025-08-26T18:01:48:     · webpackBuildWorker
+2025-08-26T18:01:48: 
+2025-08-26T18:01:48:  ✓ Starting...
+2025-08-26T18:01:53:  ✓ Compiled in 1019ms
+2025-08-26T18:01:54:  ✓ Ready in 7.3s
+2025-08-26T18:02:27:  ○ Compiling /api/admin/reservations ...
+2025-08-26T18:02:28:  ✓ Compiled /api/admin/reservations in 1681ms
+2025-08-26T18:02:29:  GET /api/ping 200 in 1995ms
+2025-08-26T18:02:29:  POST /api/admin/reservations 201 in 2982ms
+2025-08-26T18:02:34:  ○ Compiling /api/admin/reservations/[id] ...
+2025-08-26T18:02:34:  ✓ Compiled /api/admin/reservations/[id] in 726ms
+2025-08-26T18:02:37: [예약 상태 업데이트] 시작
+2025-08-26T18:02:37: [예약 상태 업데이트] 예약 ID: cmesbie9i0002uetissgmaj1w
+2025-08-26T18:02:37: [예약 상태 업데이트] 요청 본문: { status: 'CONFIRMED' }
+2025-08-26T18:02:37: [예약 상태 업데이트] 변경할 상태: CONFIRMED
+2025-08-26T18:02:37: [예약 상태 업데이트] DB 업데이트 시도...
+2025-08-26T18:02:38: [예약 상태 업데이트] DB 업데이트 성공: {
+2025-08-26T18:02:38:   id: 'cmesbie9i0002uetissgmaj1w',
+2025-08-26T18:02:38:   userId: 'cmesbie8y0000uetitqkl42my',
+2025-08-26T18:02:38:   roomId: null,
+2025-08-26T18:02:38:   totalAmount: 0,
+2025-08-26T18:02:38:   status: 'CONFIRMED',
+2025-08-26T18:02:38:   checkInDate: 2025-08-27T00:00:00.000Z,
+2025-08-26T18:02:38:   checkOutDate: 2025-08-31T00:00:00.000Z,
+2025-08-26T18:02:38:   guestName: '222',
+2025-08-26T18:02:38:   guestPhone: '2',
+2025-08-26T18:02:38:   guestEmail: null,
+2025-08-26T18:02:38:   notes: null,
+2025-08-26T18:02:38:   shoppingMall: null,
+2025-08-26T18:02:38:   orderNumber: '222',
+2025-08-26T18:02:38:   externalId: null,
+2025-08-26T18:02:38:   sellingPrice: null,
+2025-08-26T18:02:38:   depositAmount: null,
+2025-08-26T18:02:38:   supplyPrice: null,
+2025-08-26T18:02:38:   createdAt: 2025-08-26T09:02:29.814Z,
+2025-08-26T18:02:38:   updatedAt: 2025-08-26T09:02:38.526Z
+2025-08-26T18:02:38: }
+2025-08-26T18:02:38:  PATCH /api/admin/reservations/cmesbie9i0002uetissgmaj1w 200 in 4587ms
+2025-08-26T18:02:39:  GET /api/ping 200 in 352ms
+2025-08-26T18:02:51:  GET /api/ping 200 in 139ms
+2025-08-26T18:03:03:  GET /api/ping 200 in 129ms
+2025-08-26T18:03:15:  GET /api/ping 200 in 272ms
+2025-08-26T18:03:27:  GET /api/ping 200 in 133ms
+2025-08-26T18:03:39:  GET /api/ping 200 in 144ms
+2025-08-26T18:03:51:  GET /api/ping 200 in 136ms
+2025-08-26T18:04:03:  GET /api/ping 200 in 423ms
+2025-08-26T18:04:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:04:08: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:04:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:04:18: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:04:25: [?25h
+2025-08-26T18:04:26: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:09:18: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:09:18: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:09:32: [?25h
+2025-08-26T18:09:32: 
+2025-08-26T18:09:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:10:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:10:08: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:10:14: [?25h
+2025-08-26T18:10:14: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:10:45: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:10:45: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:10:53: [?25h
+2025-08-26T18:10:53: 
+2025-08-26T18:10:53: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:57:02: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:57:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:57:24: [?25h
+2025-08-26T18:57:24: 
+2025-08-26T18:57:24: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T18:57:27: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:57:27: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:57:43:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T18:57:43:   - Local:        http://localhost:4900
+2025-08-26T18:57:43:   - Environments: .env.local, .env
+2025-08-26T18:57:43:   - Experiments (use with caution):
+2025-08-26T18:57:43:     · turbo
+2025-08-26T18:57:43:     · webpackBuildWorker
+2025-08-26T18:57:43: 
+2025-08-26T18:57:43:  ✓ Starting...
+2025-08-26T18:57:49:  ✓ Compiled in 1584ms
+2025-08-26T18:57:50:  ✓ Ready in 8.8s
+2025-08-26T18:57:51:  ○ Compiling /api/ping ...
+2025-08-26T18:57:51:  ✓ Compiled /api/ping in 884ms
+2025-08-26T18:57:52:  GET /api/ping 200 in 1639ms
+2025-08-26T18:57:52:  POST /api/admin/reservations 500 in 1851ms
+2025-08-26T18:57:55:  GET /api/ping 200 in 462ms
+2025-08-26T18:58:06:  GET /api/ping 200 in 602ms
+2025-08-26T18:58:54: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:58:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:59:02:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T18:59:02:   - Local:        http://localhost:4900
+2025-08-26T18:59:02:   - Environments: .env.local, .env
+2025-08-26T18:59:02:   - Experiments (use with caution):
+2025-08-26T18:59:02:     · turbo
+2025-08-26T18:59:02:     · webpackBuildWorker
+2025-08-26T18:59:02: 
+2025-08-26T18:59:02:  ✓ Starting...
+2025-08-26T18:59:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T18:59:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T18:59:15: [?25h
+2025-08-26T18:59:15: 
+2025-08-26T18:59:15: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:05:16: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:05:16: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:05:32: [?25h
+2025-08-26T19:05:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:05:46: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:05:46: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:05:57: [?25h
+2025-08-26T19:05:57: 
+2025-08-26T19:05:57: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:06:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:06:08: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:06:19: [?25h
+2025-08-26T19:06:19: 
+2025-08-26T19:06:19: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:09:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:09:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:09:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:09:50: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:10:04: [?25h
+2025-08-26T19:10:04: 
+2025-08-26T19:10:05: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:23:10: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:23:10: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:23:27: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:23:27: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:23:47: [?25h
+2025-08-26T19:23:47: 
+2025-08-26T19:23:47: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:27:15: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:27:15: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:27:23: [?25h
+2025-08-26T19:27:23: 
+2025-08-26T19:27:23: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:27:37: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:27:37: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:27:45: [?25h
+2025-08-26T19:27:45: 
+2025-08-26T19:27:46: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:27:54: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:27:54: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:28:08: [?25h
+2025-08-26T19:28:08: 
+2025-08-26T19:28:08: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:28:09: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:28:09: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:28:27: [?25h
+2025-08-26T19:28:27: 
+2025-08-26T19:28:28: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:28:45: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:28:45: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:29:01: [?25h
+2025-08-26T19:29:02: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:29:07: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:29:07: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:29:23: [?25h
+2025-08-26T19:29:23: 
+2025-08-26T19:29:23: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:29:31: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:29:31: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:29:50: [?25h
+2025-08-26T19:29:51: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:29:52: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:29:52: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:29:59: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:30:00: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:30:25: [?25h
+2025-08-26T19:30:25: 
+2025-08-26T19:30:25: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:30:56: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:30:56: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:31:32: [?25h
+2025-08-26T19:31:32: 
+2025-08-26T19:31:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:31:55: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:31:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:32:21: [?25h
+2025-08-26T19:32:21: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:32:25: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:32:25: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:32:55:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T19:32:55:   - Local:        http://localhost:4900
+2025-08-26T19:32:55:   - Environments: .env.local, .env
+2025-08-26T19:32:55:   - Experiments (use with caution):
+2025-08-26T19:32:55:     · turbo
+2025-08-26T19:32:55:     · webpackBuildWorker
+2025-08-26T19:32:55: 
+2025-08-26T19:32:55:  ✓ Starting...
+2025-08-26T19:33:16:  ✓ Compiled in 5.8s
+2025-08-26T19:33:20:  ✓ Ready in 28.2s
+2025-08-26T19:33:52: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:33:54: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:34:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:34:18: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:34:41:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T19:34:41:   - Local:        http://localhost:4900
+2025-08-26T19:34:41:   - Environments: .env.local, .env
+2025-08-26T19:34:41:   - Experiments (use with caution):
+2025-08-26T19:34:41:     · turbo
+2025-08-26T19:34:41:     · webpackBuildWorker
+2025-08-26T19:34:41: 
+2025-08-26T19:34:41:  ✓ Starting...
+2025-08-26T19:34:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:34:42: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:35:07: [?25h
+2025-08-26T19:35:08: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:35:12: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:35:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:35:39:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T19:35:39:   - Local:        http://localhost:4900
+2025-08-26T19:35:39:   - Environments: .env.local, .env
+2025-08-26T19:35:39:   - Experiments (use with caution):
+2025-08-26T19:35:39:     · turbo
+2025-08-26T19:35:39:     · webpackBuildWorker
+2025-08-26T19:35:39: 
+2025-08-26T19:35:39:  ✓ Starting...
+2025-08-26T19:35:40: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:35:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:36:01: [?25h
+2025-08-26T19:36:01: 
+2025-08-26T19:36:02: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:46:33: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:46:33: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:47:01: [?25h
+2025-08-26T19:47:01: 
+2025-08-26T19:47:02: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:54:42: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:54:42: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:54:56: [?25h
+2025-08-26T19:54:56: 
+2025-08-26T19:54:56: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:55:04: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:55:04: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:55:23: [?25h
+2025-08-26T19:55:24: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:55:48: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:55:48: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:56:06: [?25h
+2025-08-26T19:56:07: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:56:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:56:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:56:31: [?25h
+2025-08-26T19:56:31: 
+2025-08-26T19:56:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:57:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:57:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:57:33: [?25h
+2025-08-26T19:57:33: 
+2025-08-26T19:57:34: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:58:03: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:58:03: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:58:28:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T19:58:28:   - Local:        http://localhost:4900
+2025-08-26T19:58:28:   - Environments: .env.local, .env
+2025-08-26T19:58:28:   - Experiments (use with caution):
+2025-08-26T19:58:28:     · turbo
+2025-08-26T19:58:28:     · webpackBuildWorker
+2025-08-26T19:58:28: 
+2025-08-26T19:58:28:  ✓ Starting...
+2025-08-26T19:58:47:  ✓ Compiled in 4.7s
+2025-08-26T19:58:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:58:50: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:59:04: [?25h
+2025-08-26T19:59:04: 
+2025-08-26T19:59:04: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T19:59:22: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T19:59:22: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T19:59:32: [?25h
+2025-08-26T19:59:32: 
+2025-08-26T19:59:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:00:02: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:00:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:00:20: [?25h
+2025-08-26T20:00:20: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:00:40: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:00:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:00:57:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T20:00:57:   - Local:        http://localhost:4900
+2025-08-26T20:00:57:   - Environments: .env.local, .env
+2025-08-26T20:00:57:   - Experiments (use with caution):
+2025-08-26T20:00:57:     · turbo
+2025-08-26T20:00:57:     · webpackBuildWorker
+2025-08-26T20:00:57: 
+2025-08-26T20:00:57:  ✓ Starting...
+2025-08-26T20:01:11: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:01:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:01:27: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:01:28: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:01:51: [?25h
+2025-08-26T20:01:52: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:02:32: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:02:32: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:02:54:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T20:02:54:   - Local:        http://localhost:4900
+2025-08-26T20:02:54:   - Environments: .env.local, .env
+2025-08-26T20:02:54:   - Experiments (use with caution):
+2025-08-26T20:02:54:     · turbo
+2025-08-26T20:02:54:     · webpackBuildWorker
+2025-08-26T20:02:54: 
+2025-08-26T20:02:54:  ✓ Starting...
+2025-08-26T20:03:01: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:03:01: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:03:17: [?25h
+2025-08-26T20:03:17: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:05:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:05:41: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:06:06: [?25h
+2025-08-26T20:06:06: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:16:07: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:16:07: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:16:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:16:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:16:57: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:16:58: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:17:17: [?25h
+2025-08-26T20:17:17: 
+2025-08-26T20:17:17: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:18:55: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:18:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:19:13: [?25h
+2025-08-26T20:19:13: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:20:20: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:20:20: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:20:37: [?25h
+2025-08-26T20:20:37: 
+2025-08-26T20:20:37: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:20:53: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:20:53: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:21:05: [?25h
+2025-08-26T20:21:06: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:21:12: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:21:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:21:21: [?25h
+2025-08-26T20:21:21: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:21:28: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:21:28: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:21:42: [?25h
+2025-08-26T20:21:42: 
+2025-08-26T20:21:42: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:22:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:22:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:22:43: [?25h
+2025-08-26T20:22:43: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:25:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:25:05: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:25:25: [?25h
+2025-08-26T20:25:26: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:25:55: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:25:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:26:17: [?25h
+2025-08-26T20:26:18: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:26:21: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:26:21: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:26:46: [?25h
+2025-08-26T20:26:46: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:26:53: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:26:53: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:27:22: [?25h
+2025-08-26T20:27:22: 
+2025-08-26T20:27:23: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:27:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:27:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:28:08: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:28:09: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:28:37: [?25h
+2025-08-26T20:28:38: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:28:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:28:49: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:29:22: [?25h
+2025-08-26T20:29:22: 
+2025-08-26T20:29:23: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:29:38: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:29:38: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:30:11: [?25h
+2025-08-26T20:30:11: 
+2025-08-26T20:30:11: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:30:12: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:30:46: [?25h
+2025-08-26T20:30:46: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:30:46: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:30:46: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:31:10: [?25h
+2025-08-26T20:31:10: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:31:20: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:31:20: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:31:29: [?25h
+2025-08-26T20:31:29: 
+2025-08-26T20:31:29: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:37:19: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:37:19: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:37:25: [?25h
+2025-08-26T20:37:25: 
+2025-08-26T20:37:25: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:38:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:38:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:39:01: [?25h
+2025-08-26T20:39:01: 
+2025-08-26T20:39:02: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:39:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:39:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:39:52: [?25h
+2025-08-26T20:39:52: 
+2025-08-26T20:39:52: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:40:00: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:40:00: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:40:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:40:07: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:40:46:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T20:40:46:   - Local:        http://localhost:4900
+2025-08-26T20:40:46:   - Environments: .env.local, .env
+2025-08-26T20:40:46:   - Experiments (use with caution):
+2025-08-26T20:40:46:     · turbo
+2025-08-26T20:40:46:     · webpackBuildWorker
+2025-08-26T20:40:46: 
+2025-08-26T20:40:46:  ✓ Starting...
+2025-08-26T20:41:00: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:41:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:41:40: [?25h
+2025-08-26T20:41:40: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:42:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:42:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:42:33: [?25h
+2025-08-26T20:42:34: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:42:51: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:42:51: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:43:25: [?25h
+2025-08-26T20:43:26: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:45:10: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:45:10: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:45:30: [?25h
+2025-08-26T20:45:30: 
+2025-08-26T20:45:30: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:46:21: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:46:21: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:46:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:46:25: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:46:42: [?25h
+2025-08-26T20:46:42: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T20:47:26: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T20:47:26: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T20:47:34: [?25h
+2025-08-26T20:47:34: 
+2025-08-26T20:47:34: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:27:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:27:17: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:27:27:   ▲ Next.js 14.2.31 (turbo)
+2025-08-26T21:27:27:   - Local:        http://localhost:4900
+2025-08-26T21:27:27:   - Environments: .env.local, .env
+2025-08-26T21:27:27:   - Experiments (use with caution):
+2025-08-26T21:27:27:     · turbo
+2025-08-26T21:27:27:     · webpackBuildWorker
+2025-08-26T21:27:27: 
+2025-08-26T21:27:27:  ✓ Starting...
+2025-08-26T21:27:33:  ✓ Compiled in 1526ms
+2025-08-26T21:27:34:  ✓ Ready in 9.2s
+2025-08-26T21:27:43: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:27:44: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:27:51: [?25h
+2025-08-26T21:27:52: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:28:10: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:28:10: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:28:18: [?25h
+2025-08-26T21:28:18: 
+2025-08-26T21:28:18: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:28:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:28:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:28:44: [?25h
+2025-08-26T21:28:44: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:28:58: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:28:58: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:29:06: [?25h
+2025-08-26T21:29:06: 
+2025-08-26T21:29:06: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:29:29: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:29:29: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:29:37: [?25h
+2025-08-26T21:29:37: 
+2025-08-26T21:29:37: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:30:39: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:30:39: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:30:48: [?25h
+2025-08-26T21:30:48: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:33:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:33:17: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:33:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:33:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:33:33: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:33:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:33:45: [?25h
+2025-08-26T21:33:45: 
+2025-08-26T21:33:45: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:38:35: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:38:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:38:43: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:38:43: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:38:49: [?25h
+2025-08-26T21:38:49: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:38:59: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:38:59: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:39:11: [?25h
+2025-08-26T21:39:11: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:41:19: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:41:19: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:41:51: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:41:52: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:42:12: [?25h
+2025-08-26T21:42:12: 
+2025-08-26T21:42:12: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:55:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:55:49: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:56:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:56:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:56:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:56:07: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:56:23: [?25h
+2025-08-26T21:56:23: 
+2025-08-26T21:56:24: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T21:56:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T21:56:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T21:56:45: [?25h
+2025-08-26T21:56:45: 
+2025-08-26T21:56:45: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T22:02:39: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:02:39: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:02:54: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:02:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:03:09: [?25h
+2025-08-26T22:03:09: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T22:13:15: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:13:15: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:13:22: [?25h
+2025-08-26T22:13:22: 
+2025-08-26T22:13:22: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T22:13:31: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:13:31: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:13:36: [?25h
+2025-08-26T22:13:36: 
+2025-08-26T22:13:36: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-26T22:15:25: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:15:25: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:15:32: [32m[nodemon] restarting due to changes...[39m
+2025-08-26T22:15:33: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-26T22:15:52: [?25h
+2025-08-26T22:15:53: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-27T03:11:02: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T03:11:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T03:11:31: [?25h
+2025-08-27T03:11:31: 
+2025-08-27T03:11:31: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-27T04:45:34: 
+2025-08-27T04:45:34: > rsvshop@0.1.0 dev
+2025-08-27T04:45:34: > NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+2025-08-27T04:45:34: 
+2025-08-27T04:45:35: [33m[nodemon] 3.1.10[39m
+2025-08-27T04:45:35: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-08-27T04:45:35: [33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+2025-08-27T04:45:35: [33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+2025-08-27T04:45:35: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T04:45:43:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T04:45:43:   - Local:        http://localhost:4900
+2025-08-27T04:45:43:   - Environments: .env.local, .env
+2025-08-27T04:45:43:   - Experiments (use with caution):
+2025-08-27T04:45:43:     · turbo
+2025-08-27T04:45:43:     · webpackBuildWorker
+2025-08-27T04:45:43: 
+2025-08-27T04:45:43:  ✓ Starting...
+2025-08-27T04:45:53:  ✓ Compiled in 2.9s
+2025-08-27T04:45:55:  ✓ Ready in 12.3s
+2025-08-27T05:25:51:  ○ Compiling /admin/reservations ...
+2025-08-27T05:26:27:  GET /dashboard 200 in 32369ms
+2025-08-27T05:26:33:  GET /favicon.ico?favicon.45db1c09.ico 200 in 3539ms
+2025-08-27T05:26:36:  GET /api/admin/stats 200 in 5521ms
+2025-08-27T05:26:36:  ✓ Compiled /admin/reservations in 45.7s
+2025-08-27T05:26:37:  GET /admin/reservations 200 in 46588ms
+2025-08-27T05:26:39:  ○ Compiling /api/admin/reservations ...
+2025-08-27T05:26:39:  GET /api/packages 200 in 950ms
+2025-08-27T05:26:39:  ✓ Compiled /api/admin/reservations in 913ms
+2025-08-27T05:26:40:  GET /api/shopping-malls?activeOnly=true 200 in 1245ms
+2025-08-27T05:26:40:  GET /api/rooms 200 in 1497ms
+2025-08-27T05:26:40:  GET /api/packages 200 in 933ms
+2025-08-27T05:26:40:  GET /api/admin/reservations?limit=10 200 in 1965ms
+2025-08-27T05:26:40:  GET /api/shopping-malls?activeOnly=true 200 in 782ms
+2025-08-27T05:26:40:  GET /api/health/db 200 in 2131ms
+2025-08-27T05:26:40:  GET /api/rooms 200 in 669ms
+2025-08-27T05:26:41:  GET /api/packages 200 in 634ms
+2025-08-27T05:26:41:  GET /api/shopping-malls?activeOnly=true 200 in 662ms
+2025-08-27T05:26:41:  GET /api/rooms 200 in 675ms
+2025-08-27T05:26:41:  GET /api/packages 200 in 540ms
+2025-08-27T05:26:41:  GET /api/shopping-malls?activeOnly=true 200 in 481ms
+2025-08-27T05:26:42:  GET /api/rooms 200 in 400ms
+2025-08-27T05:26:42:  GET /api/health/db 200 in 1172ms
+2025-08-27T23:34:03:  ○ Compiling /_error ...
+2025-08-27T23:34:06:  ✓ Compiled /_error in 4.1s
+2025-08-27T23:40:26: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T23:40:26: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T23:40:30:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T23:40:30:   - Local:        http://localhost:4900
+2025-08-27T23:40:30:   - Environments: .env.local, .env
+2025-08-27T23:40:30:   - Experiments (use with caution):
+2025-08-27T23:40:30:     · turbo
+2025-08-27T23:40:30:     · webpackBuildWorker
+2025-08-27T23:40:30: 
+2025-08-27T23:40:30:  ✓ Starting...
+2025-08-27T23:40:32: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T23:40:32: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T23:40:35:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T23:40:35:   - Local:        http://localhost:4900
+2025-08-27T23:40:35:   - Environments: .env.local, .env
+2025-08-27T23:40:35:   - Experiments (use with caution):
+2025-08-27T23:40:35:     · turbo
+2025-08-27T23:40:35:     · webpackBuildWorker
+2025-08-27T23:40:35: 
+2025-08-27T23:40:35:  ✓ Starting...
+2025-08-27T23:40:38:  ✓ Compiled in 951ms
+2025-08-27T23:40:39:  ✓ Ready in 3.9s
+2025-08-27T23:40:40:  ○ Compiling /admin/reservations ...
+2025-08-27T23:40:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T23:40:41: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T23:40:45:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T23:40:45:   - Local:        http://localhost:4900
+2025-08-27T23:40:45:   - Environments: .env.local, .env
+2025-08-27T23:40:45:   - Experiments (use with caution):
+2025-08-27T23:40:45:     · turbo
+2025-08-27T23:40:45:     · webpackBuildWorker
+2025-08-27T23:40:45: 
+2025-08-27T23:40:45:  ✓ Starting...
+2025-08-27T23:40:48:  ✓ Compiled in 576ms
+2025-08-27T23:40:49:  ✓ Ready in 4.4s
+2025-08-27T23:40:50:  ○ Compiling /admin/reservations ...
+2025-08-27T23:41:09:  ✓ Compiled /admin/reservations in 19.5s
+2025-08-27T23:41:10:  GET /admin/reservations 200 in 21129ms
+2025-08-27T23:41:11:  GET /admin/reservations 200 in 481ms
+2025-08-27T23:41:13:  ○ Compiling /favicon.ico ...
+2025-08-27T23:41:13:  ✓ Compiled /favicon.ico in 588ms
+2025-08-27T23:41:13:  GET /favicon.ico?favicon.45db1c09.ico 200 in 1154ms
+2025-08-27T23:41:14: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T23:41:14: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T23:41:19:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T23:41:19:   - Local:        http://localhost:4900
+2025-08-27T23:41:19:   - Environments: .env.local, .env
+2025-08-27T23:41:19:   - Experiments (use with caution):
+2025-08-27T23:41:19:     · turbo
+2025-08-27T23:41:19:     · webpackBuildWorker
+2025-08-27T23:41:19: 
+2025-08-27T23:41:19:  ✓ Starting...
+2025-08-27T23:41:21:  ✓ Compiled in 932ms
+2025-08-27T23:41:22:  ✓ Ready in 4.3s
+2025-08-27T23:51:13: [32m[nodemon] restarting due to changes...[39m
+2025-08-27T23:51:13: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-27T23:51:15:   ▲ Next.js 14.2.31 (turbo)
+2025-08-27T23:51:15:   - Local:        http://localhost:4900
+2025-08-27T23:51:15:   - Environments: .env.local, .env
+2025-08-27T23:51:15:   - Experiments (use with caution):
+2025-08-27T23:51:15:     · turbo
+2025-08-27T23:51:15:     · webpackBuildWorker
+2025-08-27T23:51:15: 
+2025-08-27T23:51:15:  ✓ Starting...
+2025-08-27T23:51:18:  ✓ Compiled in 868ms
+2025-08-27T23:51:18:  ✓ Ready in 3.2s
+2025-08-28T02:21:58:  ○ Compiling /admin/reservations ...
+2025-08-28T02:22:41:  ✓ Compiled /admin/reservations in 43.6s
+2025-08-28T02:22:44:  GET /admin/reservations 200 in 31252ms
+2025-08-28T02:22:45:  GET /admin/reservations 200 in 1024ms
+2025-08-28T02:22:53:  ○ Compiling /favicon.ico ...
+2025-08-28T02:22:55:  GET /favicon.ico?favicon.45db1c09.ico 200 in 3128ms
+2025-08-28T02:22:56:  ✓ Compiled /favicon.ico in 3.5s
+2025-08-28T02:22:56:  GET /api/packages 200 in 3303ms
+2025-08-28T02:22:56:  GET /api/rooms 200 in 3518ms
+2025-08-28T02:22:58:  GET /api/shopping-malls?activeOnly=true 200 in 5194ms
+2025-08-28T02:22:59:  GET /api/packages 200 in 2514ms
+2025-08-28T02:22:59:  GET /api/rooms 200 in 1251ms
+2025-08-28T02:22:59:  GET /api/shopping-malls?activeOnly=true 200 in 746ms
+2025-08-28T02:22:59:  GET /api/admin/reservations?limit=10 200 in 6163ms
+2025-08-28T02:22:59:  GET /api/health/db 200 in 6102ms
+2025-08-28T02:22:59:  GET /api/packages 200 in 632ms
+2025-08-28T02:22:59:  GET /api/rooms 200 in 634ms
+2025-08-28T02:23:00:  GET /api/shopping-malls?activeOnly=true 200 in 638ms
+2025-08-28T02:23:00:  GET /api/packages 200 in 621ms
+2025-08-28T02:23:00:  GET /api/rooms 200 in 568ms
+2025-08-28T02:23:00:  GET /api/shopping-malls?activeOnly=true 200 in 512ms
+2025-08-28T02:23:00:  GET /api/health/db 200 in 1098ms
+2025-08-28T02:26:06:  POST /api/admin/reservations 500 in 532ms
+2025-08-28T02:26:15:  POST /api/admin/reservations 500 in 496ms
+2025-08-28T02:26:44:  GET /api/health/db 200 in 663ms
+2025-08-28T02:26:53:  GET /api/health/db 200 in 684ms
+2025-08-28T02:27:02:  POST /api/admin/reservations 400 in 250ms
+2025-08-28T02:28:39:  POST /api/admin/reservations 201 in 421ms
+2025-08-28T02:29:30: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:29:30: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:29:40:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T02:29:40:   - Local:        http://localhost:4900
+2025-08-28T02:29:40:   - Environments: .env.local, .env
+2025-08-28T02:29:40:   - Experiments (use with caution):
+2025-08-28T02:29:40:     · turbo
+2025-08-28T02:29:40:     · webpackBuildWorker
+2025-08-28T02:29:40: 
+2025-08-28T02:29:40:  ✓ Starting...
+2025-08-28T02:29:42: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:29:43: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:29:50: [?25h
+2025-08-28T02:29:50: 
+2025-08-28T02:29:50: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T02:29:54: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:29:54: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:29:59:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T02:29:59:   - Local:        http://localhost:4900
+2025-08-28T02:29:59:   - Environments: .env.local, .env
+2025-08-28T02:29:59:   - Experiments (use with caution):
+2025-08-28T02:29:59:     · turbo
+2025-08-28T02:29:59:     · webpackBuildWorker
+2025-08-28T02:29:59: 
+2025-08-28T02:29:59:  ✓ Starting...
+2025-08-28T02:30:02:  ✓ Compiled in 746ms
+2025-08-28T02:30:03:  ✓ Ready in 4.6s
+2025-08-28T02:32:13: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:32:13: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:32:19: [?25h
+2025-08-28T02:32:19: 
+2025-08-28T02:32:19: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T02:32:23: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:32:23: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:32:30:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T02:32:30:   - Local:        http://localhost:4900
+2025-08-28T02:32:30:   - Environments: .env.local, .env
+2025-08-28T02:32:30:   - Experiments (use with caution):
+2025-08-28T02:32:30:     · turbo
+2025-08-28T02:32:30:     · webpackBuildWorker
+2025-08-28T02:32:30: 
+2025-08-28T02:32:30:  ✓ Starting...
+2025-08-28T02:32:35:  ✓ Compiled in 1983ms
+2025-08-28T02:32:37:  ✓ Ready in 8.2s
+2025-08-28T02:32:38: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T02:32:38: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T02:32:44: [?25h
+2025-08-28T02:32:45: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:13:29: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:13:30: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:13:31: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:13:31: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:13:48:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:13:48:   - Local:        http://localhost:4900
+2025-08-28T04:13:48:   - Environments: .env.local, .env
+2025-08-28T04:13:48:   - Experiments (use with caution):
+2025-08-28T04:13:48:     · turbo
+2025-08-28T04:13:48:     · webpackBuildWorker
+2025-08-28T04:13:48: 
+2025-08-28T04:13:48:  ✓ Starting...
+2025-08-28T04:13:55:  ✓ Compiled in 1588ms
+2025-08-28T04:13:57:  ✓ Ready in 9.3s
+2025-08-28T04:14:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:14:07: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:14:09: [?25h
+2025-08-28T04:14:09: 
+2025-08-28T04:14:09: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:14:19: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:14:19: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:14:24:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:14:24:   - Local:        http://localhost:4900
+2025-08-28T04:14:24:   - Environments: .env.local, .env
+2025-08-28T04:14:24:   - Experiments (use with caution):
+2025-08-28T04:14:24:     · turbo
+2025-08-28T04:14:24:     · webpackBuildWorker
+2025-08-28T04:14:24: 
+2025-08-28T04:14:24:  ✓ Starting...
+2025-08-28T04:14:27:  ✓ Compiled in 1254ms
+2025-08-28T04:14:28:  ✓ Ready in 5.3s
+2025-08-28T04:14:29: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:14:29: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:14:32: [?25h
+2025-08-28T04:14:32: 
+2025-08-28T04:14:32: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:14:40: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:14:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:14:43:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:14:43:   - Local:        http://localhost:4900
+2025-08-28T04:14:43:   - Environments: .env.local, .env
+2025-08-28T04:14:43:   - Experiments (use with caution):
+2025-08-28T04:14:43:     · turbo
+2025-08-28T04:14:43:     · webpackBuildWorker
+2025-08-28T04:14:43: 
+2025-08-28T04:14:43:  ✓ Starting...
+2025-08-28T04:14:46:  ✓ Compiled in 1034ms
+2025-08-28T04:14:47:  ✓ Ready in 3.9s
+2025-08-28T04:14:47:  ○ Compiling /admin/reservations ...
+2025-08-28T04:14:54: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:14:54: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:14:57: [?25h
+2025-08-28T04:14:57: 
+2025-08-28T04:14:57: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:15:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:15:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:15:09:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:15:09:   - Local:        http://localhost:4900
+2025-08-28T04:15:09:   - Environments: .env.local, .env
+2025-08-28T04:15:09:   - Experiments (use with caution):
+2025-08-28T04:15:09:     · turbo
+2025-08-28T04:15:09:     · webpackBuildWorker
+2025-08-28T04:15:09: 
+2025-08-28T04:15:09:  ✓ Starting...
+2025-08-28T04:15:12:  ✓ Compiled in 944ms
+2025-08-28T04:15:13:  ✓ Ready in 4s
+2025-08-28T04:15:20: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:15:20: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:15:23:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:15:23:   - Local:        http://localhost:4900
+2025-08-28T04:15:23:   - Environments: .env.local, .env
+2025-08-28T04:15:23:   - Experiments (use with caution):
+2025-08-28T04:15:23:     · turbo
+2025-08-28T04:15:23:     · webpackBuildWorker
+2025-08-28T04:15:23: 
+2025-08-28T04:15:23:  ✓ Starting...
+2025-08-28T04:15:26:  ✓ Compiled in 838ms
+2025-08-28T04:15:27:  ✓ Ready in 4.1s
+2025-08-28T04:15:28:  ○ Compiling /admin/reservations ...
+2025-08-28T04:15:57:  ✓ Compiled /admin/reservations in 29.4s
+2025-08-28T04:15:58:  GET /admin/reservations 200 in 30969ms
+2025-08-28T04:16:00:  ○ Compiling /favicon.ico ...
+2025-08-28T04:16:02:  ✓ Compiled /favicon.ico in 2.2s
+2025-08-28T04:16:02:  GET /favicon.ico?favicon.45db1c09.ico 200 in 2530ms
+2025-08-28T04:16:03:  GET /api/health/db 200 in 3078ms
+2025-08-28T04:16:04:  GET /api/health/db 200 in 803ms
+2025-08-28T04:23:26:  ○ Compiling /api/admin/reservations ...
+2025-08-28T04:23:34:  ✓ Compiled /api/admin/reservations in 7.9s
+2025-08-28T04:23:36:  GET /api/admin/reservations?limit=20 200 in 10612ms
+2025-08-28T04:23:36:  ○ Compiling /api/rooms ...
+2025-08-28T04:23:37:  ✓ Compiled /api/rooms in 1132ms
+2025-08-28T04:23:37:  GET /api/packages 200 in 1252ms
+2025-08-28T04:23:37:  GET /api/rooms 200 in 1410ms
+2025-08-28T04:23:37:  GET /api/shopping-malls?activeOnly=true 200 in 1445ms
+2025-08-28T04:23:37:  GET /api/packages 200 in 365ms
+2025-08-28T04:23:37:  GET /api/rooms 200 in 320ms
+2025-08-28T04:23:37:  GET /api/shopping-malls?activeOnly=true 200 in 248ms
+2025-08-28T04:23:38:  GET /api/packages 200 in 488ms
+2025-08-28T04:23:38:  GET /api/rooms 200 in 471ms
+2025-08-28T04:23:38:  GET /api/shopping-malls?activeOnly=true 200 in 509ms
+2025-08-28T04:23:38:  GET /api/packages 200 in 556ms
+2025-08-28T04:23:38:  GET /api/rooms 200 in 637ms
+2025-08-28T04:23:38:  GET /api/shopping-malls?activeOnly=true 200 in 559ms
+2025-08-28T04:24:01:  POST /api/admin/reservations 500 in 1015ms
+2025-08-28T04:25:29: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:25:30: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:25:42: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:25:43: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:25:49: [?25h
+2025-08-28T04:25:49: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:26:27: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:26:27: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:26:30:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:26:30:   - Local:        http://localhost:4900
+2025-08-28T04:26:30:   - Environments: .env.local, .env
+2025-08-28T04:26:30:   - Experiments (use with caution):
+2025-08-28T04:26:30:     · turbo
+2025-08-28T04:26:30:     · webpackBuildWorker
+2025-08-28T04:26:30: 
+2025-08-28T04:26:30:  ✓ Starting...
+2025-08-28T04:26:33:  ✓ Compiled in 1202ms
+2025-08-28T04:26:34:  ✓ Ready in 4.4s
+2025-08-28T04:26:40: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:26:40: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:26:43:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:26:43:   - Local:        http://localhost:4900
+2025-08-28T04:26:43:   - Environments: .env.local, .env
+2025-08-28T04:26:43:   - Experiments (use with caution):
+2025-08-28T04:26:43:     · turbo
+2025-08-28T04:26:43:     · webpackBuildWorker
+2025-08-28T04:26:43: 
+2025-08-28T04:26:43:  ✓ Starting...
+2025-08-28T04:26:48:  ✓ Compiled in 1342ms
+2025-08-28T04:26:49:  ✓ Ready in 6s
+2025-08-28T04:26:51: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:26:51: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:26:55: [?25h
+2025-08-28T04:26:55: 
+2025-08-28T04:26:55: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T04:27:03: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T04:27:03: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T04:27:08:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T04:27:08:   - Local:        http://localhost:4900
+2025-08-28T04:27:08:   - Environments: .env.local, .env
+2025-08-28T04:27:08:   - Experiments (use with caution):
+2025-08-28T04:27:08:     · turbo
+2025-08-28T04:27:08:     · webpackBuildWorker
+2025-08-28T04:27:08: 
+2025-08-28T04:27:08:  ✓ Starting...
+2025-08-28T04:27:11:  ✓ Compiled in 1070ms
+2025-08-28T04:27:12:  ✓ Ready in 3.8s
+2025-08-28T05:09:50:  ○ Compiling /admin/reservations ...
+2025-08-28T05:10:12:  ✓ Compiled /admin/reservations in 22.8s
+2025-08-28T05:10:13:  POST /api/admin/reservations 200 in 2701ms
+2025-08-28T05:10:13:  GET /admin/reservations 200 in 23304ms
+2025-08-28T05:10:13: 예약 생성 데이터: {
+2025-08-28T05:10:13:   userId: 'cmeuesy7k0000ue5s21txor8j',
+2025-08-28T05:10:13:   guestName: '2626626',
+2025-08-28T05:10:13:   guestEmail: null,
+2025-08-28T05:10:13:   guestPhone: '',
+2025-08-28T05:10:13:   checkInDate: 2025-08-27T20:10:13.772Z,
+2025-08-28T05:10:13:   checkOutDate: 2025-08-28T20:10:13.772Z,
+2025-08-28T05:10:13:   totalAmount: 0,
+2025-08-28T05:10:13:   status: 'RECEIVED',
+2025-08-28T05:10:13:   notes: null,
+2025-08-28T05:10:13:   shoppingMall: null,
+2025-08-28T05:10:13:   orderNumber: null,
+2025-08-28T05:10:13:   externalId: null,
+2025-08-28T05:10:13:   sellingPrice: null,
+2025-08-28T05:10:13:   depositAmount: null,
+2025-08-28T05:10:13:   supplyPrice: null
+2025-08-28T05:10:13: }
+2025-08-28T05:11:05: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:11:05: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:11:11:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:11:11:   - Local:        http://localhost:4900
+2025-08-28T05:11:11:   - Environments: .env.local, .env
+2025-08-28T05:11:11:   - Experiments (use with caution):
+2025-08-28T05:11:11:     · turbo
+2025-08-28T05:11:11:     · webpackBuildWorker
+2025-08-28T05:11:11: 
+2025-08-28T05:11:11:  ✓ Starting...
+2025-08-28T05:11:16:  ✓ Compiled in 1083ms
+2025-08-28T05:11:16:  ✓ Ready in 5.9s
+2025-08-28T05:11:17:  ○ Compiling /favicon.ico ...
+2025-08-28T05:11:17:  ✓ Compiled /favicon.ico in 514ms
+2025-08-28T05:11:18:  GET /favicon.ico?favicon.45db1c09.ico 200 in 969ms
+2025-08-28T05:11:24: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:11:24: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:11:26: [?25h
+2025-08-28T05:11:26: 
+2025-08-28T05:11:26: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:11:41: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:11:41: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:11:44:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:11:44:   - Local:        http://localhost:4900
+2025-08-28T05:11:44:   - Environments: .env.local, .env
+2025-08-28T05:11:44:   - Experiments (use with caution):
+2025-08-28T05:11:44:     · turbo
+2025-08-28T05:11:44:     · webpackBuildWorker
+2025-08-28T05:11:44: 
+2025-08-28T05:11:44:  ✓ Starting...
+2025-08-28T05:11:48:  ✓ Compiled in 1599ms
+2025-08-28T05:11:49:  ✓ Ready in 5.1s
+2025-08-28T05:11:51:  ○ Compiling /api/admin/reservations ...
+2025-08-28T05:11:51:  ✓ Compiled /api/admin/reservations in 867ms
+2025-08-28T05:11:52: 🔍 받은 roomId:  타입: string
+2025-08-28T05:11:52: ℹ️ roomId가 비어있음, 객실 없이 예약 생성
+2025-08-28T05:11:52: 🏨 객실 없이 예약 생성 (roomId 필드 제외)
+2025-08-28T05:11:52: 예약 생성 데이터: {
+2025-08-28T05:11:52:   userId: 'cmeuev2qd0000uezm4rnfhilg',
+2025-08-28T05:11:52:   guestName: '테스트3',
+2025-08-28T05:11:52:   guestEmail: 'test3@test.com',
+2025-08-28T05:11:52:   guestPhone: '010-1234-5678',
+2025-08-28T05:11:52:   checkInDate: 2025-08-27T20:11:52.611Z,
+2025-08-28T05:11:52:   checkOutDate: 2025-08-28T20:11:52.611Z,
+2025-08-28T05:11:52:   totalAmount: 50000,
+2025-08-28T05:11:52:   status: 'PENDING',
+2025-08-28T05:11:52:   notes: null,
+2025-08-28T05:11:52:   shoppingMall: null,
+2025-08-28T05:11:52:   orderNumber: null,
+2025-08-28T05:11:52:   externalId: null,
+2025-08-28T05:11:52:   sellingPrice: null,
+2025-08-28T05:11:52:   depositAmount: null,
+2025-08-28T05:11:52:   supplyPrice: null
+2025-08-28T05:11:52: }
+2025-08-28T05:11:52:  POST /api/admin/reservations 201 in 1713ms
+2025-08-28T05:12:06: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:12:06: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:12:13: [?25h
+2025-08-28T05:12:13: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:13:02: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:13:02: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:13:04: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:13:04: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:13:15:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:13:15:   - Local:        http://localhost:4900
+2025-08-28T05:13:15:   - Environments: .env.local, .env
+2025-08-28T05:13:15:   - Experiments (use with caution):
+2025-08-28T05:13:15:     · turbo
+2025-08-28T05:13:15:     · webpackBuildWorker
+2025-08-28T05:13:15: 
+2025-08-28T05:13:15:  ✓ Starting...
+2025-08-28T05:13:22:  ✓ Compiled in 2.6s
+2025-08-28T05:13:24:  ✓ Ready in 9.9s
+2025-08-28T05:13:31: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:13:32: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:13:33: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:13:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:13:43: [?25h
+2025-08-28T05:13:43: 
+2025-08-28T05:13:43: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:13:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:13:49: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:13:59: [?25h
+2025-08-28T05:13:59: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:14:01: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:14:01: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:14:11:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:14:11:   - Local:        http://localhost:4900
+2025-08-28T05:14:11:   - Environments: .env.local, .env
+2025-08-28T05:14:11:   - Experiments (use with caution):
+2025-08-28T05:14:11:     · turbo
+2025-08-28T05:14:11:     · webpackBuildWorker
+2025-08-28T05:14:11: 
+2025-08-28T05:14:11:  ✓ Starting...
+2025-08-28T05:14:17:  ✓ Compiled in 2.4s
+2025-08-28T05:14:20:  ✓ Ready in 9.9s
+2025-08-28T05:15:00: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:15:00: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:15:06: [?25h
+2025-08-28T05:15:06: 
+2025-08-28T05:15:06: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:15:46: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:15:46: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:15:49:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:15:49:   - Local:        http://localhost:4900
+2025-08-28T05:15:49:   - Environments: .env.local, .env
+2025-08-28T05:15:49:   - Experiments (use with caution):
+2025-08-28T05:15:49:     · turbo
+2025-08-28T05:15:49:     · webpackBuildWorker
+2025-08-28T05:15:49: 
+2025-08-28T05:15:49:  ✓ Starting...
+2025-08-28T05:15:50:  ✓ Compiled in 349ms
+2025-08-28T05:15:51:  ✓ Ready in 2.8s
+2025-08-28T05:22:51:  ○ Compiling /admin/reservations ...
+2025-08-28T05:23:06:  GET /dashboard 200 in 14772ms
+2025-08-28T05:23:08:  GET /favicon.ico?favicon.45db1c09.ico 200 in 2421ms
+2025-08-28T05:23:10:  GET /api/admin/stats 200 in 3560ms
+2025-08-28T05:23:10:  ✓ Compiled /admin/reservations in 19.1s
+2025-08-28T05:23:11:  GET /admin/reservations 200 in 19919ms
+2025-08-28T05:23:13:  ✓ Compiled /api/admin/reservations in 97ms
+2025-08-28T05:23:13:  GET /api/health/db 200 in 328ms
+2025-08-28T05:23:13:  GET /api/admin/reservations?limit=20 200 in 368ms
+2025-08-28T05:23:13:  ○ Compiling /api/packages ...
+2025-08-28T05:23:13:  GET /api/health/db 200 in 702ms
+2025-08-28T05:23:14:  ✓ Compiled /api/packages in 648ms
+2025-08-28T05:23:14:  GET /api/shopping-malls?activeOnly=true 200 in 826ms
+2025-08-28T05:23:14:  GET /api/packages 200 in 904ms
+2025-08-28T05:23:14:  GET /api/rooms 200 in 953ms
+2025-08-28T05:23:14:  GET /api/shopping-malls?activeOnly=true 200 in 375ms
+2025-08-28T05:23:14:  ✓ Compiled /api/debug/console-logs in 260ms
+2025-08-28T05:23:14:  GET /api/rooms 200 in 345ms
+2025-08-28T05:23:14:  GET /api/packages 200 in 481ms
+2025-08-28T05:23:14: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:23:14:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:23:14:   logCount: 10,
+2025-08-28T05:23:14:   timestamp: '2025-08-27T20:23:14.295Z'
+2025-08-28T05:23:14: }
+2025-08-28T05:23:14:  POST /api/debug/console-logs 200 in 539ms
+2025-08-28T05:23:14:  GET /api/shopping-malls?activeOnly=true 200 in 394ms
+2025-08-28T05:23:15:  GET /api/rooms 200 in 416ms
+2025-08-28T05:23:15:  GET /api/packages 200 in 408ms
+2025-08-28T05:23:15:  GET /api/shopping-malls?activeOnly=true 200 in 346ms
+2025-08-28T05:23:15: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:23:15:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:23:15:   logCount: 20,
+2025-08-28T05:23:15:   timestamp: '2025-08-27T20:23:15.020Z'
+2025-08-28T05:23:15: }
+2025-08-28T05:23:15:  POST /api/debug/console-logs 200 in 299ms
+2025-08-28T05:23:15:  GET /api/rooms 200 in 254ms
+2025-08-28T05:23:15:  GET /api/packages 200 in 208ms
+2025-08-28T05:23:43: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:23:43:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:23:43:   logCount: 20,
+2025-08-28T05:23:43:   timestamp: '2025-08-27T20:23:42.945Z'
+2025-08-28T05:23:43: }
+2025-08-28T05:23:43:  POST /api/debug/console-logs 200 in 70ms
+2025-08-28T05:23:56: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:23:56:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:23:56:   logCount: 20,
+2025-08-28T05:23:56:   timestamp: '2025-08-27T20:23:56.230Z'
+2025-08-28T05:23:56: }
+2025-08-28T05:23:56:  POST /api/debug/console-logs 200 in 138ms
+2025-08-28T05:23:56: 🔍 받은 roomId: 1515 타입: string
+2025-08-28T05:23:56: ⚠️ 객실을 찾을 수 없음, roomId 제외하고 생성
+2025-08-28T05:23:56: 🏨 객실 없이 예약 생성 (roomId 필드 제외)
+2025-08-28T05:23:56: 예약 생성 데이터: {
+2025-08-28T05:23:56:   userId: 'cmeufal7x0000ueegax08qdbi',
+2025-08-28T05:23:56:   guestName: '1515',
+2025-08-28T05:23:56:   guestEmail: null,
+2025-08-28T05:23:56:   guestPhone: '',
+2025-08-28T05:23:56:   checkInDate: 2025-08-27T20:23:56.402Z,
+2025-08-28T05:23:56:   checkOutDate: 2025-08-28T20:23:56.402Z,
+2025-08-28T05:23:56:   totalAmount: 0,
+2025-08-28T05:23:56:   status: 'RECEIVED',
+2025-08-28T05:23:56:   notes: null,
+2025-08-28T05:23:56:   shoppingMall: null,
+2025-08-28T05:23:56:   orderNumber: null,
+2025-08-28T05:23:56:   externalId: null,
+2025-08-28T05:23:56:   sellingPrice: null,
+2025-08-28T05:23:56:   depositAmount: null,
+2025-08-28T05:23:56:   supplyPrice: null
+2025-08-28T05:23:56: }
+2025-08-28T05:23:56:  POST /api/admin/reservations 500 in 180ms
+2025-08-28T05:26:51: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:26:51:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:26:51:   logCount: 20,
+2025-08-28T05:26:51:   timestamp: '2025-08-27T20:26:51.395Z'
+2025-08-28T05:26:51: }
+2025-08-28T05:26:51:  POST /api/debug/console-logs 200 in 455ms
+2025-08-28T05:27:13: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:27:13:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:27:13:   logCount: 20,
+2025-08-28T05:27:13:   timestamp: '2025-08-27T20:27:13.054Z'
+2025-08-28T05:27:13: }
+2025-08-28T05:27:13:  POST /api/debug/console-logs 200 in 440ms
+2025-08-28T05:27:43: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:27:43:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:27:43:   logCount: 20,
+2025-08-28T05:27:43:   timestamp: '2025-08-27T20:27:42.983Z'
+2025-08-28T05:27:43: }
+2025-08-28T05:27:43:  POST /api/debug/console-logs 200 in 169ms
+2025-08-28T05:27:43: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:27:43:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:27:43:   logCount: 20,
+2025-08-28T05:27:43:   timestamp: '2025-08-27T20:27:43.096Z'
+2025-08-28T05:27:43: }
+2025-08-28T05:27:43:  POST /api/debug/console-logs 200 in 121ms
+2025-08-28T05:27:53:  ○ Compiling /admin/reservations ...
+2025-08-28T05:28:07:  ✓ Compiled in 17.8s
+2025-08-28T05:28:08:  ✓ Compiled /admin/reservations in 15.6s
+2025-08-28T05:28:09: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:28:09:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:28:09:   logCount: 20,
+2025-08-28T05:28:09:   timestamp: '2025-08-27T20:28:09.241Z'
+2025-08-28T05:28:09: }
+2025-08-28T05:28:10:  POST /api/debug/console-logs 200 in 747ms
+2025-08-28T05:28:14: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:28:14:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:28:14:   logCount: 20,
+2025-08-28T05:28:14:   timestamp: '2025-08-27T20:28:13.949Z'
+2025-08-28T05:28:14: }
+2025-08-28T05:28:14:  POST /api/debug/console-logs 200 in 321ms
+2025-08-28T05:28:14: 📱 브라우저 콘솔 로그 수집: {
+2025-08-28T05:28:14:   url: 'http://localhost:4900/admin/reservations',
+2025-08-28T05:28:14:   logCount: 20,
+2025-08-28T05:28:14:   timestamp: '2025-08-27T20:28:14.142Z'
+2025-08-28T05:28:14: }
+2025-08-28T05:28:14:  POST /api/debug/console-logs 200 in 266ms
+2025-08-28T05:28:17: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:17: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:28:20: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:20: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:28:29: [?25h
+2025-08-28T05:28:29: 
+2025-08-28T05:28:29: [32m[nodemon] clean exit - waiting for changes before restart[39m
+2025-08-28T05:28:34: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:28:36: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:36: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:28:41:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:28:41:   - Local:        http://localhost:4900
+2025-08-28T05:28:41:   - Environments: .env.local, .env
+2025-08-28T05:28:41:   - Experiments (use with caution):
+2025-08-28T05:28:41:     · turbo
+2025-08-28T05:28:41:     · webpackBuildWorker
+2025-08-28T05:28:41: 
+2025-08-28T05:28:41:  ✓ Starting...
+2025-08-28T05:28:44:  ✓ Compiled in 1383ms
+2025-08-28T05:28:46:  ✓ Ready in 5.7s
+2025-08-28T05:28:55: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:55: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:28:57: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:28:57: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:29:02:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:29:02:   - Local:        http://localhost:4900
+2025-08-28T05:29:02:   - Environments: .env.local, .env
+2025-08-28T05:29:02:   - Experiments (use with caution):
+2025-08-28T05:29:02:     · turbo
+2025-08-28T05:29:02:     · webpackBuildWorker
+2025-08-28T05:29:02: 
+2025-08-28T05:29:02:  ✓ Starting...
+2025-08-28T05:29:06:  ✓ Compiled in 1052ms
+2025-08-28T05:29:07:  ✓ Ready in 4.8s
+2025-08-28T05:29:49: [32m[nodemon] restarting due to changes...[39m
+2025-08-28T05:29:49: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T05:29:52:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T05:29:52:   - Local:        http://localhost:4900
+2025-08-28T05:29:52:   - Environments: .env.local, .env
+2025-08-28T05:29:52:   - Experiments (use with caution):
+2025-08-28T05:29:52:     · turbo
+2025-08-28T05:29:52:     · webpackBuildWorker
+2025-08-28T05:29:52: 
+2025-08-28T05:29:52:  ✓ Starting...
+2025-08-28T05:29:54:  ✓ Compiled in 972ms
+2025-08-28T05:29:55:  ✓ Ready in 2.9s
+2025-08-28T16:57:36: 
+2025-08-28T16:57:36: > rsvshop@0.1.0 dev
+2025-08-28T16:57:36: > NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+2025-08-28T16:57:36: 
+2025-08-28T16:57:37: [33m[nodemon] 3.1.10[39m
+2025-08-28T16:57:37: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-08-28T16:57:37: [33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+2025-08-28T16:57:37: [33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+2025-08-28T16:57:37: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T16:57:47:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T16:57:47:   - Local:        http://localhost:4900
+2025-08-28T16:57:47:   - Environments: .env.local, .env
+2025-08-28T16:57:47:   - Experiments (use with caution):
+2025-08-28T16:57:47:     · turbo
+2025-08-28T16:57:47:     · webpackBuildWorker
+2025-08-28T16:57:47: 
+2025-08-28T16:57:47:  ✓ Starting...
+2025-08-28T16:57:52:  ✓ Compiled in 2.3s
+2025-08-28T16:57:54:  ✓ Ready in 7.7s
+2025-08-28T16:59:33: 
+2025-08-28T16:59:33: > rsvshop@0.1.0 dev
+2025-08-28T16:59:33: > NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+2025-08-28T16:59:33: 
+2025-08-28T16:59:34: [33m[nodemon] 3.1.10[39m
+2025-08-28T16:59:34: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-08-28T16:59:34: [33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+2025-08-28T16:59:34: [33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+2025-08-28T16:59:34: [32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+2025-08-28T16:59:44:   ▲ Next.js 14.2.31 (turbo)
+2025-08-28T16:59:44:   - Local:        http://localhost:4900
+2025-08-28T16:59:44:   - Environments: .env.local, .env
+2025-08-28T16:59:44:   - Experiments (use with caution):
+2025-08-28T16:59:44:     · turbo
+2025-08-28T16:59:44:     · webpackBuildWorker
+2025-08-28T16:59:44: 
+2025-08-28T16:59:44:  ✓ Starting...
+2025-08-28T16:59:50:  ✓ Compiled in 1487ms
+2025-08-28T16:59:51:  ✓ Ready in 7.5s
+2025-08-28T17:01:20:  ○ Compiling /api/admin/reservations ...
+2025-08-28T17:01:21:  ✓ Compiled /api/admin/reservations in 892ms
+2025-08-28T17:01:21: 🔍 받은 roomId:  타입: string
+2025-08-28T17:01:21: ℹ️ roomId가 비어있음, 객실 없이 예약 생성
+2025-08-28T17:01:21: 🏨 객실 없이 예약 생성 (roomId 필드 제외)
+2025-08-28T17:01:21: 예약 생성 데이터: {
+2025-08-28T17:01:21:   userId: 'cmev47hb10000uex8hwx1b4j0',
+2025-08-28T17:01:21:   guestName: '테스트 고객',
+2025-08-28T17:01:21:   guestEmail: 'test@example.com',
+2025-08-28T17:01:21:   guestPhone: '010-0000-0000',
+2025-08-28T17:01:21:   checkInDate: 2025-09-01T00:00:00.000Z,
+2025-08-28T17:01:21:   checkOutDate: 2025-09-02T00:00:00.000Z,
+2025-08-28T17:01:21:   totalAmount: 10000,
+2025-08-28T17:01:21:   status: 'PENDING',
+2025-08-28T17:01:21:   notes: '테스트',
+2025-08-28T17:01:21:   shoppingMall: '내부',
+2025-08-28T17:01:21:   orderNumber: null,
+2025-08-28T17:01:21:   externalId: null,
+2025-08-28T17:01:21:   sellingPrice: null,
+2025-08-28T17:01:21:   depositAmount: null,
+2025-08-28T17:01:21:   supplyPrice: null
+2025-08-28T17:01:21: }
+2025-08-28T17:01:21:  POST /api/admin/reservations 201 in 1613ms
+2025-08-28T17:01:38:  ✓ Compiled /api/ping in 219ms
+2025-08-28T17:01:38:  GET /api/ping 200 in 442ms
+2025-08-28T17:01:44:  GET /api/admin/reservations 200 in 345ms
+2025-08-28T17:01:50:  ○ Compiling /api/reservations ...
+2025-08-28T17:01:50:  ✓ Compiled /api/reservations in 665ms
+2025-08-28T17:01:50: ✅ DATABASE_URL 로드됨: postgresql://***:***@127.0.0.1:5432/rsvshop?connection_limit=3&pool_timeout=60&connect_timeout=30&socket_timeout=60
+2025-08-28T17:01:50:  POST /api/reservations 400 in 958ms
+2025-08-28T17:01:50: ✅ Prisma 클라이언트 연결 성공
+2025-08-28T17:01:56: 🔍 받은 roomId:  타입: string
+2025-08-28T17:01:56: ℹ️ roomId가 비어있음, 객실 없이 예약 생성
+2025-08-28T17:01:56: 🏨 객실 없이 예약 생성 (roomId 필드 제외)
+2025-08-28T17:01:56: 예약 생성 데이터: {
+2025-08-28T17:01:56:   userId: 'cmev47hb10000uex8hwx1b4j0',
+2025-08-28T17:01:56:   guestName: '테스트 고객',
+2025-08-28T17:01:56:   guestEmail: 'test@example.com',
+2025-08-28T17:01:56:   guestPhone: '010-0000-0000',
+2025-08-28T17:01:56:   checkInDate: 2025-09-01T00:00:00.000Z,
+2025-08-28T17:01:56:   checkOutDate: 2025-09-02T00:00:00.000Z,
+2025-08-28T17:01:56:   totalAmount: 10000,
+2025-08-28T17:01:56:   status: 'PENDING',
+2025-08-28T17:01:56:   notes: '테스트',
+2025-08-28T17:01:56:   shoppingMall: '내부',
+2025-08-28T17:01:56:   orderNumber: null,
+2025-08-28T17:01:56:   externalId: null,
+2025-08-28T17:01:56:   sellingPrice: null,
+2025-08-28T17:01:56:   depositAmount: null,
+2025-08-28T17:01:56:   supplyPrice: null
+2025-08-28T17:01:56: }
+2025-08-28T17:01:56:  POST /api/admin/reservations 201 in 200ms
+2025-08-28T17:02:20: prisma:query SELECT 1
+2025-08-28T17:02:20: prisma:query SELECT 1
+2025-08-28T17:02:50: prisma:query SELECT 1
+2025-08-28T17:02:50: prisma:query SELECT 1
+2025-08-28T17:03:20: prisma:query SELECT 1
+2025-08-28T17:03:20: prisma:query SELECT 1
+2025-08-28T17:03:50: prisma:query SELECT 1
+2025-08-28T17:03:50: prisma:query SELECT 1
+2025-08-28T17:04:20: prisma:query SELECT 1
+2025-08-28T17:04:20: prisma:query SELECT 1
+2025-08-28T17:04:50: prisma:query SELECT 1
+2025-08-28T17:04:50: prisma:query SELECT 1
+2025-08-28T17:05:20: prisma:query SELECT 1
+2025-08-28T17:05:20: prisma:query SELECT 1
+2025-08-28T17:05:50: prisma:query SELECT 1
+2025-08-28T17:05:50: prisma:query SELECT 1
+2025-08-28T17:06:20: prisma:query SELECT 1
+2025-08-28T17:06:20: prisma:query SELECT 1
+2025-08-28T17:06:50: prisma:query SELECT 1
+2025-08-28T17:06:50: prisma:query SELECT 1
+2025-08-28T17:07:20: prisma:query SELECT 1
+2025-08-28T17:07:50: prisma:query SELECT 1
+2025-08-28T17:07:50: prisma:query SELECT 1
+2025-08-28T17:08:20: prisma:query SELECT 1
+2025-08-28T17:08:20: prisma:query SELECT 1
+2025-08-28T17:08:50: prisma:query SELECT 1
+2025-08-28T17:08:50: prisma:query SELECT 1
+2025-08-28T17:09:20: prisma:query SELECT 1
+2025-08-28T17:09:20: prisma:query SELECT 1
+2025-08-28T17:09:50: prisma:query SELECT 1
+2025-08-28T17:09:50: prisma:query SELECT 1
+2025-08-28T17:10:20: prisma:query SELECT 1
+2025-08-28T17:10:20: prisma:query SELECT 1
+2025-08-28T17:10:50: prisma:query SELECT 1
+2025-08-28T17:10:50: prisma:query SELECT 1
+2025-08-28T17:11:20: prisma:query SELECT 1
+2025-08-28T17:11:20: prisma:query SELECT 1
+2025-08-28T17:11:50: prisma:query SELECT 1
+2025-08-28T17:11:50: prisma:query SELECT 1
+2025-08-28T17:12:20: prisma:query SELECT 1
+2025-08-28T17:12:50: prisma:query SELECT 1
+2025-08-28T17:12:50: prisma:query SELECT 1
+2025-08-28T17:13:20: prisma:query SELECT 1
+2025-08-28T17:13:20: prisma:query SELECT 1
+2025-08-28T17:13:50: prisma:query SELECT 1
+2025-08-28T17:13:50: prisma:query SELECT 1
+2025-08-28T17:14:20: prisma:query SELECT 1
+2025-08-28T17:14:20: prisma:query SELECT 1
+2025-08-28T17:14:50: prisma:query SELECT 1
+2025-08-28T17:14:50: prisma:query SELECT 1
+2025-08-28T17:15:20: prisma:query SELECT 1
+2025-08-28T17:15:20: prisma:query SELECT 1
+2025-08-28T17:15:50: prisma:query SELECT 1
+2025-08-28T17:15:50: prisma:query SELECT 1
+2025-08-28T17:16:20: prisma:query SELECT 1
+2025-08-28T17:16:20: prisma:query SELECT 1
+2025-08-28T17:16:50: prisma:query SELECT 1
+2025-08-28T17:16:50: prisma:query SELECT 1
+2025-08-28T17:17:20: prisma:query SELECT 1
+2025-08-28T17:17:50: prisma:query SELECT 1
+2025-08-28T17:17:50: prisma:query SELECT 1
+2025-08-28T17:18:20: prisma:query SELECT 1
+2025-08-28T17:18:20: prisma:query SELECT 1
+2025-08-28T17:18:50: prisma:query SELECT 1
+2025-08-28T17:18:50: prisma:query SELECT 1
+2025-08-28T17:19:20: prisma:query SELECT 1
+2025-08-28T17:19:20: prisma:query SELECT 1
+2025-08-28T17:19:50: prisma:query SELECT 1
+2025-08-28T17:19:50: prisma:query SELECT 1
+2025-08-28T17:20:20: prisma:query SELECT 1
+2025-08-28T17:20:20: prisma:query SELECT 1
+2025-08-28T17:20:50: prisma:query SELECT 1
+2025-08-28T17:20:50: prisma:query SELECT 1
+2025-08-28T17:21:20: prisma:query SELECT 1
+2025-08-28T17:21:20: prisma:query SELECT 1
+2025-08-28T17:21:50: prisma:query SELECT 1
+2025-08-28T17:21:50: prisma:query SELECT 1
+2025-08-28T17:22:20: prisma:query SELECT 1
+2025-08-28T17:22:50: prisma:query SELECT 1
+2025-08-28T17:22:50: prisma:query SELECT 1
+2025-08-28T17:23:20: prisma:query SELECT 1
+2025-08-28T17:23:20: prisma:query SELECT 1
+2025-08-28T17:23:50: prisma:query SELECT 1
+2025-08-28T17:23:50: prisma:query SELECT 1
+2025-08-28T17:24:20: prisma:query SELECT 1
+2025-08-28T17:24:20: prisma:query SELECT 1
+2025-08-28T17:24:50: prisma:query SELECT 1
+2025-08-28T17:24:50: prisma:query SELECT 1
+2025-08-28T17:25:20: prisma:query SELECT 1
+2025-08-28T17:25:20: prisma:query SELECT 1
+2025-08-28T17:25:50: prisma:query SELECT 1
+2025-08-28T17:25:50: prisma:query SELECT 1
+2025-08-28T17:26:20: prisma:query SELECT 1
+2025-08-28T17:26:20: prisma:query SELECT 1
+2025-08-28T17:26:50: prisma:query SELECT 1
+2025-08-28T17:26:50: prisma:query SELECT 1
+2025-08-28T17:27:20: prisma:query SELECT 1
+2025-08-28T17:27:50: prisma:query SELECT 1
+2025-08-28T17:27:50: prisma:query SELECT 1
+2025-08-28T17:28:20: prisma:query SELECT 1
+2025-08-28T17:28:20: prisma:query SELECT 1
+2025-08-28T17:28:50: prisma:query SELECT 1
+2025-08-28T17:28:50: prisma:query SELECT 1
+2025-08-28T17:29:20: prisma:query SELECT 1
+2025-08-28T17:29:20: prisma:query SELECT 1
+2025-08-28T17:29:50: prisma:query SELECT 1
+2025-08-28T17:29:50: prisma:query SELECT 1
+2025-08-28T17:30:20: prisma:query SELECT 1
+2025-08-28T17:30:20: prisma:query SELECT 1
+2025-08-28T17:30:50: prisma:query SELECT 1
+2025-08-28T17:30:50: prisma:query SELECT 1
+2025-08-28T17:31:20: prisma:query SELECT 1
+2025-08-28T17:31:20: prisma:query SELECT 1
+2025-08-28T17:31:50: prisma:query SELECT 1
+2025-08-28T17:31:50: prisma:query SELECT 1
+2025-08-28T17:32:20: prisma:query SELECT 1
+2025-08-28T17:32:50: prisma:query SELECT 1
+2025-08-28T17:32:50: prisma:query SELECT 1
+2025-08-28T17:33:20: prisma:query SELECT 1
+2025-08-28T17:33:20: prisma:query SELECT 1
+2025-08-28T17:33:50: prisma:query SELECT 1
+2025-08-28T17:33:50: prisma:query SELECT 1
+2025-08-28T17:34:20: prisma:query SELECT 1
+2025-08-28T17:34:20: prisma:query SELECT 1
+2025-08-28T17:34:50: prisma:query SELECT 1
+2025-08-28T17:34:50: prisma:query SELECT 1
+2025-08-28T17:35:20: prisma:query SELECT 1
+2025-08-28T17:35:20: prisma:query SELECT 1
+2025-08-28T17:35:50: prisma:query SELECT 1
+2025-08-28T17:35:50: prisma:query SELECT 1
+2025-08-28T17:36:20: prisma:query SELECT 1
+2025-08-28T17:36:20: prisma:query SELECT 1
+2025-08-28T17:36:50: prisma:query SELECT 1
+2025-08-28T17:36:50: prisma:query SELECT 1
+2025-08-28T17:37:20: prisma:query SELECT 1
+2025-08-28T17:37:50: prisma:query SELECT 1
+2025-08-28T17:37:50: prisma:query SELECT 1
+2025-08-28T17:38:20: prisma:query SELECT 1
+2025-08-28T17:38:20: prisma:query SELECT 1
+2025-08-28T17:38:50: prisma:query SELECT 1
+2025-08-28T17:38:50: prisma:query SELECT 1
+2025-08-28T17:39:20: prisma:query SELECT 1
+2025-08-28T17:39:20: prisma:query SELECT 1
+2025-08-28T17:39:50: prisma:query SELECT 1
+2025-08-28T17:39:50: prisma:query SELECT 1
+2025-08-28T17:40:20: prisma:query SELECT 1
+2025-08-28T17:40:20: prisma:query SELECT 1
+2025-08-28T17:40:50: prisma:query SELECT 1
+2025-08-28T17:40:50: prisma:query SELECT 1
+2025-08-28T17:41:20: prisma:query SELECT 1
+2025-08-28T17:41:20: prisma:query SELECT 1
+2025-08-28T17:41:50: prisma:query SELECT 1
+2025-08-28T17:41:50: prisma:query SELECT 1
+2025-08-28T17:42:20: prisma:query SELECT 1
+2025-08-28T17:42:50: prisma:query SELECT 1
+2025-08-28T17:42:50: prisma:query SELECT 1
+2025-08-28T17:43:20: prisma:query SELECT 1
+2025-08-28T17:43:20: prisma:query SELECT 1
+2025-08-28T17:43:50: prisma:query SELECT 1
+2025-08-28T17:43:50: prisma:query SELECT 1
+2025-08-28T17:44:20: prisma:query SELECT 1
+2025-08-28T17:44:20: prisma:query SELECT 1
+2025-08-28T17:44:50: prisma:query SELECT 1
+2025-08-28T17:44:50: prisma:query SELECT 1
+2025-08-28T17:45:20: prisma:query SELECT 1
+2025-08-28T17:45:20: prisma:query SELECT 1
+2025-08-28T17:45:50: prisma:query SELECT 1
+2025-08-28T17:45:50: prisma:query SELECT 1
+2025-08-28T17:46:20: prisma:query SELECT 1
+2025-08-28T17:46:20: prisma:query SELECT 1
+2025-08-28T17:46:50: prisma:query SELECT 1
+2025-08-28T17:46:50: prisma:query SELECT 1
+2025-08-28T17:47:20: prisma:query SELECT 1
+2025-08-28T17:47:50: prisma:query SELECT 1
+2025-08-28T17:47:50: prisma:query SELECT 1
+2025-08-28T17:48:20: prisma:query SELECT 1
+2025-08-28T17:48:20: prisma:query SELECT 1
+2025-08-28T17:48:50: prisma:query SELECT 1
+2025-08-28T17:48:50: prisma:query SELECT 1
+2025-08-28T17:49:20: prisma:query SELECT 1
+2025-08-28T17:49:20: prisma:query SELECT 1
+2025-08-28T17:49:50: prisma:query SELECT 1
+2025-08-28T17:49:50: prisma:query SELECT 1
+2025-08-28T17:50:20: prisma:query SELECT 1
+2025-08-28T17:50:20: prisma:query SELECT 1
+2025-08-28T17:50:50: prisma:query SELECT 1
+2025-08-28T17:50:50: prisma:query SELECT 1
+2025-08-28T17:51:20: prisma:query SELECT 1
+2025-08-28T17:51:20: prisma:query SELECT 1
+2025-08-28T17:51:50: prisma:query SELECT 1
+2025-08-28T17:51:50: prisma:query SELECT 1
+2025-08-28T17:52:20: prisma:query SELECT 1
+2025-08-28T17:52:50: prisma:query SELECT 1
+2025-08-28T17:52:50: prisma:query SELECT 1
+2025-08-28T17:53:20: prisma:query SELECT 1
+2025-08-28T17:53:20: prisma:query SELECT 1
+2025-08-28T17:53:50: prisma:query SELECT 1
+2025-08-28T17:53:50: prisma:query SELECT 1
+2025-08-28T17:54:20: prisma:query SELECT 1
+2025-08-28T17:54:20: prisma:query SELECT 1
+2025-08-28T17:54:50: prisma:query SELECT 1
+2025-08-28T17:54:50: prisma:query SELECT 1
+2025-08-28T17:55:20: prisma:query SELECT 1
+2025-08-28T17:55:20: prisma:query SELECT 1
+2025-08-28T17:55:50: prisma:query SELECT 1
+2025-08-28T17:55:50: prisma:query SELECT 1
+2025-08-28T17:56:20: prisma:query SELECT 1
+2025-08-28T17:56:20: prisma:query SELECT 1
+2025-08-28T17:56:50: prisma:query SELECT 1
+2025-08-28T17:56:50: prisma:query SELECT 1
+2025-08-28T17:57:20: prisma:query SELECT 1
+2025-08-28T17:57:50: prisma:query SELECT 1
+2025-08-28T17:57:50: prisma:query SELECT 1
+2025-08-28T17:58:20: prisma:query SELECT 1
+2025-08-28T17:58:20: prisma:query SELECT 1
+2025-08-28T17:58:50: prisma:query SELECT 1
+2025-08-28T17:58:50: prisma:query SELECT 1
+2025-08-28T17:59:20: prisma:query SELECT 1
+2025-08-28T17:59:20: prisma:query SELECT 1
+2025-08-28T17:59:50: prisma:query SELECT 1
+2025-08-28T17:59:50: prisma:query SELECT 1
+2025-08-28T18:00:20: prisma:query SELECT 1
+2025-08-28T18:00:20: prisma:query SELECT 1
+2025-08-28T18:00:50: prisma:query SELECT 1
+2025-08-28T18:00:50: prisma:query SELECT 1
+2025-08-28T18:01:20: prisma:query SELECT 1
+2025-08-28T18:01:20: prisma:query SELECT 1
+2025-08-28T18:01:50: prisma:query SELECT 1
+2025-08-28T18:01:50: prisma:query SELECT 1
+2025-08-28T18:02:20: prisma:query SELECT 1
+2025-08-28T18:02:50: prisma:query SELECT 1
+2025-08-28T18:02:50: prisma:query SELECT 1
+2025-08-28T18:03:20: prisma:query SELECT 1
+2025-08-28T18:03:20: prisma:query SELECT 1
+2025-08-28T18:03:50: prisma:query SELECT 1
+2025-08-28T18:03:50: prisma:query SELECT 1
+2025-08-28T18:04:20: prisma:query SELECT 1
+2025-08-28T18:04:20: prisma:query SELECT 1
+2025-08-28T18:04:50: prisma:query SELECT 1
+2025-08-28T18:04:50: prisma:query SELECT 1
+2025-08-28T18:05:20: prisma:query SELECT 1
+2025-08-28T18:05:20: prisma:query SELECT 1
+2025-08-28T18:05:50: prisma:query SELECT 1
+2025-08-28T18:05:50: prisma:query SELECT 1
+2025-08-28T18:06:20: prisma:query SELECT 1
+2025-08-28T18:06:20: prisma:query SELECT 1
+2025-08-28T18:06:50: prisma:query SELECT 1
+2025-08-28T18:06:50: prisma:query SELECT 1
+2025-08-28T18:07:20: prisma:query SELECT 1
+2025-08-28T18:07:50: prisma:query SELECT 1
+2025-08-28T18:07:50: prisma:query SELECT 1
+2025-08-28T18:08:20: prisma:query SELECT 1
+2025-08-28T18:08:20: prisma:query SELECT 1
+2025-08-28T18:08:50: prisma:query SELECT 1
+2025-08-28T18:08:50: prisma:query SELECT 1
+2025-08-28T18:09:20: prisma:query SELECT 1
+2025-08-28T18:09:20: prisma:query SELECT 1
+2025-08-28T18:09:50: prisma:query SELECT 1
+2025-08-28T18:09:50: prisma:query SELECT 1
+2025-08-28T18:10:20: prisma:query SELECT 1
+2025-08-28T18:10:20: prisma:query SELECT 1
+2025-08-28T18:10:50: prisma:query SELECT 1
+2025-08-28T18:10:50: prisma:query SELECT 1
+2025-08-28T18:11:20: prisma:query SELECT 1
+2025-08-28T18:11:20: prisma:query SELECT 1
+2025-08-28T18:11:50: prisma:query SELECT 1
+2025-08-28T18:11:50: prisma:query SELECT 1
+2025-08-28T18:12:20: prisma:query SELECT 1
+2025-08-28T18:12:50: prisma:query SELECT 1
+2025-08-28T18:12:50: prisma:query SELECT 1
+2025-08-28T18:13:20: prisma:query SELECT 1
+2025-08-28T18:13:20: prisma:query SELECT 1
+2025-08-28T18:13:50: prisma:query SELECT 1
+2025-08-28T18:13:50: prisma:query SELECT 1
+2025-08-28T18:14:20: prisma:query SELECT 1
+2025-08-28T18:14:20: prisma:query SELECT 1
+2025-08-28T18:14:50: prisma:query SELECT 1
+2025-08-28T18:14:50: prisma:query SELECT 1
+2025-08-28T18:15:20: prisma:query SELECT 1
+2025-08-28T18:15:20: prisma:query SELECT 1
+2025-08-28T18:15:50: prisma:query SELECT 1
+2025-08-28T18:15:50: prisma:query SELECT 1
+2025-08-28T18:16:20: prisma:query SELECT 1
+2025-08-28T18:16:20: prisma:query SELECT 1
+2025-08-28T18:16:50: prisma:query SELECT 1
+2025-08-28T18:16:50: prisma:query SELECT 1
+2025-08-28T18:17:20: prisma:query SELECT 1
+2025-08-28T18:17:50: prisma:query SELECT 1
+2025-08-28T18:17:50: prisma:query SELECT 1
+2025-08-28T18:18:20: prisma:query SELECT 1
+2025-08-28T18:18:20: prisma:query SELECT 1
+2025-08-28T18:18:50: prisma:query SELECT 1
+2025-08-28T18:18:50: prisma:query SELECT 1
+2025-08-28T18:19:20: prisma:query SELECT 1
+2025-08-28T18:19:20: prisma:query SELECT 1
+2025-08-28T18:19:50: prisma:query SELECT 1
+2025-08-28T18:19:50: prisma:query SELECT 1
+2025-08-28T18:20:20: prisma:query SELECT 1
+2025-08-28T18:20:21: prisma:query SELECT 1
+2025-08-28T18:20:51: prisma:query SELECT 1
+2025-08-28T18:20:51: prisma:query SELECT 1
+2025-08-28T18:21:21: prisma:query SELECT 1
+2025-08-28T18:21:21: prisma:query SELECT 1
+2025-08-28T18:21:51: prisma:query SELECT 1
+2025-08-28T18:21:51: prisma:query SELECT 1
+2025-08-28T18:22:21: prisma:query SELECT 1
+2025-08-28T18:22:51: prisma:query SELECT 1
+2025-08-28T18:22:51: prisma:query SELECT 1
+2025-08-28T18:23:21: prisma:query SELECT 1
+2025-08-28T18:23:21: prisma:query SELECT 1
+2025-08-28T18:23:51: prisma:query SELECT 1
+2025-08-28T18:23:51: prisma:query SELECT 1
+2025-08-28T18:24:21: prisma:query SELECT 1
+2025-08-28T18:24:21: prisma:query SELECT 1
+2025-08-28T18:24:51: prisma:query SELECT 1
+2025-08-28T18:24:51: prisma:query SELECT 1
+2025-08-28T18:25:21: prisma:query SELECT 1
+2025-08-28T18:25:21: prisma:query SELECT 1
+2025-08-28T18:25:51: prisma:query SELECT 1
+2025-08-28T18:25:51: prisma:query SELECT 1
+2025-08-28T18:26:21: prisma:query SELECT 1
+2025-08-28T18:26:21: prisma:query SELECT 1
+2025-08-28T18:26:51: prisma:query SELECT 1
+2025-08-28T18:26:51: prisma:query SELECT 1
+2025-08-28T18:27:21: prisma:query SELECT 1
+2025-08-28T18:27:51: prisma:query SELECT 1
+2025-08-28T18:27:51: prisma:query SELECT 1
+2025-08-28T18:28:21: prisma:query SELECT 1
+2025-08-28T18:28:21: prisma:query SELECT 1
+2025-08-28T18:28:51: prisma:query SELECT 1
+2025-08-28T18:28:51: prisma:query SELECT 1
+2025-08-28T18:29:21: prisma:query SELECT 1
+2025-08-28T18:29:21: prisma:query SELECT 1
+2025-08-28T18:29:51: prisma:query SELECT 1
+2025-08-28T18:29:51: prisma:query SELECT 1
+2025-08-28T18:30:21: prisma:query SELECT 1
+2025-08-28T18:30:21: prisma:query SELECT 1
+2025-08-28T18:30:51: prisma:query SELECT 1
+2025-08-28T18:30:51: prisma:query SELECT 1
+2025-08-28T18:31:21: prisma:query SELECT 1
+2025-08-28T18:31:21: prisma:query SELECT 1
+2025-08-28T18:31:51: prisma:query SELECT 1
+2025-08-28T18:31:51: prisma:query SELECT 1
+2025-08-28T18:32:21: prisma:query SELECT 1
+2025-08-28T18:32:51: prisma:query SELECT 1
+2025-08-28T18:32:51: prisma:query SELECT 1
+2025-08-28T18:33:21: prisma:query SELECT 1
+2025-08-28T18:33:21: prisma:query SELECT 1
+2025-08-28T18:33:51: prisma:query SELECT 1
+2025-08-28T18:33:51: prisma:query SELECT 1
+2025-08-28T18:34:21: prisma:query SELECT 1
+2025-08-28T18:34:21: prisma:query SELECT 1
+2025-08-28T18:34:51: prisma:query SELECT 1
+2025-08-28T18:34:51: prisma:query SELECT 1
+2025-08-28T18:35:21: prisma:query SELECT 1
+2025-08-28T18:35:21: prisma:query SELECT 1
+2025-08-28T18:35:51: prisma:query SELECT 1
+2025-08-28T18:35:51: prisma:query SELECT 1
+2025-08-28T18:36:21: prisma:query SELECT 1
+2025-08-28T18:36:21: prisma:query SELECT 1
+2025-08-28T18:36:51: prisma:query SELECT 1
+2025-08-28T18:36:51: prisma:query SELECT 1
+2025-08-28T18:37:21: prisma:query SELECT 1
+2025-08-28T18:37:51: prisma:query SELECT 1
+2025-08-28T18:37:51: prisma:query SELECT 1
+2025-08-28T18:38:21: prisma:query SELECT 1
+2025-08-28T18:38:21: prisma:query SELECT 1
+2025-08-28T18:38:51: prisma:query SELECT 1
+2025-08-28T18:38:51: prisma:query SELECT 1
+2025-08-28T18:39:21: prisma:query SELECT 1
+2025-08-28T18:39:21: prisma:query SELECT 1
+2025-08-28T18:39:51: prisma:query SELECT 1
+2025-08-28T18:39:51: prisma:query SELECT 1
+2025-08-28T18:40:21: prisma:query SELECT 1
+2025-08-28T18:40:21: prisma:query SELECT 1
+2025-08-28T18:40:51: prisma:query SELECT 1
+2025-08-28T18:40:51: prisma:query SELECT 1
+2025-08-28T18:41:21: prisma:query SELECT 1
+2025-08-28T18:41:21: prisma:query SELECT 1
+2025-08-28T18:41:51: prisma:query SELECT 1
+2025-08-28T18:41:51: prisma:query SELECT 1
+2025-08-28T18:42:21: prisma:query SELECT 1
+2025-08-28T18:42:51: prisma:query SELECT 1
+2025-08-28T18:42:51: prisma:query SELECT 1
+2025-08-28T18:43:21: prisma:query SELECT 1
+2025-08-28T18:43:21: prisma:query SELECT 1
+2025-08-28T18:43:51: prisma:query SELECT 1
+2025-08-28T18:43:51: prisma:query SELECT 1
+2025-08-28T18:44:21: prisma:query SELECT 1
+2025-08-28T18:44:21: prisma:query SELECT 1
+2025-08-28T18:44:51: prisma:query SELECT 1
+2025-08-28T18:44:51: prisma:query SELECT 1
+2025-08-28T18:45:21: prisma:query SELECT 1
+2025-08-28T18:45:21: prisma:query SELECT 1
+2025-08-28T18:45:51: prisma:query SELECT 1
+2025-08-28T18:45:51: prisma:query SELECT 1
+2025-08-28T18:46:21: prisma:query SELECT 1
+2025-08-28T18:46:21: prisma:query SELECT 1
+2025-08-28T18:46:51: prisma:query SELECT 1
+2025-08-28T18:46:51: prisma:query SELECT 1
+2025-08-28T18:47:21: prisma:query SELECT 1
+2025-08-28T18:47:51: prisma:query SELECT 1
+2025-08-28T18:47:51: prisma:query SELECT 1
+2025-08-28T18:48:21: prisma:query SELECT 1
+2025-08-28T18:48:21: prisma:query SELECT 1
+2025-08-28T18:48:51: prisma:query SELECT 1
+2025-08-28T18:48:51: prisma:query SELECT 1
+2025-08-28T18:49:21: prisma:query SELECT 1
+2025-08-28T18:49:21: prisma:query SELECT 1
+2025-08-28T18:49:51: prisma:query SELECT 1
+2025-08-28T18:49:51: prisma:query SELECT 1
+2025-08-28T18:50:21: prisma:query SELECT 1
+2025-08-28T18:50:21: prisma:query SELECT 1
+2025-08-28T18:50:51: prisma:query SELECT 1
+2025-08-28T18:50:51: prisma:query SELECT 1
+2025-08-28T18:51:21: prisma:query SELECT 1
+2025-08-28T18:51:21: prisma:query SELECT 1
+2025-08-28T18:51:51: prisma:query SELECT 1
+2025-08-28T18:51:51: prisma:query SELECT 1
+2025-08-28T18:52:21: prisma:query SELECT 1
+2025-08-28T18:52:51: prisma:query SELECT 1
+2025-08-28T18:52:51: prisma:query SELECT 1
+2025-08-28T18:53:21: prisma:query SELECT 1
+2025-08-28T18:53:21: prisma:query SELECT 1
+2025-08-28T18:53:51: prisma:query SELECT 1
+2025-08-28T18:53:51: prisma:query SELECT 1
+2025-08-28T18:54:21: prisma:query SELECT 1
+2025-08-28T18:54:21: prisma:query SELECT 1
+2025-08-28T18:54:51: prisma:query SELECT 1
+2025-08-28T18:54:51: prisma:query SELECT 1
+2025-08-28T18:55:21: prisma:query SELECT 1
+2025-08-28T18:55:21: prisma:query SELECT 1
+2025-08-28T18:55:51: prisma:query SELECT 1
+2025-08-28T18:55:51: prisma:query SELECT 1
+2025-08-28T18:56:21: prisma:query SELECT 1
+2025-08-28T18:56:21: prisma:query SELECT 1
+2025-08-28T18:56:51: prisma:query SELECT 1
+2025-08-28T18:56:51: prisma:query SELECT 1
+2025-08-28T18:57:21: prisma:query SELECT 1
+2025-08-28T18:57:51: prisma:query SELECT 1
+2025-08-28T18:57:51: prisma:query SELECT 1

@@ -1,0 +1,25 @@
+[Unit]
+Description=RSVShop Next.js App (Dev)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rsvshop
+WorkingDirectory=/home/rsvshop/rsvshop
+Environment=NODE_ENV=development
+Environment=HOST=127.0.0.1
+Environment=PORT=4900
+ExecStart=/usr/bin/npm run dev
+Restart=always
+RestartSec=1
+KillSignal=SIGINT
+TimeoutStopSec=15
+
+# For production, replace the above ExecStart and envs with:
+# Environment=NODE_ENV=production
+# Environment=PORT=4900
+# ExecStart=/usr/bin/npm run start
+
+[Install]
+WantedBy=multi-user.target

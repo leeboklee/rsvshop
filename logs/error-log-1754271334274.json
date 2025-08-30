@@ -1,0 +1,24 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-04T01:33:32.766Z"
+    },
+    "timestamp": "2025-08-04T01:33:32.776Z",
+    "recoveryAttempts": 1
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-04T01:35:34.273Z"
+    },
+    "timestamp": "2025-08-04T01:35:34.273Z",
+    "recoveryAttempts": 2
+  }
+]

@@ -1,0 +1,37 @@
+nohup: ignoring input
+
+> rsvshop@0.1.0 dev
+> NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900 --turbo'
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+[33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+[32m[nodemon] starting `npx next dev --port 4900 --turbo`[39m
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at errorOrDestroy (node:internal/streams/destroy:238:7)
+    at node:internal/fs/streams:272:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:683:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+
+Node.js v20.19.4
+  ▲ Next.js 14.2.31 (turbo)
+  - Local:        http://localhost:4900
+  - Environments: .env.local, .env
+  - Experiments (use with caution):
+    · turbo
+    · webpackBuildWorker
+
+ ✓ Starting...
+ ✓ Compiled in 641ms
+ ✓ Ready in 2.8s
+[?25h

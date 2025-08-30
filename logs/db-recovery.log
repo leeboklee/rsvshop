@@ -1,0 +1,78 @@
+[2025-08-14T16:09:04.919Z] [ERROR] 데이터베이스 연결 실패: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+[2025-08-14T16:09:05.236Z] [ERROR] 데이터 무결성 확인 실패: 
+Invalid `this.prisma.user.count()` invocation in
+/home/rsvshop/projects/rsvshop/scripts/db-recovery-manager.js:42:48
+
+  39 async checkDataIntegrity() {
+  40   try {
+  41     // 주요 테이블 데이터 확인
+→ 42     const userCount = await this.prisma.user.count(
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+[2025-08-14T16:10:24.408Z] [INFO] 데이터베이스 연결 정상
+[2025-08-14T16:10:24.429Z] [ERROR] 데이터 무결성 확인 실패: Cannot read properties of undefined (reading 'count')
+[2025-08-14T16:11:07.619Z] [INFO] 백업에서 복구 시작: /home/rsvshop/projects/rsvshop/backup/backup/backup-2025-08-01T06-56-38-248Z.json
+[2025-08-14T16:11:07.621Z] [ERROR] 백업 복구 실패: ENOENT: no such file or directory, open '/home/rsvshop/projects/rsvshop/backup/backup/backup-2025-08-01T06-56-38-248Z.json'
+[2025-08-14T16:11:14.793Z] [INFO] 백업에서 복구 시작: /home/rsvshop/projects/rsvshop/backup/backup/backup-2025-08-01T06-56-38-248Z.json
+[2025-08-14T16:11:14.796Z] [ERROR] 백업 복구 실패: ENOENT: no such file or directory, open '/home/rsvshop/projects/rsvshop/backup/backup/backup-2025-08-01T06-56-38-248Z.json'
+[2025-08-17T03:16:50.918Z] [ERROR] 데이터베이스 연결 실패: 
+Invalid `prisma.$queryRaw()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+[2025-08-17T03:16:51.052Z] [ERROR] 데이터 무결성 확인 실패: 
+Invalid `this.prisma.user.count()` invocation in
+/home/rsvshop/projects/rsvshop/scripts/db-recovery-manager.js:42:48
+
+  39 async checkDataIntegrity() {
+  40   try {
+  41     // 주요 테이블 데이터 확인
+→ 42     const userCount = await this.prisma.user.count(
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+[2025-08-17T03:17:19.722Z] [INFO] 데이터베이스 연결 정상
+[2025-08-17T03:17:19.774Z] [ERROR] 데이터 무결성 확인 실패: Cannot read properties of undefined (reading 'count')
+[2025-08-17T03:17:36.416Z] [INFO] 데이터베이스 연결 정상
+[2025-08-17T03:17:36.420Z] [ERROR] 데이터 무결성 확인 실패: Cannot read properties of undefined (reading 'count')
+[2025-08-17T03:19:51.746Z] [INFO] 시드 데이터 실행 시작
+[2025-08-17T03:19:57.020Z] [ERROR] 시드 데이터 실행 실패: Command failed: npx tsx prisma/seed.ts
+npm warn exec The following package was not found and will be installed: tsx@4.20.4
+TypeError: Cannot read properties of undefined (reading 'deleteMany')
+    at main (/home/rsvshop/projects/rsvshop/prisma/seed.ts:9:26)
+    at <anonymous> (/home/rsvshop/projects/rsvshop/prisma/seed.ts:247:1)
+    at Object.<anonymous> (/home/rsvshop/projects/rsvshop/prisma/seed.ts:254:4)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object.transformer (/home/rsvshop/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at cjsLoader (node:internal/modules/esm/translators:317:5)
+
+[2025-08-17T03:19:57.020Z] [ERROR] 시드 데이터 실행 실패: Command failed: npx tsx prisma/seed.ts
+npm warn exec The following package was not found and will be installed: tsx@4.20.4
+TypeError: Cannot read properties of undefined (reading 'deleteMany')
+    at main (/home/rsvshop/projects/rsvshop/prisma/seed.ts:9:26)
+    at <anonymous> (/home/rsvshop/projects/rsvshop/prisma/seed.ts:247:1)
+    at Object.<anonymous> (/home/rsvshop/projects/rsvshop/prisma/seed.ts:254:4)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object.transformer (/home/rsvshop/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at cjsLoader (node:internal/modules/esm/translators:317:5)
+
+[2025-08-17T03:22:08.570Z] [INFO] 시드 데이터 실행 시작
+[2025-08-17T03:26:53.921Z] [INFO] 데이터베이스 연결 정상
+[2025-08-17T03:26:53.999Z] [ERROR] 데이터 무결성 확인 실패: Cannot read properties of undefined (reading 'count')

@@ -1,0 +1,35 @@
+[
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T18:12:45.346Z"
+    },
+    "timestamp": "2025-08-03T18:12:45.353Z",
+    "recoveryAttempts": 1
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T18:13:27.756Z"
+    },
+    "timestamp": "2025-08-03T18:13:27.756Z",
+    "recoveryAttempts": 2
+  },
+  {
+    "type": "SERVER",
+    "message": "서버 오류 발생",
+    "details": {
+      "message": "서버 프로세스 크래시",
+      "code": 0,
+      "timestamp": "2025-08-03T18:14:16.426Z"
+    },
+    "timestamp": "2025-08-03T18:14:16.426Z",
+    "recoveryAttempts": 3
+  }
+]
