@@ -56,7 +56,9 @@ export function middleware(request: NextRequest) {
 			url.pathname.startsWith('/auth') ||
 			url.pathname.startsWith('/site') ||
 			url.pathname.startsWith('/widget') ||
-			url.pathname.startsWith('/test-error')
+			url.pathname.startsWith('/test-error') ||
+			url.pathname.startsWith('/dashboard') ||
+			url.pathname.startsWith('/channeling')
 		) {
 			return NextResponse.next();
 		}

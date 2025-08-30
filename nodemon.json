@@ -1,0 +1,44 @@
+{
+  "watch": [
+    "app/**/*",
+    "lib/**/*",
+    "prisma/**/*",
+    "next.config.js"
+  ],
+  "ext": "js,ts,tsx,jsx,json,prisma",
+  "ignore": [
+    ".next/**/*",
+    "node_modules/**/*",
+    "logs/**/*",
+    "test-results/**/*",
+    "backup/**/*",
+    "*.log",
+    "*.tmp",
+    "package-lock.json",
+    "pnpm-lock.yaml",
+    "yarn.lock",
+    "public/**/*",
+    "*.md",
+    ".env*",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/__tests__/**/*",
+    "**/coverage/**/*"
+  ],
+  "exec": "npx next dev --port 4900",
+  "env": {
+    "NODE_ENV": "development",
+    "NODE_OPTIONS": "--max-old-space-size=2048 --max-semi-space-size=256"
+  },
+  "restartable": "rs",
+  "delay": 500,
+  "verbose": false,
+  "legacyWatch": false,
+  "polling": false,
+  "watchThrottle": 50,
+  "ignoreRoot": [
+    ".git",
+    "node_modules",
+    ".next"
+  ]
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVShop 에러 처리 테스트</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .test-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .test-section.error {
+            border-left-color: #f44336;
+        }
+        .test-section.warning {
+            border-left-color: #ff9800;
+        }
+        button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        button.danger {
+            background: linear-gradient(45deg, #f44336, #d32f2f);
+        }
+        button.warning {
+            background: linear-gradient(45deg, #ff9800, #f57c00);
+        }
+        .result {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .success { color: #4CAF50; }
+        .error { color: #f44336; }
+        .warning { color: #ff9800; }
+        .info { color: #2196F3; }
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status.success { background: #4CAF50; color: white; }
+        .status.error { background: #f44336; color: white; }
+        .status.warning { background: #ff9800; color: white; }
+        .status.info { background: #2196F3; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 RSVShop 에러 처리 시스템 테스트</h1>
+        
+        <div class="test-section">
+            <h2>📊 시스템 상태</h2>
+            <div id="system-status">확인 중...</div>
+            <button onclick="checkSystemStatus()">시스템 상태 확인</button>
+        </div>
+
+        <div class="test-section">
+            <h2>🧪 에러 처리 테스트</h2>
+            <button onclick="testErrorReporting()">에러 리포트 API 테스트</button>
+            <button onclick="testErrorBoundary()">에러 바운더리 테스트</button>
+            <button onclick="testGlobalError()">전역 에러 처리 테스트</button>
+            <div id="error-test-results"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>🔍 에러 모니터링</h2>
+            <button onclick="startErrorMonitoring()">에러 모니터링 시작</button>
+            <button onclick="stopErrorMonitoring()">에러 모니터링 중지</button>
+            <button onclick="clearErrorLog()">에러 로그 정리</button>
+            <div id="error-log"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>⚡ 성능 테스트</h2>
+            <button onclick="testPerformance()">성능 테스트 실행</button>
+            <button onclick="testMemoryUsage()">메모리 사용량 테스트</button>
+            <div id="performance-results"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>🌐 네트워크 테스트</h2>
+            <button onclick="testNetworkConnectivity()">네트워크 연결 테스트</button>
+            <button onclick="testAPIResponse()">API 응답 테스트</button>
+            <div id="network-results"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>📝 테스트 결과 요약</h2>
+            <div id="test-summary">
+                <div class="result info">테스트를 실행해주세요...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let errorMonitor = null;
+        let testResults = {
+            total: 0,
+            passed: 0,
+            failed: 0,
+            startTime: null
+        };
+
+        // 시스템 상태 확인
+        async function checkSystemStatus() {
+            const statusDiv = document.getElementById('system-status');
+            statusDiv.innerHTML = '확인 중...';
+            
+            try {
+                const response = await fetch('http://localhost:4900/api/admin/error-report');
+                if (response.ok) {
+                    statusDiv.innerHTML = `
+                        <span class="status success">✅ 정상</span>
+                        서버가 정상적으로 응답하고 있습니다.
+                        <br>응답 시간: ${response.headers.get('x-response-time') || 'N/A'}
+                    `;
+                } else {
+                    statusDiv.innerHTML = `
+                        <span class="status warning">⚠️ 경고</span>
+                        서버 응답: ${response.status} ${response.statusText}
+                    `;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = `
+                    <span class="status error">❌ 오류</span>
+                    서버 연결 실패: ${error.message}
+                `;
+            }
+        }
+
+        // 에러 리포트 API 테스트
+        async function testErrorReporting() {
+            const resultsDiv = document.getElementById('error-test-results');
+            resultsDiv.innerHTML = '<div class="result info">테스트 실행 중...</div>';
+            
+            let results = [];
+            
+            try {
+                // GET 요청 테스트
+                const getResponse = await fetch('http://localhost:4900/api/admin/error-report');
+                if (getResponse.ok) {
+                    results.push('✅ GET 요청 성공');
+                } else {
+                    results.push(`❌ GET 요청 실패: ${getResponse.status}`);
+                }
+
+                // POST 요청 테스트
+                const postResponse = await fetch('http://localhost:4900/api/admin/error-report', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        type: 'test',
+                        message: '브라우저 테스트 에러',
+                        stack: '테스트 스택 트레이스',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                if (postResponse.ok) {
+                    results.push('✅ POST 요청 성공');
+                } else {
+                    results.push(`❌ POST 요청 실패: ${postResponse.status}`);
+                }
+
+                resultsDiv.innerHTML = `<div class="result success">${results.join('\n')}</div>`;
+                updateTestSummary(true);
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="result error">테스트 실패: ${error.message}</div>`;
+                updateTestSummary(false);
+            }
+        }
+
+        // 에러 바운더리 테스트
+        function testErrorBoundary() {
+            const resultsDiv = document.getElementById('error-test-results');
+            
+            try {
+                // 의도적으로 에러 발생
+                throw new Error('테스트용 에러 바운더리 에러');
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="result warning">
+                        에러 바운더리 테스트 완료
+                        에러 메시지: ${error.message}
+                    </div>
+                `;
+                updateTestSummary(true);
+            }
+        }
+
+        // 전역 에러 처리 테스트
+        function testGlobalError() {
+            const resultsDiv = document.getElementById('error-test-results');
+            
+            // 전역 에러 이벤트 발생
+            window.dispatchEvent(new ErrorEvent('error', {
+                error: new Error('전역 에러 테스트'),
+                message: '전역 에러 테스트 메시지'
+            }));
+            
+            resultsDiv.innerHTML = `
+                <div class="result info">
+                    전역 에러 이벤트 발생 완료
+                    브라우저 콘솔을 확인하세요.
+                </div>
+            `;
+            updateTestSummary(true);
+        }
+
+        // 에러 모니터링 시작
+        function startErrorMonitoring() {
+            if (!errorMonitor) {
+                errorMonitor = {
+                    errors: [],
+                    startTime: new Date(),
+                    addError: function(error) {
+                        this.errors.push({
+                            timestamp: new Date(),
+                            message: error.message,
+                            stack: error.stack,
+                            type: error.name
+                        });
+                        this.updateDisplay();
+                    },
+                    updateDisplay: function() {
+                        const logDiv = document.getElementById('error-log');
+                        logDiv.innerHTML = `
+                            <div class="result info">
+                                모니터링 시작: ${this.startTime.toLocaleTimeString()}
+                                총 에러 수: ${this.errors.length}
+                            </div>
+                            ${this.errors.map(err => `
+                                <div class="result error">
+                                    [${err.timestamp.toLocaleTimeString()}] ${err.type}: ${err.message}
+                                </div>
+                            `).join('')}
+                        `;
+                    }
+                };
+                
+                // 전역 에러 이벤트 리스너 등록
+                window.addEventListener('error', (event) => {
+                    errorMonitor.addError(event.error);
+                });
+                
+                // Promise 에러 이벤트 리스너 등록
+                window.addEventListener('unhandledrejection', (event) => {
+                    errorMonitor.addError(new Error(event.reason));
+                });
+            }
+            
+            document.getElementById('error-log').innerHTML = `
+                <div class="result success">
+                    에러 모니터링이 시작되었습니다.
+                    에러가 발생하면 자동으로 기록됩니다.
+                </div>
+            `;
+        }
+
+        // 에러 모니터링 중지
+        function stopErrorMonitoring() {
+            if (errorMonitor) {
+                window.removeEventListener('error', errorMonitor.addError);
+                window.removeEventListener('unhandledrejection', errorMonitor.addError);
+                errorMonitor = null;
+                
+                document.getElementById('error-log').innerHTML = `
+                    <div class="result warning">
+                        에러 모니터링이 중지되었습니다.
+                    </div>
+                `;
+            }
+        }
+
+        // 에러 로그 정리
+        function clearErrorLog() {
+            if (errorMonitor) {
+                errorMonitor.errors = [];
+                errorMonitor.updateDisplay();
+            }
+            document.getElementById('error-log').innerHTML = `
+                <div class="result info">
+                    에러 로그가 정리되었습니다.
+                </div>
+            `;
+        }
+
+        // 성능 테스트
+        function testPerformance() {
+            const resultsDiv = document.getElementById('performance-results');
+            const startTime = performance.now();
+            
+            // 간단한 성능 테스트
+            let result = 0;
+            for (let i = 0; i < 1000000; i++) {
+                result += Math.sqrt(i);
+            }
+            
+            const endTime = performance.now();
+            const duration = endTime - startTime;
+            
+            resultsDiv.innerHTML = `
+                <div class="result success">
+                    성능 테스트 완료
+                    계산 시간: ${duration.toFixed(2)}ms
+                    결과값: ${result.toFixed(2)}
+                </div>
+            `;
+            updateTestSummary(true);
+        }
+
+        // 메모리 사용량 테스트
+        function testMemoryUsage() {
+            const resultsDiv = document.getElementById('performance-results');
+            
+            if (performance.memory) {
+                const memory = performance.memory;
+                resultsDiv.innerHTML = `
+                    <div class="result info">
+                        메모리 사용량 정보
+                        사용 중: ${(memory.usedJSHeapSize / 1024 / 1024).toFixed(2)} MB
+                        총 할당: ${(memory.totalJSHeapSize / 1024 / 1024).toFixed(2)} MB
+                        제한: ${(memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2)} MB
+                    </div>
+                `;
+            } else {
+                resultsDiv.innerHTML = `
+                    <div class="result warning">
+                        메모리 정보를 가져올 수 없습니다.
+                        (Chrome에서만 지원)
+                    </div>
+                `;
+            }
+            updateTestSummary(true);
+        }
+
+        // 네트워크 연결 테스트
+        async function testNetworkConnectivity() {
+            const resultsDiv = document.getElementById('network-results');
+            resultsDiv.innerHTML = '<div class="result info">네트워크 테스트 중...</div>';
+            
+            try {
+                const startTime = performance.now();
+                const response = await fetch('http://localhost:4900');
+                const endTime = performance.now();
+                
+                const duration = endTime - startTime;
+                resultsDiv.innerHTML = `
+                    <div class="result success">
+                        네트워크 연결 성공
+                        응답 시간: ${duration.toFixed(2)}ms
+                        상태: ${response.status}
+                    </div>
+                `;
+                updateTestSummary(true);
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="result error">
+                        네트워크 연결 실패: ${error.message}
+                    </div>
+                `;
+                updateTestSummary(false);
+            }
+        }
+
+        // API 응답 테스트
+        async function testAPIResponse() {
+            const resultsDiv = document.getElementById('network-results');
+            resultsDiv.innerHTML = '<div class="result info">API 응답 테스트 중...</div>';
+            
+            try {
+                const response = await fetch('http://localhost:4900/api/admin/error-report');
+                const data = await response.json();
+                
+                resultsDiv.innerHTML = `
+                    <div class="result success">
+                        API 응답 성공
+                        상태: ${response.status}
+                        데이터: ${JSON.stringify(data, null, 2)}
+                    </div>
+                `;
+                updateTestSummary(true);
+                
+            } catch (error) {
+                resultsDiv.innerHTML = `
+                    <div class="result error">
+                        API 응답 실패: ${error.message}
+                    </div>
+                `;
+                updateTestSummary(false);
+            }
+        }
+
+        // 테스트 결과 요약 업데이트
+        function updateTestSummary(success) {
+            if (!testResults.startTime) {
+                testResults.startTime = new Date();
+            }
+            
+            testResults.total++;
+            if (success) {
+                testResults.passed++;
+            } else {
+                testResults.failed++;
+            }
+            
+            const summaryDiv = document.getElementById('test-summary');
+            const duration = new Date() - testResults.startTime;
+            
+            summaryDiv.innerHTML = `
+                <div class="result success">
+                    📊 테스트 결과 요약
+                    총 테스트: ${testResults.total}
+                    통과: ${testResults.passed} ✅
+                    실패: ${testResults.failed} ❌
+                    소요시간: ${duration}ms
+                    성공률: ${((testResults.passed / testResults.total) * 100).toFixed(1)}%
+                </div>
+            `;
+        }
+
+        // 페이지 로드 시 자동 실행
+        window.addEventListener('load', () => {
+            console.log('🚀 RSVShop 에러 처리 테스트 페이지가 로드되었습니다.');
+            checkSystemStatus();
+        });
+
+        // 전역 에러 핸들러
+        window.addEventListener('error', (event) => {
+            console.error('전역 에러 발생:', event.error);
+            if (errorMonitor) {
+                errorMonitor.addError(event.error);
+            }
+        });
+
+        // Promise 에러 핸들러
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('처리되지 않은 Promise 에러:', event.reason);
+            if (errorMonitor) {
+                errorMonitor.addError(new Error(event.reason));
+            }
+        });
+    </script>
+</body>
+</html>
