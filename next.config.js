@@ -18,16 +18,37 @@ const nextConfig = {
   // 압축 활성화
   compress: true,
   
+  // 성능 최적화 설정
+  swcMinify: true,
+  
+  // 실험적 기능으로 성능 향상
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['@heroicons/react', 'react-icons'],
+    turbo: {
+      rules: {
+        '*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js',
+        },
+      },
+    },
+  },
+  
   // 이미지 최적화
   images: {
     domains: ['example.com'],
     formats: ['image/webp', 'image/avif'],
   },
   
-  // 실험적 기능 최소화 (개발 안정성 우선)
-  experimental: {
-    // turbo: false, // 이 설정 제거
-  },
+
+  
+  // Cross Origin 허용 설정 (개발 환경)
+  allowedDevOrigins: [
+    '172.19.254.74',
+    'localhost',
+    '127.0.0.1'
+  ],
   
   // 웹팩 최적화
   webpack: (config, { dev, isServer }) => {
@@ -42,11 +63,32 @@ const nextConfig = {
       };
       
       // 소스맵 최적화 (빠른 로딩)
-      config.devtool = 'eval-source-map';
+      config.devtool = 'eval-cheap-module-source-map';
       
       // 개발 모드에서 번들 분석 비활성화
       config.optimization.minimize = false;
       config.optimization.minimizer = [];
+      
+      // 캐시 최적화 (개발 모드에서는 비활성화)
+      // config.cache = {
+      //   type: 'filesystem',
+      //   buildDependencies: {
+      //     config: [__filename],
+      //   },
+      //   cacheDirectory: require('path').resolve(__dirname, '.next/cache/webpack'),
+      // };
+      
+      // 모듈 해결 최적화
+      config.resolve = {
+        ...config.resolve,
+        alias: {
+          ...config.resolve.alias,
+          '@': require('path').resolve(__dirname, './'),
+        },
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+      };
+      
+      // 로더 최적화는 Next.js 기본 설정 사용
     }
     
     // 개발 서버에서 커스텀 청크 분할 비활성화 (ESM/CJS 충돌 회피)

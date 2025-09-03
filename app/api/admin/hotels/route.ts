@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
       data: {
         name: name.trim(),
         address: address?.trim() || null,
-        phone: phone?.trim() || null,
+        phone: phone?.trim() || '미입력',
         email: email?.trim() || null,
         description: description?.trim() || null
       }

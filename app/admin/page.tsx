@@ -479,7 +479,7 @@ export default function AdminPage() {
         router.push('/admin/hotels');
         break;
       case 'rooms':
-        router.push('/admin/rooms');
+        router.push('/admin/hotel-rooms');
         break;
       case 'packages':
         router.push('/admin/packages');

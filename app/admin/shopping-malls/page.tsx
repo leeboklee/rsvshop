@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 interface ShoppingMall {
   id: string;
   name: string;
-  platform: string;
+  platform?: string;
   commissionRate: number; // 수수료율 (%)
   isActive: boolean;
   createdAt: string;
@@ -19,68 +19,94 @@ export default function ShoppingMallsPage() {
   const [formData, setFormData] = useState({
     name: '',
     platform: '',
-    commissionRate: 0
+    commissionRate: 0,
+    description: ''
   });
 
-  // 샘플 데이터 로드
+  // 서버에서 로드 (DB API → 실패 시 mock API 폴백)
   useEffect(() => {
-    const sampleData: ShoppingMall[] = [
-      {
-        id: '1',
-        name: '스마트스토어',
-        platform: '네이버',
-        commissionRate: 3.5,
-        isActive: true,
-        createdAt: '2024-01-01'
-      },
-      {
-        id: '2',
-        name: 'G마켓',
-        platform: '이베이',
-        commissionRate: 5.0,
-        isActive: true,
-        createdAt: '2024-01-01'
-      },
-      {
-        id: '3',
-        name: '11번가',
-        platform: 'SK',
-        commissionRate: 4.2,
-        isActive: true,
-        createdAt: '2024-01-01'
+    const load = async () => {
+      try {
+        setLoading(true);
+        let malls: ShoppingMall[] | null = null;
+        try {
+          const res = await fetch('/api/admin/shopping-malls', { cache: 'no-store' });
+          if (res.ok) {
+            const data = await res.json();
+            malls = data.shoppingMalls || [];
+          }
+        } catch {}
+        if (!malls || malls.length === 0) {
+          const res2 = await fetch('/api/shopping-malls?activeOnly=true');
+          if (res2.ok) {
+            const data2 = await res2.json();
+            malls = data2.shoppingMalls || [];
+          }
+        }
+        setShoppingMalls(malls || []);
+      } finally {
+        setLoading(false);
       }
-    ];
-    setShoppingMalls(sampleData);
-    setLoading(false);
+    };
+    load();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (editingMall) {
       // 수정
-      setShoppingMalls(malls => 
-        malls.map(mall => 
-          mall.id === editingMall.id 
-            ? { ...mall, ...formData, commissionRate: Number(formData.commissionRate) }
-            : mall
-        )
-      );
-      setEditingMall(null);
+      const res = await fetch(`/api/admin/shopping-malls/${editingMall.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          platform: formData.platform || null,
+          commissionRate: Number(formData.commissionRate),
+          description: formData.description || null
+        })
+      });
+      if (res.ok) {
+        const { shoppingMall } = await res.json();
+        setShoppingMalls(malls => malls.map(m => (m.id === shoppingMall.id ? shoppingMall : m)));
+        setEditingMall(null);
+      } else {
+        const err = await res.json().catch(() => ({}));
+        alert(err.error || '수정 실패');
+      }
     } else {
-      // 추가
-      const newMall: ShoppingMall = {
-        id: Date.now().toString(),
-        name: formData.name,
-        platform: formData.platform,
-        commissionRate: Number(formData.commissionRate),
-        isActive: true,
-        createdAt: new Date().toISOString().split('T')[0]
-      };
-      setShoppingMalls(malls => [...malls, newMall]);
+      // 추가: DB API 시도 → 실패 시 임시 아이템으로 폴백
+      let added: ShoppingMall | null = null;
+      try {
+        const res = await fetch('/api/admin/shopping-malls', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: formData.name,
+            platform: formData.platform || null,
+            commissionRate: Number(formData.commissionRate),
+            description: formData.description || null
+          })
+        });
+        if (res.ok) {
+          const { shoppingMall } = await res.json();
+          added = shoppingMall;
+        }
+      } catch {}
+      if (!added) {
+        added = {
+          id: `temp_${Date.now()}`,
+          name: formData.name,
+          platform: formData.platform,
+          commissionRate: Number(formData.commissionRate),
+          isActive: true,
+          createdAt: new Date().toISOString()
+        } as ShoppingMall;
+      }
+      setShoppingMalls(malls => [added!, ...malls]);
     }
-    
-    setFormData({ name: '', platform: '', commissionRate: 0 });
+
+    setFormData({ name: '', platform: '', commissionRate: 0, description: '' });
     setShowAddForm(false);
   };
 
@@ -88,28 +114,45 @@ export default function ShoppingMallsPage() {
     setEditingMall(mall);
     setFormData({
       name: mall.name,
-      platform: mall.platform,
-      commissionRate: mall.commissionRate
+      platform: mall.platform || '',
+      commissionRate: mall.commissionRate,
+      description: ''
     });
     setShowAddForm(true);
   };
 
-  const handleDelete = (id: string) => {
-    if (confirm('정말 삭제하시겠습니까?')) {
+  const handleDelete = async (id: string) => {
+    if (!confirm('정말 삭제하시겠습니까?')) return;
+    const res = await fetch(`/api/admin/shopping-malls/${id}`, { method: 'DELETE' });
+    if (res.ok) {
       setShoppingMalls(malls => malls.filter(mall => mall.id !== id));
+    } else {
+      const err = await res.json().catch(() => ({}));
+      alert(err.error || '삭제 실패');
     }
   };
 
-  const toggleActive = (id: string) => {
-    setShoppingMalls(malls =>
-      malls.map(mall =>
-        mall.id === id ? { ...mall, isActive: !mall.isActive } : mall
-      )
-    );
+  const toggleActive = async (id: string) => {
+    const mall = shoppingMalls.find(m => m.id === id);
+    if (!mall) return;
+    const res = await fetch(`/api/admin/shopping-malls/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: mall.name,
+        commissionRate: mall.commissionRate,
+        description: null,
+        isActive: !mall.isActive
+      })
+    });
+    if (res.ok) {
+      const { shoppingMall } = await res.json();
+      setShoppingMalls(malls => malls.map(m => (m.id === id ? shoppingMall : m)));
+    }
   };
 
   const resetForm = () => {
-    setFormData({ name: '', platform: '', commissionRate: 0 });
+    setFormData({ name: '', platform: '', commissionRate: 0, description: '' });
     setEditingMall(null);
     setShowAddForm(false);
   };
@@ -155,9 +198,11 @@ export default function ShoppingMallsPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-lg font-semibold">{mall.name}</h3>
-                  <span className="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">
-                    {mall.platform}
-                  </span>
+                  {mall.platform && (
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-sm rounded">
+                      {mall.platform}
+                    </span>
+                  )}
                   <span className={`px-2 py-1 text-sm rounded ${
                     mall.isActive 
                       ? 'bg-green-100 text-green-700' 
@@ -169,7 +214,7 @@ export default function ShoppingMallsPage() {
                 <div className="text-sm text-gray-600">
                   <span className="font-medium">수수료율: {mall.commissionRate}%</span>
                   <span className="mx-2">•</span>
-                  <span>등록일: {mall.createdAt}</span>
+                  <span>등록일: {new Date(mall.createdAt).toLocaleDateString()}</span>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -224,7 +269,7 @@ export default function ShoppingMallsPage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  플랫폼 <span className="text-red-500">*</span>
+                  플랫폼
                 </label>
                 <input
                   type="text"
@@ -232,7 +277,6 @@ export default function ShoppingMallsPage() {
                   onChange={(e) => setFormData({ ...formData, platform: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="예: 네이버"
-                  required
                 />
               </div>
               <div>
@@ -250,9 +294,16 @@ export default function ShoppingMallsPage() {
                   placeholder="3.5"
                   required
                 />
-                <p className="text-xs text-gray-500 mt-1">
-                  예: 3.5% 입력 시 고객 결제금액의 3.5%가 수수료로 차감됩니다
-                </p>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">설명</label>
+                <textarea
+                  value={formData.description}
+                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  rows={3}
+                  placeholder="메모 또는 설명"
+                />
               </div>
               <div className="flex gap-3 pt-4">
                 <button

@@ -1,10 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+import prisma from '@/app/lib/prisma';
+import serverLogger from '@/app/lib/serverLogger';
 
-const prisma = new PrismaClient();
+// Ensure Node.js runtime (Prisma is not supported on the edge runtime)
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+// use shared prisma client
 
 export async function GET() {
   try {
+    serverLogger.logApiStart('GET', '/api/admin/shopping-malls');
     console.log('[쇼핑몰 API] GET 요청 시작');
     
     const shoppingMalls = await prisma.shoppingMall.findMany({
@@ -18,34 +24,28 @@ export async function GET() {
         settlementDay: true,
         lastSettlementDate: true,
         nextSettlementDate: true,
-        createdAt: true,
-        _count: {
-          select: {
-            bookings: true
-          }
-        }
+        createdAt: true
       },
       orderBy: { createdAt: 'desc' }
     });
     
-    console.log('[쇼핑몰 API] 조회된 쇼핑몰:', shoppingMalls);
+    serverLogger.log('info', 'shopping-malls:list:ok', { count: shoppingMalls.length });
     
-    return NextResponse.json({ shoppingMalls });
+    const res = NextResponse.json({ success: true, shoppingMalls });
+    serverLogger.logApiEnd('GET', '/api/admin/shopping-malls', 200);
+    return res;
   } catch (error) {
-    console.error('[쇼핑몰 API] GET 오류:', error);
-    return NextResponse.json(
-      { error: '쇼핑몰 목록 조회에 실패했습니다.' },
-      { status: 500 }
-    );
+    serverLogger.logApiError('GET', '/api/admin/shopping-malls', error);
+    return NextResponse.json({ success: false, error: '쇼핑몰 목록 조회에 실패했습니다.' }, { status: 500 });
   }
 }
 
 export async function POST(request: NextRequest) {
   try {
-    console.log('[쇼핑몰 API] POST 요청 시작');
+    serverLogger.logApiStart('POST', '/api/admin/shopping-malls');
     
     const data = await request.json();
-    console.log('[쇼핑몰 API] 요청 데이터:', data);
+    serverLogger.log('debug', 'shopping-malls:create:req', data);
     
     const { name, commissionRate, description, settlementCycle, settlementDay, lastSettlementDate, nextSettlementDate } = data;
     
@@ -76,11 +76,7 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    console.log('[쇼핑몰 API] 쇼핑몰 생성 시도:', {
-      name: name.trim(),
-      commissionRate,
-      description: description?.trim() || null
-    });
+    serverLogger.log('info', 'shopping-malls:create:attempt', { name: name.trim(), commissionRate });
     
     const shoppingMall = await prisma.shoppingMall.create({
       data: {
@@ -94,22 +90,21 @@ export async function POST(request: NextRequest) {
       }
     });
     
-    console.log('[쇼핑몰 API] 생성 성공:', shoppingMall);
+    serverLogger.log('info', 'shopping-malls:create:ok', { id: shoppingMall.id });
     
-    return NextResponse.json({ success: true, shoppingMall });
+    const res = NextResponse.json({ success: true, shoppingMall });
+    serverLogger.logApiEnd('POST', '/api/admin/shopping-malls', 200);
+    return res;
   } catch (error) {
-    console.error('[쇼핑몰 API] POST 오류:', error);
+    serverLogger.logApiError('POST', '/api/admin/shopping-malls', error);
     
-    if (error.code === 'P2002') {
+    if ((error as any).code === 'P2002') {
       return NextResponse.json(
         { error: '이미 존재하는 쇼핑몰명입니다.' },
         { status: 400 }
       );
     }
     
-    return NextResponse.json(
-      { error: '쇼핑몰 등록에 실패했습니다.' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: '쇼핑몰 등록에 실패했습니다.' }, { status: 500 });
   }
 } 

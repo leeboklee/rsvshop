@@ -25,6 +25,7 @@ model Room {
   description      String
   imageUrl         String?
   capacity         Int
+  basePrice        Float              @default(0)  // 객실 기본 가격 추가
   createdAt        DateTime           @default(now())
   updatedAt        DateTime           @updatedAt
   hotelId          String?
@@ -89,6 +90,14 @@ model Booking {
   sellingPrice  Float?
   shoppingMall  String?
   supplyPrice   Float?
+  
+  // 수익 및 부가세 필드 추가
+  profit        Float?        // 수익 (판매가 - 공급가)
+  vatAmount     Float?        // 부가세 금액
+  vatRate       Float?        @default(10.0) // 부가세율 (기본 10%)
+  commission    Float?        // 수수료
+  commissionRate Float?       // 수수료율
+  
   room          Room?         @relation(fields: [roomId], references: [id])
   user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   bookingItems  BookingItem[]
@@ -166,6 +175,22 @@ model Product {
   taxRate        Float       @default(0.1)
   OrderItem      OrderItem[]
   Category       Category    @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+}
+
+/// Shopping mall/channel configuration for commissions and settlements
+model ShoppingMall {
+  id                 String    @id @default(cuid())
+  name               String    @unique
+  platform           String?
+  commissionRate     Float     @default(0)
+  description        String?
+  isActive           Boolean   @default(true)
+  settlementCycle    String?   @default("MONTHLY")
+  settlementDay      Int?
+  lastSettlementDate DateTime?
+  nextSettlementDate DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
 }
 
 /// Added for hotel/price management features

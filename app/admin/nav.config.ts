@@ -8,7 +8,7 @@ export const navItemsGrouped: NavGroup[] = [
   { label: '예약/객실', items: [
     { href: '/admin/reservations', label: '예약 관리' },
     { href: '/admin/calendar', label: '달력 뷰' },
-    { href: '/admin/rooms', label: '호텔 관리' },
+    { href: '/admin/hotel-rooms', label: '호텔객실관리' },
     { href: '/admin/packages', label: '패키지 관리' },
     { href: '/admin/shopping-malls', label: '쇼핑몰 관리' },
     { href: '/admin/customers', label: '고객 관리' },

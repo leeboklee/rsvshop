@@ -58,7 +58,7 @@ export default function DashboardPage() {
     
     // 관리자 하위 페이지 - 호텔 및 객실 관리
     { path: "/admin/hotels", name: "호텔 관리", description: "호텔 정보 및 설정", category: "호텔 및 객실 관리", type: "page", color: "purple" },
-    { path: "/admin/rooms", name: "객실 관리", description: "객실 정보 및 가격", category: "호텔 및 객실 관리", type: "page", color: "indigo" },
+    { path: "/admin/hotel-rooms", name: "호텔객실관리", description: "호텔과 객실 통합 관리", category: "호텔 및 객실 관리", type: "page", color: "indigo" },
     { path: "/admin/packages", name: "패키지 관리", description: "투어 패키지 관리", category: "호텔 및 객실 관리", type: "page", color: "pink" },
     
     // 관리자 하위 페이지 - 재무 및 결제 관리
@@ -107,7 +107,7 @@ export default function DashboardPage() {
     { path: "/api/admin/stats", name: "관리자 통계", description: "시스템 통계 데이터", category: "관리자 핵심 API", type: "api", color: "blue" },
     { path: "/api/admin/reservations", name: "예약 API", description: "예약 CRUD 작업", category: "관리자 핵심 API", type: "api", color: "green" },
     { path: "/api/admin/hotels", name: "호텔 API", description: "호텔 정보 관리", category: "관리자 핵심 API", type: "api", color: "purple" },
-    { path: "/api/admin/rooms", name: "객실 API", description: "객실 정보 관리", category: "관리자 핵심 API", type: "api", color: "indigo" },
+    { path: "/api/rooms", name: "객실 API", description: "객실 정보 관리", category: "관리자 핵심 API", type: "api", color: "indigo" },
     { path: "/api/admin/packages", name: "패키지 API", description: "투어 패키지 관리", category: "관리자 핵심 API", type: "api", color: "pink" },
     { path: "/api/admin/customers", name: "고객 API", description: "고객 정보 관리", category: "관리자 핵심 API", type: "api", color: "yellow" },
     { path: "/api/admin/payments", name: "결제 API", description: "결제 처리 및 내역", category: "관리자 핵심 API", type: "api", color: "emerald" },

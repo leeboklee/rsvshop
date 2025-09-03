@@ -6,8 +6,8 @@
     "node": ">=18.17.0"
   },
   "scripts": {
-    "dev": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nodemon --config nodemon.json --exec 'npx next dev --port 4900'",
-    "dev:fast": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 4900",
+    "dev": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 4900",
+    "dev:fast": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo",
     "dev:ultra": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=512' npx next dev --port 4900",
     "dev:bg": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nohup nodemon --config nodemon.json --exec 'npx next dev --port 4900' > dev-server.log 2>&1 &",
     "dev:pm2": "pm2 start npm --name 'rsvshop-dev' -- run dev",

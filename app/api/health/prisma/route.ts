@@ -1,32 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+import prisma from '@/app/lib/prisma';
+import serverLogger from '@/app/lib/serverLogger';
 
-const prisma = new PrismaClient();
+// Force Node runtime to avoid edge limitations
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {
-    // Prisma 연결 테스트
-    await prisma.$connect();
-    
-    // 간단한 쿼리로 연결 상태 확인
+    serverLogger.logApiStart('GET', '/api/health/prisma');
+    // 간단한 쿼리로 연결 상태 확인(연결은 싱글톤이 관리)
     const result = await prisma.$queryRaw`SELECT 1 as test`;
     
-    await prisma.$disconnect();
-    
-    return NextResponse.json({
+    const res = NextResponse.json({
       success: true,
       message: 'Prisma ORM 연결 성공',
       timestamp: new Date().toISOString(),
       test: result
     });
+    serverLogger.logApiEnd('GET', '/api/health/prisma', 200);
+    return res;
   } catch (error) {
-    console.error('Prisma 연결 오류:', error);
-    
-    try {
-      await prisma.$disconnect();
-    } catch (disconnectError) {
-      console.error('Prisma 연결 해제 오류:', disconnectError);
-    }
+    serverLogger.logApiError('GET', '/api/health/prisma', error);
     
     return NextResponse.json({
       success: false,

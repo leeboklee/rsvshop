@@ -79,7 +79,7 @@ export async function PATCH(
   } catch (error) {
     console.error('[쇼핑몰 API] PATCH 오류:', error);
     
-    if (error.code === 'P2002') {
+    if ((error as any).code === 'P2002') {
       return NextResponse.json(
         { error: '이미 존재하는 쇼핑몰명입니다.' },
         { status: 400 }

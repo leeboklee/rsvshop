@@ -1,119 +1,267 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+// import { apiErrorHandler } from '@/app/lib/api-error-handler';
 
 const prisma = new PrismaClient();
 
+// 개별 예약 상세 정보 조회
 export async function GET(
-  _req: NextRequest,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
-    console.log('🔍 예약 상세 조회 시작:', params.id);
+    const { id } = params;
+
+    if (!id) {
+      return NextResponse.json({ error: '예약 ID가 필요합니다.' }, { status: 400 });
+    }
     
     const booking = await prisma.booking.findUnique({
-      where: { id: params.id },
-      include: {
-        bookingItems: { 
-          include: { 
-            package: true 
-          } 
+      where: { id },
+      select: {
+        id: true,
+        userId: true,
+        totalAmount: true,
+        status: true,
+        checkInDate: true,
+        checkOutDate: true,
+        guestName: true,
+        guestPhone: true,
+        guestEmail: true,
+        notes: true,
+        createdAt: true,
+        updatedAt: true,
+        roomId: true,
+        depositAmount: true,
+        externalId: true,
+        orderNumber: true,
+        sellingPrice: true,
+        shoppingMall: true,
+        supplyPrice: true,
+        profit: true,
+        vatAmount: true,
+        vatRate: true,
+        commission: true,
+        commissionRate: true,
+        room: {
+          select: {
+            id: true,
+            name: true,
+            description: true,
+            basePrice: true,
+          },
         },
-        room: true,
         user: { 
           select: { 
             id: true, 
             name: true, 
-            email: true 
-          } 
-        }
-      }
+            email: true,
+          },
+        },
+        bookingItems: {
+          select: {
+            id: true,
+            packageId: true,
+            quantity: true,
+            price: true,
+            package: {
+              select: {
+                id: true,
+                name: true,
+                description: true,
+                price: true,
+              },
+            },
+          },
+        },
+      },
     });
     
     if (!booking) {
-      console.log('❌ 예약을 찾을 수 없음:', params.id);
       return NextResponse.json({ error: '예약을 찾을 수 없습니다.' }, { status: 404 });
     }
     
-    // 응답 데이터 구조화
-    const responseData = {
-      id: booking.id,
-      userId: booking.userId,
-      roomId: booking.roomId,
-      totalAmount: booking.totalAmount,
-      status: booking.status,
-      checkInDate: booking.checkInDate,
-      checkOutDate: booking.checkOutDate,
-      guestName: booking.guestName,
-      guestPhone: booking.guestPhone,
-      guestEmail: booking.guestEmail,
-      notes: booking.notes,
-      shoppingMall: booking.shoppingMall,
-      orderNumber: booking.orderNumber,
-      externalId: booking.externalId,
-      sellingPrice: booking.sellingPrice,
-      depositAmount: booking.depositAmount,
-      supplyPrice: booking.supplyPrice,
-      createdAt: booking.createdAt,
-      updatedAt: booking.updatedAt,
-      room: booking.room,
-      user: booking.user,
-      bookingItems: booking.bookingItems,
-      // 추가 계산된 필드들
-      totalPrice: booking.totalAmount,
-      items: booking.bookingItems.map(item => ({
-        package: item.package,
-        price: item.price,
-        quantity: item.quantity
-      }))
-    };
-    
-    console.log('✅ 예약 상세 조회 성공:', responseData.id);
-    return NextResponse.json(responseData);
-    
-  } catch (e) {
-    console.error('❌ 예약 상세 조회 실패:', e);
-    return NextResponse.json({ 
-      error: '조회 실패', 
-      details: e instanceof Error ? e.message : '알 수 없는 오류'
-    }, { status: 500 });
+    return NextResponse.json(booking);
+  } catch (error: any) {
+    console.error('개별 예약 조회 오류:', error);
+    return NextResponse.json({ error: '예약 정보를 불러오는 중 오류가 발생했습니다.', details: error.message }, { status: 500 });
   }
 }
 
+// 예약 정보 수정
 export async function PATCH(
   request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
-    const body = await request.json();
-    const data: any = {};
-    if (body.status) data.status = body.status;
-    if (body.guestName) data.guestName = body.guestName;
-    if (body.guestEmail !== undefined) data.guestEmail = body.guestEmail || null;
-    if (body.guestPhone !== undefined) data.guestPhone = body.guestPhone || '';
-    if (body.shoppingMall !== undefined) data.shoppingMall = body.shoppingMall || null;
-    if (body.orderNumber !== undefined) data.orderNumber = body.orderNumber || null;
-    if (body.sellingPrice !== undefined) data.sellingPrice = body.sellingPrice ?? null;
-    if (body.depositAmount !== undefined) data.depositAmount = body.depositAmount ?? null;
-    if (body.supplyPrice !== undefined) data.supplyPrice = body.supplyPrice ?? null;
-    if (body.checkInDate) data.checkInDate = new Date(body.checkInDate);
-    if (body.checkOutDate) data.checkOutDate = new Date(body.checkOutDate);
+    const { id } = params;
+    const data = await request.json();
 
-    const updated = await prisma.booking.update({ where: { id: params.id }, data });
-    return NextResponse.json(updated);
-  } catch (e) {
-    return NextResponse.json({ error: '업데이트 실패' }, { status: 500 });
+    if (!id) {
+      return NextResponse.json({ error: '예약 ID가 필요합니다.' }, { status: 400 });
+    }
+
+    // 기존 예약 확인
+    const existingBooking = await prisma.booking.findUnique({
+      where: { id },
+    });
+
+    if (!existingBooking) {
+      return NextResponse.json({ error: '예약을 찾을 수 없습니다.' }, { status: 404 });
+    }
+
+    // 수정할 데이터 준비
+    const updateData: any = {};
+
+    // 기본 필드들
+    if (data.guestName !== undefined) updateData.guestName = data.guestName;
+    if (data.guestPhone !== undefined) updateData.guestPhone = data.guestPhone;
+    if (data.guestEmail !== undefined) updateData.guestEmail = data.guestEmail;
+    if (data.notes !== undefined) updateData.notes = data.notes;
+    if (data.status !== undefined) updateData.status = data.status;
+    if (data.shoppingMall !== undefined) updateData.shoppingMall = data.shoppingMall;
+    if (data.orderNumber !== undefined) updateData.orderNumber = data.orderNumber;
+    if (data.externalId !== undefined) updateData.externalId = data.externalId;
+
+    // 날짜 필드들
+    if (data.checkInDate !== undefined) updateData.checkInDate = new Date(data.checkInDate);
+    if (data.checkOutDate !== undefined) updateData.checkOutDate = new Date(data.checkOutDate);
+
+    // 가격 필드들
+    if (data.sellingPrice !== undefined) updateData.sellingPrice = data.sellingPrice;
+    if (data.depositAmount !== undefined) updateData.depositAmount = data.depositAmount;
+    if (data.supplyPrice !== undefined) updateData.supplyPrice = data.supplyPrice;
+    if (data.totalAmount !== undefined) updateData.totalAmount = data.totalAmount;
+
+    // 수익 및 부가세 필드들
+    if (data.sellingPrice !== undefined && data.supplyPrice !== undefined) {
+      const profit = Math.max(0, data.sellingPrice - data.supplyPrice);
+      const commission = (data.sellingPrice * 4) / 100; // 기본 수수료율 4%
+      const vatAmount = (data.supplyPrice * 10) / 100; // 기본 부가세율 10%
+      
+      updateData.profit = profit;
+      updateData.commission = commission;
+      updateData.commissionRate = 4;
+      updateData.vatAmount = vatAmount;
+      updateData.vatRate = 10;
+    }
+
+    // 객실 ID
+    if (data.roomId !== undefined) {
+      if (data.roomId === '' || data.roomId === null) {
+        updateData.roomId = null;
+      } else {
+        // 객실 존재 확인
+        const room = await prisma.room.findUnique({
+          where: { id: data.roomId },
+        });
+        if (room) {
+          updateData.roomId = data.roomId;
+        } else {
+          updateData.roomId = null;
+        }
+      }
+    }
+
+    // 예약 업데이트
+    const updatedBooking = await prisma.booking.update({
+      where: { id },
+      data: updateData,
+      select: {
+        id: true,
+        userId: true,
+        totalAmount: true,
+        status: true,
+        checkInDate: true,
+        checkOutDate: true,
+        guestName: true,
+        guestPhone: true,
+        guestEmail: true,
+        notes: true,
+        createdAt: true,
+        updatedAt: true,
+        roomId: true,
+        depositAmount: true,
+        externalId: true,
+        orderNumber: true,
+        sellingPrice: true,
+        shoppingMall: true,
+        supplyPrice: true,
+        profit: true,
+        vatAmount: true,
+        vatRate: true,
+        commission: true,
+        commissionRate: true,
+        room: {
+          select: {
+            id: true,
+            name: true,
+            description: true,
+            basePrice: true,
+          },
+        },
+        user: {
+          select: {
+            id: true,
+            name: true,
+            email: true,
+          },
+        },
+        bookingItems: {
+          select: {
+            id: true,
+            packageId: true,
+            quantity: true,
+            price: true,
+            package: {
+              select: {
+                id: true,
+                name: true,
+                description: true,
+                price: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return NextResponse.json(updatedBooking);
+  } catch (error: any) {
+    console.error('예약 수정 오류:', error);
+    return NextResponse.json({ error: '예약 정보를 수정하는 중 오류가 발생했습니다.', details: error.message }, { status: 500 });
   }
 }
 
+// 예약 삭제
 export async function DELETE(
-  _req: NextRequest,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
-    await prisma.bookingItem.deleteMany({ where: { bookingId: params.id } });
-    await prisma.booking.delete({ where: { id: params.id } });
-    return NextResponse.json({ success: true });
-  } catch (e) {
-    return NextResponse.json({ error: '삭제 실패' }, { status: 500 });
+    const { id } = params;
+
+    if (!id) {
+      return NextResponse.json({ error: '예약 ID가 필요합니다.' }, { status: 400 });
+    }
+
+    // 기존 예약 확인
+    const existingBooking = await prisma.booking.findUnique({
+      where: { id },
+    });
+
+    if (!existingBooking) {
+      return NextResponse.json({ error: '예약을 찾을 수 없습니다.' }, { status: 404 });
+    }
+
+    // 예약 삭제 (연관된 bookingItems는 onDelete: Cascade로 자동 삭제)
+    await prisma.booking.delete({
+      where: { id },
+    });
+
+    return NextResponse.json({ message: '예약이 성공적으로 삭제되었습니다.' });
+  } catch (error: any) {
+    console.error('예약 삭제 오류:', error);
+    return NextResponse.json({ error: '예약을 삭제하는 중 오류가 발생했습니다.', details: error.message }, { status: 500 });
   }
 }

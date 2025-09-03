@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+import { calculatePrices } from '@/app/lib/calculations';
 
 const prisma = new PrismaClient();
 
@@ -8,6 +9,7 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
+    // 기본 limit를 20→10으로 낮춰 초기 로딩 개선
     const limit = parseInt(searchParams.get('limit') || '10');
     const search = searchParams.get('search') || '';
     const status = searchParams.get('status') || '';
@@ -53,6 +55,13 @@ export async function GET(request: NextRequest) {
           depositAmount: true,
           supplyPrice: true,
           
+          // 수익 및 부가세 필드
+          profit: true,
+          vatAmount: true,
+          vatRate: true,
+          commission: true,
+          commissionRate: true,
+          
           room: {
             select: {
               id: true,
@@ -61,21 +70,7 @@ export async function GET(request: NextRequest) {
             },
           },
 
-          bookingItems: {
-            select: {
-              id: true,
-              quantity: true,
-              price: true,
-              package: {
-                select: {
-                  id: true,
-                  name: true,
-                  description: true,
-                  price: true,
-                },
-              },
-            },
-          },
+          // 리스트 화면에서는 bookingItems 제외하여 페이로드 감소
         },
         orderBy: { createdAt: 'desc' },
         skip,
@@ -95,7 +90,8 @@ export async function GET(request: NextRequest) {
     });
 
     // 캐시 헤더 추가 (성능 최적화)
-    response.headers.set('Cache-Control', 'public, max-age=600, s-maxage=600');
+    // 브라우저 캐시 60초, CDN 300초
+    response.headers.set('Cache-Control', 'public, max-age=60, s-maxage=300');
     response.headers.set('ETag', `"${Date.now()}"`);
     response.headers.set('X-Response-Time', `${Date.now()}`);
     
@@ -236,6 +232,14 @@ export async function POST(request: NextRequest) {
         console.log('ℹ️ roomId가 비어있음, 객실 없이 예약 생성');
       }
 
+      // 가격 계산
+      const priceCalculation = calculatePrices({
+        sellingPrice: sellingPrice || totalAmount || totalPrice || 0,
+        supplyPrice: supplyPrice || 0,
+        commissionRate: 4, // 기본 수수료율 4%
+        vatRate: 10        // 기본 부가세율 10%
+      });
+
       // 예약 생성 데이터 준비
       const bookingData: any = {
         userId: user.id,
@@ -254,9 +258,16 @@ export async function POST(request: NextRequest) {
         externalId: externalId || null,
         
         // 가격 관련 필드
-        sellingPrice: sellingPrice || null,
+        sellingPrice: priceCalculation.sellingPrice,
         depositAmount: depositAmount || null,
-        supplyPrice: supplyPrice || null,
+        supplyPrice: priceCalculation.supplyPrice,
+        
+        // 수익 및 부가세 필드
+        profit: priceCalculation.profit,
+        vatAmount: priceCalculation.vatAmount,
+        vatRate: priceCalculation.vatRate,
+        commission: priceCalculation.commission,
+        commissionRate: priceCalculation.commissionRate,
       };
 
       // roomId가 있을 때만 추가 (null이면 아예 필드를 제외)
@@ -332,12 +343,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: '존재하지 않는 객실입니다.' }, { status: 400 });
     }
     if (error.code === 'P2011') {
-      return NextResponse.json({ error: '필수 필드가 누락되었습니다. (roomId 제약 조건)' }, { status: 400 });
+      return NextResponse.json({ error: '필수 필드가 누락되었습니다.' }, { status: 400 });
+    }
+    if (error.code === 'P2025') {
+      return NextResponse.json({ error: '요청한 레코드를 찾을 수 없습니다.' }, { status: 404 });
+    }
+    
+    // 데이터베이스 연결 오류
+    if (error.message && error.message.includes('connect')) {
+      return NextResponse.json({ error: '데이터베이스 연결 오류가 발생했습니다.' }, { status: 503 });
     }
     
     return NextResponse.json({ 
       error: '서버 오류가 발생했습니다.',
-      details: error.message || '알 수 없는 오류'
+      details: error.message || '알 수 없는 오류',
+      code: error.code || 'UNKNOWN'
     }, { status: 500 });
   }
 } 

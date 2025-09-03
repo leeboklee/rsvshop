@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useMemo, useEffect } from 'react';
 import { Room, Package, Booking } from '@prisma/client';
+import { calculatePrices, formatCurrency } from '@/app/lib/calculations';
 
 type EnrichedBooking = Booking & {
   room: Room;
@@ -36,6 +37,13 @@ interface NewBooking {
   sellingPrice: number;
   depositAmount: number;
   supplyPrice: number;
+  
+  // 수익 및 부가세 필드
+  profit?: number;
+  vatAmount?: number;
+  vatRate?: number;
+  commission?: number;
+  commissionRate?: number;
 }
 
 interface ShoppingMall {
@@ -54,6 +62,7 @@ export const useReservations = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [serverError, setServerError] = useState<any>(null);
   const [roomAvailability, setRoomAvailability] = useState<{[key: string]: boolean}>({});
   const [customerSuggestions, setCustomerSuggestions] = useState<Array<{name: string, email: string, phone: string}>>([]);
   const [showCustomerSuggestions, setShowCustomerSuggestions] = useState(false);
@@ -156,7 +165,8 @@ export const useReservations = () => {
       Promise.all([
         fetch('/api/rooms', { headers: { 'Cache-Control': 'max-age=300' } }),
         fetch('/api/packages', { headers: { 'Cache-Control': 'max-age=300' } }),
-        fetch('/api/shopping-malls?activeOnly=true', { headers: { 'Cache-Control': 'max-age=300' } })
+        // DB 기반 관리자 API로 변경
+        fetch('/api/admin/shopping-malls', { headers: { 'Cache-Control': 'no-store' } })
       ]).then(async ([roomsResponse, packagesResponse, shoppingMallsResponse]) => {
         try {
           const [roomsData, packagesData, shoppingMallsData] = await Promise.all([
@@ -165,13 +175,24 @@ export const useReservations = () => {
             shoppingMallsResponse.json()
           ]);
 
-          const rooms = roomsData.success && Array.isArray(roomsData.data) ? roomsData.data : [];
-          const packages = packagesData.success && Array.isArray(packagesData.data) ? packagesData.data : [];
-          const shoppingMalls = shoppingMallsData.success ? shoppingMallsData.shoppingMalls || [] : [];
+          // API 응답 키 정합성 맞춤
+          // /api/rooms → { success, rooms }
+          // /api/packages → { success, packages }
+          // /api/admin/shopping-malls → { success, shoppingMalls }
+          const rooms = roomsData?.success && Array.isArray(roomsData.rooms) ? roomsData.rooms : [];
+          const packages = packagesData?.success && Array.isArray(packagesData.packages) ? packagesData.packages : [];
+          const shoppingMalls = shoppingMallsData?.success && Array.isArray(shoppingMallsData.shoppingMalls) ? shoppingMallsData.shoppingMalls : [];
 
           setRooms(rooms);
           setPackages(packages);
           setShoppingMalls(shoppingMalls);
+          
+          // 디버깅: 쇼핑몰 데이터 로딩 상태 확인
+          console.log('🛍️ 쇼핑몰 데이터 로딩:', {
+            response: shoppingMallsData,
+            parsed: shoppingMalls,
+            count: shoppingMalls.length
+          });
           
           // 캐시 저장
           sessionStorage.setItem(cacheKey, JSON.stringify({
@@ -202,7 +223,7 @@ export const useReservations = () => {
     if (!newBooking.checkInDate || !newBooking.checkOutDate) return;
 
     try {
-      const response = await fetch('/api/admin/rooms/availability', {
+      const response = await fetch('/api/rooms/availability', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -227,6 +248,16 @@ export const useReservations = () => {
     if (numbers.length <= 7) return `${numbers.slice(0, 3)}-${numbers.slice(3)}`;
     return `${numbers.slice(0, 3)}-${numbers.slice(3, 7)}-${numbers.slice(7, 11)}`;
   }, []);
+
+  // 가격 계산
+  const priceCalculation = useMemo(() => {
+    return calculatePrices({
+      sellingPrice: newBooking.sellingPrice || 0,
+      supplyPrice: newBooking.supplyPrice || 0,
+      commissionRate: 4, // 기본 수수료율 4%
+      vatRate: 10        // 기본 부가세율 10%
+    });
+  }, [newBooking.sellingPrice, newBooking.supplyPrice]);
 
   // 고객명 변경 처리
   const handleCustomerNameChange = useCallback((name: string) => {
@@ -278,41 +309,54 @@ export const useReservations = () => {
       setNewBooking(prev => ({ ...prev, [name]: value }));
     }
     
+    // 판매가 변경 시 자동 수수료 계산
+    if (name === 'sellingPrice' && newBooking.shoppingMall) {
+      const sellingPrice = Number(value) || 0;
+      const selectedMall = shoppingMalls.find(m => m.name === newBooking.shoppingMall);
+      
+      if (selectedMall && sellingPrice > 0) {
+        const commissionRate = selectedMall.commissionRate / 100;
+        const commissionAmount = Math.round(sellingPrice * commissionRate);
+        const calculatedSupplyPrice = sellingPrice - commissionAmount;
+        
+        setNewBooking(prev => ({
+          ...prev,
+          [name]: sellingPrice,
+          supplyPrice: calculatedSupplyPrice
+        }));
+        return;
+      }
+    }
+    
     // 체크인/아웃 날짜 변경 시 객실 가용성 체크
     if (name === 'checkInDate' || name === 'checkOutDate') {
       setTimeout(checkRoomAvailability, 100);
     }
-  }, [formatPhoneNumber, checkRoomAvailability, rooms]);
+  }, [formatPhoneNumber, checkRoomAvailability, rooms, newBooking.shoppingMall, shoppingMalls]);
 
-  // 패키지 변경 처리
-  const handlePackageChange = useCallback((packageId: string) => {
-    const id = parseInt(packageId);
-    setNewBooking(prev => ({
-      ...prev,
-      selectedPackages: prev.selectedPackages.includes(id)
-        ? prev.selectedPackages.filter(p => p !== id)
-        : [...prev.selectedPackages, id]
-    }));
-  }, []);
+
 
   // 총액 계산
   const totalPrice = useMemo(() => {
     let basePrice = 0;
     if (newBooking.roomId) {
-      const roomPackages = packages.filter(pkg => pkg.roomId === newBooking.roomId);
-      if (roomPackages.length > 0) {
-        basePrice = roomPackages[0].price || 0;
+      const room = rooms.find(r => r.id === newBooking.roomId);
+      if (room) {
+        basePrice = room.basePrice || 0;
       }
     }
     
-    const packagePrice = newBooking.selectedPackages.reduce((sum, pkgId) => {
-      const pkg = packages.find(p => p.id === String(pkgId));
-      return sum + (pkg?.price || 0);
-    }, 0);
+    let packagePrice = 0;
+    if (newBooking.packageId) {
+      const pkg = packages.find(p => p.id === newBooking.packageId);
+      if (pkg) {
+        packagePrice = pkg.price || 0;
+      }
+    }
     
     const discountAmount = Number(newBooking.discountAmount) || 0;
     return Math.max(0, basePrice + packagePrice - discountAmount);
-  }, [newBooking.roomId, newBooking.discountAmount, newBooking.selectedPackages, packages]);
+  }, [newBooking.roomId, newBooking.packageId, newBooking.discountAmount, packages, rooms]);
 
   // 쇼핑몰별 수수료 계산
   const calculateMallFees = useCallback((basePrice: number, mall: string) => {
@@ -321,56 +365,58 @@ export const useReservations = () => {
     
     if (shoppingMall) {
       const commissionRate = shoppingMall.commissionRate / 100;
-      const depositRate = 1 - commissionRate;
-      const supplyRate = 0.75; // 기본 공급가율 (수수료의 75%)
+      const commissionAmount = Math.round(basePrice * commissionRate);
+      const supplyPrice = basePrice - commissionAmount;
       
       return {
         sellingPrice: basePrice,
-        depositAmount: Math.round(basePrice * depositRate),
-        supplyPrice: Math.round(basePrice * supplyRate)
+        commissionAmount: commissionAmount,
+        supplyPrice: supplyPrice,
+        commissionRate: shoppingMall.commissionRate
       };
     }
     
     // 기본값 (수수료 없음)
     return {
       sellingPrice: basePrice,
-      depositAmount: basePrice,
-      supplyPrice: basePrice
+      commissionAmount: 0,
+      supplyPrice: basePrice,
+      commissionRate: 0
     };
   }, [shoppingMalls]);
 
   // 쇼핑몰 변경 시 가격 자동 계산
   const handleShoppingMallChange = useCallback((mall: string) => {
-    const prices = calculateMallFees(totalPrice, mall);
+    const currentSellingPrice = newBooking.sellingPrice || totalPrice;
+    const prices = calculateMallFees(currentSellingPrice, mall);
+    
     setNewBooking(prev => ({
       ...prev,
       shoppingMall: mall,
       sellingPrice: prices.sellingPrice,
-      depositAmount: prices.depositAmount,
       supplyPrice: prices.supplyPrice
     }));
-  }, [totalPrice, calculateMallFees]);
+  }, [newBooking.sellingPrice, totalPrice, calculateMallFees]);
 
   // totalPrice나 쇼핑몰이 변경될 때 가격 자동 업데이트
   useEffect(() => {
     if (newBooking.shoppingMall && newBooking.shoppingMall !== '') {
-      const prices = calculateMallFees(totalPrice, newBooking.shoppingMall);
+      const currentSellingPrice = newBooking.sellingPrice || totalPrice;
+      const prices = calculateMallFees(currentSellingPrice, newBooking.shoppingMall);
       setNewBooking(prev => ({
         ...prev,
         sellingPrice: prices.sellingPrice,
-        depositAmount: prices.depositAmount,
         supplyPrice: prices.supplyPrice
       }));
     }
-  }, [totalPrice, newBooking.shoppingMall, calculateMallFees]);
+  }, [totalPrice, newBooking.shoppingMall, calculateMallFees, newBooking.sellingPrice]);
 
-  // 판매가가 수동으로 변경될 때 입금가와 공급가 자동 업데이트
+  // 판매가가 수동으로 변경될 때 공급가 자동 업데이트
   useEffect(() => {
     if (newBooking.sellingPrice && newBooking.shoppingMall && newBooking.shoppingMall !== '') {
       const prices = calculateMallFees(newBooking.sellingPrice, newBooking.shoppingMall);
       setNewBooking(prev => ({
         ...prev,
-        depositAmount: prices.depositAmount,
         supplyPrice: prices.supplyPrice
       }));
     }
@@ -396,10 +442,11 @@ export const useReservations = () => {
       return;
     }
     
-    if (!newBooking.roomId || newBooking.roomId.trim() === '') {
-      alert('객실을 선택해주세요.');
-      return;
-    }
+    // roomId는 선택사항으로 변경 (API에서 처리)
+    // if (!newBooking.roomId || newBooking.roomId.trim() === '') {
+    //   alert('객실을 선택해주세요.');
+    //   return;
+    // }
     
     setIsSubmitting(true);
     
@@ -433,15 +480,31 @@ export const useReservations = () => {
         return true; // 성공 시 true 반환
       } else {
         let errorMessage = '서버 오류가 발생했습니다.';
+        let errorDetails = '';
         try {
           const errorData = await response.json();
           errorMessage = errorData.error || errorMessage;
+          errorDetails = errorData.details || '';
         } catch (parseError) {
           console.error('오류 응답 파싱 실패:', parseError);
           errorMessage = `HTTP ${response.status}: ${response.statusText}`;
         }
-        console.error('예약 생성 실패:', { status: response.status, error: errorMessage });
-        alert(`예약 생성 실패: ${errorMessage}`);
+        
+        console.error('예약 생성 실패:', { 
+          status: response.status, 
+          error: errorMessage,
+          details: errorDetails,
+          requestData 
+        });
+        
+        // 서버 오류 정보 저장
+        setServerError({
+          message: errorMessage,
+          details: errorDetails,
+          code: response.status.toString(),
+          timestamp: new Date().toISOString()
+        });
+        
         return false;
       }
     } catch (error) {
@@ -511,15 +574,18 @@ export const useReservations = () => {
     showCustomerSuggestions,
     newBooking,
     totalPrice,
+    priceCalculation,
     
     // 액션
     fetchData,
     setError,
+    serverError,
+    setServerError,
     setShowCustomerSuggestions,
     handleCustomerNameChange,
     selectCustomerSuggestion,
     handleInputChange,
-    handlePackageChange,
+
     handleSubmit,
     updateBookingStatus,
     resetForm,

@@ -1,38 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
 
-// 샘플 객실 데이터 - 동적으로 관리
-let mockRooms = [
-  {
-    id: '1',
-    name: '디럭스 룸',
-    description: '편안하고 아늑한 디럭스 객실',
-    price: 150000,
-    capacity: 2,
-    amenities: ['킹베드', '전용욕실', '무료WiFi', 'TV'],
-    available: true,
-    hotelId: '1'
-  },
-  {
-    id: '2',
-    name: '스위트 룸',
-    description: '고급스러운 스위트 객실',
-    price: 250000,
-    capacity: 4,
-    amenities: ['킹베드 + 소파베드', '전용욕실', '무료WiFi', 'TV', '미니바'],
-    available: true,
-    hotelId: '1'
-  },
-  {
-    id: '3',
-    name: '스탠다드 룸',
-    description: '깔끔하고 실용적인 스탠다드 객실',
-    price: 100000,
-    capacity: 2,
-    amenities: ['더블베드', '전용욕실', '무료WiFi', 'TV'],
-    available: true,
-    hotelId: '2'
-  }
-];
+// Prisma 클라이언트 최적화
+const globalForPrisma = globalThis as unknown as {
+  prisma: PrismaClient | undefined;
+};
+
+const prisma = globalForPrisma.prisma ?? new PrismaClient({
+  log: ['error'],
+  errorFormat: 'minimal',
+});
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
 export async function GET(request: NextRequest) {
   try {
@@ -40,23 +19,42 @@ export async function GET(request: NextRequest) {
     const hotelId = searchParams.get('hotelId');
     const available = searchParams.get('available');
 
-    let filteredRooms = mockRooms;
-
-    // 호텔별 필터링
+    // 검색 조건 구성
+    const where: any = {};
     if (hotelId) {
-      filteredRooms = filteredRooms.filter(room => room.hotelId === hotelId);
+      where.hotelId = hotelId;
+    }
+    if (available !== null) {
+      where.available = available === 'true';
     }
 
-    // 가용성 필터링
-    if (available !== null) {
-      const isAvailable = available === 'true';
-      filteredRooms = filteredRooms.filter(room => room.available === isAvailable);
-    }
+    // 데이터베이스에서 객실 목록 조회
+    const rooms = await prisma.room.findMany({
+      where,
+      select: {
+        id: true,
+        name: true,
+        description: true,
+        capacity: true,
+        basePrice: true,
+        imageUrl: true,
+        createdAt: true,
+        updatedAt: true,
+        hotelId: true,
+        hotel: {
+          select: {
+            id: true,
+            name: true,
+          }
+        }
+      },
+      orderBy: { createdAt: 'desc' },
+    });
 
     return NextResponse.json({
       success: true,
-      rooms: filteredRooms,
-      total: filteredRooms.length
+      rooms,
+      total: rooms.length
     });
   } catch (error) {
     console.error('객실 목록 조회 실패:', error);
@@ -70,23 +68,27 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    
-    // 새 객실 생성 로직
-    const newRoom = {
-      id: Date.now().toString(),
-      name: body.name,
-      description: body.description,
-      capacity: body.capacity || 2,
-      imageUrl: body.imageUrl || '',
-      price: body.price || 100000,
-      amenities: body.amenities || ['기본 편의시설'],
-      available: true,
-      hotelId: body.hotelId || '1',
-      createdAt: new Date().toISOString()
-    };
+    const { name, description, capacity, basePrice, imageUrl, hotelId } = body;
 
-    // mockRooms 배열에 새 객실 추가
-    mockRooms.push(newRoom);
+    // 필수 필드 검증
+    if (!name?.trim()) {
+      return NextResponse.json(
+        { error: '객실명은 필수입니다.' },
+        { status: 400 }
+      );
+    }
+
+    // 새 객실 생성
+    const newRoom = await prisma.room.create({
+      data: {
+        name: name.trim(),
+        description: description?.trim() || '',
+        capacity: capacity || 2,
+        basePrice: basePrice || 0,
+        imageUrl: imageUrl || '',
+        hotelId: hotelId || null,
+      },
+    });
 
     return NextResponse.json({
       success: true,

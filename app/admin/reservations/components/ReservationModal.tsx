@@ -5,6 +5,7 @@ import { Room, Package } from '@prisma/client';
 import Link from 'next/link';
 import PackageItem from './PackageItem';
 import CompactDatePicker from '@/app/components/common/CompactDatePicker';
+import PriceInfoCard from '@/app/components/PriceInfoCard';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -21,8 +22,8 @@ interface ReservationModalProps {
   selectCustomerSuggestion: (customer: {name: string, email: string, phone: string}) => void;
   roomAvailability: {[key: string]: boolean};
   totalPrice: number;
+  priceCalculation?: any;
   isSubmitting: boolean;
-  handlePackageChange: (packageId: string) => void;
   handleShoppingMallChange?: (mall: string) => void;
   isEditMode?: boolean;
 }
@@ -42,8 +43,8 @@ const ReservationModal = memo(({
   selectCustomerSuggestion,
   roomAvailability,
   totalPrice,
+  priceCalculation,
   isSubmitting,
-  handlePackageChange,
   handleShoppingMallChange,
   isEditMode = false
 }: ReservationModalProps) => {
@@ -152,7 +153,7 @@ const ReservationModal = memo(({
                 <div className="space-y-4">
                   <div className="relative">
                     <label htmlFor="customerName" className="block text-sm font-semibold text-gray-700 mb-2">
-                      고객명 <span className="text-red-500">*</span>
+                      고객명 {!isEditMode && <span className="text-red-500">*</span>}
                     </label>
                     <input 
                       type="text" 
@@ -160,7 +161,7 @@ const ReservationModal = memo(({
                       id="customerName" 
                       value={newBooking.customerName} 
                       onChange={(e) => handleCustomerNameChange(e.target.value)} 
-                      required 
+                      required={!isEditMode} 
                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300 bg-white shadow-sm text-base" 
                       placeholder="고객 이름을 입력하세요"
                     />
@@ -208,39 +209,39 @@ const ReservationModal = memo(({
                     />
                   </div>
                   
-                                     <div>
-                     <label htmlFor="shoppingMall" className="block text-sm font-semibold text-gray-700 mb-2">쇼핑몰</label>
-                     <select 
-                       name="shoppingMall" 
-                       id="shoppingMall" 
-                       value={newBooking.shoppingMall || ''} 
-                       onChange={(e) => {
-                         const mall = e.target.value;
-                         if (mall) {
-                           // 쇼핑몰 변경 시 가격 자동 계산
-                           const event = {
-                             target: { name: 'shoppingMall', value: mall }
-                           } as React.ChangeEvent<HTMLSelectElement>;
-                           handleInputChange(event);
-                           
-                           // 가격 자동 계산
-                           if (handleShoppingMallChange) {
-                             handleShoppingMallChange(mall);
-                           }
-                         }
-                       }}
-                       className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300 bg-white shadow-sm text-base"
-                     >
-                       <option value="">쇼핑몰을 선택하세요</option>
-                       {shoppingMalls.map((mall) => (
-                         <option key={mall.id} value={mall.name}>
-                           {mall.name} ({mall.commissionRate}% 수수료)
-                         </option>
-                       ))}
-                     </select>
+                  <div>
+                    <label htmlFor="shoppingMall" className="block text-sm font-semibold text-gray-700 mb-2">쇼핑몰</label>
+                    <select 
+                      name="shoppingMall" 
+                      id="shoppingMall" 
+                      value={newBooking.shoppingMall || ''} 
+                      onChange={(e) => {
+                        const mall = e.target.value;
+                        if (mall) {
+                          // 쇼핑몰 변경 시 가격 자동 계산
+                          const event = {
+                            target: { name: 'shoppingMall', value: mall }
+                          } as React.ChangeEvent<HTMLSelectElement>;
+                          handleInputChange(event);
+                          
+                          // 가격 자동 계산
+                          if (handleShoppingMallChange) {
+                            handleShoppingMallChange(mall);
+                          }
+                        }
+                      }}
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300 bg-white shadow-sm text-base"
+                    >
+                      <option value="">쇼핑몰을 선택하세요</option>
+                      {shoppingMalls.map((mall) => (
+                        <option key={mall.id} value={mall.name}>
+                          {mall.name} ({mall.commissionRate}% 수수료)
+                        </option>
+                      ))}
+                    </select>
                   </div>
 
-                  {/* 주문번호: 고객명 위로 이동 (고객정보 섹션에만 표시) */}
+                  {/* 주문번호 */}
                   <div>
                     <label htmlFor="orderNumberTop" className="block text-sm font-semibold text-gray-700 mb-2">주문번호</label>
                     <input 
@@ -254,9 +255,29 @@ const ReservationModal = memo(({
                     />
                   </div>
 
-                  {/* 가격 정보: 쇼핑몰 드롭다운 바로 아래 */}
+                  {/* 가격 정보 */}
                   <div className="bg-white/70 rounded-lg p-4 border border-blue-100">
                     <h4 className="text-base font-bold text-gray-800 mb-3">가격 정보</h4>
+                    
+                    {/* 수수료 정보 표시 */}
+                    {newBooking.shoppingMall && newBooking.sellingPrice && (
+                      <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-blue-700 font-medium">수수료 정보</span>
+                          <span className="text-blue-600">
+                            {(() => {
+                              const selectedMall = shoppingMalls.find(m => m.name === newBooking.shoppingMall);
+                              if (selectedMall && newBooking.sellingPrice) {
+                                const commissionAmount = Math.round(newBooking.sellingPrice * (selectedMall.commissionRate / 100));
+                                return `${commissionAmount.toLocaleString()}원 (${selectedMall.commissionRate}%)`;
+                              }
+                              return '';
+                            })()}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+                    
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                       <div>
                         <label htmlFor="sellingPrice" className="block text-sm font-semibold text-gray-700 mb-2">판매가</label>
@@ -307,6 +328,25 @@ const ReservationModal = memo(({
                         />
                       </div>
                     </div>
+
+                    {/* 수익 및 부가세 정보 카드 */}
+                    {priceCalculation && (
+                      <div className="mt-4">
+                        <PriceInfoCard 
+                          booking={{
+                            sellingPrice: newBooking.sellingPrice,
+                            supplyPrice: newBooking.supplyPrice,
+                            profit: priceCalculation.profit,
+                            vatAmount: priceCalculation.vatAmount,
+                            vatRate: priceCalculation.vatRate,
+                            commission: priceCalculation.commission,
+                            commissionRate: priceCalculation.commissionRate,
+                            totalAmount: totalPrice
+                          }}
+                          className="border-2 border-blue-200"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -323,42 +363,154 @@ const ReservationModal = memo(({
                 </h3>
                 
                 <div className="space-y-4">
-                  {/* 객실 선택: 수동 입력 우선 + 선택 지원 (datalist) */}
+                  {/* 호텔 선택 */}
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">객실 선택 <span className="text-red-500">*</span></label>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">호텔 선택</label>
                     <div className="flex gap-2">
-                      <input
-                        list="roomsList"
-                        name="roomId" 
-                        value={newBooking.roomId} 
-                        onChange={handleInputChange}
-                        className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 bg-white shadow-sm text-base"
-                        placeholder="객실명을 직접 입력하거나 선택하세요"
-                        required
-                      />
-                      <datalist id="roomsList">
-                        {rooms && rooms.length > 0 && rooms.map((room) => (
-                          <option key={room.id} value={room.name}>{room.name}</option>
+                      <select
+                        name="hotelSelection" 
+                        value={newBooking.hotelId || ''} 
+                        onChange={(e) => {
+                          const event = {
+                            target: { name: 'hotelId', value: e.target.value }
+                          } as React.ChangeEvent<HTMLInputElement>;
+                          handleInputChange(event);
+                        }}
+                        className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300 bg-white shadow-sm text-base"
+                      >
+                        <option value="">↓ 호텔을 선택하세요 (선택사항)</option>
+                        {rooms && rooms.length > 0 && Array.from(new Set(rooms.map(room => room.hotel?.name).filter(Boolean))).map((hotelName) => (
+                          <option key={hotelName} value={hotelName}>
+                            {hotelName}
+                          </option>
                         ))}
-                      </datalist>
+                      </select>
                       <button
                         type="button"
                         onClick={() => {
-                          // 모달을 닫고 객실 관리 페이지로 이동
                           onClose();
-                          // 약간의 지연 후 페이지 이동 (모달이 완전히 닫힌 후)
                           setTimeout(() => {
-                            window.location.href = '/admin/rooms';
+                            window.location.href = '/admin/hotel-rooms';
                           }, 100);
                         }}
-                        className="px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-lg hover:from-green-600 hover:to-emerald-600 transition-all duration-300 hover:scale-105 shadow-md text-sm whitespace-nowrap"
+                        className="px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 shadow-md text-sm whitespace-nowrap"
                       >
-                        객실 관리
+                        호텔 관리
                       </button>
                     </div>
                   </div>
 
-                  {/* 날짜 선택 - 새로운 CompactDatePicker 사용 */}
+                  {/* 객실 선택 */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">객실 선택</label>
+                    <div className="space-y-2">
+                      {/* 드롭다운 선택 */}
+                      <div className="flex gap-2">
+                        <select
+                          name="roomSelection" 
+                          value="" 
+                          onChange={(e) => {
+                            if (e.target.value) {
+                              const selectedRoom = rooms.find(room => room.id === e.target.value);
+                              if (selectedRoom) {
+                                const event = {
+                                  target: { name: 'roomId', value: selectedRoom.name }
+                                } as React.ChangeEvent<HTMLInputElement>;
+                                handleInputChange(event);
+                              }
+                              e.target.value = ""; // 선택 후 초기화
+                            }
+                          }}
+                          className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 bg-white shadow-sm text-base"
+                        >
+                          <option value="">↓ 등록된 객실에서 선택 (선택사항)</option>
+                          {rooms && rooms.length > 0 && rooms.map((room) => {
+                            // 해당 객실의 패키지 중 가장 낮은 가격 찾기
+                            const roomPackages = packages.filter(pkg => pkg.roomId === room.id);
+                            const minPrice = roomPackages.length > 0 
+                              ? Math.min(...roomPackages.map(pkg => pkg.price))
+                              : 0;
+                            
+                            return (
+                              <option key={room.id} value={room.id}>
+                                {room.name} ({minPrice.toLocaleString()}원)
+                              </option>
+                            );
+                          })}
+                        </select>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            // 모달을 닫고 객실 관리 페이지로 이동
+                            onClose();
+                            // 약간의 지연 후 페이지 이동 (모달이 완전히 닫힌 후)
+                            setTimeout(() => {
+                              window.location.href = '/admin/hotel-rooms';
+                            }, 100);
+                          }}
+                          className="px-4 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-lg hover:from-green-600 hover:to-emerald-600 transition-all duration-300 hover:scale-105 shadow-md text-sm whitespace-nowrap"
+                        >
+                          객실 관리
+                        </button>
+                      </div>
+                      
+                      {/* 수동 입력 */}
+                      <div>
+                        <input
+                          type="text"
+                          name="roomId" 
+                          value={newBooking.roomId || ''} 
+                          onChange={handleInputChange}
+                          className="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-100 focus:border-blue-500 transition-all duration-300 bg-blue-50 shadow-sm text-base"
+                          placeholder="또는 객실명을 직접 입력하세요 (예: 스페셜룸 201호)"
+                        />
+                        <div className="text-xs text-gray-500 mt-1 flex items-center">
+                          <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                          </svg>
+                          등록되지 않은 객실명도 입력 가능합니다
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 패키지 선택 */}
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">패키지 선택</label>
+                    <div className="flex gap-2">
+                      <select
+                        name="packageId" 
+                        value={newBooking.packageId || ''} 
+                        onChange={handleInputChange}
+                        className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 bg-white shadow-sm text-base"
+                      >
+                        <option value="">패키지를 선택하세요 (선택사항)</option>
+                        {packages && packages.length > 0 && packages.map((pkg) => (
+                          <option key={pkg.id} value={pkg.id}>
+                            {pkg.name} - {pkg.price?.toLocaleString()}원
+                          </option>
+                        ))}
+                      </select>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          // 패키지 관리 페이지로 이동
+                          window.open('/admin/packages', '_blank');
+                        }}
+                        className="px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 shadow-md text-sm whitespace-nowrap"
+                      >
+                        패키지 관리
+                      </button>
+                    </div>
+                    <div className="text-xs text-gray-500 mt-1 flex items-center">
+                      <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                      </svg>
+                      패키지 선택 시 자동으로 가격이 계산됩니다
+                    </div>
+                  </div>
+
+                  {/* 날짜 선택 */}
                   <div className="grid grid-cols-2 gap-3">
                     <div>
                       <label className="block text-sm font-semibold text-gray-700 mb-2">체크인</label>
@@ -379,90 +531,29 @@ const ReservationModal = memo(({
                       />
                     </div>
                   </div>
-
-                  {/* 판매가 입력은 가격 정보 섹션으로 이동 (한 줄 입력 UX) */}
                 </div>
               </div>
             </div>
 
-            {/* 쇼핑몰 주문 정보 + 패키지 선택을 한 줄에 */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {/* 쇼핑몰 주문 정보 섹션 (가격 정보 블록 제거) */}
-              <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 border border-gray-200">
-                <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                  <div className="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center mr-2">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                  </div>
-                  쇼핑몰 주문 정보
-                </h3>
-                
-                <div className="space-y-4">
-                  {/* 중복 제거: 하단 섹션의 주문번호 입력은 제거됨 */}
-                  
-                  {/* 외부 시스템 ID 필드 삭제 */}
+            {/* 특별 요청사항 */}
+            <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-2">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
                 </div>
-              </div>
-
-              {/* 패키지 선택 섹션 */}
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-gray-200">
-                <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                  <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-2">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                  </div>
-                  패키지 선택
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <input
-                        type="checkbox"
-                        id="spaPackage"
-                        className="w-5 h-5 text-purple-600 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-100 focus:ring-offset-0"
-                      />
-                      <label htmlFor="spaPackage" className="text-base font-semibold text-gray-700">스파 패키지</label>
-                    </div>
-                    <span className="text-xl font-bold text-purple-600">50,000원</span>
-                  </div>
-                  
-                  <button
-                    type="button"
-                    className="w-full px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 shadow-md"
-                  >
-                    패키지 추가
-                  </button>
-                </div>
-              </div>
-
-              {/* 특별 요청사항 */}
-              <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
-              {/* 특별 요청사항 */}
-              <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-gray-200">
-                <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                  <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-2">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </div>
-                  특별 요청사항
-                </h3>
-                
-                <textarea 
-                  name="specialRequests" 
-                    value={newBooking.specialRequests || ''} 
-                  onChange={handleInputChange}
-                  rows={4}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-100 focus:border-orange-500 transition-all duration-300 bg-white shadow-sm text-base resize-none"
-                  placeholder="고객의 특별한 요청사항이 있다면 입력해주세요"
-                />
-                </div>
-
-                {/* 가격 정보 섹션은 쇼핑몰 석션 아래로 이동 */}
-              </div>
+                특별 요청사항
+              </h3>
+              
+              <textarea 
+                name="specialRequests" 
+                value={newBooking.specialRequests || ''} 
+                onChange={handleInputChange}
+                rows={4}
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-100 focus:border-orange-500 transition-all duration-300 bg-white shadow-sm text-base resize-none"
+                placeholder="고객의 특별한 요청사항이 있다면 입력해주세요"
+              />
             </div>
 
             {/* 예상 총액 + 제출 버튼 */}

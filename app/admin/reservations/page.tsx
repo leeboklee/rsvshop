@@ -25,6 +25,8 @@ const ReservationModal = dynamic(() => import('./components/ReservationModal'), 
 // 커스텀 훅 import
 import { useReservations } from './hooks/useReservations';
 import ConsoleLogger from '@/app/components/ConsoleLogger';
+import ErrorMonitor from '@/app/components/ErrorMonitor';
+import ServerErrorDisplay from '@/app/components/ServerErrorDisplay';
 
 export default function ManageReservations() {
   // 성능 모니터링
@@ -45,11 +47,14 @@ export default function ManageReservations() {
     isLoading,
     isSubmitting,
     error,
+    serverError,
+    setServerError,
     roomAvailability,
     customerSuggestions,
     showCustomerSuggestions,
     newBooking,
     totalPrice,
+    priceCalculation,
     fetchData,
     setError,
     setShowCustomerSuggestions,
@@ -176,7 +181,11 @@ export default function ManageReservations() {
   }, [checkDbStatus, fetchData]);
 
   useEffect(() => {
-    fetchData();
+    // 쇼핑몰 관련 캐시 초기화 (데이터 구조 변경으로 인한 호환성 문제 방지)
+    sessionStorage.removeItem('admin-reservations-cache');
+    
+    // 초기 요청을 가볍게: limit 10
+    fetchData({ limit: 10, page: 1 });
     checkDbStatus();
     checkPrismaStatus();
   }, [fetchData, checkDbStatus, checkPrismaStatus]);
@@ -205,9 +214,9 @@ export default function ManageReservations() {
 
     if (searchTerm) {
       filtered = filtered.filter(booking =>
-        booking.guestName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        booking.guestEmail.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        booking.room.name.toLowerCase().includes(searchTerm.toLowerCase())
+        (booking.guestName || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (booking.guestEmail || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (booking.room?.name || '').toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
@@ -369,8 +378,11 @@ export default function ManageReservations() {
         const mappedDetail = {
           id: data.id,
           guestName: data.guestName || '',
+          customerName: data.guestName || '', // 폼에서 사용하는 customerName 필드 추가
           guestEmail: data.guestEmail || '',
+          customerEmail: data.guestEmail || '', // 폼에서 사용하는 customerEmail 필드 추가
           guestPhone: data.guestPhone || '',
+          customerPhone: data.guestPhone || '', // 폼에서 사용하는 customerPhone 필드 추가
           roomId: data.roomId || '',
           checkInDate: data.checkInDate ? new Date(data.checkInDate).toISOString().split('T')[0] : '',
           checkOutDate: data.checkOutDate ? new Date(data.checkOutDate).toISOString().split('T')[0] : '',
@@ -455,6 +467,7 @@ export default function ManageReservations() {
   return (
     <>
       <ConsoleLogger isActive={true} />
+      <ErrorMonitor isActive={true} />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-indigo-50 p-6">
         <div className="max-w-7xl mx-auto">
         {/* 헤더 */}
@@ -636,7 +649,7 @@ export default function ManageReservations() {
                 </div>
                 <div className="flex gap-2">
                   <button
-                    onClick={() => fetchData({ force: true, search: searchTerm, status: statusFilter === 'ALL' ? '' : statusFilter, page: 1, limit: 20 })}
+                    onClick={() => fetchData({ force: true, search: searchTerm, status: statusFilter === 'ALL' ? '' : statusFilter, page: 1, limit: 10 })}
                     className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-semibold"
                   >
                     🔍 조회
@@ -765,10 +778,19 @@ export default function ManageReservations() {
         selectCustomerSuggestion={selectCustomerSuggestion}
         roomAvailability={roomAvailability}
         totalPrice={totalPrice}
+        priceCalculation={priceCalculation}
         isSubmitting={isSubmitting}
         handlePackageChange={handlePackageChange}
         handleShoppingMallChange={handleShoppingMallChange}
       />
+
+      {/* 서버 오류 표시 */}
+      {serverError && (
+        <ServerErrorDisplay
+          error={serverError}
+          onClose={() => setServerError(null)}
+        />
+      )}
 
       {/* 상세보기 모달 - ReservationModal 재사용 */}
       {isDetailOpen && detail && (
@@ -823,14 +845,24 @@ export default function ManageReservations() {
             const { name, value } = e.target;
             setDetail(prev => ({ ...prev, [name]: value }));
           }}
-          handleCustomerNameChange={(value) => setDetail(prev => ({ ...prev, customerName: value }))}
+          handleCustomerNameChange={(value) => setDetail(prev => ({ ...prev, customerName: value, guestName: value }))}
           customerSuggestions={[]}
           showCustomerSuggestions={false}
           selectCustomerSuggestion={() => {}}
           roomAvailability={{}}
           totalPrice={detail.totalAmount || 0}
+          priceCalculation={detail.sellingPrice && detail.supplyPrice ? {
+            sellingPrice: detail.sellingPrice,
+            supplyPrice: detail.supplyPrice,
+            profit: detail.profit || 0,
+            vatAmount: detail.vatAmount || 0,
+            vatRate: detail.vatRate || 10,
+            commission: detail.commission || 0,
+            commissionRate: detail.commissionRate || 4,
+            netAmount: (detail.profit || 0) - (detail.commission || 0)
+          } : null}
           isSubmitting={false}
-          handlePackageChange={() => {}}
+
           handleShoppingMallChange={(mall) => {
             setDetail(prev => ({ ...prev, shoppingMall: mall }));
             // 가격 자동 계산 로직 추가

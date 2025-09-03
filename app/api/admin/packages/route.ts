@@ -44,6 +44,7 @@ export async function GET(request: NextRequest) {
         name: true,
         description: true,
         price: true,
+        roomId: true,
         createdAt: true,
         updatedAt: true,
         room: {
@@ -157,7 +158,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { id, name, description, price, isActive } = body;
+    const { id, name, description, price, roomId, isActive } = body;
 
     if (!id) {
       return NextResponse.json(
@@ -183,6 +184,21 @@ export async function PATCH(request: NextRequest) {
     if (name?.trim()) updateData.name = name.trim();
     if (description !== undefined) updateData.description = description?.trim() || null;
     if (price !== undefined) updateData.price = parseFloat(price);
+    if (roomId) {
+      // 객실 존재 여부 확인
+      const room = await prisma.room.findUnique({
+        where: { id: roomId },
+        select: { id: true, name: true }
+      });
+      
+      if (!room) {
+        return NextResponse.json(
+          { error: '선택한 객실을 찾을 수 없습니다.' },
+          { status: 400 }
+        );
+      }
+      updateData.roomId = roomId;
+    }
     
 
     // 패키지 업데이트
@@ -194,13 +210,14 @@ export async function PATCH(request: NextRequest) {
         name: true,
         description: true,
         price: true,
-                 updatedAt: true,
-         room: {
-           select: {
-             id: true,
-             name: true,
-           },
-         },
+        roomId: true,
+        updatedAt: true,
+        room: {
+          select: {
+            id: true,
+            name: true,
+          },
+        },
       },
     });
 

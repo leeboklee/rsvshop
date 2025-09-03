@@ -53,7 +53,7 @@ export default function HomePage() {
             { path: "/admin/reservations", name: "예약 관리", description: "예약 생성, 수정, 삭제", color: "green" },
             { path: "/admin/calendar", name: "달력 뷰", description: "예약 달력 및 일정", color: "sky" },
             { path: "/admin/hotels", name: "호텔 관리", description: "호텔 정보 및 설정", color: "purple" },
-            { path: "/admin/rooms", name: "객실 관리", description: "객실 정보 및 가격", color: "indigo" },
+            { path: "/admin/hotel-rooms", name: "호텔객실관리", description: "호텔과 객실 통합 관리", color: "indigo" },
             { path: "/admin/packages", name: "패키지 관리", description: "투어 패키지 관리", color: "pink" },
           ]
         },
@@ -121,7 +121,7 @@ export default function HomePage() {
             { path: "/api/rooms", name: "객실 정보", description: "객실 목록 및 가용성", color: "green" },
             { path: "/api/packages", name: "패키지 정보", description: "투어 패키지 목록 및 상세", color: "purple" },
             { path: "/api/admin/hotels", name: "호텔 관리 API", description: "호텔 CRUD 작업", color: "indigo" },
-            { path: "/api/admin/rooms", name: "객실 관리 API", description: "객실 CRUD 작업", color: "teal" },
+            { path: "/api/rooms", name: "객실 관리 API", description: "객실 CRUD 작업", color: "teal" },
             { path: "/api/admin/packages", name: "패키지 관리 API", description: "패키지 CRUD 작업", color: "pink" },
           ]
         },
