@@ -1,0 +1,62 @@
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): app/**/* lib/**/* prisma/**/* next.config.js[39m
+[33m[nodemon] watching extensions: js,ts,tsx,jsx,json,prisma[39m
+[32m[nodemon] starting `npx next dev --port 4900`[39m
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::4900
+    at Server.setupListenHandle [as _listen2] (no[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx next dev --port 4900`[39m
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::4900
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+    at new Promise (<anonymous>)
+    at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+    at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+    at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+    a ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::4900
+    at Server.setupListenHandle [as _listen2] (no[32m[nodemon] clean exit - waiting for changes before restart[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `npx next dev --port 4900`[39m
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::4900
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+    at new Promise (<anonymous>)
+    at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+    at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+    at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+    at process.emit (node:events:524:28) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4900
+}
+[?25h
+[32m[nodemon] clean exit - waiting for changes before restart[39m
+ver.listen (node:net:2067:7)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:280:16
+    at new Promise (<anonymous>)
+    at startServer (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:191:11)
+    at /home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:52
+    at Span.traceAsyncFn (/home/rsvshop/projects/rsvshop/node_modules/next/dist/trace/trace.js:154:26)
+    at process.<anonymous> (/home/rsvshop/projects/rsvshop/node_modules/next/dist/server/lib/start-server.js:310:35)
+    at process.emit (node:events:524:28) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 4900
+}
+[?25h
+[32m[nodemon] clean exit - waiting for changes before restart[39m

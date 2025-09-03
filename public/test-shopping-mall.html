@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 연동 기능 테스트</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .test-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #007bff;
+        }
+        .test-section h3 {
+            color: #007bff;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .test-button {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+        }
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,123,255,0.4);
+        }
+        .test-button.success {
+            background: linear-gradient(45deg, #28a745, #20c997);
+        }
+        .test-button.danger {
+            background: linear-gradient(45deg, #dc3545, #c82333);
+        }
+        .result-box {
+            background: #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #dee2e6;
+        }
+        .status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+        .info-card h4 {
+            color: #495057;
+            margin-top: 0;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f3f4;
+            display: flex;
+            align-items: center;
+        }
+        .feature-list li:before {
+            content: "✅";
+            margin-right: 10px;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ 쇼핑몰 연동 기능 테스트</h1>
+        
+        <div class="test-section">
+            <h3>📋 테스트 개요</h3>
+            <p>이 페이지는 RSVShop의 쇼핑몰 연동 및 수수료 계산 기능을 테스트합니다.</p>
+            
+            <div class="grid">
+                <div class="info-card">
+                    <h4>✅ 구현된 기능</h4>
+                    <ul class="feature-list">
+                        <li>쇼핑몰 등록/관리</li>
+                        <li>수수료율 설정</li>
+                        <li>자동 수수료 계산</li>
+                        <li>예약 시 쇼핑몰 연동</li>
+                        <li>실시간 가격 동기화</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h4>🧪 테스트 항목</h4>
+                    <ul class="feature-list">
+                        <li>쇼핑몰 API 테스트</li>
+                        <li>수수료 계산 검증</li>
+                        <li>예약 생성 연동</li>
+                        <li>UI 기능 확인</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🚀 자동 테스트 실행</h3>
+            <button class="test-button" onclick="runAllTests()">전체 테스트 실행</button>
+            <button class="test-button success" onclick="testShoppingMallCreation()">쇼핑몰 등록만</button>
+            <button class="test-button" onclick="testShoppingMallList()">목록 조회만</button>
+            <button class="test-button" onclick="testCommissionCalculation()">수수료 계산만</button>
+            <button class="test-button" onclick="testReservationWithShoppingMall()">예약 생성만</button>
+        </div>
+
+        <div class="test-section">
+            <h3>📊 테스트 결과</h3>
+            <div id="testResults" class="result-box">
+                테스트를 실행하면 결과가 여기에 표시됩니다...
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h3>🔗 관련 페이지</h3>
+            <div class="grid">
+                <div class="info-card">
+                    <h4>관리자 페이지</h4>
+                    <p><a href="/admin" target="_blank">📊 메인 대시보드</a></p>
+                    <p><a href="/admin/shopping-malls" target="_blank">🛍️ 쇼핑몰 관리</a></p>
+                    <p><a href="/admin/reservations" target="_blank">📅 예약 관리</a></p>
+                </div>
+                
+                <div class="info-card">
+                    <h4>API 테스트</h4>
+                    <p><a href="/api/admin/shopping-malls" target="_blank">🛍️ 쇼핑몰 API</a></p>
+                    <p><a href="/api/admin/reservations" target="_blank">📅 예약 API</a></p>
+                    <p><a href="/api/health" target="_blank">💚 시스템 상태</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/test-shopping-mall-integration.js"></script>
+    <script>
+        // 테스트 결과 표시 함수
+        function logResult(message, type = 'info') {
+            const resultsDiv = document.getElementById('testResults');
+            const timestamp = new Date().toLocaleTimeString();
+            const statusClass = type === 'success' ? 'success' : type === 'error' ? 'error' : 'info';
+            
+            const logEntry = document.createElement('div');
+            logEntry.innerHTML = `
+                <span class="status ${statusClass}">${timestamp}</span>
+                ${message}
+            `;
+            
+            resultsDiv.appendChild(logEntry);
+            resultsDiv.scrollTop = resultsDiv.scrollHeight;
+        }
+
+        // 테스트 함수들을 오버라이드하여 결과를 화면에 표시
+        const originalLog = console.log;
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            logResult(args.join(' '), 'info');
+        };
+
+        const originalError = console.error;
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            logResult(args.join(' '), 'error');
+        };
+
+        // 테스트 실행 함수들
+        async function runAllTests() {
+            logResult('🚀 전체 테스트 시작', 'info');
+            try {
+                await testShoppingMallCreation();
+                await testShoppingMallList();
+                testCommissionCalculation();
+                await testReservationWithShoppingMall();
+                logResult('🎉 전체 테스트 완료!', 'success');
+            } catch (error) {
+                logResult(`❌ 테스트 실행 중 오류: ${error.message}`, 'error');
+            }
+        }
+
+        async function testShoppingMallCreation() {
+            logResult('📝 쇼핑몰 등록 테스트 시작', 'info');
+            try {
+                await window.testShoppingMallIntegration.createMalls();
+                logResult('✅ 쇼핑몰 등록 테스트 완료', 'success');
+            } catch (error) {
+                logResult(`❌ 쇼핑몰 등록 테스트 실패: ${error.message}`, 'error');
+            }
+        }
+
+        async function testShoppingMallList() {
+            logResult('📋 쇼핑몰 목록 조회 테스트 시작', 'info');
+            try {
+                await window.testShoppingMallIntegration.listMalls();
+                logResult('✅ 쇼핑몰 목록 조회 테스트 완료', 'success');
+            } catch (error) {
+                logResult(`❌ 쇼핑몰 목록 조회 테스트 실패: ${error.message}`, 'error');
+            }
+        }
+
+        function testCommissionCalculation() {
+            logResult('💰 수수료 계산 테스트 시작', 'info');
+            try {
+                window.testShoppingMallIntegration.calculateCommission();
+                logResult('✅ 수수료 계산 테스트 완료', 'success');
+            } catch (error) {
+                logResult(`❌ 수수료 계산 테스트 실패: ${error.message}`, 'error');
+            }
+        }
+
+        async function testReservationWithShoppingMall() {
+            logResult('📅 예약 생성 테스트 시작', 'info');
+            try {
+                await window.testShoppingMallIntegration.createReservation();
+                logResult('✅ 예약 생성 테스트 완료', 'success');
+            } catch (error) {
+                logResult(`❌ 예약 생성 테스트 실패: ${error.message}`, 'error');
+            }
+        }
+
+        // 페이지 로드 시 초기화
+        window.addEventListener('load', () => {
+            logResult('🛍️ 쇼핑몰 연동 기능 테스트 페이지 로드 완료', 'success');
+            logResult('💡 위의 버튼을 클릭하여 테스트를 실행하세요', 'info');
+        });
+    </script>
+</body>
+</html>

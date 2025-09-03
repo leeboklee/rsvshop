@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVShop 접속 테스트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .link-group {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .link-group h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .link {
+            display: block;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .link:hover {
+            background: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .status {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+        .test-button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .test-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 RSVShop 접속 테스트</h1>
+        
+        <div class="status">
+            <h3>📊 서버 상태</h3>
+            <p>서버가 정상적으로 실행 중입니다 (포트 4900)</p>
+        </div>
+
+        <div class="link-group">
+            <h3>🔗 직접 접속 링크</h3>
+            <a href="http://localhost:4900/" class="link">🏠 메인 페이지</a>
+            <a href="http://localhost:4900/admin" class="link">⚙️ 관리자 대시보드</a>
+            <a href="http://localhost:4900/admin/reservations" class="link">📅 예약 관리</a>
+            <a href="http://localhost:4900/admin/shopping-malls" class="link">🛍️ 쇼핑몰 관리</a>
+            <a href="http://localhost:4900/admin/rooms" class="link">🏨 객실 관리</a>
+        </div>
+
+        <div class="link-group">
+            <h3>🧪 기능 테스트</h3>
+            <button class="test-button" onclick="testConnection()">🔍 연결 테스트</button>
+            <button class="test-button" onclick="testAPI()">📡 API 테스트</button>
+        </div>
+
+        <div id="test-results" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        async function testConnection() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 10px 0;">🔍 연결 테스트 중...</div>';
+            
+            try {
+                const response = await fetch('http://localhost:4900/api/health/db');
+                if (response.ok) {
+                    results.innerHTML = '<div style="background: rgba(76,175,80,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">✅ 연결 성공! 서버가 정상 작동 중입니다.</div>';
+                } else {
+                    results.innerHTML = '<div style="background: rgba(244,67,54,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">❌ 연결 실패: ' + response.status + '</div>';
+                }
+            } catch (error) {
+                results.innerHTML = '<div style="background: rgba(244,67,54,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">❌ 연결 오류: ' + error.message + '</div>';
+            }
+        }
+
+        async function testAPI() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 8px; margin: 10px 0;">📡 API 테스트 중...</div>';
+            
+            try {
+                const response = await fetch('http://localhost:4900/api/admin/shopping-malls');
+                if (response.ok) {
+                    const data = await response.json();
+                    results.innerHTML = '<div style="background: rgba(76,175,80,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">✅ API 테스트 성공! 쇼핑몰 ' + data.shoppingMalls.length + '개 발견</div>';
+                } else {
+                    results.innerHTML = '<div style="background: rgba(244,67,54,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">❌ API 테스트 실패: ' + response.status + '</div>';
+                }
+            } catch (error) {
+                results.innerHTML = '<div style="background: rgba(244,67,54,0.3); padding: 15px; border-radius: 8px; margin: 10px 0;">❌ API 테스트 오류: ' + error.message + '</div>';
+            }
+        }
+    </script>
+</body>
+</html>

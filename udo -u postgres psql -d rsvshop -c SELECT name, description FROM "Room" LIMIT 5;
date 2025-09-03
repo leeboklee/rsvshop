@@ -1,0 +1,12 @@
+ column_name |          data_type          
+-------------+-----------------------------
+ id          | text
+ name        | text
+ description | text
+ imageUrl    | text
+ capacity    | integer
+ createdAt   | timestamp without time zone
+ updatedAt   | timestamp without time zone
+ hotelId     | text
+(8 rows)
+
