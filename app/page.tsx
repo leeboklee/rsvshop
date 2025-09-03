@@ -1,33 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import Card from '@/app/components/common/Card';
 
 export default function HomePage() {
-  const [stats, setStats] = useState<any>({});
-  const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState('frontend');
-
-  // 통계 데이터 가져오기
-  useEffect(() => {
-    const fetchStats = async () => {
-      setLoading(true);
-      try {
-        const response = await fetch('/api/admin/stats');
-        if (response.ok) {
-          const data = await response.json();
-          setStats(data);
-        }
-      } catch (error) {
-        console.error('통계 데이터 로딩 실패:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchStats();
-  }, []);
 
   // 탭별 엔드포인트 그룹 정의
   const tabGroups = {
@@ -236,24 +213,18 @@ export default function HomePage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* 통계 카드 */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <Card className="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
-            <div className="text-2xl font-bold">{stats.totalReservations || 0}</div>
-            <div className="text-blue-100">총 예약</div>
-          </Card>
-          <Card className="bg-gradient-to-r from-green-500 to-green-600 text-white">
-            <div className="text-2xl font-bold">{stats.todayReservations || 0}</div>
-            <div className="text-green-100">오늘 예약</div>
-          </Card>
-          <Card className="bg-gradient-to-r from-purple-500 to-purple-600 text-white">
-            <div className="text-2xl font-bold">{stats.activeRooms || 0}</div>
-            <div className="text-purple-100">활성 객실</div>
-          </Card>
-          <Card className="bg-gradient-to-r from-pink-500 to-pink-600 text-white">
-            <div className="text-2xl font-bold">{stats.totalPackages || 0}</div>
-            <div className="text-pink-100">패키지</div>
-          </Card>
+        {/* 환영 메시지 */}
+        <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-4">🚀 RSVShop에 오신 것을 환영합니다!</h2>
+          <p className="text-xl mb-6">호텔 예약 및 관리 시스템의 모든 기능을 한 곳에서 관리하세요.</p>
+          <div className="flex space-x-4">
+            <Link href="/admin" className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              관리자 페이지 시작하기
+            </Link>
+            <Link href="/hotel-admin" className="px-6 py-3 bg-blue-400 text-white rounded-lg font-semibold hover:bg-blue-300 transition-colors">
+              호텔 관리자 페이지
+            </Link>
+          </div>
         </div>
 
         {/* 검색바 */}
