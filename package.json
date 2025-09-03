@@ -41,7 +41,7 @@
     "db:ensure": "bash ./scripts/db-control.sh ensure",
     "db:toggle": "bash ./scripts/db-control.sh toggle",
     "dev:with-db": "npm run db:ensure && npm run dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "start:customer": "NODE_ENV=wsl npx next start --port 5990",
     "lint": "next lint",
