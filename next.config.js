@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  // output: 'standalone', // Vercel에서는 자동으로 최적화됨
   
   // TypeScript 검사 비활성화 (개발 속도 향상)
   typescript: {

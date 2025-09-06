@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 4900",
-    "dev:fast": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev --port 4900 --turbo",
-    "dev:ultra": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=512' npx next dev --port 4900",
+    "dev:fast": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev -p 4900",
+    "dev:ultra": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=512' npx next dev -p 4900",
     "dev:bg": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=2048' nohup nodemon --config nodemon.json --exec 'npx next dev --port 4900' > dev-server.log 2>&1 &",
     "dev:pm2": "pm2 start npm --name 'rsvshop-dev' -- run dev",
     "dev:pm2:stop": "pm2 stop rsvshop-dev",
@@ -22,8 +22,6 @@
     "dev:wsl": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 4900",
     "dev:customer": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev --port 5990",
     "dev:nodemon": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' nodemon --config nodemon.json --exec 'npx next dev --port 4900'",
-    "dev:fast": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=1024' npx next dev -p 4900",
-    "dev:ultra": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=512' npx next dev -p 4900",
     "dev:compile": "NODE_ENV=wsl NODE_OPTIONS='--max-old-space-size=512 --max-semi-space-size=64' npx next dev -p 4900",
     "dev:fix": "NODE_ENV=wsl HOSTNAME=0.0.0.0 NODE_OPTIONS='--max-old-space-size=2048 --max-semi-space-size=128' npx next dev -p 4900 --experimental-https",
     "dev:optimized": "NODE_ENV=development NODE_OPTIONS='--max-old-space-size=4096 --max-semi-space-size=256' npx next dev --port 4900",
@@ -65,6 +63,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@modelcontextprotocol/server-filesystem": "^2025.8.21",
     "@pandacss/dev": "^0.54.0",
     "@prisma/client": "^6.13.0",
     "@tosspayments/payment-sdk": "^1.7.0",

@@ -1,0 +1,210 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-filesystem",
+        "/"
+      ],
+      "enabled": true,
+      "description": "파일 시스템 접근"
+    },
+    "git": {
+      "command": "git",
+      "args": ["status"],
+      "enabled": false,
+      "description": "Git 저장소 관리 (수동 설정 필요)"
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": ""
+      },
+      "enabled": false,
+      "description": "웹 검색 (API 키 필요)"
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-postgres"
+      ],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": ""
+      },
+      "enabled": true,
+      "description": "PostgreSQL 데이터베이스"
+    },
+    "vercel": {
+      "command": "npx",
+      "args": [
+        "mcp-server-vercel"
+      ],
+      "env": {
+        "VERCEL_TOKEN": ""
+      },
+      "enabled": false,
+      "description": "Vercel 배포 관리 (토큰 필요)"
+    },
+    "neon": {
+      "command": "npx",
+      "args": [
+        "mcp-server-neon"
+      ],
+      "env": {
+        "NEON_API_KEY": "",
+        "NEON_DATABASE_URL": ""
+      },
+      "enabled": false,
+      "description": "Neon 데이터베이스 (API 키 필요)"
+    },
+    "browserTools": {
+      "command": "node",
+      "args": [
+        "browser-tools-mcp.js"
+      ],
+      "enabled": true,
+      "autoApprove": true,
+      "description": "브라우저 디버깅 도구"
+    },
+    "debugTools": {
+      "command": "node",
+      "args": [
+        "debug-unified.js"
+      ],
+      "enabled": true,
+      "autoApprove": true,
+      "description": "통합 디버깅 도구"
+    }
+  },
+  "config": {
+    "autoStart": true,
+    "logLevel": "info",
+    "logDirectory": "./logs",
+    "port": 4700,
+    "apiPort": 4710
+  },
+  "startup": {
+    "openBrowser": true,
+    "startServer": true,
+    "startApi": true
+  },
+  "keywords": [
+    "mcp",
+    "파일 시스템",
+    "git",
+    "웹 검색",
+    "데이터베이스",
+    "vercel",
+    "neon",
+    "브라우저 로그",
+    "브라우저 스크린샷",
+    "네트워크 요청",
+    "DOM 요소",
+    "접근성 검사",
+    "SEO 검사",
+    "성능 검사",
+    "디버거 모드"
+  ],
+  "server": {
+    "port": 5000,
+    "autoStart": true,
+    "logDirectory": "logs",
+    "debug": true
+  },
+  "browser": {
+    "defaultUrl": "http://localhost:3000",
+    "headless": false,
+    "autoClose": true,
+    "screenshotDirectory": "logs/screenshots"
+  },
+  "automation": {
+    "enabled": true,
+    "commands": {
+      "파일 시스템 접근": "filesystem",
+      "Git 저장소 관리": "git",
+      "웹 검색": "brave-search",
+      "데이터베이스 쿼리": "postgres",
+      "Vercel 배포": "vercel",
+      "Neon DB 관리": "neon",
+      "브라우저 로그 확인": "simple-debug.js console",
+      "브라우저 스크린샷 찍기": "simple-debug.js screenshot",
+      "네트워크 요청 분석": "simple-debug.js network",
+      "현재 DOM 요소 확인": "simple-debug.js dom",
+      "접근성 검사 실행": "simple-debug.js accessibility",
+      "SEO 검사 실행": "simple-debug.js seo",
+      "성능 검사 실행": "simple-debug.js performance",
+      "디버거 모드 실행": "mcp-debug.js"
+    },
+    "yoloMode": true
+  },
+  "tools": {
+    "filesystem": {
+      "enabled": true,
+      "allowedPaths": [
+        "./",
+        "../"
+      ],
+      "readOnly": false
+    },
+    "git": {
+      "enabled": true,
+      "repository": ".",
+      "autoCommit": false
+    },
+    "search": {
+      "enabled": true,
+      "maxResults": 10,
+      "safeSearch": true
+    },
+    "database": {
+      "enabled": true,
+      "connectionString": "",
+      "maxConnections": 5
+    },
+    "vercel": {
+      "enabled": true,
+      "projectId": "prj_dkJndydTSE2LiVEKrs0f5G0tELRJ",
+      "autoDeploy": false
+    },
+    "neon": {
+      "enabled": true,
+      "databaseUrl": "",
+      "autoBackup": true
+    },
+    "screenshots": {
+      "enabled": true,
+      "fullPage": true,
+      "format": "png",
+      "quality": 100,
+      "autoSave": true
+    },
+    "network": {
+      "enabled": true,
+      "captureHeaders": true,
+      "captureContent": true,
+      "filterTypes": [
+        "xhr",
+        "fetch",
+        "websocket"
+      ]
+    },
+    "console": {
+      "enabled": true,
+      "captureTypes": [
+        "log",
+        "error",
+        "warn",
+        "info",
+        "debug"
+      ]
+    },
+    "dom": {
+      "enabled": true,
+      "maxDepth": 5,
+      "includeAttributes": true
+    }
+  }
+}

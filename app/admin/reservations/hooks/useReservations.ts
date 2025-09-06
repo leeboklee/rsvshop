@@ -29,6 +29,10 @@ interface NewBooking {
   specialRequests: string;
   status: string;
   
+  // 패키지 관련 필드
+  packageId?: string;
+  discountAmount?: number;
+  
   // 쇼핑몰 관련 필드
   orderNumber: string;
   externalId: string;
@@ -78,6 +82,10 @@ export const useReservations = () => {
     selectedPackages: [],
     specialRequests: '',
     status: 'RECEIVED',
+    
+    // 패키지 관련 필드
+    packageId: '',
+    discountAmount: 0,
     
     // 쇼핑몰 관련 필드
     orderNumber: '',
@@ -385,6 +393,11 @@ export const useReservations = () => {
     };
   }, [shoppingMalls]);
 
+  // 패키지 변경 처리
+  const handlePackageChange = useCallback((packageId: string) => {
+    setNewBooking(prev => ({ ...prev, packageId }));
+  }, []);
+
   // 쇼핑몰 변경 시 가격 자동 계산
   const handleShoppingMallChange = useCallback((mall: string) => {
     const currentSellingPrice = newBooking.sellingPrice || totalPrice;
@@ -529,6 +542,9 @@ export const useReservations = () => {
       selectedPackages: [],
       specialRequests: '',
       status: 'RECEIVED',
+      
+      // 패키지 관련 필드
+      packageId: '',
       discountAmount: 0,
       
       // 쇼핑몰 관련 필드
@@ -585,7 +601,7 @@ export const useReservations = () => {
     handleCustomerNameChange,
     selectCustomerSuggestion,
     handleInputChange,
-
+    handlePackageChange,
     handleSubmit,
     updateBookingStatus,
     resetForm,
